@@ -16,4 +16,7 @@ pandoc
 test_ref.md 
 -o main.docx
 ```
-Update time on 18:20 March 10<sur>th<sur>
+I'm writing this just to show Yugo he's not old and he can learn it in 1 hour.  
+What would you answer?:  
+* [x] I'm down for it, word is a bitch.
+* [ ] I'mmm too old i pass. 
