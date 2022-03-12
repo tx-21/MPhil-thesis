@@ -1,0 +1,3 @@
+## *Wu et al. (2020)*
+* In this work, we presented a Transformer-based approach to forecasting time series data. Compared to other sequence- aligned deep learning methods, our approach leverages self- attention mechanisms to model sequence data, and therefore it can learn complex dependencies of various lengths from time series data.
+* Finally, although the current case study focuses on time series data, __*we hypothesize that our approach can be further extended to model spatio-temporal data indexed by both time and location coordinates.*__ Self-attention mechanisms can be generalized to learn relations between two arbitrary points in spatio-temporal space. This is a direction we plan to explore in the future.

@@ -1,5 +1,5 @@
 ## Terms
-* sequence-aligned models [@\cite{wuDeepTransformerModels2020}]
+* sequence-aligned models [@wuDeepTransformerModels2020]
 
 ## Models
 ### Statistical models
