@@ -95,6 +95,7 @@ class Transformer(nn.Module):
         self.transformer_encoder = nn.TransformerEncoder(self.encoder_layer, num_layers=num_layers)        
         self.decoder = nn.Linear(feature_size,1)
         self.init_weights()
+        
     def init_weights(self):
         initrange = 0.1    
         self.decoder.bias.data.zero_()
