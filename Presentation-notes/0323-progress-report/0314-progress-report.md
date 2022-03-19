@@ -30,10 +30,10 @@ Forecasting the Ammonia Concentration in the Reclaimed Water using Machine Learn
 
 ## Future plan
 ### April & May
-* 4/22 – Finish MPhil thesis 1$_{st}$ draft.
+* 4/22 – Finish MPhil thesis draft.
 * 4/22 – Group presentation.
 * 5/11 – EVNG 6050X presentation.
-* 5/27 – Finish MPhil thesis 1st revision.  
+* 5/27 – Finish MPhil thesis 1$^{st}$ revision.  
 (Start to shcedule time for oral defense)
 
 ### June & July
@@ -44,6 +44,8 @@ Forecasting the Ammonia Concentration in the Reclaimed Water using Machine Learn
 
 ## Progress report 
 ### Key findings in Feb and March
-* Train ammonia forecasting model with colour data decreased the model performance.
-* Feature enginnering was applied to increase the model performance, and the improvement of the model can be explained in environmental engineering perspective.
-* New state-of-the-art model (Transformer) was used and a better model performance was achieved compared to LSTM and DNN.
+* 2/13 – Train ammonia forecasting model with colour data decreased the model performance.
+* 3/2 – New state-of-the-art model (Transformer) was used and a better model performance was achieved compared to LSTM and DNN.
+* 3/5 – Feature enginnering was applied to increase the model performance, and the improvement of the model can be explained in environmental engineering perspective.
+* 3/10 – Submit ACS abstract.
+* 3/18 – Finalize the coverage of my research works.
