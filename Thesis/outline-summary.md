@@ -1,9 +1,24 @@
 # Listing the key targets in each chapter
 ## Chap 1 Introduction
 ## Chap 2 Literature Review
-1. The forecasting water quality works have been done in the industry.
-2. The recent works of water reclamation in wastewater treatment plant.
-3. 
+* [ ] Water reclamation in wastewater treatment plant.
+    * To talk about what has been done for recovering water from wastewater.
+* [ ] Water quality forecasting in wastewater treatment plant.
+    
+    
+
+2.1 Water quality forecasting in wastewater treatment plant
+2.1.1 Tools and technologies for parameter forecasting in wastewater treatment plant
+2.2 Machine learning models for water quality forecasting
+2.1.1 Introduction to time-series data
+2.1.1 Machine learning models and comparison 
+2.1.2 Review of existing cases of applying machine learning for water quality forecasting
+2.3 Techniques for improving model forecasting performance
+2.3.1 Data pre-processing with smoothing and outlier removal 
+2.3.1 Implementation of weight regularization to avoid model overfittings
+2.3.2 Other regularization methods to avoid model overfittings
+
+
 
 ## Chap 3 Materials and Methods
 1. Data collection 
