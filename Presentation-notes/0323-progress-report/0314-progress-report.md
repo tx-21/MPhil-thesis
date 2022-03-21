@@ -40,7 +40,7 @@ Forecasting the Ammonia Concentration in the Reclaimed Water using Machine Learn
 * June – Preparing for oral defense
 * Jul – Oral defense  
 
-![](/Users/tinghsi/OneDrive - HKUST Connect/MPhil-thesis-github-library/MPhil-thesis/Presentation-notes/0314-progress-report/plan.png)
+![](/Users/tinghsi/OneDrive - HKUST Connect/MPhil-thesis-github-library/MPhil-thesis/Presentation-notes/0323-progress-report/plan.png)
 
 ## Progress report 
 ### Key findings in Feb and March

@@ -11,6 +11,12 @@ Describe how to solve the problem by using supervised machine learning task...
 #### Data smoothing
 #### Outlier detection and removal
 #### Feature engineering
+@patelWhatFeatureEngineering2021
+What is Feature Engineering
+Feature engineering is a machine learning technique that leverages data to create new variables that aren’t in the training set. It can produce new features for both supervised and unsupervised learning, with the goal of simplifying and speeding up data transformations while also enhancing model accuracy. Feature engineering is required when working with machine learning models. Regardless of the data or architecture, a terrible feature will have a direct impact on your model.
+
+
+
 #### Split of Train/valid/test dataset 
 ## Machine learning models
 ### MLP
@@ -20,6 +26,7 @@ Describe how to solve the problem by using supervised machine learning task...
 ### Transformer
 #### Model Architecture
 ##### Decoder
+@wuDeepTransformerModels2020
 We employ a decoder design that is similar to the original Transformer architecture (Vaswani et al., 2017). The decoder is also composed of the input layer, four identi- cal decoder layers, and an output layer. The decoder input begins with the last data point of the encoder input. The input layer maps the decoder input to a $d_{model}dimensional vector. In addition to the two sub-layers in each encoder layer, the decoder inserts a third sub-layer to apply self- attention mechanisms over the encoder output. Finally, there is an output layer that maps the output of last decoder layer to the target time sequence. We employ look-ahead masking and one-position offset between the decoder input and tar- get output in the decoder to ensure that prediction of a time series data point will only depend on previous data points
 ##### Attention mechanism
 ## Training
