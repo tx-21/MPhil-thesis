@@ -51,8 +51,8 @@ def main(
         metric = []
 
         for i in range(model_number):
-            # train_loss, best_model = teacher_forcing(i, train_dataloader, epoch, lr, k, frequency, path_to_save_model, path_to_save_loss[i], path_to_save_predictions[i], device)
-            train_loss, best_model = scheduled_sampling(i, train_dataloader, epoch, lr, k, frequency, path_to_save_model, path_to_save_loss[i], path_to_save_predictions[i], device, training_length)
+            train_loss, best_model = teacher_forcing(i, train_dataloader, epoch, lr, k, frequency, path_to_save_model, path_to_save_loss[i], path_to_save_predictions[i], device)
+            # train_loss, best_model = scheduled_sampling(i, train_dataloader, epoch, lr, k, frequency, path_to_save_model, path_to_save_loss[i], path_to_save_predictions[i], device, training_length)
             _rmse, r2, val_loss = inference(i, path_to_save_predictions[i], forecast_window, test_dataloader, device, path_to_save_model, best_model, path_to_save_loss[i])
             status = []
             status = [_rmse, r2, val_loss, train_loss, best_model]
