@@ -14,6 +14,8 @@ Describe how to solve the problem by using supervised machine learning task...
 @patelWhatFeatureEngineering2021
 What is Feature Engineering
 Feature engineering is a machine learning technique that leverages data to create new variables that aren’t in the training set. It can produce new features for both supervised and unsupervised learning, with the goal of simplifying and speeding up data transformations while also enhancing model accuracy. Feature engineering is required when working with machine learning models. Regardless of the data or architecture, a terrible feature will have a direct impact on your model.
+#### Data Augmentation
+* link: https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0254841
 
 
 
@@ -24,6 +26,9 @@ Feature engineering is a machine learning technique that leverages data to creat
 ### LSTM
 #### Model Architecture
 ### Transformer
+* Good explaination
+    * https://jalammar.github.io/illustrated-transformer/
+    
 #### Model Architecture
 ##### Decoder
 @wuDeepTransformerModels2020

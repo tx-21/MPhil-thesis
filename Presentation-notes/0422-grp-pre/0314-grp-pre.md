@@ -1,6 +1,36 @@
+## Slides
+* Introduction  
+    * Talk about the important steps in establishing methodologies for successfully forecasting ammonia using machine learning.
+        1. To find the right models for training.
+        2. To build up data pre-processing methods for data cleaning.
+        3. To find an optimal way to train the model.  
+        I didn't present this part, because this part is more technical in machine learning. Simply saying, is how to train a model to forecast ammonia in multiple steps, adjustment of the model hyperparameters, and model architectures. 
+        4. To use our domian knowledge in envinronmental engineering to enhence the model performance.  
+        This last point will be the focus of todays presentation. To be more specific, in machine learning, the best way to incoporate domain knowledge in the training process is by performing feature engineering. (explain what is feature engineering, jump to objective)
+
+    (Transition: The last step of the establishment will lead to the next slide, last point is to use domain knowledge)
+    * Introduce what is feature engineering, and why domain knowledge can be utilized here.
+    * Provide proof of my observation and conlcude it how to achieve through feature engineering)
+        * The repetitive patterns of ammonia fluctuation (can be related to residence time distribution)
+        * The source of ammonia from residential use water.
+        * The operational aspect of the wastewater treatment plant (follows a routine).
+    * Explain what is positional encoding
+        * Mention that if positional encoding is used, do we still need recursive neural networks? Recently, a new model architecture is proposed, and the model itself is not based on recursive neural networks, instead, it combined the use of attention mechanism and positional encoding to replace the use of recursive neural networks. Therefore, i attempt to train the ammonia forecasting model with this new archetecture and see the performance of it. 
+    * Questions
+        * Will the positional encoding help the forecast performance of models trained with DNN and LSTM?
+        * Can non-recursive neural networks perform better than recursive neural networks?
+    * Objectives
+        * To study the influence of training model with positional encoding as new features in model performance in forecasting ammonia.
+        * To train ammonia forecasting model without using recursive neural network.
+
 ## Slide contents
+* Some important steps in establishing a methodology for successfully forecast ammonia using machine learning.
+    
+
 ### Introduction
-1. Remind the audience the goal of this project. (1 slide)
+1. Remind the audience the goal of this project. (1 slide)  
+* The primary goal of this project can be split into two part. The first part is to establish a methodology for successfully forecast ammonia using machine learning, the second part is to explain the model performance using domain knowledge. 
+* The domain knowledge could be the understanding of the water treatment process in wastewater treatment plant, or the source where ammonia is generated
 2. Mention the focus of creating a good machine learning models depends on several things.
     * Graph
 3. Use bullet point from the alst slide and talk about the previous work. (transition: the previous works only cover .... except feature engineering, to build a better model, thus... )
