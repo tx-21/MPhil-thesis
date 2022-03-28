@@ -1,0 +1,1 @@
+pandoc --citeproc --number-sections thesis-structure.md -o thesis-structure.docx
