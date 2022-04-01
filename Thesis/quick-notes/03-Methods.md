@@ -43,3 +43,9 @@ Feature scaling is one of the most pervasive and difficult problems in machine l
 * Normalization : All values are scaled in a specified range between 0 and 1 via normalisation (or min-max normalisation). This modification has no influence on the feature’s distribution, however it does exacerbate the effects of outliers due to lower standard deviations. As a result, it is advised that outliers be dealt with prior to normalisation.
 * Standardization: Standardization (also known as z-score normalisation) is the process of scaling values while accounting for standard deviation. If the standard deviation of features differs, the range of those features will likewise differ. The effect of outliers in the characteristics is reduced as a result. To arrive at a distribution with a 0 mean and 1 variance, all the data points are subtracted by their mean and the result divided by the distribution’s variance.
 
+# Baseline model selection
+## The purpose of creating baseline models
+There are few requirements for a good baseline model:
+* Baseline model should be simple. Simple models are less likely to overfit. If you see that your baseline is already overfitting, it makes no sense to go for more complex modelling, as the complexity will kill the performance.
+* Baseline model should be interpretable. Explainability will help you to get a better understanding of your data and will show you a direction for the feature engineering.
+* 

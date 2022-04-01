@@ -40,7 +40,7 @@ Forecasting the Ammonia Concentration in the Reclaimed Water using Machine Learn
 * June – Preparing for oral defense
 * Jul – Oral defense  
 
-![](/Users/tinghsi/OneDrive - HKUST Connect/MPhil-thesis-github-library/MPhil-thesis/Presentation-notes/0323-progress-report/plan.png)
+![](D:\OneDrive - HKUST Connect\MPhil-thesis-github-library\MPhil-thesis\Presentation-notes\0323-progress-report\plan.png)
 
 ## Progress report 
 ### Key findings in Feb and March
@@ -49,3 +49,4 @@ Forecasting the Ammonia Concentration in the Reclaimed Water using Machine Learn
 * 3/5 – Feature enginnering was applied to increase the model performance, and the improvement of the model can be explained in environmental engineering perspective.
 * 3/10 – Submit ACS abstract.
 * 3/18 – Finalize the coverage of my research works.
+* 3/29 - Second draft of my thesis outline.
