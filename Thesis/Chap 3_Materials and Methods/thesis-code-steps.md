@@ -44,7 +44,9 @@ The purpose of Exp 1 is to use different preprocess methods to find the best per
 8. Use teacher focing to train
 9. Inference
 # Exp 2
+## Purpose
 The purpose of __Exp 2__ is to use the top three performance models, using the optimized pre-processed method to train with feature engineering (positional encoding).
+## Step description
 1. Copy the optimized training dataset to new folder.
 2. Append positional encoding to three datasets. (LSTM DNN RF)
 3. Prepare the algorithm (see if i can run smoothly with the last two features are removed)
