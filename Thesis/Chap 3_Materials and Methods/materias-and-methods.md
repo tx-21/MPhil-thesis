@@ -7,7 +7,11 @@
 Describe how to solve the problem by using supervised machine learning task...
 ## Data collection and preparation
 ### NH3-N data monitoring and collection
+NH$_{3}$N data was collected in the time interval of 1 minutes.
+### Colour data monitoring and collection
+Colour data was collected in the time interval of 30 minutes.
 ### Data preparation process
+To have colour and NH$_{3}$N trained together, the time interval of both parameters is adapted into 1 hour by averaging the values within the 1 hour interval. The purpose of changing time interval to 1 hour instead of just 30 mintues is becuase colour and NH$_{3}$N on-line analyzer collect sample at different time, to minimize the influence time lag of collection time, we set the time of collection from 00:00 to 23:00 using 24-hour clock time.
 #### Data smoothing
 #### Outlier detection and removal
 #### Feature engineering

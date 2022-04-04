@@ -62,3 +62,9 @@ The purpose of __Exp 2__ is to use the top three performance models, using the o
 8. Use teacher focing and scheduled sampling
 9. Inference
 10. Generate the final output and compare with baseline model.
+# Exp 3
+## purpose
+The purpose of Exp 3 is to test whether the methodology I built for NH$_{3}$N can be applied to predicting colour, also using colour and NH$_{3}$N combined to predict either of it.
+## Step description
+1. Create a new training database of colour.
+2. Create a new training database of NH$_{3}$N + colour

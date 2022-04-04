@@ -11,7 +11,7 @@
 ### Markdown
 * For converting markdown file to docx [(Original artical)](https://sspai.com/post/64842).
     * LaTeX &rarr; .tex
-    * Shell &rarr: .sh  
+    * Shell &rarr; .sh  
 
         ```python
         chmod +x example.sh # change the mode
