@@ -16,6 +16,7 @@ and EWMA filters and OR by visulization.
 * [ ] Plot SG filters.
 * [ ] Plot EWMA filters.
 * [ ] Plot peak analysis.
+* [ ] use makedirs to create folders
 ### Output
 1. train.csv of obs, sg5, sg7, sg9, ew2, ew3, ew4, and or.
 2. test.csv
@@ -30,9 +31,6 @@ and EWMA filters and OR by visulization.
 ### Task
 ### Output
 ---
-## Checklist
-* [ ] use makedirs to create folders
-
 # Preprocessing.py
 ## Exp-1
 ### Input
@@ -42,6 +40,8 @@ and EWMA filters and OR by visulization.
 * Add positional encoding to the input train/test data.
 ### Task
 * [x] Add hour and day positional encoding to NH$_{3}$N data.
+* [x] Create only the hour and day positional encoding
+* [x] Export to the right directories
 ### Output
 * train_dataset.csv of obs, sg5, sg7, sg9, ew2, ew3, ew4, and or.
 * test_dataset.csv.
@@ -49,22 +49,23 @@ and EWMA filters and OR by visulization.
 ## Exp-2
 ---
 ## Exp-3
-## Checklist
-* [x] Create only the hour and day positional encoding
-* [x] Export to the right directories
+
 # models.py
 ## Exp-1
 ### Purpose
 * Generate available models for training.
 ### Tasks
-* [ ] Random forest
-* [x] CNN
-  * src has been changed into [: ,: ,0 ] (1 feature)
-  * In CNN, the src is required to be premuted ([N ,: ,features] instead of [: ,N ,features])
-* [x] RNN
-* [x] GRU
-* [x] DNN
-* [x] LSTM
+* Writing model
+  * [ ] Random forest
+  * [x] CNN
+    * src has been changed into [: ,: ,0 ] (1 feature)
+    * In CNN, the src is required to be premuted ([N ,: ,features instead of [: ,N ,features])
+  * [x] RNN
+  * [x] GRU
+  * [x] DNN
+  * [x] LSTM
+* [x] Check the input data into the models follows the right format stated by pytorch website.
+* [x] Check the input, output size of the model.
 ## Exp-2
 * [ ] DNN-5
 * [ ] LSTM-5
@@ -72,20 +73,36 @@ and EWMA filters and OR by visulization.
 * [ ] Transformer
 ---
 ## Exp-3
-## Checklist
-* [x] Check the input data into the models follows the right format stated by pytorch website.
-* [x] Check the input, output size of the model.
  
 # Dataloader.py
 ### Purpose
 * Input the train and test dataset one by one.
 ---
-### Checklist
 ## TrainDataset
 * [ ] check the len__
 * [ ] the input and target should only input with positional encoding of hour and day
 ## TestDataset
 * [ ] The len needs to be change according to the length of the testdataset.
+# train.py
+## teacher-forcing func
+### Purpose
+* To train time series models with teacher forcing.
+* To save train loss to designated location
+* To plot the train loss (in the case of exp 1, it's not neccessary)
+### Tasks
+* [ ] Create a dictionary for model selection.
+* [ ] Determine showing the loss in n epoch
+* [ ] Decide how to calculate the train loss.
+## scheduled sampling
+### Purpose
+* Same as teacher forcing but changed to scheduled sampling.
+# Inference.py
+### Purpose
+* Input the test dataset in trained model to forecast.
+### Tasks
+* [ ] Decide the forecast horizon.
+* [ ] Decide how to calculate the test loss
+
 # helpers.py
 ### Purpose
 * Write loss file save location
@@ -97,7 +114,7 @@ and EWMA filters and OR by visulization.
 * [ ] Modify the clean directory function according to new file saving location
 #### Stability_test func
 * [ ] Consider the output file saving directory according to different database.
-# main_load.py
+# main-load.py
 ### purpose
 * To input all the required parameters for main.py to run.
 * Organize all the script and output directories of results.
