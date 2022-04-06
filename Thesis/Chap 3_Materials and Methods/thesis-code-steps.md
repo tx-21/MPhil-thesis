@@ -1,6 +1,29 @@
-# Exp 1
+# Summary
+## Exp-1 + Exp-1.1
+### Aim
+* To select the baseline model for forecasting NH$_{3}$N.
+### Objectives
+*  Build methodologies for data-preprocessing.
+*  Build methodologies for outlier detection and removal.
+*  Select algorithms to build NH$_{3}$N forecasting models.
+*  Compare forecasting performance between models.
+## Exp-2
+### Aim
+* To optimize the baseline model for forecasting NH$_{3}$N with feature engineering.
+### Objectives
+* To analysze the patterns in daily NH$_{3}$N fluctuation patterns.
+* To investigate the causes of daily NH$_{3}$N fluctuation.
+* To develop the use of feature engineering with the use of domain knowledge.
+## Exp-3
+### Aim
+* To evaluate the robustness of the established methodologies for building NH$_{3}$N forecasiting model on colour forecasting model.
+### Objectives
+* Build colour forecasting model using methodologies for building NH$_{3}$N forecasting model.
+* Use colour and NH$_{3}$N data to build a NH$_{3}$N/colour forecasting model using previous methodologies.
+# Detailed description
+## Exp 1
 ## Purpose
-The purpose of Exp 1 is to use different preprocess methods to find the best performance model, which is also called the baseline model.
+* The purpose of Exp 1 is to use different preprocess methods to find the best performance model, which is also called the baseline model.
 ## Step description
 1. Collect NH$_{3}$N and colour data
    * will be selected from 12/23 to 1/22.

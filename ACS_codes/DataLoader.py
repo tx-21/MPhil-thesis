@@ -11,7 +11,6 @@ from icecream import ic
 
 class TrainDataset(Dataset):
     """Face Landmarks dataset."""
-
     def __init__(self, csv_name, root_dir, training_length, forecast_window):
         """
         Args:
@@ -42,8 +41,8 @@ class TrainDataset(Dataset):
         start = np.random.randint(0, len(self.df) - self.T - self.S + 1)  
         index_in = torch.tensor([i for i in range(start, start+self.T)])
         index_tar = torch.tensor([i for i in range(start + self.T, start + self.T + self.S)])
-        _input = torch.tensor(self.df[["NH3_N", "sin_hour", "cos_hour", "sin_day", "cos_day", "sin_month", "cos_month"]][start : start + self.T].values)
-        target = torch.tensor(self.df[["NH3_N", "sin_hour", "cos_hour", "sin_day", "cos_day", "sin_month", "cos_month"]][start + self.T : start + self.T + self.S].values)
+        _input = torch.tensor(self.df[["NH3_N", "sin_hour", "cos_hour", "sin_day", "cos_day"]][start : start + self.T].values)
+        target = torch.tensor(self.df[["NH3_N", "sin_hour", "cos_hour", "sin_day", "cos_day"]][start + self.T : start + self.T + self.S].values)
 
         # scalar is fit only to the input, to avoid the scaled values "leaking" information about the target range.
         # scalar is fit only for humidity, as the timestamps are already scaled
@@ -93,8 +92,8 @@ class TestDataset(Dataset):
         # start = index - self.T - self.S
         index_in = torch.tensor([i for i in range(start, start+self.T)])
         index_tar = torch.tensor([i for i in range(start + self.T, start + self.T + self.S)])
-        _input = torch.tensor(self.df[["NH3_N", "sin_hour", "cos_hour", "sin_day", "cos_day", "sin_month", "cos_month"]][start : start + self.T].values)
-        target = torch.tensor(self.df[["NH3_N", "sin_hour", "cos_hour", "sin_day", "cos_day", "sin_month", "cos_month"]][start + self.T : start + self.T + self.S].values)
+        _input = torch.tensor(self.df[["NH3_N", "sin_hour", "cos_hour", "sin_day", "cos_day"]][start : start + self.T].values)
+        target = torch.tensor(self.df[["NH3_N", "sin_hour", "cos_hour", "sin_day", "cos_day"]][start + self.T : start + self.T + self.S].values)
 
         # scalar is fit only to the input, to avoid the scaled values "leaking" information about the target range.
         # scalar is fit only for humidity, as the timestamps are already scaled
