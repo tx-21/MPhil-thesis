@@ -15,7 +15,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(na
 logger = logging.getLogger(__name__)
 
 
-def inference(model_number, path_to_save_predictions, forecast_window, dataloader, device, path_to_save_model, best_model,path_to_save_loss):
+def inference(model_number, path_to_save_predictions, forecast_window, dataloader, device, path_to_save_model, best_model,path_to_save_loss,current_exp,last_exp_num):
 
     device = torch.device(device)
     model_dic = {
@@ -26,8 +26,6 @@ def inference(model_number, path_to_save_predictions, forecast_window, dataloade
         "LSTM_1": model_LSTM_1().double().to(device),
         "MLP_7": model_MLP_7().double().to(device),
         "LSTM_7": model_LSTM_7().double().to(device),
-        "Attn_LSTM": AttentionalLSTM().double().to(device), 
-        "Transformer": Transformer().double().to(device)
         }
     model_dic_keys = model_dic.keys()
     model_dic_keys_ls = list(model_dic_keys)
@@ -70,45 +68,48 @@ def inference(model_number, path_to_save_predictions, forecast_window, dataloade
         
             scaler = load('scalar_item.joblib')
             src_ammonia = scaler.inverse_transform(src[:,:,0].cpu())
+        
             target_ammonia = scaler.inverse_transform(target[:,:,0].cpu())
             # Extract the tru ammonia values 
             out_target_ammonia = target_ammonia.flatten()
             fh1_true.append(out_target_ammonia[0])
-            #fh2_true.append(out_target_ammonia[1])
-            #fh3_true.append(out_target_ammonia[2])
+            fh2_true.append(out_target_ammonia[1])
+            fh3_true.append(out_target_ammonia[2])
            
             prediction_ammonia = scaler.inverse_transform(all_predictions[:,:,0].detach().cpu().numpy()) #np.shape = [25,1]   
             # Extract the ammonia values from the respective forecast horizon
             out_prediction_ammonia = prediction_ammonia.flatten()
             # print(np.shape(out_prediction_ammonia))
             # print(out_prediction_ammonia[-1])
-            fh1.append(out_prediction_ammonia[-1])
-            #fh1.append(out_prediction_ammonia[-3])
-            #fh2.append(out_prediction_ammonia[-2])
-            #fh3.append(out_prediction_ammonia[-1])
-            
-            plot_prediction(index, path_to_save_predictions, src_ammonia, target_ammonia, prediction_ammonia, index_in, index_tar)
-
+            # fh1.append(out_prediction_ammonia[-1])
+            fh1.append(out_prediction_ammonia[-3])
+            fh2.append(out_prediction_ammonia[-2])
+            fh3.append(out_prediction_ammonia[-1])
+        
+            # if current_exp == last_exp_num:
+            #    plot_prediction(index, path_to_save_predictions, src_ammonia, target_ammonia, prediction_ammonia, index_in, index_tar)
+    
         forecast_horizon['fh1'] = fh1
-        #forecast_horizon['fh2'] = fh2
-        #forecast_horizon['fh3'] = fh3
+        forecast_horizon['fh2'] = fh2
+        forecast_horizon['fh3'] = fh3
         forecast_horizon['fh1_true'] = fh1_true
-        #forecast_horizon['fh2_true'] = fh2_true
-        #forecast_horizon['fh3_true'] = fh3_true       
+        forecast_horizon['fh2_true'] = fh2_true
+        forecast_horizon['fh3_true'] = fh3_true       
         # date_range = ['11-27','11-28','11-29','11-30']
-        date_range = ['12-11','12-12','12-13','12-14','12-15','12-16','12-17','12-18','12-19']
-        rmse_1, r2_1 = plot_prediction_horizon(forecast_horizon['fh1'], forecast_horizon['fh1_true'], '1', model_dic_keys_ls[model_number], path_to_save_predictions,date_range)
-        #rmse_2, r2_2 = plot_prediction_horizon(forecast_horizon['fh2'], forecast_horizon['fh2_true'], '2', model_dic_keys_ls[model_number], path_to_save_predictions,date_range)
-        #rmse_3, r2_3 = plot_prediction_horizon(forecast_horizon['fh3'], forecast_horizon['fh3_true'], '3', model_dic_keys_ls[model_number], path_to_save_predictions,date_range)
         
+        date_range = ['1-16','1-17','1-18','1-19','1-20','1-21','1-22']
+        rmse_1, r2_1 = plot_prediction_horizon(forecast_horizon['fh1'], forecast_horizon['fh1_true'], '1', model_dic_keys_ls[model_number], path_to_save_predictions,date_range,current_exp,last_exp_num)
+        rmse_2, r2_2 = plot_prediction_horizon(forecast_horizon['fh2'], forecast_horizon['fh2_true'], '2', model_dic_keys_ls[model_number], path_to_save_predictions,date_range,current_exp,last_exp_num)
+        rmse_3, r2_3 = plot_prediction_horizon(forecast_horizon['fh3'], forecast_horizon['fh3_true'], '3', model_dic_keys_ls[model_number], path_to_save_predictions,date_range,current_exp,last_exp_num)
         
-        val_loss = val_loss
-        log_test_loss(val_loss, path_to_save_loss)
+        val_loss /= len(dataloader)
+        # if current_exp == last_exp_num:
+        #     log_test_loss(val_loss, path_to_save_loss)
         # logger.info(f"{model_dic_keys_ls[model_number]}_Loss On Unseen Dataset: {val_loss}")
         # metric_out = [rmse_1, rmse_2, rmse_3, r2_1, r2_2, r2_3, val_loss]
         # metric_out = [rmse_1, r2_1, val_loss]
     
-    return rmse_1, r2_1, val_loss
+    return rmse_1, r2_1, rmse_2, r2_2, rmse_3, r2_3, val_loss
 
 def inference_archived(path_to_save_predictions, forecast_window, dataloader, device, path_to_save_model, best_model):
 

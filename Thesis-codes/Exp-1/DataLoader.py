@@ -42,8 +42,8 @@ class TrainDataset(Dataset):
         start = np.random.randint(0, len(self.df) - self.T - self.S + 1)  
         index_in = torch.tensor([i for i in range(start, start+self.T)])
         index_tar = torch.tensor([i for i in range(start + self.T, start + self.T + self.S)])
-        _input = torch.tensor(self.df[["NH3_N", "sin_hour", "cos_hour", "sin_day", "cos_day", "sin_month", "cos_month"]][start : start + self.T].values)
-        target = torch.tensor(self.df[["NH3_N", "sin_hour", "cos_hour", "sin_day", "cos_day", "sin_month", "cos_month"]][start + self.T : start + self.T + self.S].values)
+        _input = torch.tensor(self.df[["NH3_N", "sin_hour", "cos_hour", "sin_day", "cos_day"]][start : start + self.T].values)
+        target = torch.tensor(self.df[["NH3_N", "sin_hour", "cos_hour", "sin_day", "cos_day"]][start + self.T : start + self.T + self.S].values)
 
         # scalar is fit only to the input, to avoid the scaled values "leaking" information about the target range.
         # scalar is fit only for humidity, as the timestamps are already scaled
@@ -80,7 +80,7 @@ class TestDataset(Dataset):
         self.S = forecast_window
 
     def __len__(self):
-        return 24*7 #the length of the test dataset
+        return 24*5 #the length of the test dataset
 
     # Will pull an index between 0 and __len__. 
     def __getitem__(self, index): #idx will iterate between 0 and __len__
@@ -88,13 +88,13 @@ class TestDataset(Dataset):
         #from codeline 43 to 49, is to take only 1 sample, which contains the training and testing only within one sensor (idx is assigned in the arg)
         #there might have a small error here, which len(df) - T - S does not include the last sample (can still run but not sure the influence of it)
         _len = len(self.df) - self.T - self.S + 1
-        _list = np.arange(_len - 24*7, _len) #last 7 days is no.506 ~ no.697, input = last 8 ~ last 1, output = last 7 ~ last
+        _list = np.arange(_len - 24*5, _len) #last 7 days is no.506 ~ no.697, input = last 8 ~ last 1, output = last 7 ~ last
         start = _list[index] # index len = 10
         # start = index - self.T - self.S
         index_in = torch.tensor([i for i in range(start, start+self.T)])
         index_tar = torch.tensor([i for i in range(start + self.T, start + self.T + self.S)])
-        _input = torch.tensor(self.df[["NH3_N", "sin_hour", "cos_hour", "sin_day", "cos_day", "sin_month", "cos_month"]][start : start + self.T].values)
-        target = torch.tensor(self.df[["NH3_N", "sin_hour", "cos_hour", "sin_day", "cos_day", "sin_month", "cos_month"]][start + self.T : start + self.T + self.S].values)
+        _input = torch.tensor(self.df[["NH3_N", "sin_hour", "cos_hour", "sin_day", "cos_day"]][start : start + self.T].values)
+        target = torch.tensor(self.df[["NH3_N", "sin_hour", "cos_hour", "sin_day", "cos_day"]][start + self.T : start + self.T + self.S].values)
 
         # scalar is fit only to the input, to avoid the scaled values "leaking" information about the target range.
         # scalar is fit only for humidity, as the timestamps are already scaled

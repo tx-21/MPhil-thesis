@@ -15,7 +15,7 @@ from torch.optim.lr_scheduler import ReduceLROnPlateau
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(name)s %(message)s", datefmt="[%Y-%m-%d %H:%M:%S]")
 logger = logging.getLogger(__name__)
 
-def teacher_forcing(model_number, dataloader, EPOCH, lr, k, frequency, path_to_save_model, path_to_save_loss, path_to_save_predictions, device):
+def teacher_forcing(model_number, dataloader, EPOCH, lr, k, frequency, path_to_save_model, path_to_save_loss, path_to_save_predictions, device, current_exp, last_exp_num):
 
     device = torch.device(device)
     model_dic = {
@@ -26,8 +26,6 @@ def teacher_forcing(model_number, dataloader, EPOCH, lr, k, frequency, path_to_s
         "LSTM_1": model_LSTM_1().double().to(device),
         "MLP_7": model_MLP_7().double().to(device),
         "LSTM_7": model_LSTM_7().double().to(device),
-        "Attn_LSTM": AttentionalLSTM().double().to(device), 
-        "Transformer": Transformer().double().to(device)
         }
     model_dic_keys = model_dic.keys()
     model_dic_keys_ls = list(model_dic_keys)
@@ -58,11 +56,12 @@ def teacher_forcing(model_number, dataloader, EPOCH, lr, k, frequency, path_to_s
             prediction = model(src, device) # torch.Size([24, 1, 7])
             loss = criterion(prediction, target[:,:,0].unsqueeze(-1)) #only calculate the loss of the predicted value
             loss.backward()
-            optimizer.step()
+            optimizer.step()    
             # scheduler.step(loss.detach().item())
             train_loss += loss.detach().item()
 
         if train_loss < min_train_loss:
+            os.makedirs(os.path.dirname(path_to_save_model), exist_ok=True)
             torch.save(model.state_dict(), path_to_save_model + f"{model_dic_keys_ls[model_number]}_best_train_{epoch}.pth")
             torch.save(optimizer.state_dict(), path_to_save_model + f"{model_dic_keys_ls[model_number]}_optimizer_{epoch}.pth")
             min_train_loss = train_loss
@@ -75,13 +74,18 @@ def teacher_forcing(model_number, dataloader, EPOCH, lr, k, frequency, path_to_s
             scaler = load('scalar_item.joblib')
             src_ammonia = scaler.inverse_transform(src[:,:,0].cpu()) #torch.Size([35, 1, 7])
             target_ammonia = scaler.inverse_transform(target[:,:,0].cpu()) #torch.Size([35, 1, 7])
+            # issue on 4/7, output size from CNN is not correct
+            # print(prediction)
+            # print(prediction.size())
+            # exit()
             prediction_ammonia = scaler.inverse_transform(prediction[:,:,0].detach().cpu().numpy()) #torch.Size([35, 1, 7])
-            # plot_training(epoch, path_to_save_predictions, src_ammonia, prediction_ammonia, index_in, index_tar, model_dic_keys_ls[model_number])
+            plot_training(epoch, path_to_save_predictions, src_ammonia, prediction_ammonia, index_in, index_tar, model_dic_keys_ls[model_number])
 
-        train_loss /= len(dataloader)
-        log_loss(train_loss, path_to_save_loss, train=True)
+        if current_exp == last_exp_num:
+            train_loss /= len(dataloader)
+            # log_loss(train_loss, path_to_save_loss, train=True)
         
-    plot_loss(model_dic_keys_ls[model_number],path_to_save_loss, train=True)
+    # plot_loss(model_dic_keys_ls[model_number],path_to_save_loss, train=True)
     # print(f'Load inference with:{best_model}')
     # output = [min_train_loss, best_model]
     return min_train_loss,best_model
@@ -100,8 +104,6 @@ def scheduled_sampling(model_number, dataloader, EPOCH, lr, k, frequency, path_t
         "LSTM_1": model_LSTM_1().double().to(device),
         "MLP_7": model_MLP_7().double().to(device),
         "LSTM_7": model_LSTM_7().double().to(device),
-        "Attn_LSTM": AttentionalLSTM().double().to(device), 
-        "Transformer": Transformer().double().to(device)
         }
 
     model_dic_keys = model_dic.keys()
@@ -182,7 +184,8 @@ def scheduled_sampling(model_number, dataloader, EPOCH, lr, k, frequency, path_t
             min_train_loss = train_loss
             best_model = f"{model_dic_keys_ls[model_number]}_best_train_{epoch}.pth"
 
-        if epoch % 1 == 0: # Plot 1-Step Predictions
+        if epoch % 15 == 0: # Plot 1-Step Predictions
+            # will run only at 50% and 100% epoch
 
             # logger.info(f"Epoch: {epoch}, Training loss: {train_loss}")
             scaler = load('scalar_item.joblib')
@@ -197,7 +200,7 @@ def scheduled_sampling(model_number, dataloader, EPOCH, lr, k, frequency, path_t
             src_ammonia = scaler.inverse_transform(src[:,:,0].cpu()) #torch.Size([47, 1, 7]) # the input ammonia (ground truth)
             target_ammonia = scaler.inverse_transform(target[:,:,0].cpu()) #torch.Size([47, 1, 7]) # the gt of predicted ammonia
             prediction_ammonia = scaler.inverse_transform(prediction[:,:,0].detach().cpu().numpy()) #torch.Size([47, 1, 7])
-            plot_training_3(epoch, path_to_save_predictions, src_ammonia, sampled_src_ammonia, prediction_ammonia, index_in, index_tar)
+            # plot_training_3(epoch, path_to_save_predictions, src_ammonia, sampled_src_ammonia, prediction_ammonia, index_in, index_tar)
 
         train_loss /= len(dataloader)
         log_loss(train_loss, path_to_save_loss, train=True)
