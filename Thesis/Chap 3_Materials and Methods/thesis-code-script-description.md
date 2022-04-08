@@ -18,7 +18,7 @@
 * Exp-3
 # raw-data-pre-processing.ipynb
 ### Input
-* Raw NH$_{3}$N and colour data from 12/23 to 1/20.
+* Raw NH$_{3}$N and colour data from 12/23 to 1/22.
 ---
 ## Exp-1
 ### Purpose

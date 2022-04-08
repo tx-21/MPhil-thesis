@@ -1,0 +1,6 @@
+,0
+CNN-obs,26.8382
+RNN-obs,23.4007
+GRU-obs,16.3396
+DNN-obs,37.0685
+LSTM-obs,26.9467
