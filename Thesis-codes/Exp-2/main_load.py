@@ -22,14 +22,20 @@ def main(
     path_to_save_model = "save_model/",
     path_to_save_loss_1 = "loss/save_loss_RNN/",
     path_to_save_loss_2 = "loss/save_loss_DNN/",
-    path_to_save_loss_3 = "loss/save_loss_LSTM/",
-    path_to_save_loss_4 = "loss/save_loss_AttnLSTM/",
+    path_to_save_loss_3 = "loss/save_loss_RNN_attn/",
+    path_to_save_loss_4 = "loss/save_loss_Transformer/",
     path_to_save_loss_5 = "loss/save_loss_Transformer/",
+    path_to_save_loss_6 = "loss/save_loss_Transformer/",
+    path_to_save_loss_7 = "loss/save_loss_Transformer/",
+    path_to_save_loss_8 = "loss/save_loss_Transformer/",
     path_to_save_predictions_1 = "pred/save_predictions_RNN/",
     path_to_save_predictions_2 = "pred/save_predictions_DNN/",
-    path_to_save_predictions_3 = "pred/save_predictions_LSTM/",
-    path_to_save_predictions_4 = "pred/save_predictions_AttnLSTM/",
+    path_to_save_predictions_3 = "pred/save_predictions_RNN_attn/",
+    path_to_save_predictions_4 = "pred/save_predictions_Transformer/",
     path_to_save_predictions_5 = "pred/save_predictions_Transformer/",
+    path_to_save_predictions_6 = "pred/save_predictions_Transformer/",
+    path_to_save_predictions_7 = "pred/save_predictions_Transformer/",
+    path_to_save_predictions_8 = "pred/save_predictions_Transformer/",
     device = 'cpu'
 ):
 
@@ -39,56 +45,69 @@ def main(
     fc2_all_dataset = []
     fc3_all_dataset = []
     all_model_dataset_name = []
-    for m in range(1,3):
+    for m in range(1,2):
         metric_all = []
         database = m
         if database == 1:
-            root_database = "data/train/obs/"
-            result_loc = "results/obs"
-            dataset_name = 'obs'
+            root_database = "data/train/ew2/"
+            result_loc = "results/RNN"
+            dataset_name = 'RNN-ews'
+            model_num = 0 # RNN
         if database == 2:
-            root_database = "data/train/sg5/"
-            result_loc = "results/sg5"
-            dataset_name = 'sg5'        
-        if database == 3:
             root_database = "data/train/sg7/"
-            result_loc = "results/sg7"
-            dataset_name = 'sg7'
+            result_loc = "results/DNN"
+            dataset_name = 'DNN-sg7'
+            model_num = 1 # DNN        
+        if database == 3:
+            root_database = "data/train/ew2/"
+            result_loc = "results/RNN-attn"
+            dataset_name = 'RNN-attn-ew2'
+            model_num = 2 # RNN+attn
         if database == 4:
-            root_database = "data/train/sg9/"
-            result_loc = "results/sg9"
-            dataset_name = 'sg9'
+            root_database = "data/train/ew2/"
+            result_loc = "results/Transformer"
+            dataset_name = 'Transformer'
+            model_num = 3 # RNN+attn
         if database == 5:
             root_database = "data/train/ew2/"
-            result_loc = "results/ew2"
-            dataset_name = 'ew2'
+            result_loc = "results/Transformer"
+            dataset_name = 'Transformer'
+            model_num = 4 # RNN+attn
         if database == 6:
-            root_database = "data/train/ew3/"
-            result_loc = "results/ew3"
-            dataset_name = 'ew3'
+            root_database = "data/train/ew2/"
+            result_loc = "results/Transformer"
+            dataset_name = 'Transformer'
+            model_num = 5 # RNN+attn
         if database == 7:
-            root_database = "data/train/ew4/"
-            result_loc = "results/ew4"
-            dataset_name = 'ew4'
+            root_database = "data/train/ew2/"
+            result_loc = "results/Transformer"
+            dataset_name = 'Transformer'
+            model_num = 6 # RNN+attn
         if database == 8:
-            root_database = "data/train/or/"
-            result_loc = "results/or"
-            dataset_name = 'or'
-
-
+            root_database = "data/train/ew2/"
+            result_loc = "results/Transformer"
+            dataset_name = 'Transformer'
+            model_num = 7 # RNN+attn
+                    
         path_to_save_model_new = result_loc + '/' + path_to_save_model
         path_to_save_loss_1_new = result_loc + '/' + path_to_save_loss_1
         path_to_save_loss_2_new = result_loc + '/' + path_to_save_loss_2
         path_to_save_loss_3_new = result_loc + '/' + path_to_save_loss_3
         path_to_save_loss_4_new = result_loc + '/' + path_to_save_loss_4
         path_to_save_loss_5_new = result_loc + '/' + path_to_save_loss_5
+        path_to_save_loss_6_new = result_loc + '/' + path_to_save_loss_6
+        path_to_save_loss_7_new = result_loc + '/' + path_to_save_loss_7
+        path_to_save_loss_8_new = result_loc + '/' + path_to_save_loss_8
         path_to_save_predictions_1_new = result_loc + '/' + path_to_save_predictions_1
         path_to_save_predictions_2_new = result_loc + '/' + path_to_save_predictions_2
         path_to_save_predictions_3_new = result_loc + '/' + path_to_save_predictions_3
         path_to_save_predictions_4_new = result_loc + '/' + path_to_save_predictions_4
         path_to_save_predictions_5_new = result_loc + '/' + path_to_save_predictions_5
+        path_to_save_predictions_6_new = result_loc + '/' + path_to_save_predictions_6
+        path_to_save_predictions_7_new = result_loc + '/' + path_to_save_predictions_7
+        path_to_save_predictions_8_new = result_loc + '/' + path_to_save_predictions_8
 
-
+        metric = []
         for j in range(Exp_num):
             current_exp = j
             last_exp_num = Exp_num-1
@@ -106,45 +125,38 @@ def main(
                 )
             test_dataloader = DataLoader(test_dataset, batch_size=1, shuffle=False)
             #k was removed for using train_teacher_forcing
-            model_number = 5
-            #num1 = CNN, num2 = RNN, num3 = GRU, num4 = DNN, num5 = LSTM
             path_to_save_predictions = [
-                path_to_save_predictions_1_new,path_to_save_predictions_2_new,path_to_save_predictions_3_new,
-                path_to_save_predictions_4_new,path_to_save_predictions_5_new
+                path_to_save_predictions_1_new,path_to_save_predictions_2_new,path_to_save_predictions_3_new,path_to_save_predictions_4_new,
+                path_to_save_predictions_5_new,path_to_save_predictions_6_new,path_to_save_predictions_7_new,path_to_save_predictions_8_new
                 ]
             path_to_save_loss = [
-                path_to_save_loss_1_new,path_to_save_loss_2_new,path_to_save_loss_3_new,
-                path_to_save_loss_4_new,path_to_save_loss_5_new
+                path_to_save_loss_1_new,path_to_save_loss_2_new,path_to_save_loss_3_new,path_to_save_loss_4_new,
+                path_to_save_loss_5_new,path_to_save_loss_6_new,path_to_save_loss_7_new,path_to_save_loss_8_new
                 ]
-            metric = []
-
-            for i in range(model_number):
-                train_loss, best_model = teacher_forcing(
-                    i, train_dataloader, epoch,
-                    lr, k, frequency,
-                    path_model_exp, path_to_save_loss[i],path_to_save_predictions[i], 
-                    device, current_exp, last_exp_num
-                    )
-                # train_loss, best_model = scheduled_sampling(i, train_dataloader, epoch, lr, k, frequency, path_to_save_model, path_to_save_loss[i], path_to_save_predictions[i], device, training_length)
-                _rmse_1, r2_1, _rmse_2, r2_2, _rmse_3, r2_3, val_loss = inference(
-                    i, path_to_save_predictions[i], forecast_window,
-                    test_dataloader, device, path_model_exp,
-                    best_model, path_to_save_loss[i], current_exp,
-                    last_exp_num
-                    )
-                status = []
-                status = [_rmse_1, r2_1, _rmse_2, r2_2, _rmse_3, r2_3, val_loss, train_loss, best_model]
-                metric.append(status)
-        
-            metric_all.append(metric)
+            
+            train_loss, best_model = teacher_forcing(
+                model_num, train_dataloader, epoch,
+                lr, k, frequency,
+                path_model_exp, path_to_save_loss[model_num],path_to_save_predictions[model_num], 
+                device, current_exp, last_exp_num
+                )
+            # train_loss, best_model = scheduled_sampling(i, train_dataloader, epoch, lr, k, frequency, path_to_save_model, path_to_save_loss[i], path_to_save_predictions[i], device, training_length)
+            _rmse_1, r2_1, _rmse_2, r2_2, _rmse_3, r2_3, val_loss = inference(
+                model_num, path_to_save_predictions[model_num], forecast_window,
+                test_dataloader, device, path_model_exp,
+                best_model, path_to_save_loss[model_num], current_exp,
+                last_exp_num
+                )
+            status = []
+            status = [_rmse_1, r2_1, _rmse_2, r2_2, _rmse_3, r2_3, val_loss, train_loss, best_model]
+            metric.append(status)
             print(f'Exp_num {j+1} has finished ({dataset_name})')
-        
     
         # metric = pd.DataFrame(metric, columns = ['fc_1_rmse','fc_2_rmse','fc_3_rmse','fc_1_r2','fc_2_r2','fc_3_r2','test_loss','train_loss','best_model'],index = ['MLP_1','MLP_7','LSTM_1','LSTM_7','Transformer'])
         # metric = pd.DataFrame(metric, columns = ['fc_1_rmse','fc_1_r2','test_loss','train_loss','best_model'],index = ['MLP_1','MLP_7','LSTM_1','LSTM_7','Transformer'])
 
         metric_summary_fc1, metric_summary_fc2, metric_summary_fc3, model_dataset_name = stability_test(
-            metric_all, model_number, Exp_num,
+            metric, Exp_num,
             result_loc, dataset_name
             )
         fc1_all_dataset.append(metric_summary_fc1)

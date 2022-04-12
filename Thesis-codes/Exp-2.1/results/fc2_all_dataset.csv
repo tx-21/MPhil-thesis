@@ -1,0 +1,3 @@
+,fc2_rmse_mean,fc2_rmse_std,fc2_rmse_max,fc2_rmse_min,fc2_r2_mean,fc2_r2_std,fc2_r2_max,fc2_r2_min
+tf-ews,0.8083,0.0,0.8083,0.8083,-0.1636,0.0,-0.1636,-0.1636
+tf-obs,0.7625,0.0,0.7625,0.7625,-0.0356,0.0,-0.0356,-0.0356

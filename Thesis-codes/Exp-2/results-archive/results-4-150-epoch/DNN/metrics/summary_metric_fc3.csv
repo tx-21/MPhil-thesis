@@ -1,0 +1,2 @@
+,fc3_rmse_mean,fc3_rmse_std,fc3_rmse_max,fc3_rmse_min,fc3_r2_mean,fc3_r2_std,fc3_r2_max,fc3_r2_min
+DNN-sg7,0.7669,0.0606,0.8691,0.6843,-0.0538,0.1686,0.1663,-0.3451

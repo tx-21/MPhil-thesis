@@ -40,99 +40,104 @@ def create_csv(name_list,outname,result_loc):
     name_list.to_csv(full_path,index=True)
    
 
-def stability_test(metric_all, model_number, Exp_num, result_loc, dataset_name):
+def stability_test(metric_all, Exp_num, result_loc, dataset_name):
 
         input_metric_number_fc1 = 4
-        rmse_ls_1 = np.zeros([model_number,Exp_num])
-        r2_ls_1 = np.zeros([model_number,Exp_num])
-        test_loss_ls = np.zeros([model_number,Exp_num])
-        train_loss_ls = np.zeros([model_number,Exp_num])
+        rmse_ls_1 = np.zeros([Exp_num])
+        r2_ls_1 = np.zeros([Exp_num])
+        test_loss_ls = np.zeros([Exp_num])
+        train_loss_ls = np.zeros([Exp_num])
+
 
         input_metric_number_fc2 = 2
-        rmse_ls_2 = np.zeros([model_number,Exp_num])
-        r2_ls_2 = np.zeros([model_number,Exp_num])
+        rmse_ls_2 = np.zeros([Exp_num])
+        r2_ls_2 = np.zeros([Exp_num])
 
         input_metric_number_fc3 = 2
-        rmse_ls_3 = np.zeros([model_number,Exp_num])
-        r2_ls_3 = np.zeros([model_number,Exp_num])
+        rmse_ls_3 = np.zeros([Exp_num])
+        r2_ls_3 = np.zeros([Exp_num])
 
 
-        for i in range(model_number):
-            for j in range(Exp_num):
-                # [exp_num, model, metric]
-
-                rmse_ls_1[i,j] = metric_all[j][i][0] #model = i, exp_num = j
-                r2_ls_1[i,j] = metric_all[j][i][1] #model = i, exp_num = j
-                rmse_ls_2[i,j] = metric_all[j][i][2]
-                r2_ls_2[i,j] = metric_all[j][i][3]
-                rmse_ls_3[i,j] = metric_all[j][i][4] #model = i, exp_num = j
-                r2_ls_3[i,j] = metric_all[j][i][5] #model = i, exp_num = j
-                test_loss_ls[i,j] = metric_all[j][i][6]
-                train_loss_ls[i,j] = metric_all[j][i][7]
+        #for i in range(model_number):
+        for j in range(Exp_num):
+            # [exp_num, model, metric]
+            rmse_ls_1[j] = metric_all[j][0] #model = i, exp_num = j
+            r2_ls_1[j] = metric_all[j][1] #model = i, exp_num = j
+            rmse_ls_2[j] = metric_all[j][2]
+            r2_ls_2[j] = metric_all[j][3]
+            rmse_ls_3[j] = metric_all[j][4] #model = i, exp_num = j
+            r2_ls_3[j] = metric_all[j][5] #model = i, exp_num = j
+            test_loss_ls[j] = metric_all[j][6]
+            train_loss_ls[j] = metric_all[j][7]
         
-        metric_summary_fc1 = np.empty([5, input_metric_number_fc1*4])
-        metric_summary_fc2 = np.empty([5, input_metric_number_fc2*4])
-        metric_summary_fc3 = np.empty([5, input_metric_number_fc3*4])
-        #5 models in total
+        metric_summary_fc1 = np.empty([input_metric_number_fc1*4])
+        metric_summary_fc2 = np.empty([input_metric_number_fc2*4])
+        metric_summary_fc3 = np.empty([input_metric_number_fc3*4])
+        #3 models in total
         #std, min, max, mean of rmse, r2, test, train loss
 
-        for i in range(model_number):
-            metric_summary_fc1[i,0] = round(rmse_ls_1[i].mean(),4)
-            metric_summary_fc1[i,1] = round(rmse_ls_1[i].std(),4)
-            metric_summary_fc1[i,2] = round(rmse_ls_1[i].max(),4)
-            metric_summary_fc1[i,3] = round(rmse_ls_1[i].min(),4)
-            metric_summary_fc1[i,4] = round(r2_ls_1[i].mean(),4)
-            metric_summary_fc1[i,5] = round(r2_ls_1[i].std(),4)
-            metric_summary_fc1[i,6] = round(r2_ls_1[i].max(),4)
-            metric_summary_fc1[i,7] = round(r2_ls_1[i].min(),4)
+        # or i in range(model_number):
+        metric_summary_fc1[0] = round(rmse_ls_1.mean(),4)
+        metric_summary_fc1[1] = round(rmse_ls_1.std(),4)
+        metric_summary_fc1[2] = round(rmse_ls_1.max(),4)
+        metric_summary_fc1[3] = round(rmse_ls_1.min(),4)
+        metric_summary_fc1[4] = round(r2_ls_1.mean(),4)
+        metric_summary_fc1[5] = round(r2_ls_1.std(),4)
+        metric_summary_fc1[6] = round(r2_ls_1.max(),4)
+        metric_summary_fc1[7] = round(r2_ls_1.min(),4)
 
-            metric_summary_fc1[i,8] = round(test_loss_ls[i].mean(),4)
-            metric_summary_fc1[i,9] = round(test_loss_ls[i].std(),4)
-            metric_summary_fc1[i,10] = round(test_loss_ls[i].max(),4)
-            metric_summary_fc1[i,11] = round(test_loss_ls[i].min(),4)
+        metric_summary_fc1[8] = round(test_loss_ls.mean(),4)
+        metric_summary_fc1[9] = round(test_loss_ls.std(),4)
+        metric_summary_fc1[10] = round(test_loss_ls.max(),4)
+        metric_summary_fc1[11] = round(test_loss_ls.min(),4)
 
-            metric_summary_fc1[i,12] = round(train_loss_ls[i].mean(),4)
-            metric_summary_fc1[i,13] = round(train_loss_ls[i].std(),4)
-            metric_summary_fc1[i,14] = round(train_loss_ls[i].max(),4)
-            metric_summary_fc1[i,15] = round(train_loss_ls[i].min(),4)
+        metric_summary_fc1[12] = round(train_loss_ls.mean(),4)
+        metric_summary_fc1[13] = round(train_loss_ls.std(),4)
+        metric_summary_fc1[14] = round(train_loss_ls.max(),4)
+        metric_summary_fc1[15] = round(train_loss_ls.min(),4)
 
-        for i in range(model_number):
-            metric_summary_fc2[i,0] = round(rmse_ls_2[i].mean(),4)
-            metric_summary_fc2[i,1] = round(rmse_ls_2[i].std(),4)
-            metric_summary_fc2[i,2] = round(rmse_ls_2[i].max(),4)
-            metric_summary_fc2[i,3] = round(rmse_ls_2[i].min(),4)
-            metric_summary_fc2[i,4] = round(r2_ls_2[i].mean(),4)
-            metric_summary_fc2[i,5] = round(r2_ls_2[i].std(),4)
-            metric_summary_fc2[i,6] = round(r2_ls_2[i].max(),4)
-            metric_summary_fc2[i,7] = round(r2_ls_2[i].min(),4)
+        # for i in range(model_number):
+        metric_summary_fc2[0] = round(rmse_ls_2.mean(),4)
+        metric_summary_fc2[1] = round(rmse_ls_2.std(),4)
+        metric_summary_fc2[2] = round(rmse_ls_2.max(),4)
+        metric_summary_fc2[3] = round(rmse_ls_2.min(),4)
+        metric_summary_fc2[4] = round(r2_ls_2.mean(),4)
+        metric_summary_fc2[5] = round(r2_ls_2.std(),4)
+        metric_summary_fc2[6] = round(r2_ls_2.max(),4)
+        metric_summary_fc2[7] = round(r2_ls_2.min(),4)
         
-        for i in range(model_number):
-            metric_summary_fc3[i,0] = round(rmse_ls_3[i].mean(),4)
-            metric_summary_fc3[i,1] = round(rmse_ls_3[i].std(),4)
-            metric_summary_fc3[i,2] = round(rmse_ls_3[i].max(),4)
-            metric_summary_fc3[i,3] = round(rmse_ls_3[i].min(),4)
-            metric_summary_fc3[i,4] = round(r2_ls_3[i].mean(),4)
-            metric_summary_fc3[i,5] = round(r2_ls_3[i].std(),4)
-            metric_summary_fc3[i,6] = round(r2_ls_3[i].max(),4)
-            metric_summary_fc3[i,7] = round(r2_ls_3[i].min(),4)
+        # for i in range(model_number):
+        metric_summary_fc3[0] = round(rmse_ls_3.mean(),4)
+        metric_summary_fc3[1] = round(rmse_ls_3.std(),4)
+        metric_summary_fc3[2] = round(rmse_ls_3.max(),4)
+        metric_summary_fc3[3] = round(rmse_ls_3.min(),4)
+        metric_summary_fc3[4] = round(r2_ls_3.mean(),4)
+        metric_summary_fc3[5] = round(r2_ls_3.std(),4)
+        metric_summary_fc3[6] = round(r2_ls_3.max(),4)
+        metric_summary_fc3[7] = round(r2_ls_3.min(),4)
 
-        index_model_name = [f'CNN-{dataset_name}',f'RNN-{dataset_name}',f'GRU-{dataset_name}',f'DNN-{dataset_name}',f'LSTM-{dataset_name}']
+        index_model_name = [f'{dataset_name}']
         metric_name_1 = ['fc1_rmse_mean','fc1_rmse_std','fc1_rmse_max','fc1_rmse_min','fc1_r2_mean','fc1_r2_std','fc1_r2_max','fc1_r2_min']
         metric_name_2 = ['fc2_rmse_mean','fc2_rmse_std','fc2_rmse_max','fc2_rmse_min','fc2_r2_mean','fc2_r2_std','fc2_r2_max','fc2_r2_min']
         metric_name_3 = ['fc3_rmse_mean','fc3_rmse_std','fc3_rmse_max','fc3_rmse_min','fc3_r2_mean','fc3_r2_std','fc3_r2_max','fc3_r2_min']
 
         metric_names = metric_name_1 + ['test_loss_mean','test_loss_std','test_loss_max','test_loss_min','train_loss_mean','train_loss_std','train_loss_max','train_loss_min']
-        rmse_ls_1 = pd.DataFrame(rmse_ls_1, index = index_model_name)
-        r2_ls_1 = pd.DataFrame(r2_ls_1, index = index_model_name)
-        rmse_ls_2 = pd.DataFrame(rmse_ls_2, index = index_model_name)
-        r2_ls_2 = pd.DataFrame(r2_ls_2, index = index_model_name)
-        rmse_ls_3 = pd.DataFrame(rmse_ls_3, index = index_model_name)
-        r2_ls_3 = pd.DataFrame(r2_ls_3, index = index_model_name)        
-        test_loss_ls = pd.DataFrame(test_loss_ls, index = index_model_name)
-        train_loss_ls = pd.DataFrame(train_loss_ls, index = index_model_name)
-        metric_summary_fc1 = pd.DataFrame(metric_summary_fc1, columns = metric_names, index = index_model_name)
-        metric_summary_fc2 = pd.DataFrame(metric_summary_fc2, columns = metric_name_2, index = index_model_name)
-        metric_summary_fc3 = pd.DataFrame(metric_summary_fc3, columns = metric_name_3, index = index_model_name)
+        # print(np.shape(rmse_ls_1))
+        # print(rmse_ls_1)
+        # print(np.shape(rmse_ls_1.ravel()))
+        # print(rmse_ls_1)
+        # exit()
+        rmse_ls_1 = pd.DataFrame(rmse_ls_1.flatten(), columns = index_model_name).T
+        r2_ls_1 = pd.DataFrame(r2_ls_1, columns = index_model_name).T
+        rmse_ls_2 = pd.DataFrame(rmse_ls_2, columns = index_model_name).T
+        r2_ls_2 = pd.DataFrame(r2_ls_2, columns = index_model_name).T
+        rmse_ls_3 = pd.DataFrame(rmse_ls_3, columns = index_model_name).T
+        r2_ls_3 = pd.DataFrame(r2_ls_3, columns = index_model_name).T        
+        test_loss_ls = pd.DataFrame(test_loss_ls, columns = index_model_name).T
+        train_loss_ls = pd.DataFrame(train_loss_ls, columns = index_model_name).T
+        metric_summary_fc1 = pd.DataFrame(metric_summary_fc1, index = metric_names,  columns = index_model_name).T
+        metric_summary_fc2 = pd.DataFrame(metric_summary_fc2, index = metric_name_2, columns = index_model_name).T
+        metric_summary_fc3 = pd.DataFrame(metric_summary_fc3, index = metric_name_3, columns = index_model_name).T
         
         create_csv(rmse_ls_1,'rmse_1.csv',result_loc)
         create_csv(r2_ls_1,'r2_1.csv',result_loc)
@@ -158,7 +163,7 @@ def create_all_summary(fc1_ls,fc2_ls,fc3_ls,all_model_dataset_name):
 
     fc1_all_df = pd.DataFrame(np.array(fc1_ls).reshape(-1,16),columns = metric_names, index = index_name)
     fc2_all_df = pd.DataFrame(np.array(fc2_ls).reshape(-1,8),columns = metric_name_2, index = index_name)
-    fc3_all_df = pd.DataFrame(np.array(fc3_ls).reshape(-1,8),columns = metric_name_2, index = index_name)
+    fc3_all_df = pd.DataFrame(np.array(fc3_ls).reshape(-1,8),columns = metric_name_3, index = index_name)
 
     fc1_all_df.to_csv('results/fc1_all_dataset.csv',index=True)
     fc2_all_df.to_csv('results/fc2_all_dataset.csv',index=True)

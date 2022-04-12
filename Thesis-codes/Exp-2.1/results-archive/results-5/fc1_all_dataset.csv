@@ -1,0 +1,3 @@
+,fc1_rmse_mean,fc1_rmse_std,fc1_rmse_max,fc1_rmse_min,fc1_r2_mean,fc1_r2_std,fc1_r2_max,fc1_r2_min,test_loss_mean,test_loss_std,test_loss_max,test_loss_min,train_loss_mean,train_loss_std,train_loss_max,train_loss_min
+tf-ews,0.6875,0.1467,0.8242,0.499,0.1192,0.3443,0.5561,-0.2109,0.1255,0.0307,0.1707,0.075,3.5095,0.3447,4.1463,3.1543
+tf-obs,0.69,0.0456,0.7306,0.6066,0.1476,0.1085,0.3442,0.0486,0.1232,0.0302,0.1735,0.0885,4.3512,0.4815,5.0831,3.6527

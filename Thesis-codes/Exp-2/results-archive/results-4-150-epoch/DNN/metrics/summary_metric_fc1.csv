@@ -1,0 +1,2 @@
+,fc1_rmse_mean,fc1_rmse_std,fc1_rmse_max,fc1_rmse_min,fc1_r2_mean,fc1_r2_std,fc1_r2_max,fc1_r2_min,test_loss_mean,test_loss_std,test_loss_max,test_loss_min,train_loss_mean,train_loss_std,train_loss_max,train_loss_min
+DNN-sg7,0.3945,0.078,0.5487,0.338,0.7118,0.1251,0.7964,0.4634,0.0627,0.0095,0.0802,0.0525,9.7415,4.1532,17.9942,7.1611

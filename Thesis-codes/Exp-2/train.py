@@ -1,4 +1,4 @@
-from model import *
+from model_attn import *
 from torch.utils.data import DataLoader
 import torch
 import torch.nn as nn
@@ -21,8 +21,7 @@ def teacher_forcing(model_number, dataloader, EPOCH, lr, k, frequency, path_to_s
     model_dic = {
         "RNN_5": RNN_5().double().to(device),
         "MLP_5": model_MLP_5().double().to(device),
-        "LSTM_5": model_LSTM_5().double().to(device),
-        "Attn_LSTM": AttentionalLSTM().double().to(device),
+        "RNN_attn": RNN_attn().double().to(device),
         "Transformer": Transformer().double().to(device)
         }
     model_dic_keys = model_dic.keys()
@@ -97,9 +96,7 @@ def scheduled_sampling(model_number, dataloader, EPOCH, lr, k, frequency, path_t
     model_dic = {
         "RNN_5": RNN_5().double().to(device),
         "MLP_5": model_MLP_5().double().to(device),
-        "LSTM_5": model_LSTM_5().double().to(device),
-        "Attn_LSTM": AttentionalLSTM().double().to(device),
-        "Transformer": Transformer().double().to(device)
+        "RNN_attn": RNN_attn().double().to(device),
         }
 
     model_dic_keys = model_dic.keys()

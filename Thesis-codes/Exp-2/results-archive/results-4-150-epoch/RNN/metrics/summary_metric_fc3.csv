@@ -1,0 +1,2 @@
+,fc3_rmse_mean,fc3_rmse_std,fc3_rmse_max,fc3_rmse_min,fc3_r2_mean,fc3_r2_std,fc3_r2_max,fc3_r2_min
+RNN-ews,0.7177,0.0297,0.7547,0.6805,0.0812,0.0758,0.1754,-0.0143

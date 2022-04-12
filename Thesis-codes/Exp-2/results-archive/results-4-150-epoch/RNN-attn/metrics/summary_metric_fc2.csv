@@ -1,0 +1,2 @@
+,fc2_rmse_mean,fc2_rmse_std,fc2_rmse_max,fc2_rmse_min,fc2_r2_mean,fc2_r2_std,fc2_r2_max,fc2_r2_min
+RNN-attn-ew2,0.518,0.0191,0.5491,0.4953,0.5215,0.0355,0.563,0.4629

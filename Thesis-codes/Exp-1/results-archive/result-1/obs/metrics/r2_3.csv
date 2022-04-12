@@ -1,0 +1,6 @@
+,0
+CNN-obs,-0.2206
+RNN-obs,-0.0369
+GRU-obs,-0.136
+DNN-obs,-0.0183
+LSTM-obs,-0.7644

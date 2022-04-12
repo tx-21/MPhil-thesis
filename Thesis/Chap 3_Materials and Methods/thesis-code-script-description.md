@@ -1,3 +1,92 @@
+Exp-1: Looking for best dataset+method combination
+Exp-1.1: Use RF+datasets to see the performance.
+Exp-2: Use several best combinations to test with positional encoding
+Exp-2.1: Use Transformer+datasets
+Exp-2.2: Use RF + positional encoding
+
+
+# Testing
+* Terminal Exp 1
+  * Testing sheduler. (compare with and without scheduler at lr=1e-04, epoch=50)
+
+# Next
+## 4/11
+* [x] To find the optimal lr for exp 1.
+  * [x] locate the good range of lr for exp1
+* [ ] proceed to exp2, which is to use positional encoding to improve on the already good model from exp1. (need to add gru, lstm, rnn with attn)
+  * [x] find out what's the problem with transformer, or just simply give up on it.
+* [x] also test positional encoding on RF.
+  * No effect
+## 4/12
+# Results
+* RF can only predict NH$_{3}$N wtih 0.34 RMSE (fc1).
+* lr=1e-05 requires 150-200 epoch to reach optimal.
+* if train loss < 2, it will overfit
+* some combination of lr and epoch have been tried on transformer model and the results are poorer than using other deep learning models
+* Using positional encoding on RF didn't improve the model performance
+## epoch
+* for lstm-sg7, 
+# ideas
+
+
+# To be solved
+* [x] Optimal training epoch?
+  * for lr=1e-05, epoch should be around 200
+* [ ] Can transformer or attn can really improve the model performance?
+* [x] Change to lr to lr=5*1e-05 in exp2 and exp1
+* [ ] attn seems to improve on the std?
+* [x] transformer seems not working.
+  * [x] transformer has poor performance in univariate forecasting in our case
+performance.
+# Exp results
+## Exp 1
+* nh3 predict nh3 using cnn, rnn, gru, dnn, lstm with 8 datasets.
+  * result-3, epoch = 20, Exp_num=10, RNN-ew2	0.5277	0.0787	27.6076 # rmse, test, train
+  * result-4, epoch = 50, Exp_num=3, RNN-ew2	0.3193	0.0538	11.0396
+  * result-5, epoch = 100, Exp_num=3, RNN-ew2	0.2635	0.0465	8.0311
+  * result-6, epoch = 150, Exp_num=5, RNN-ew3	0.2388	0.0436	5.5158
+  * result-7, epoch = 100, Exp_num=3, lr = 3*1e-04
+  * result-8, epoch = 50, Exp_num=5, lr = 5*1e-05
+  * result-9, epoch = 50, Exp_num=3, lr = 1e-04 
+ 
+## Exp 1.1
+* Use RF to predict nh3 with 9 datasets.
+  * result-4, estimator=100, Exp_num=10, sg5	RF	0.3364 0.8976 0.2337		
+  * result-5, estimator=500, Exp_num=10, sg7	RF	0.3387 0.8858 0.2022
+> RF prediction accuracy is only around 0.34 and stop decreasing with the increase of estimator.
+
+## Exp 2
+* Use RNN, DNN, RNN-attn with the corresponding data preprocessing method to predict nh3. (with positional encoding) and also add transformer (with 1 dataset). 
+  * results-1, epoch = 50, Exp_num=5, RNN-ews	0.4318	0.0627	14.426
+  * results-2, epoch = 20, Exp_num=5, RNN-ews	0.6202	0.0844	26.7278
+  * results-3, epoch = 100, Exp_num=5, RNN-ews	0.2834	0.0471	6.9025  
+  * results-4, epoch = 150, Exp_num=5, RNN-ews	0.2811	0.0456	6.214
+  * results-5, epoch = 200, Exp_num=5, RNN-ews	0.2626	0.0445	5.168
+  * results-6, epoch = 100, Exp_num=5, lr=4*1e-05, RNN-ews	0.2445	0.0418	4.7295
+
+
+## Exp 2.1
+* [ ] If transformer is not good, then focus on the attn of lstm/rnn/gru. 
+* [ ] try different hyperparameter
+* Use Transformer to predict (with positional encoding)
+  * result-1, epoch = 20, Exp_num=5, lr = 1e-05, tf-ews	0.7042	0.1022	11.7339
+  * result-2, epoch = 50, Exp_num=5, lr = 1e-05, tf-ews	0.7141	0.1205	7.4256
+  * result-3, epoch = 10, Exp_num=5, lr = 1e-05, tf-ews	0.7112	0.0951	25.0694
+  * result-4, epoch = 100, Exp_num=5, lr = 1e-05, tf-ews	0.7724	0.1243	5.2446
+  * result-5, epoch = 100, Exp_num=5, lr = 1e-05, tf_model_layer=3, tf-ews	0.6875	0.1255	3.5095
+  * result-6, epoch = 50, Exp_num=1, lr = 1e-04,  tf_model_layer=3, 
+
+## Exp 4-val
+* no scheduler, lr=5*1e-05, epoch=50
+  * RNN-ews 0.2707	0.0456	4.386	4.386
+* with scheduler
+  * lr=1e-04, epoch=50,  factor=0.5, patience=2  >> RNN-ews	0.2312	0.0426	4.3966	1.239 # rmse, test, train, valid
+* no scheduler
+  * lr=1e-04, epoch=50,  factor=0.5, patience=2  >> RNN-ews	0.2422	0.0441	3.8699	1.3102
+
+
+
+
 # file saving directory
 * Exp-1
   * data

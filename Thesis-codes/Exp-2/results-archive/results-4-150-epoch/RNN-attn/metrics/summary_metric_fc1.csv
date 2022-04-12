@@ -1,0 +1,2 @@
+,fc1_rmse_mean,fc1_rmse_std,fc1_rmse_max,fc1_rmse_min,fc1_r2_mean,fc1_r2_std,fc1_r2_max,fc1_r2_min,test_loss_mean,test_loss_std,test_loss_max,test_loss_min,train_loss_mean,train_loss_std,train_loss_max,train_loss_min
+RNN-attn-ew2,0.257,0.0141,0.2746,0.2399,0.8819,0.0128,0.8975,0.8656,0.0427,0.0019,0.0462,0.0409,5.1407,0.0612,5.2194,5.0613
