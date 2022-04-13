@@ -103,16 +103,12 @@ def main(
                 csv_name = train_csv, root_dir = root_database, training_length = training_length,
                 forecast_window = forecast_window
                 )
-            train_dataloader = DataLoader(
-                train_dataset, batch_size=1, shuffle=True
-                )
+            train_dataloader = DataLoader(train_dataset, batch_size=1, shuffle=True)
             val_dataset = TrainDataset(
                 csv_name = valid_csv, root_dir = "data/valid/", training_length = training_length,
                 forecast_window = forecast_window
                 )
-            val_dataloader = DataLoader(
-                val_dataset, batch_size=1, shuffle=True
-                )
+            val_dataloader = DataLoader(val_dataset, batch_size=1, shuffle=True)
             test_dataset = TestDataset(
                 csv_name = test_csv, root_dir = "data/test/", training_length = training_length,
                 forecast_window = forecast_window
@@ -133,8 +129,7 @@ def main(
 
             for i in range(model_number):
                 train_loss, valid_loss, best_model, epoch_out = teacher_forcing(
-                    i, train_dataloader, val_dataloader, forecast_window, epoch,
-                    lr, k, frequency,
+                    i, train_dataloader, val_dataloader, forecast_window, epoch, lr, k, frequency,
                     path_model_exp, path_to_save_loss[i],path_to_save_predictions[i], 
                     device, current_exp, last_exp_num, scheduler_status,
                     factor, patience

@@ -76,9 +76,9 @@ def teacher_forcing(model_number, dataloader, valdataloader, forecast_window, EP
         if min_valid_loss > val_loss:
             # print(f'Validation Loss Decreased({min_valid_loss:.6f}--->{val_loss:.6f}) \t Saving The Model')
             os.makedirs(os.path.dirname(path_to_save_model), exist_ok=True)
-            torch.save(model.state_dict(), path_to_save_model + f"{model_dic_keys_ls[model_number]}_best_train_{epoch}.pth")
-            torch.save(optimizer.state_dict(), path_to_save_model + f"{model_dic_keys_ls[model_number]}_optimizer_{epoch}.pth")
-            best_model = f"{model_dic_keys_ls[model_number]}_best_train_{epoch}.pth"
+            torch.save(model.state_dict(), path_to_save_model + f"{model_dic_keys_ls[model_number]}_best_train.pth")
+            # torch.save(optimizer.state_dict(), path_to_save_model + f"{model_dic_keys_ls[model_number]}_optimizer_{epoch}.pth")
+            best_model = f"{model_dic_keys_ls[model_number]}_best_train.pth"
             min_valid_loss = val_loss
 
         if min_train_loss > train_loss:

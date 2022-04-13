@@ -19,10 +19,14 @@ def inference(model_number, path_to_save_predictions, forecast_window, dataloade
 
     device = torch.device(device)
     model_dic = {
-        "RNN_5": RNN_5().double().to(device),
-        "MLP_5": model_MLP_5().double().to(device),
+        "RNN": RNN_5().double().to(device),
+        "GRU": GRU_5().double().to(device),
+        "LSTM_5": LSTM_5().double().to(device),
         "RNN_attn": RNN_attn().double().to(device),
-        "Transformer": Transformer().double().to(device)
+        "GRU_attn": GRU_attn().double().to(device),
+        "LSTM_5_attn": LSTM_attn().double().to(device),
+        "Transformer": Transformer().double().to(device),
+        "GRU": GRU().double().to(device)
         }
     model_dic_keys = model_dic.keys()
     model_dic_keys_ls = list(model_dic_keys)

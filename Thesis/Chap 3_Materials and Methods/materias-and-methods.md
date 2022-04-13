@@ -44,8 +44,6 @@ To produce a labeled dataset, we used a fixed-length sliding time window approac
   
 In a typical training setup, we train the model to predict 4 future weekly ILI ratios from 10 trailing weekly datapoints. That is, given the encoder input (x1, x2, ..., x10) and the decoder input (x10, ..., x13), the decoder aims to output (x11, ..., x14). A look-ahead mask is applied to ensure that attention will only be applied to datapoints prior to target data by the model. That is, when predicting target (x11, x12), the mask ensures attention weights are only on (x10, x11) so the decoder doesn’t leak information about x12 and x13 from the decoder input. A minibatch of size 64 is used for training.
 ### Implementation of regularization on machine learning models
-#### Early-stopping 
-#### Dropout
-#### Weight regularization
+#### Scheduler
 ## Evaluation
 In evaluation, labeled test data are constructed using a fix- length sliding window as well. One-step ahead prediction is performed by the trained Transformer model. We computed Pearson correlation coefficient and root-mean-square errors (RMSE) between the actual data yi and the predicted value yˆ .

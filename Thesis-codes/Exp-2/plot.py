@@ -59,18 +59,20 @@ def plot_loss(model_name, path_to_save, train=True):
     plt.rcParams.update({'font.size': 10}) #appoint the fontsize in all the plots
     with open(path_to_save + "/train_loss.txt", 'r') as f:
         loss_list = [float(line) for line in f.readlines()]
+    with open(path_to_save + "/val_loss.txt", 'r') as f:
+        val_loss_list = [float(line) for line in f.readlines()]   
     if train:
         title = "Train"
     else:
         title = "Validation"
-    EMA_loss = EMA(loss_list)
-    plt.plot(loss_list, label = "loss")
-    plt.plot(EMA_loss, label="EMA loss") #plot trend line with exponential average curve
+    # EMA_loss = EMA(loss_list)
+    plt.plot(loss_list, label = "train loss")
+    plt.plot(val_loss_list, label = "val loss") #plot trend line with exponential average curve
     plt.xlabel("Epochs")
     plt.ylabel("Loss")
     plt.legend()
-    plt.title(title+"_loss")
-    plt.savefig(path_to_save+f"/{title}_{model_name}.png")
+    plt.title("train/valid loss")
+    plt.savefig(path_to_save+f"/train-loss_{model_name}.png")
     plt.close('all')
 
 

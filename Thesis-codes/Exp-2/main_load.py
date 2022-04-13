@@ -17,11 +17,16 @@ def main(
     forecast_window = 3,
     Exp_num = 10,
     lr = 0.0003,
+    factor = 0.5,
+    patience = 5,
+    num_dataset: int = 9,
+    scheduler_status = False,
     train_csv = "train_dataset.csv",
     test_csv = "test_dataset.csv",
+    valid_csv = "valid_dataset.csv",
     path_to_save_model = "save_model/",
-    path_to_save_loss_1 = "loss/save_loss_RNN/",
-    path_to_save_loss_2 = "loss/save_loss_DNN/",
+    path_to_save_loss_1 = "loss/save_loss_GRU/",
+    path_to_save_loss_2 = "loss/save_loss_RNN/",
     path_to_save_loss_3 = "loss/save_loss_RNN_attn/",
     path_to_save_loss_4 = "loss/save_loss_Transformer/",
     path_to_save_loss_5 = "loss/save_loss_Transformer/",
@@ -45,49 +50,49 @@ def main(
     fc2_all_dataset = []
     fc3_all_dataset = []
     all_model_dataset_name = []
-    for m in range(1,2):
+    for m in range(1,num_dataset+1):
         metric_all = []
         database = m
         if database == 1:
-            root_database = "data/train/ew2/"
-            result_loc = "results/RNN"
-            dataset_name = 'RNN-ews'
-            model_num = 0 # RNN
+            root_database = "data/train/sg7/"
+            result_loc = "results/GRU"
+            dataset_name = 'GRU-sg7'
+            model_num = 1 # GRU
         if database == 2:
             root_database = "data/train/sg7/"
-            result_loc = "results/DNN"
-            dataset_name = 'DNN-sg7'
-            model_num = 1 # DNN        
+            result_loc = "results/RNN"
+            dataset_name = 'RNN-sg7'
+            model_num = 0 # RNN        
         if database == 3:
-            root_database = "data/train/ew2/"
-            result_loc = "results/RNN-attn"
-            dataset_name = 'RNN-attn-ew2'
-            model_num = 2 # RNN+attn
-        if database == 4:
-            root_database = "data/train/ew2/"
-            result_loc = "results/Transformer"
-            dataset_name = 'Transformer'
-            model_num = 3 # RNN+attn
+            root_database = "data/train/or/"
+            result_loc = "results/LSTM"
+            dataset_name = 'LSTM-or'
+            model_num = 2 # LSTM
+        if database == 4: #anchor purpose
+            root_database = "data/train/sg7/"
+            result_loc = "results/GRU-anchor"
+            dataset_name = 'GRU-anchor'
+            model_num = 7 
         if database == 5:
-            root_database = "data/train/ew2/"
-            result_loc = "results/Transformer"
-            dataset_name = 'Transformer'
-            model_num = 4 # RNN+attn
+            root_database = "data/train/sg7/"
+            result_loc = "results/GRU-attn"
+            dataset_name = 'GRU-attn'
+            model_num = 4 
         if database == 6:
-            root_database = "data/train/ew2/"
-            result_loc = "results/Transformer"
-            dataset_name = 'Transformer'
-            model_num = 5 # RNN+attn
+            root_database = "data/train/sg7/"
+            result_loc = "results/RNN-attn"
+            dataset_name = 'RNN-attn'
+            model_num = 3
         if database == 7:
-            root_database = "data/train/ew2/"
-            result_loc = "results/Transformer"
-            dataset_name = 'Transformer'
-            model_num = 6 # RNN+attn
+            root_database = "data/train/or/"
+            result_loc = "results/LSTM-attn"
+            dataset_name = 'LSTM-attn'
+            model_num = 5 
         if database == 8:
-            root_database = "data/train/ew2/"
+            root_database = "data/train/sg7/"
             result_loc = "results/Transformer"
             dataset_name = 'Transformer'
-            model_num = 7 # RNN+attn
+            model_num = 6 
                     
         path_to_save_model_new = result_loc + '/' + path_to_save_model
         path_to_save_loss_1_new = result_loc + '/' + path_to_save_loss_1
@@ -116,9 +121,12 @@ def main(
                 csv_name = train_csv, root_dir = root_database, training_length = training_length,
                 forecast_window = forecast_window
                 )
-            train_dataloader = DataLoader(
-                train_dataset, batch_size=1, shuffle=True
+            train_dataloader = DataLoader(train_dataset, batch_size=1, shuffle=True)
+            val_dataset = TrainDataset(
+                csv_name = valid_csv, root_dir = "data/valid/", training_length = training_length,
+                forecast_window = forecast_window
                 )
+            val_dataloader = DataLoader(val_dataset, batch_size=1, shuffle=True)
             test_dataset = TestDataset(
                 csv_name = test_csv, root_dir = "data/test/", training_length = training_length,
                 forecast_window = forecast_window
@@ -134,21 +142,20 @@ def main(
                 path_to_save_loss_5_new,path_to_save_loss_6_new,path_to_save_loss_7_new,path_to_save_loss_8_new
                 ]
             
-            train_loss, best_model = teacher_forcing(
-                model_num, train_dataloader, epoch,
-                lr, k, frequency,
-                path_model_exp, path_to_save_loss[model_num],path_to_save_predictions[model_num], 
-                device, current_exp, last_exp_num
+            train_loss, valid_loss, best_model, epoch_out = teacher_forcing(
+                model_num, train_dataloader,val_dataloader, forecast_window, epoch, lr, k, frequency,
+                path_model_exp, path_to_save_loss[database-1],path_to_save_predictions[database-1], 
+                device, current_exp, last_exp_num, scheduler_status, factor, patience
                 )
             # train_loss, best_model = scheduled_sampling(i, train_dataloader, epoch, lr, k, frequency, path_to_save_model, path_to_save_loss[i], path_to_save_predictions[i], device, training_length)
             _rmse_1, r2_1, _rmse_2, r2_2, _rmse_3, r2_3, val_loss = inference(
-                model_num, path_to_save_predictions[model_num], forecast_window,
+                model_num, path_to_save_predictions[database-1], forecast_window,
                 test_dataloader, device, path_model_exp,
-                best_model, path_to_save_loss[model_num], current_exp,
+                best_model, path_to_save_loss[database-1], current_exp,
                 last_exp_num
                 )
             status = []
-            status = [_rmse_1, r2_1, _rmse_2, r2_2, _rmse_3, r2_3, val_loss, train_loss, best_model]
+            status = [_rmse_1, r2_1, _rmse_2, r2_2, _rmse_3, r2_3, val_loss, train_loss, valid_loss, epoch_out]
             metric.append(status)
             print(f'Exp_num {j+1} has finished ({dataset_name})')
     
