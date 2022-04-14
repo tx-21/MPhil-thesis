@@ -7,11 +7,11 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--scheduler_status", type=bool, default=True)
     parser.add_argument("--factor", type=float, default=0.1)
-    parser.add_argument("--patience", type=int, default=20)
+    parser.add_argument("--patience", type=int, default=10)
     parser.add_argument("--epoch", type=int, default=100)
-    parser.add_argument("--lr", type=float, default=5e-05)
-    parser.add_argument("--Exp_num", type=int, default=5)
-    parser.add_argument("--num_dataset", type=int, default=8) # max = 8
+    parser.add_argument("--lr", type=float, default=1e-04)
+    parser.add_argument("--Exp_num", type=int, default=3)
+    parser.add_argument("--num_dataset", type=int, default=10) # max = 10
     parser.add_argument("--k", type=int, default=1)
     parser.add_argument("--batch_size", type=int, default=1)
     parser.add_argument("--frequency", type=int, default=100)
@@ -23,7 +23,9 @@ if __name__ == "__main__":
     parser.add_argument("--path_to_save_loss_5",type=str,default="save_loss_GRU_attn/")
     parser.add_argument("--path_to_save_loss_6",type=str,default="save_loss_RNN_attn/")
     parser.add_argument("--path_to_save_loss_7",type=str,default="save_loss_LSTM_attn/")
-    parser.add_argument("--path_to_save_loss_8",type=str,default="save_loss_Transformer/")
+    parser.add_argument("--path_to_save_loss_8",type=str,default="save_loss_LSTM_anchor/")
+    parser.add_argument("--path_to_save_loss_9",type=str,default="save_loss_RNN_anchor/")
+    parser.add_argument("--path_to_save_loss_10",type=str,default="save_loss_Transformer/")
     parser.add_argument("--path_to_save_predictions_1",type=str,default="save_predictions_GRU/")
     parser.add_argument("--path_to_save_predictions_2",type=str,default="save_predictions_RNN/")
     parser.add_argument("--path_to_save_predictions_3",type=str,default="save_predictions_LSTM/")
@@ -31,7 +33,9 @@ if __name__ == "__main__":
     parser.add_argument("--path_to_save_predictions_5",type=str,default="save_predictions_GRU_attn/")
     parser.add_argument("--path_to_save_predictions_6",type=str,default="save_predictions_RNN_attn/")
     parser.add_argument("--path_to_save_predictions_7",type=str,default="save_predictions_LSTM_attn/")
-    parser.add_argument("--path_to_save_predictions_8",type=str,default="save_predictions_Transformer/")
+    parser.add_argument("--path_to_save_predictions_8",type=str,default="save_predictions_LSTM_anchor/")
+    parser.add_argument("--path_to_save_predictions_9",type=str,default="save_predictions_RNN_anchor/")
+    parser.add_argument("--path_to_save_predictions_10",type=str,default="save_predictions_Transformer/")
     parser.add_argument("--device", type=str, default="cpu")
     args = parser.parse_args()
 
@@ -52,6 +56,8 @@ if __name__ == "__main__":
         path_to_save_loss_6=args.path_to_save_loss_6,
         path_to_save_loss_7=args.path_to_save_loss_7,
         path_to_save_loss_8=args.path_to_save_loss_8,
+        path_to_save_loss_9=args.path_to_save_loss_9,
+        path_to_save_loss_10=args.path_to_save_loss_10,
         path_to_save_predictions_1=args.path_to_save_predictions_1,
         path_to_save_predictions_2=args.path_to_save_predictions_2,
         path_to_save_predictions_3=args.path_to_save_predictions_3,
@@ -60,6 +66,8 @@ if __name__ == "__main__":
         path_to_save_predictions_6=args.path_to_save_predictions_6,
         path_to_save_predictions_7=args.path_to_save_predictions_7,
         path_to_save_predictions_8=args.path_to_save_predictions_8,
+        path_to_save_predictions_9=args.path_to_save_predictions_9,
+        path_to_save_predictions_10=args.path_to_save_predictions_10,
         scheduler_status=args.scheduler_status,
         patience=args.patience,
         factor=args.factor,
