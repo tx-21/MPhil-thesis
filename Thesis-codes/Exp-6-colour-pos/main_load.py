@@ -58,45 +58,45 @@ def main(
         metric_all = []
         database = m
         if database == 1:
-            root_database = "data/train/sg7/"
-            result_loc = "results/GRU"
-            dataset_name = 'GRU-sg7-3'
-            model_num = 1 # GRU
+            root_database = "data/train/obs/"
+            result_loc = "results/LSTM-3-obs"
+            dataset_name = 'LSTM-3-obs'
+            model_num = 2 # GRU
         if database == 2:
-            root_database = "data/train/sg7/"
-            result_loc = "results/RNN"
-            dataset_name = 'RNN-sg7-3'
-            model_num = 0 # RNN        
+            root_database = "data/train/sg5/"
+            result_loc = "results/LSTM-3-sg5"
+            dataset_name = 'LSTM-3-sg5'
+            model_num = 2 # RNN        
         if database == 3:
-            root_database = "data/train/or/"
-            result_loc = "results/LSTM"
-            dataset_name = 'LSTM-or-3'
+            root_database = "data/train/sg7/"
+            result_loc = "results/LSTM-3-sg7"
+            dataset_name = 'LSTM-3-sg7'
             model_num = 2 # LSTM
         if database == 4: #anchor purpose
-            root_database = "data/train/sg7/"
-            result_loc = "results/GRU-anchor"
-            dataset_name = 'GRU-anchor'
-            model_num = 7 
+            root_database = "data/train/sg9/"
+            result_loc = "results/LSTM-3-sg9"
+            dataset_name = 'LSTM-3-sg9'
+            model_num = 2 
         if database == 5:
-            root_database = "data/train/sg7/"
-            result_loc = "results/GRU-attn"
-            dataset_name = 'GRU-attn'
-            model_num = 4 
+            root_database = "data/train/ew2/"
+            result_loc = "results/LSTM-3-ew2"
+            dataset_name = 'LSTM-3-ew2'
+            model_num = 2 
         if database == 6:
-            root_database = "data/train/sg7/"
-            result_loc = "results/RNN-attn"
-            dataset_name = 'RNN-attn'
-            model_num = 3
+            root_database = "data/train/ew3/"
+            result_loc = "results/LSTM-3-ew3"
+            dataset_name = 'LSTM-3-ew3'
+            model_num = 2
         if database == 7:
-            root_database = "data/train/or/"
-            result_loc = "results/LSTM-attn"
-            dataset_name = 'LSTM-attn'
-            model_num = 5 
+            root_database = "data/train/ew4/"
+            result_loc = "results/LSTM-3-ew4"
+            dataset_name = 'LSTM-3-ew4'
+            model_num = 2 
         if database == 8:
             root_database = "data/train/or/"
-            result_loc = "results/LSTM-anchor"
-            dataset_name = 'LSTM-anchor'
-            model_num = 8
+            result_loc = "results/LSTM-3-or"
+            dataset_name = 'LSTM-3-or'
+            model_num = 2
         if database == 9:
             root_database = "data/train/sg7/"
             result_loc = "results/RNN-anchor"

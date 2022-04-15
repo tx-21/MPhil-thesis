@@ -21,7 +21,7 @@ def inference(model_number, path_to_save_predictions, forecast_window, dataloade
     model_dic = {
         "RNN": RNN_3().double().to(device),
         "GRU": GRU_3().double().to(device),
-        "LSTM_5": LSTM_3().double().to(device),
+        "LSTM_3": LSTM_3().double().to(device),
         "RNN_attn": RNN_attn().double().to(device),
         "GRU_attn": GRU_attn().double().to(device),
         "LSTM_5_attn": LSTM_attn().double().to(device),

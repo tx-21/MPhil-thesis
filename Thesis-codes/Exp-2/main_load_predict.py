@@ -22,7 +22,7 @@ def main(
     num_dataset: int = 9,
     scheduler_status = False,
     train_csv = "train_dataset.csv",
-    test_csv = "test_dataset.csv",
+    test_csv = "test_1010_1016_dataset.csv",
     valid_csv = "valid_dataset.csv",
     path_to_save_model = "save_model/",
     path_to_save_loss_1 = "loss/save_loss_GRU/",
@@ -58,53 +58,53 @@ def main(
         metric_all = []
         database = m
         if database == 1:
-            root_database = "data/train/sg7/"
-            result_loc = "results/GRU"
-            dataset_name = 'GRU-sg7-3'
-            pred_loc = "GRU/"
-            model_num = 1 # GRU
+            root_database = "data/train/obs/"
+            result_loc = "results/LSTM-3-obs"
+            dataset_name = 'LSTM-3-obs'
+            pred_loc = 'LSTM-3-obs'
+            model_num = 2 # GRU
         if database == 2:
-            root_database = "data/train/sg7/"
-            result_loc = "results/RNN"
-            dataset_name = 'RNN-sg7-3'
-            pred_loc = "RNN/"
-            model_num = 0 # RNN        
+            root_database = "data/train/sg5/"
+            result_loc = "results/LSTM-3-sg5"
+            dataset_name = 'LSTM-3-sg5'
+            pred_loc = 'LSTM-3-sg5'
+            model_num = 2 # RNN        
         if database == 3:
-            root_database = "data/train/or/"
-            result_loc = "results/LSTM"
-            dataset_name = 'LSTM-or-3'
-            pred_loc = "LSTM/"
+            root_database = "data/train/sg7/"
+            result_loc = "results/LSTM-3-sg7"
+            dataset_name = 'LSTM-3-sg7'
+            pred_loc = 'LSTM-3-sg7'
             model_num = 2 # LSTM
         if database == 4: #anchor purpose
-            root_database = "data/train/sg7/"
-            result_loc = "results/GRU-anchor"
-            dataset_name = 'GRU-anchor'
-            pred_loc = "GRU-anchor/"
-            model_num = 7 
+            root_database = "data/train/sg9/"
+            result_loc = "results/LSTM-3-sg9"
+            dataset_name = 'LSTM-3-sg9'
+            pred_loc = 'LSTM-3-sg9'
+            model_num = 2 
         if database == 5:
-            root_database = "data/train/sg7/"
-            result_loc = "results/GRU-attn"
-            dataset_name = 'GRU-attn'
-            pred_loc = "GRU-attn/"
-            model_num = 4 
+            root_database = "data/train/ew2/"
+            result_loc = "results/LSTM-3-ew2"
+            dataset_name = 'LSTM-3-ew2'
+            pred_loc = 'LSTM-3-ew2'
+            model_num = 2 
         if database == 6:
-            root_database = "data/train/sg7/"
-            result_loc = "results/RNN-attn"
-            dataset_name = 'RNN-attn'
-            pred_loc = "RNN-attn/"
-            model_num = 3
+            root_database = "data/train/ew3/"
+            result_loc = "results/LSTM-3-ew3"
+            dataset_name = 'LSTM-3-ew3'
+            pred_loc = 'LSTM-3-ew3'
+            model_num = 2
         if database == 7:
-            root_database = "data/train/or/"
-            result_loc = "results/LSTM-attn"
-            dataset_name = 'LSTM-attn'
-            pred_loc = 'LSTM-attn/'
-            model_num = 5 
+            root_database = "data/train/ew4/"
+            result_loc = "results/LSTM-3-ew4"
+            dataset_name = 'LSTM-3-ew4'
+            pred_loc = 'LSTM-3-ew4'
+            model_num = 2 
         if database == 8:
             root_database = "data/train/or/"
-            result_loc = "results/LSTM-anchor"
-            dataset_name = 'LSTM-anchor'
-            pred_loc = 'LSTM-anchor/'
-            model_num = 8
+            result_loc = "results/LSTM-3-or"
+            dataset_name = 'LSTM-3-or'
+            pred_loc = 'LSTM-3-or'
+            model_num = 2
         if database == 9:
             root_database = "data/train/sg7/"
             result_loc = "results/RNN-anchor"
@@ -119,7 +119,7 @@ def main(
             model_num = 6
 
                     
-        path_to_save_model_new = "results-archive/result-3-final/" + pred_loc + path_to_save_model
+        path_to_save_model_new = "results-archive/result-5-FINAL-0415/" + pred_loc + "/" + path_to_save_model
         path_to_save_loss_1_new = result_loc + '/' + path_to_save_loss_1
         path_to_save_loss_2_new = result_loc + '/' + path_to_save_loss_2
         path_to_save_loss_3_new = result_loc + '/' + path_to_save_loss_3
@@ -193,7 +193,7 @@ def main(
             model_dic_keys = model_dic.keys()
             model_dic_keys_ls = list(model_dic_keys)
             best_model = f"{model_dic_keys_ls[model_num]}_best_train.pth"
-
+            os.makedirs(os.path.dirname(path_to_save_predictions[database-1]), exist_ok=True)
             _rmse_1, r2_1, _rmse_2, r2_2, _rmse_3, r2_3, val_loss = inference(
                 model_num, path_to_save_predictions[database-1], forecast_window,
                 test_dataloader, device, path_model_exp,

@@ -1,8 +1,22 @@
+# Progress
+# 4/14
+* i have discovered that the orignal test dataset has some issues, using test dataset at different time is better.
+
 # Ultimate goal
 * 4/14
   * since test and valid data (12/23-1/15) look much different to the test (1/16-1/22), 
 
-
+# RESULTS
+* Exp1-nh3-baseline
+  * train and valid stays the same, but test datasets used 1010-1016 and 1022-1028
+  * 
+* Exp2-nh3-pos
+  * test datasets used 1010-1016 and 1022-1028
+  * The saved model from exp3 
+* Exp3 (used to test with transformer now is unneeded)
+* Exp4 (used to test the validation and scheduler method, now is unneeded)
+* Exp5-colour-baseline
+* Exp6-colour-pos
 
 
 # Terminal

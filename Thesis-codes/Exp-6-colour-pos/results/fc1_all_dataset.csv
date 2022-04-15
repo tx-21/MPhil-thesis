@@ -1,3 +1,0 @@
-,fc1_rmse_mean,fc1_r2_mean,test_loss_mean,train_loss_mean,valid_loss_mean,last_epoch,fc1_rmse_std,fc1_rmse_max,fc1_rmse_min,fc1_r2_std,fc1_r2_max,fc1_r2_min,test_loss_std,test_loss_max,test_loss_min,train_loss_std,train_loss_max,train_loss_min,valid_loss_std,valid_loss_max,valid_loss_min
-GRU-sg7-3,13.6383,0.4303,0.0679,30.5175,7.6977,0.0001,0.0,13.6383,13.6383,0.0,0.4303,0.4303,0.0,0.0679,0.0679,0.0,30.5175,30.5175,0.0,7.6977,7.6977
-RNN-sg7-3,11.8083,0.5729,0.046,15.2078,4.5168,0.0001,0.0,11.8083,11.8083,0.0,0.5729,0.5729,0.0,0.046,0.046,0.0,15.2078,15.2078,0.0,4.5168,4.5168
