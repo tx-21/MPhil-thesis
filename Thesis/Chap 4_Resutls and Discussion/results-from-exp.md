@@ -1,15 +1,18 @@
 # RESULTS
 ## Exp-1 (NH$_{3}$N baseline model)
-* The results showed LSTM was the best performanced model in average.
-* All the pre-processing methods improved the model performance significantly compared to train model with observed NH$_{3}$N, except or has the poorest results for LSTM model.
-* ew3 and ew3 with LSTM model have the best performance.
-* Since of other models, the performance of each model with differect pro-processing methods are different, therefore, i will use all the preprocessing method in the next optimization stage.
+### Keys
+* [ ] The benefit of data pre-processing by comparing validation and test loss.
+* [ ] The selection of best model by comparing validation and test loss.
+* [ ] Test data could be in poor quality.
+* [ ] Show another test data results and compare the test and valid loss.
+### Fig
+* [ ] validation and test loss bar plots of 5 models (5 figs) #group box plot(valid and test in the same group, in this case group is the dataset)
+* [ ] choose the 
+
 ## Exp-2
-(use LSTM + ew2/3/4, sg5/7/9, or)
+
 
 ## Exp-5
-* All the pre-processing methods improved the model performance significantly compared to train model with observed NH$_{3}$N.
-* LSTM has the best performance in average.
+
 
 ## Exp-6
-(use LSTM + ew2/3/4, sg5/7/9, or)

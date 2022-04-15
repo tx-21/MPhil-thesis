@@ -22,7 +22,8 @@ def main(
     num_dataset: int = 9,
     scheduler_status = False,
     train_csv = "train_dataset.csv",
-    test_csv = "test_1010_1016_dataset.csv",
+    # test_csv = "test_1010_1016_dataset.csv",
+    test_csv = "test_1022_1028_dataset.csv",
     valid_csv = "valid_dataset.csv",
     path_to_save_model = "save_model/",
     path_to_save_loss_1 = "loss/save_loss_GRU/",
@@ -119,7 +120,7 @@ def main(
             model_num = 6
 
                     
-        path_to_save_model_new = "results-archive/result-5-FINAL-0415/" + pred_loc + "/" + path_to_save_model
+        path_to_save_model_new = "results-archive/result-5-0415-0116-0122/" + pred_loc + "/" + path_to_save_model
         path_to_save_loss_1_new = result_loc + '/' + path_to_save_loss_1
         path_to_save_loss_2_new = result_loc + '/' + path_to_save_loss_2
         path_to_save_loss_3_new = result_loc + '/' + path_to_save_loss_3

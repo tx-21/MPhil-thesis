@@ -101,9 +101,9 @@ def inference(model_number, path_to_save_predictions, forecast_window, dataloade
         
         # date_range = ['1-17','1-18','1-19','1-20','1-21','1-22','1-23']
         # test data range 1010 1016
-        date_range = ['10-11','10-11','10-13','10-14','10-15','10-16','10-17']
+        # date_range = ['10-11','10-11','10-13','10-14','10-15','10-16','10-17']
         # test data range 1022_1028
-        # date_range = ['10-23','10-24','10-25','10-26','10-27','10-28','10-29']
+        date_range = ['10-23','10-24','10-25','10-26','10-27','10-28','10-29']
         rmse_1, r2_1 = plot_prediction_horizon(forecast_horizon['fh1'], forecast_horizon['fh1_true'], '1', model_dic_keys_ls[model_number], path_to_save_predictions,date_range,current_exp,last_exp_num)
         rmse_2, r2_2 = plot_prediction_horizon(forecast_horizon['fh2'], forecast_horizon['fh2_true'], '2', model_dic_keys_ls[model_number], path_to_save_predictions,date_range,current_exp,last_exp_num)
         rmse_3, r2_3 = plot_prediction_horizon(forecast_horizon['fh3'], forecast_horizon['fh3_true'], '3', model_dic_keys_ls[model_number], path_to_save_predictions,date_range,current_exp,last_exp_num)
