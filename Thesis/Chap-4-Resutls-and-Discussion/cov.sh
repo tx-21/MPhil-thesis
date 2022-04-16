@@ -2,7 +2,7 @@ pandoc --pdf-engine=xelatex \
 --filter pandoc-tablenos \
 --filter pandoc-fignos \
 --toc -V lot -V lof  \
--V fontsize=12pt \
+-V fontsize=10pt \
 -V papersize=a4paper -V linestretch=1.5 \
 -V margin-left=20mm --number-sections \
 -V mainfont="Times New Roman" \
