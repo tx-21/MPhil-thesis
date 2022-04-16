@@ -24,13 +24,19 @@
 * result 1
   After sorting the test loss from the lowest to the highest, we observed that the test loss from lowest doesn't match with the valid loss from lowest.
 
-  |Model-dataset|Test Loss (1/16—1/22)      |Valid loss (1/10—1/15)|
-  |:---         |:---:                      |:---: |
-  |GRU-sg7	    |**0.0383**	                |1.2508|
-  |GRU-sg5	    |0.0385	                    |1.2644|
-  |LSTM-ew3	    |0.0388	                    |**1.0796**|
-  |LSTM-sg7	    |0.0388	                    |1.1804|
-  |LSTM-sg5	    |0.0388	                    |1.2346|
+	                  0116-0122	        0110-0115		                    0116-0122	      0110-0115
+  --------------- ----------------  -----------------  ---------------- ----------------- -----------------
+  Model-dasetta	   test_loss_mean	   valid_loss_mean	 Model-dasetta     test_loss_mean	   valid_loss_mean
+  --------------- ----------------  -----------------  ---------------- ----------------- -----------------
+  GRU-sg7	          0.0383	          1.2508	          LSTM-ew3	        0.0388	          1.0796
+  GRU-sg5	          0.0385	          1.2644	          LSTM-sg7	        0.0388	          1.1804
+  GRU-ew2	          0.0389	          1.1891	          LSTM-sg5	        0.0388	          1.2346
+  GRU-ew4	          0.0391	          1.2390	          LSTM-ew2	        0.0392	          1.0969
+  GRU-ew3	          0.0392	          1.2199	          LSTM-ew4	        0.0395	          1.1219
+  GRU-sg9	          0.0396	          1.3097	          LSTM-or	          0.0398	          1.2612
+  GRU-or	          0.0405	          1.3993	          LSTM-obs	        0.0405	          1.2366
+  GRU-obs	          0.0414	          1.3638	          LSTM-sg9	        0.0410            1.3076
+
   Table: Test and valid loss of NH$_{3}$N in Exp-1. {#tbl:id}
 
 
