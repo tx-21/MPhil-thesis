@@ -1,0 +1,12 @@
+pandoc --pdf-engine=xelatex \
+--filter pandoc-tablenos \
+--filter pandoc-fignos \
+--toc -V lot -V lof  \
+-V fontsize=12pt \
+-V papersize=a4paper -V linestretch=1.5 \
+-V margin-left=20mm --number-sections \
+-V mainfont="Times New Roman" \
+-M tablenos-number-by-section=True \
+-M fignos-number-by-section=True \
+--dpi 300 results-from-exp.md \
+-o results-from-exp.pdf

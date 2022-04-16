@@ -36,34 +36,34 @@ def process_data(source):
     return df
 
 
-for i in range(1,9):
-    problem=i
-    if problem ==1:
-        train_dataset = process_data("data/train/obs/train.csv")
-        train_dataset.to_csv(r'data/train/obs/train_dataset.csv', index=False)
-    if problem ==2:
-        train_dataset = process_data("data/train/sg5/train.csv")
-        train_dataset.to_csv(r'data/train/sg5/train_dataset.csv', index=False)
-    if problem ==3:
-        train_dataset = process_data("data/train/sg7/train.csv")
-        train_dataset.to_csv(r'data/train/sg7/train_dataset.csv', index=False)
-    if problem ==4:
-        train_dataset = process_data("data/train/sg9/train.csv")
-        train_dataset.to_csv(r'data/train/sg9/train_dataset.csv', index=False)
-    if problem ==5:
-        train_dataset = process_data("data/train/ew2/train.csv")
-        train_dataset.to_csv(r'data/train/ew2/train_dataset.csv', index=False)
-    if problem ==6:
-        train_dataset = process_data("data/train/ew3/train.csv")
-        train_dataset.to_csv(r'data/train/ew3/train_dataset.csv', index=False)
-    if problem ==7:
-        train_dataset = process_data("data/train/ew4/train.csv")
-        train_dataset.to_csv(r'data/train/ew4/train_dataset.csv', index=False)
-    if problem ==8:
-        train_dataset = process_data("data/train/or/train.csv")
-        train_dataset.to_csv(r'data/train/or/train_dataset.csv', index=False)
+# for i in range(1,9):
+#     problem=i
+#     if problem ==1:
+#         train_dataset = process_data("data/train/obs/train.csv")
+#         train_dataset.to_csv(r'data/train/obs/train_dataset.csv', index=False)
+#     if problem ==2:
+#         train_dataset = process_data("data/train/sg5/train.csv")
+#         train_dataset.to_csv(r'data/train/sg5/train_dataset.csv', index=False)
+#     if problem ==3:
+#         train_dataset = process_data("data/train/sg7/train.csv")
+#         train_dataset.to_csv(r'data/train/sg7/train_dataset.csv', index=False)
+#     if problem ==4:
+#         train_dataset = process_data("data/train/sg9/train.csv")
+#         train_dataset.to_csv(r'data/train/sg9/train_dataset.csv', index=False)
+#     if problem ==5:
+#         train_dataset = process_data("data/train/ew2/train.csv")
+#         train_dataset.to_csv(r'data/train/ew2/train_dataset.csv', index=False)
+#     if problem ==6:
+#         train_dataset = process_data("data/train/ew3/train.csv")
+#         train_dataset.to_csv(r'data/train/ew3/train_dataset.csv', index=False)
+#     if problem ==7:
+#         train_dataset = process_data("data/train/ew4/train.csv")
+#         train_dataset.to_csv(r'data/train/ew4/train_dataset.csv', index=False)
+#     if problem ==8:
+#         train_dataset = process_data("data/train/or/train.csv")
+#         train_dataset.to_csv(r'data/train/or/train_dataset.csv', index=False)
 
-test_dataset = process_data('data/test/test.csv')
-test_dataset.to_csv(r'data/test/test_dataset.csv', index=False)
-valid_dataset = process_data('data/valid/valid.csv')
-valid_dataset.to_csv(r'data/valid/valid_dataset.csv', index=False)
+test_dataset = process_data('data/test/test_1123_1129.csv')
+test_dataset.to_csv(r'data/test/test_1123_1129_dataset.csv', index=False)
+# valid_dataset = process_data('data/valid/valid.csv')
+# valid_dataset.to_csv(r'data/valid/valid_dataset.csv', index=False)
