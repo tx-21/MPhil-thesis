@@ -7,9 +7,41 @@
 * [ ] Show another test data results and compare the test and valid loss.
 
 ### Fig and table
-* Result 1 - To select the best algorithm for training NH$_{3}$N forecasting model.
+* Result 1
+    * LSTM and GRU have lower test loss than RNN, DNN, and RF.
+    * The lowest test loss of NH$_{3}$N forecasting approach has higher validation loss than several approaches.
 
-|GRU|Test loss mean|Valid loss mean|LSTM|Test loss mean|Valid loss mean|
+|Rank|Model-Dataset|Test loss$^{*}$|valid loss |
+|:---:|:---|:---:|:---:|
+|1|GRU-sg7|0.0383|1.2508|
+|2|GRU-sg5|0.0385|1.2644|
+|3|LSTM-ew3|0.0388|**1.0796**|
+|4|LSTM-sg7|0.0388|1.1804|
+|5|LSTM-sg5|0.0388|1.2346|
+|6|GRU-ew2|0.0389|1.1891|
+|7|GRU-ew4|0.0391|1.2390|
+|8|LSTM-ew2|0.0392|**1.0969**|
+|9|GRU-ew3|0.0392|1.2199|
+|10|LSTM-ew4|0.0395|**1.1219**|
+|11|GRU-sg9|0.0396|1.3097|
+|12|LSTM-or|0.0398|1.2612|
+|13|LSTM-obs|0.0405|1.2366|
+|14|GRU-or|0.0405|1.3993|
+|15|LSTM-sg9|0.0410|1.3076|
+|16|GRU-obs|0.0414|1.3638|
+|17|RNN-sg5|0.0415|1.5088|
+|18|RNN-ew2|0.0421|1.5425|
+|19|RNN-sg7|0.0423|1.6267|
+|20|RNN-ew4|0.0432|1.5992|
+
+Table: Evaluation of each baseline model forecasting approach. {#tbl:id}
+
+\pagebreak
+
+* Result 2
+    * Test dataset from 1/16 to 1/22 performed differently on the same forecasting approach compared to validation loss.
+
+|GRU|Test loss$^{*}$|Val loss |LSTM|Test loss$^{*}$|Val loss |
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |sg7	  |0.0383|1.2508|    ew3|	 0.0388|**1.0796**(1)|
 |sg5	  |0.0385|1.2644|    sg7|	 0.0388|1.1804|
@@ -20,61 +52,61 @@
 |or	      |0.0405|1.3993|    obs|    0.0405|1.2366|
 |obs	  |0.0414|1.3638|    sg9|	 0.0410|1.3076|
 
-Table: Comparison of NH$_{3}$N val and test loss from 1/16 to 1/22. {#tbl:id}
+Table: Comparison of NH$_{3}$N val/test loss from 1/16 to 1/22. {#tbl:id}
 
+\pagebreak
 
-|GRU|Test loss mean|Valid loss mean|LSTM|Test loss mean|Valid loss mean|
+* Result 3
+    * The influence of each pre-processing method on model training is different.
+
+|Rank|GRU|LSTM|
+|:---:|:---:|:---:|
+|1|sg7|ew3|
+|2|sg5|sg7|
+|3|ew2|sg5|
+|4|ew4|ew2|
+|5|ew3|ew4|
+|6|sg9|or |
+|7|or|obs|
+|8|obs|sg9|
+
+Table: Evaluation of pre-processing methods on LSTM and GRU models from 1/16 to 1/22. {#tbl:id}
+
+\pagebreak
+
+* Result 4
+    * Test dataset from 10/10 to 10/16 performed similar on the same forecasting approach compared to validation loss.
+
+|GRU|Test loss$^{*}$|Val loss |LSTM|Test loss$^{*}$|Val loss |
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|ew3|0.0167|**1.2199**(2)|ew2|0.0161|**1.0969**(2)|
-|ew4|0.0169|**1.2390**(3)|ew3|0.0158|**1.0796**(1)|
-|ew2|0.0170|**1.1891**(1)|ew4|0.0163|**1.1219**(3)|
-|sg9|0.0174|1.3097|obs|0.0175|1.2366|
-|sg5|0.0178|1.2644|or|0.0177|1.2612|
-|sg7|0.018|1.2508|sg5|0.0166|1.2346|
+|ew3|0.0167|**1.2199**(2)|ew3|0.0158|**1.0796**(1)|
+|ew4|0.0169|**1.239**(3)|ew2|0.0161|**1.0969**(2)|
+|ew2|0.017|**1.1891**(1)|ew4|0.0163|**1.1219**(3)|
+|sg9|0.0174|1.3097|sg5|0.0166|1.2346|
+|sg5|0.0178|1.2644|obs|0.0175|1.2366|
+|sg7|0.018|1.2508|or|0.0177|1.2612|
 |or|0.0187|1.3993|sg7|0.018|1.1804|
 |obs|0.0189|1.3638|sg9|0.0188|1.3076|
 
-Table: Comparison of NH$_{3}$N val and test loss from 10/10 to 10/16. {#tbl:id}
+Table: Comparison of NH$_{3}$N val/test loss from 10/10 to 10/16. {#tbl:id}
+
+* Result 5
+    * EWMA pre-processing method can improve model forecasting performance in general.
+
+|Rank|GRU|LSTM|
+|:---:|:---:|:---:|:---:|
+|1|ew3|ew3|
+|2|ew4|ew2|
+|3|ew2|ew4|
+|4|sg9|sg5|
+|5|sg5|obs|
+|6|sg7|or |
+|7|or|sg7|
+|8|obs|sg9|
+
+Table: Evaluation of pre-processing methods on LSTM and GRU from 10/10 to 10/16. {#tbl:id}
 
 
-|Model-dataset|Validation Loss|Model-dataset    |Test loss|
-|:---         |:---:          |:---             |:---:    |
-|LSTM-ew3	    |1.0796         |__GRU-sg7__	    |0.0383   |
-|LSTM-ew2	    |1.0969         |GRU-sg5	        |0.0385   |
-|LSTM-ew4	    |1.1219         |__LSTM-ew3__	    |0.0388   |
-|LSTM-sg7	    |1.1804         |__LSTM-sg7__	    |0.0388   |
-|GRU-ew2	    |1.1891         |__LSTM-sg5	__    |0.0388   |
-|GRU-ew3	    |1.2199         |__GRU-ew2__	    |0.0389   |
-|LSTM-sg5	    |1.2346         |__GRU-ew4__	    |0.0391   |
-|LSTM-obs	    |1.2366         |__LSTM-ew2__     |0.0392   |
-|GRU-ew4	    |1.239          |__GRU-ew3__	    |0.0392   |
-|GRU-sg7	    |1.2508         |__LSTM-ew4__	    |0.0395   |
-
-Table: Valid and test loss from 1/16 to 1/22. {#tbl:2}
-
-|Model-dataset|Validation Loss|Model-dataset    |Test loss|
-|:---         |:---:          |:---             |:---:    |
-|LSTM-ew3	    |1.0796         |__LSTM-ew3__	    |0.0158|
-|LSTM-ew2	    |1.0969         |__LSTM-ew2__	    |0.0161|
-|LSTM-ew4	    |1.1219         |__LSTM-ew4__	    |0.0163|
-|LSTM-sg7	    |1.1804         |__LSTM-sg5__	    |0.0166|
-|GRU-ew2	    |1.1891         |__GRU-ew3__	    |0.0167|
-|GRU-ew3	    |1.2199         |__GRU-ew4__	    |0.0169|
-|LSTM-sg5	    |1.2346         |__GRU-ew2__	    |0.0170|
-|LSTM-obs	    |1.2366         |GRU-sg9	        |0.0174|
-|GRU-ew4	    |1.239          |__LSTM-obs__	    |0.0175|
-|GRU-sg7	    |1.2508         |LSTM-or	        |0.0177|
-
-Table: Valid and test loss from 1/16 to 1/22. {#tbl:3}
-
-| Reagent                  | Amount   |
-| ------------------------ | -------- |
-| Appropriate Buffer (10x) | 1x       |
-| DNA                      | 50-500ng |
-| Restriction Enzyme       | 1*U*     |
-| Water                    | -        |
-
-Table: {#tbl:restriction-generic} Schematic for restriction digestion with a single restriction enzyme. Some really long text that shows how the caption is formatted when it takes multiple lines.
 
 ## Exp-2
 
