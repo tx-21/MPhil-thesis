@@ -17,6 +17,10 @@
 * Exp4 (used to test the validation and scheduler method, now is unneeded)
 * Exp5-colour-baseline
 * Exp6-colour-pos
+* Exp7-colour+nh3 predict nh3 
+* Exp8-colour+nh3 predict nh3 + pos
+* Exp9-colour+nh3 predict colour
+* 
 
 
 # Terminal

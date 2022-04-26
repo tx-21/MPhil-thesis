@@ -7,32 +7,64 @@
 * [ ] Show another test data results and compare the test and valid loss.
 
 ### Fig and table
-* Result 1
+* Result 1 (baseline performance in October)
+  
+|Rank|Model-Dataset|Test loss$^{*}$|valid loss |
+|:---:|:---|:---:|:---:|
+|1 |LSTM-ew3 |0.0158|1.0796|
+|2 |LSTM-ew2 |0.0161|1.0969|
+|3 |LSTM-ew4 |0.0163|1.1219|
+|4 |LSTM-sg5 |0.0166|1.2346|
+|5 |GRU-ew3  |0.0167|1.2199|
+|6 |GRU-ew4  |0.0169|1.2390|
+|7 |GRU-ew2  |0.0170|1.1891|
+|8 |GRU-sg9  |0.0174|1.3097|
+|9 |LSTM-obs |0.0175|1.2366|
+|10|LSTM-or  |0.0177|1.2612|
+|11|GRU-sg5  |0.0178|1.2644|
+|12|GRU-sg7  |0.0180|1.2508|
+|13|LSTM-sg7 |0.0180|1.1804|
+|14|GRU-or   |0.0187|1.3993|
+|15|LSTM-sg9 |0.0188|1.3076|
+|16|GRU-obs　|0.0189|1.3638|
+|17|RNN-ew4　|0.0190|1.5992|
+|18|RNN-ew2　|0.0191|1.5425|
+|19|RNN-ew3　|0.0193|1.6041|
+|20|RNN-sg5　|0.0195|1.5088|
+
+Table: Evaluation of each baseline model forecasting approach. {#tbl:id}
+
+\pagebreak
+
+
+
+
+* Result 1 (baseline performance in January)
     * LSTM and GRU have lower test loss than RNN, DNN, and RF.
     * The lowest test loss of NH$_{3}$N forecasting approach has higher validation loss than several approaches.
 
 |Rank|Model-Dataset|Test loss$^{*}$|valid loss |
 |:---:|:---|:---:|:---:|
-|1|GRU-sg7|0.0383|1.2508|
-|2|GRU-sg5|0.0385|1.2644|
-|3|LSTM-ew3|0.0388|**1.0796**|
-|4|LSTM-sg7|0.0388|1.1804|
-|5|LSTM-sg5|0.0388|1.2346|
-|6|GRU-ew2|0.0389|1.1891|
-|7|GRU-ew4|0.0391|1.2390|
-|8|LSTM-ew2|0.0392|**1.0969**|
-|9|GRU-ew3|0.0392|1.2199|
+|1 |GRU-sg7 |0.0383|1.2508|
+|2 |GRU-sg5 |0.0385|1.2644|
+|3 |LSTM-ew3|0.0388|**1.0796**|
+|4 |LSTM-sg7|0.0388|1.1804|
+|5 |LSTM-sg5|0.0388|1.2346|
+|6 |GRU-ew2 |0.0389|1.1891|
+|7 |GRU-ew4 |0.0391|1.2390|
+|8 |LSTM-ew2|0.0392|**1.0969**|
+|9 |GRU-ew3 |0.0392|1.2199|
 |10|LSTM-ew4|0.0395|**1.1219**|
-|11|GRU-sg9|0.0396|1.3097|
-|12|LSTM-or|0.0398|1.2612|
+|11|GRU-sg9 |0.0396|1.3097|
+|12|LSTM-or |0.0398|1.2612|
 |13|LSTM-obs|0.0405|1.2366|
-|14|GRU-or|0.0405|1.3993|
+|14|GRU-or  |0.0405|1.3993|
 |15|LSTM-sg9|0.0410|1.3076|
-|16|GRU-obs|0.0414|1.3638|
-|17|RNN-sg5|0.0415|1.5088|
-|18|RNN-ew2|0.0421|1.5425|
-|19|RNN-sg7|0.0423|1.6267|
-|20|RNN-ew4|0.0432|1.5992|
+|16|GRU-obs |0.0414|1.3638|
+|17|RNN-sg5 |0.0415|1.5088|
+|18|RNN-ew2 |0.0421|1.5425|
+|19|RNN-sg7 |0.0423|1.6267|
+|20|RNN-ew4 |0.0432|1.5992|
 
 Table: Evaluation of each baseline model forecasting approach. {#tbl:id}
 

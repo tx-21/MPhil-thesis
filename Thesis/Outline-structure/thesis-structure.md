@@ -1,10 +1,3 @@
-Title:  
-Forecasting the Ammonia Concentration in the Reclaimed Water using Machine Learning  
-
-Study 1: Algorithm Selections and Data Pre-processing Methodologies in Developing Machine Learning Models for NH$_{3}$N Forecasting.  
-
-Study 2: To incoporate the use of domain knowledge in water/wastewater treatment and established methodology to construct a optimized model for NH$_{3}$N forecasting.
-
 # Introduction
 ## Background
 ## Objectives
@@ -64,3 +57,8 @@ Study 2: To incoporate the use of domain knowledge in water/wastewater treatment
 ## The influence of feature engineering on model performance
 ### Positional encoding as new input features
 # Conclusions and recommendations
+
+Title:  
+Forecasting the Ammonia Concentration in the Reclaimed Water using Machine Learning  
+Study 1: Algorithm Selections and Data Pre-processing Methodologies in Developing Machine Learning Models for NH$_{3}$N Forecasting.  
+Study 2: To incoporate the use of domain knowledge in water/wastewater treatment and established methodology to construct a optimized model for NH$_{3}$N forecasting.
