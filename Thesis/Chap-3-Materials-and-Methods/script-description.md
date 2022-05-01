@@ -18,9 +18,9 @@
 * Exp5-colour-baseline
 * Exp6-colour-pos
 * Exp7-colour+nh3 predict nh3 
-* Exp8-colour+nh3 predict nh3 + pos
+* Exp8-colour+nh3 pos predict nh3
 * Exp9-colour+nh3 predict colour
-* 
+* Exp10-colour+nh3 pos predict colour
 
 
 # Terminal
