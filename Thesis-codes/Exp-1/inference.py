@@ -106,8 +106,8 @@ def inference(model_number, path_to_save_predictions, forecast_window, dataloade
         rmse_3, r2_3 = plot_prediction_horizon(forecast_horizon['fh3'], forecast_horizon['fh3_true'], '3', model_dic_keys_ls[model_number], path_to_save_predictions,date_range,current_exp,last_exp_num)
         
         val_loss /= len(dataloader)
-        # if current_exp == last_exp_num:
-        #     log_test_loss(val_loss, path_to_save_loss)
+        if current_exp == last_exp_num:
+            log_test_loss(val_loss, path_to_save_loss)
         # logger.info(f"{model_dic_keys_ls[model_number]}_Loss On Unseen Dataset: {val_loss}")
         # metric_out = [rmse_1, rmse_2, rmse_3, r2_1, r2_2, r2_3, val_loss]
         # metric_out = [rmse_1, r2_1, val_loss]

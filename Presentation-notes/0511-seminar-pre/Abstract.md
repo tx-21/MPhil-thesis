@@ -1,9 +1,13 @@
-# Example
-## UV/electrooxidation lag operation for UV254 absorbance reduction in landfill leachate: operational considerations for municipal sewage co-treatment  
-
-Abstract:  
-Landfill leachate co-treatment with municipal sewage is an economical strategy limited by the dissolved organic matter (DOM) in leachate. The discharged DOM exhibits high ultraviolet absorbance at 254 nm (UVA254) and thus hinders the UV disinfection efficiency at downstream wastewater treatment plants (WWTPs). Here, the UVA254 was alleviated by optimizing the current density and irradiation timing of a UV/electrooxidation (UV/EO) process to accumulate the generating chlorine and accelerate its photolysis. At an optimal 200 A·m−2, the UV irradiation was delayed by 10 min to accumulate 21 mg·L−1 as Cl2 of chlorine, enhancing its initial photolysis rate by 5.25 times compared with a simultaneous UV/EO. After 60 min, the lag operation produced ClO• and Cl2•− at respective steady-state concentrations of 4.11 × 10−14 M and 1.09 × 10−14 M and reduced the UVA254 in leachate DOM by 78.2%. The results indicate that aromatic formulas with low oxygen content were susceptible to UV/EO from Fourier-transform ion cyclotron resonance mass spectrometry (FTICR-MS) analysis. After quenching the residual chlorine, leachate co-treatment at 3.5% (v/v) resulted in specific oxygen uptake rates (SOUR) comparable with municipal sewage. The findings provide operational insight for applying UV/EO in high UVA254 matrices such as landfill leachate.
-
-## Title: ClO2 pre-oxidation changes dissolved organic matter at the molecular level and reduces chloro-organic byproducts and toxicity of water treated by the UV/chlorine process
-
-Abstract: The formation of undesirable chloro-organic byproducts is of great concern in the UV/chlorine process. In this study, chlorine dioxide (ClO2) pre-oxidation was applied to control the formation of chloro-organic byproducts and the toxicity in UV/chlorine-treated water. The molecular-level changes in dissolved organic matter (DOM) were tracked by using Fourier transform ion cyclotron resonance mass spectrometry (FT-ICR-MS) and ClO2 pre-oxidation was found to preferentially react with DOM moieties with high aromaticity level and with a carbon number of > 18, producing compounds with a higher degree of oxidation and lower aromaticity. The ClO2-treated DOM was found to be less susceptible to attack by radicals and free chlorine in the UV/chlorine process compared to the raw DOM. ClO2 pre-oxidation resulted in a significant decrease in the number of unknown chloro-organic byproducts (i.e., –17%) and the total intensity of organic chlorine detected by FT-ICR-MS (i.e., –31%). The molecular characteristics, such as O/C, aromaticity index, and the average number of chlorine atoms, of these unknown chloro-organic byproducts generated in the scenarios with and without ClO2 pre-oxidation were also different. Additionally, ClO2 pre-oxidation reduced the genotoxicity (SOS/umu test) and cytotoxicity (Hep G2 cytotoxicity assay) of UV/chlorine-treated water by 26% and 20%, respectively. The findings in this study highlight the merits of ClO2 pre-oxidation for controlling chloro-organic byproducts and reducing the toxicity of water treated by the UV/chlorine process in actual practice.
+|Parameter|Unit|Endorsed Reclaimed water quality standard|
+|:---|:---:|:---|
+|*E. coli*|cfu/100 mL|Not detectable|
+|Total Residual Chlorine (TRC)|mg/L|\pm 1 
+|Dissovled Oxygen (DO)||
+|TGotal Suspended Solids (TSS)||
+|Colour||
+|Turbidity||
+|pH||
+|Threshold Odour Number (TON)||
+|5-day Biochemical Oxygen Demeand (BOD$_{5}$)||
+|Ammoniacal Nitrogen (NH$_{3}$-N||
+|Synthetic detergents||
