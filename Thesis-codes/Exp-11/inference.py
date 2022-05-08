@@ -19,7 +19,8 @@ def inference(model_number, path_to_save_predictions, forecast_window, dataloade
 
     device = torch.device(device)
     model_dic = {
-        "Transformer": Transformer().double().to(device),
+        "Attn-LSTM": Attn_LSTM().double().to(device),
+        "Transformer": Transformer().double().to(device)
         }
     model_dic_keys = model_dic.keys()
     model_dic_keys_ls = list(model_dic_keys)
@@ -91,10 +92,10 @@ def inference(model_number, path_to_save_predictions, forecast_window, dataloade
         forecast_horizon['fh1_true'] = fh1_true
         forecast_horizon['fh2_true'] = fh2_true
         forecast_horizon['fh3_true'] = fh3_true       
-        # date_range = ['11-27','11-28','11-29','11-30']
-        
+        date_range = ['1-16','1-17','1-18','1-19','1-20','1-21','1-22']        
         # test data range 1010 1016
-        date_range = ['10-11','10-11','10-13','10-14','10-15','10-16','10-17']
+        # date_range = ['10-11','10-11','10-13','10-14','10-15','10-16','10-17']
+
         # test data range 1022_1028
         # date_range = ['10-23','10-24','10-25','10-26','10-27','10-28','10-29']
         rmse_1, r2_1 = plot_prediction_horizon(forecast_horizon['fh1'], forecast_horizon['fh1_true'], '1', model_dic_keys_ls[model_number], path_to_save_predictions,date_range,current_exp,last_exp_num,'Colour')

@@ -19,7 +19,8 @@ def teacher_forcing(model_number, dataloader, valdataloader, forecast_window, EP
 
     device = torch.device(device)
     model_dic = {
-        "Transformer": Transformer().double().to(device),
+        "Attn-LSTM": Attn_LSTM().double().to(device),
+        "Transformer": Transformer().double().to(device)
         }
     model_dic_keys = model_dic.keys()
     model_dic_keys_ls = list(model_dic_keys)

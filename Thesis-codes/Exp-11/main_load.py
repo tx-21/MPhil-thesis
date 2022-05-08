@@ -26,12 +26,12 @@ def main(
     test_csv = "test_dataset.csv",
     valid_csv = "valid_dataset.csv",
     path_to_save_model = "save_model/",
-    path_to_save_loss_1 = "loss/save_loss_LSTM/",
+    path_to_save_loss_1 = "loss/save_loss_CNN/",
     path_to_save_loss_2 = "loss/save_loss_RNN/",
     path_to_save_loss_3 = "loss/save_loss_GRU/",
     path_to_save_loss_4 = "loss/save_loss_DNN/",
     path_to_save_loss_5 = "loss/save_loss_LSTM/",
-    path_to_save_predictions_1 = "pred/save_predictions_LSTM/",
+    path_to_save_predictions_1 = "pred/save_predictions_CNN/",
     path_to_save_predictions_2 = "pred/save_predictions_RNN/",
     path_to_save_predictions_3 = "pred/save_predictions_GRU/",
     path_to_save_predictions_4 = "pred/save_predictions_DNN/",
@@ -50,32 +50,32 @@ def main(
         database = m
         if database == 1:
             root_database = "data/train/obs/"
-            result_loc = "results/Transformer-obs"
-            dataset_name = 'Transformer-obs'
+            result_loc = "results/obs"
+            dataset_name = 'obs'
         if database == 2:
             root_database = "data/train/sg5/"
-            result_loc = "results/Transformer-sg5"
-            dataset_name = 'Transformer-sg5'        
+            result_loc = "results/sg5"
+            dataset_name = 'sg5'        
         if database == 3:
             root_database = "data/train/sg7/"
-            result_loc = "results/Transformer-sg7"
-            dataset_name = 'Transformer-sg7'
+            result_loc = "results/sg7"
+            dataset_name = 'sg7'
         if database == 4:
             root_database = "data/train/sg9/"
-            result_loc = "results/Transformer-sg9"
-            dataset_name = 'Transformer-sg9'
+            result_loc = "results/sg9"
+            dataset_name = 'sg9'
         if database == 5:
             root_database = "data/train/ew2/"
-            result_loc = "results/Transformer-ew2"
-            dataset_name = 'Transformer-ew2'
+            result_loc = "results/ew2"
+            dataset_name = 'ew2'
         if database == 6:
             root_database = "data/train/ew3/"
-            result_loc = "results/Transformer-ew3"
-            dataset_name = 'Transformer-ew3'
+            result_loc = "results/ew3"
+            dataset_name = 'ew3'
         if database == 7:
             root_database = "data/train/ew4/"
-            result_loc = "results/Transformer-ew4"
-            dataset_name = 'Transformer-ew4'
+            result_loc = "results/ew4"
+            dataset_name = 'ew4'
 
 
         path_to_save_model_new = result_loc + '/' + path_to_save_model

@@ -123,11 +123,8 @@ def stability_test(metric_all, model_number, Exp_num, result_loc, dataset_name):
             metric_summary_fc3[i,5] = round(r2_ls_3[i].std(),4)
             metric_summary_fc3[i,6] = round(r2_ls_3[i].max(),4)
             metric_summary_fc3[i,7] = round(r2_ls_3[i].min(),4)
-        if model_number == 5:
-            index_model_name = [f'LSTM-{dataset_name}',f'RNN-{dataset_name}',f'GRU-{dataset_name}',f'DNN-{dataset_name}',f'LSTM-{dataset_name}']
-        else:
-            _list = np.arange(model_number)
-            index_model_name = _list
+            index_model_name = [f'LSTM-{dataset_name}',f'Transformer-{dataset_name}']
+
         # index_model_name = [f'CNN-{dataset_name}']
         # metric_name_1 = ['fc1_rmse_mean','fc1_r2_mean','fc1_rmse_std','fc1_rmse_max','fc1_rmse_min','fc1_r2_std','fc1_r2_max','fc1_r2_min']
         metric_name_2 = ['fc2_rmse_mean','fc2_r2_mean','fc2_rmse_std','fc2_rmse_max','fc2_rmse_min','fc2_r2_std','fc2_r2_max','fc2_r2_min']
@@ -185,35 +182,3 @@ def clean_directory():
 
     if os.path.exists('results'):
         shutil.rmtree('results')
-    # if os.path.exists('save_loss_RNN'):
-    #     shutil.rmtree('save_loss_RNN')
-    # if os.path.exists('save_loss_GRU'):
-    #     shutil.rmtree('save_loss_GRU')
-    # if os.path.exists('save_loss_DNN'):
-    #     shutil.rmtree('save_loss_DNN')
-    # if os.path.exists('save_loss_LSTM'):
-    #     shutil.rmtree('save_loss_LSTM')
-    # if os.path.exists('save_model'): 
-    #     shutil.rmtree('save_model')
-    # if os.path.exists('save_predictions_CNN'): 
-    #     shutil.rmtree('save_predictions_CNN')
-    # if os.path.exists('save_predictions_RNN'): 
-    #     shutil.rmtree('save_predictions_RNN')
-    # if os.path.exists('save_predictions_GRU'): 
-    #     shutil.rmtree('save_predictions_GRU')
-    # if os.path.exists('save_predictions_DNN'): 
-    #     shutil.rmtree('save_predictions_DNN')
-    # if os.path.exists('save_predictions_LSTM'): 
-    #     shutil.rmtree('save_predictions_LSTM')
-
-   # os.mkdir("save_loss_CNN")
-   # os.mkdir("save_loss_RNN")
-   # os.mkdir("save_loss_GRU")
-   # os.mkdir("save_loss_DNN")
-   # os.mkdir("save_loss_LSTM")
-   # os.mkdir("save_model")
-   # os.mkdir("save_predictions_CNN")
-   # os.mkdir("save_predictions_RNN")
-   # os.mkdir("save_predictions_GRU")
-   # os.mkdir("save_predictions_DNN")
-   # os.mkdir("save_predictions_LSTM")

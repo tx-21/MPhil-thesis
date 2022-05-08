@@ -48,6 +48,8 @@ def teacher_forcing(model_number, dataloader, valdataloader, forecast_window, EP
             src = _input.permute(1,0,2).double().to(device)[:-1,:,:] # torch.Size([24, 1, 7]) #save the last token for prediction
             target = _input.permute(1,0,2).double().to(device)[1:,:,:] # src shifted by 1.
             prediction = model(src, device) # torch.Size([24, 1, 7])
+            print(prediction[:,:,1].size())
+            exit()
             loss = criterion(prediction[:,:,1].unsqueeze(-1), target[:,:,1].unsqueeze(-1)) #only calculate the loss of the predicted value
             loss.backward()
             optimizer.step()    
