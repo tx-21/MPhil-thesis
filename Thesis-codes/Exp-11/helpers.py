@@ -124,7 +124,7 @@ def stability_test(metric_all, model_number, Exp_num, result_loc, dataset_name):
             metric_summary_fc3[i,6] = round(r2_ls_3[i].max(),4)
             metric_summary_fc3[i,7] = round(r2_ls_3[i].min(),4)
         if model_number == 5:
-            index_model_name = [f'CNN-{dataset_name}',f'RNN-{dataset_name}',f'GRU-{dataset_name}',f'DNN-{dataset_name}',f'LSTM-{dataset_name}']
+            index_model_name = [f'LSTM-{dataset_name}',f'RNN-{dataset_name}',f'GRU-{dataset_name}',f'DNN-{dataset_name}',f'LSTM-{dataset_name}']
         else:
             _list = np.arange(model_number)
             index_model_name = _list

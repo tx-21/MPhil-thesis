@@ -50,32 +50,32 @@ def main(
         database = m
         if database == 1:
             root_database = "data/train/obs/"
-            result_loc = "results/LSTM-obs"
-            dataset_name = 'LSTM-obs'
+            result_loc = "results/Transformer-obs"
+            dataset_name = 'Transformer-obs'
         if database == 2:
             root_database = "data/train/sg5/"
-            result_loc = "results/LSTM-sg5"
-            dataset_name = 'LSTM-sg5'        
+            result_loc = "results/Transformer-sg5"
+            dataset_name = 'Transformer-sg5'        
         if database == 3:
             root_database = "data/train/sg7/"
-            result_loc = "results/LSTM-sg7"
-            dataset_name = 'LSTM-sg7'
+            result_loc = "results/Transformer-sg7"
+            dataset_name = 'Transformer-sg7'
         if database == 4:
             root_database = "data/train/sg9/"
-            result_loc = "results/LSTM-sg9"
-            dataset_name = 'LSTM-sg9'
+            result_loc = "results/Transformer-sg9"
+            dataset_name = 'Transformer-sg9'
         if database == 5:
             root_database = "data/train/ew2/"
-            result_loc = "results/LSTM-ew2"
-            dataset_name = 'LSTM-ew2'
+            result_loc = "results/Transformer-ew2"
+            dataset_name = 'Transformer-ew2'
         if database == 6:
             root_database = "data/train/ew3/"
-            result_loc = "results/LSTM-ew3"
-            dataset_name = 'LSTM-ew3'
+            result_loc = "results/Transformer-ew3"
+            dataset_name = 'Transformer-ew3'
         if database == 7:
             root_database = "data/train/ew4/"
-            result_loc = "results/LSTM-ew4"
-            dataset_name = 'LSTM-ew4'
+            result_loc = "results/Transformer-ew4"
+            dataset_name = 'Transformer-ew4'
 
 
         path_to_save_model_new = result_loc + '/' + path_to_save_model
