@@ -21,7 +21,21 @@
 * Exp8-colour+nh3 pos predict nh3
 * Exp9-colour+nh3 predict colour
 * Exp10-colour+nh3 pos predict colour
-
+* Exp11-colour+nh3 pos, using LSTM-attn and transformer to predict color
+* Exp12-4 features + modified model architecture
+  * Result1
+    * nn.Linear1 output = 5
+    * nn.Linear2 output = 5
+  * Result2
+    * nn.Linear1 output = 2
+    * nn.Linear2 output = 4
+  * Result3
+    * nn.Linear1 output = 1
+    * nn.Linear2 output = 4
+  * Result3
+    * change input 1 to only nh3 (without pos)
+    * nn.Linear1 output = 2
+    * nn.Linear2 output = 4
 
 # Terminal
 * Exp 2
