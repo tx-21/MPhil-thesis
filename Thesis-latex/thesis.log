@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.27)  16 MAY 2022 16:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.27)  16 MAY 2022 17:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**d:/MPhil-thesis-github-library/MPhil-thesis/Thesis/Thesis-latex/sample.tex
-(d:/MPhil-thesis-github-library/MPhil-thesis/Thesis/Thesis-latex/sample.tex
+**d:/MPhil-thesis-github-library/MPhil-thesis/Thesis-latex/thesis.tex
+(d:/MPhil-thesis-github-library/MPhil-thesis/Thesis-latex/thesis.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-02-24> (ustthesis.cls
 Document Class: ustthesis 2015/11/01 v2.2 LaTeX document class
@@ -391,8 +391,8 @@ Package geometry Warning: Over-specification in `v'-direction.
 
 )
 Package translations Info: No language package found. I am going to use `english' as default language. on input line 119.
- (sample.aux)
-\openout1 = `sample.aux'.
+ (thesis.aux)
+\openout1 = `thesis.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 119.
 LaTeX Font Info:    ... okay on input line 119.
@@ -526,7 +526,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\nbi' on input line 132.
 
-[2] (pre/signature.tex
+[2] (sections/signature.tex
 Signature Page
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -536,7 +536,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\nbi' on input line 19.
 
-[3]) (pre/ack.tex)
+[3]) (sections/ack.tex)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\nbi' on input line 172.
@@ -547,9 +547,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 [4]
 Table of Contents
-(sample.toc)
+(thesis.toc)
 \tf@toc=\write3
-\openout3 = `sample.toc'.
+\openout3 = `thesis.toc'.
 
 
 
@@ -564,9 +564,9 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 ]
 List of Figures
-(sample.lof)
+(thesis.lof)
 \tf@lof=\write4
-\openout4 = `sample.lof'.
+\openout4 = `thesis.lof'.
 
 
 
@@ -581,11 +581,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 ]
 List of Tables
-(sample.lot)
+(thesis.lot)
 \tf@lot=\write5
-\openout5 = `sample.lot'.
+\openout5 = `thesis.lot'.
 
- (pre/abstract.tex
+ (sections/abstract.tex
 Abstract
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
@@ -606,7 +606,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\nbi' on input line 25.
 
-[8]) (chapter/chapter-1-intro.tex
+[8]) (chapters/chapter-1-intro.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\nbi' on input line 1.
@@ -622,25 +622,25 @@ Warning: No abstract.
 CHAPTER 1.
 [1
 
-]) (chapter/chapter-2-lit-review.tex [2]
+]) (chapters/chapter-2-lit-review.tex [2]
 CHAPTER 2.
-) (sample.bbl
+) (thesis.bbl
 References
 [3
 
 ]) [4
 
-] (sample.aux) ) 
+] (thesis.aux) ) 
 Here is how much of TeX's memory you used:
  16481 strings out of 478582
- 318807 string characters out of 2845288
+ 318769 string characters out of 2845288
  574582 words of memory out of 3000000
  34407 multiletter control sequences out of 15000+600000
  477006 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,6n,79p,946b,821s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 74i,6n,79p,940b,821s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on sample.pdf (13 pages, 115535 bytes).
+Output written on thesis.pdf (13 pages, 115570 bytes).
 PDF statistics:
  212 PDF objects out of 1000 (max. 8388607)
  35 named destinations out of 1000 (max. 500000)
