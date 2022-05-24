@@ -2,33 +2,44 @@
 
 \section{Background}
 
-%paragraph 1 Urban water scarcity-why is it an issue
+%paragraph 1 Forecasting models play an important role in water quality control in DTPs and WWTPs.
 %paragraph 2 Water reclamation-why is it a good choice for solving urban water scarcity
 %paragraph 3 Decision-making processing-how does this help water reclamation
 %paragraph 4 Deep learning model to replace fuzzy supervisor and machine learning models-the need of using it
-Intelligent robots are influencing many aspects of the world nowadays, from collaborative robot arms in factories to L4 autonomous driving technology, from biped household robots to quadruped mobile military agents, and from unmanned surface vehicles to quadrotor swarms. The more deeply we imagine the future, the more indispensable we find robot services.
 
-For mobile robots, navigation is always the kernel function. However, compared with the automation of manipulation, mobile robot navigation is evolving more slowly. In the classical manipulation and manufacturing scenarios, the workspace of robots is usually well defined, and the robots can perform correctly under human-designed programming, without any interaction between uncertain objects and themselves. If we regard \textit{replacing the repetitive workloads} as the first step, we should start to consider \textit{living with the robot} in the next step. For mobile robots, to be incorporated into human's daily life, they must be intelligent in unknown and pedestrian-rich environments for tasks like autonomous driving, cargo delivers and household mobile robots, which is \textit{behaving like a human}.
+%%%% Paragraph 1
+Forecasting models play an important roles in water quality control in drinking water treatment plants (DTPs) 
+and wastewater treatment plants (WWTPs). The need of using forecasting models are becuase the unpredictable 
+nature of water quality, and the treatment operations are subjected to the change of water quality to prodcue
+effluent complied the government regulation \cite{chen_assessing_2003}.
 
-Human beings can navigate in crowded environments smartly without dependence on pre-defined high-resolution maps. We can also explore unknown environments without taking time to think about the information gain or frontiers. To navigate safely and efficiently like a human being, mobile robots should be able to perceive and predict behaviours of unfamiliar and dynamic agents. Based on the implicit or explicit understanding, an accessible policy considering various constraints is needed to guide the robots.
+%%%% Paragraph 2
+Forecasting models can also be called time series model becuase the data is consisted of the values and the 
+time (need to be further revised). For the well-know time series models are for example, RNN, ... These are 
+used to replace the theory-based models, for example Activated Sludege Model (ASM). The difference between 
+these two models are, machine learning based models require to learn from historic data, while the thoery-based
+models only need to enter the basic operational parameters (e.g., influent flow, tempearture, and pH, etc).
 
+%%%% Paragraph 3
+Despite the promising usage and performance of machine learning models, the collection of the data became
+the most difficult tasks. Many small scale or old treatment plants do not have the capital or the available
+environment for the set-ups of the online sensors to collect data.
+Although these are the major issues, it's still possible to train a forecasting model with one input, which 
+is also called a self-prediction model. Although the accuracy or stability compared to multi-input models, 
+the forecasted results can be used at some cases. To increase the model performance, there are several ways.
+Paper included weather data, or perform data-preprocessing methods to improve the model performance.
 
-Deep learning, as a solution for artificial intelligence, is capable of building progressively meaningful feature abstraction of input data.
-It plays an essential role in various fields of study bringing the state of the art in image classification 
-semantic segmentation ,
-human-level game playing , driving real robotic systems in navigation 
-and manipulation  tasks.
-
-We may be witnessing the most rapidly growing trend of deep learning techniques for robotics tasks in recent years.
-Replacing hand-crafted features with learned hierarchical distributed deep features, and learning control policies directly from high-dimensional sensory inputs, the robotics community is making substantial progress towards building fully autonomous intelligent systems.Bla.\cite{chen_assessing_2003}.
+%%%% Paragraph 4
+These solutions (data preprocessing, feature engineering) are not well discussed in this field, also the 
+potential of using univariate models are under estimated.
 
 \section{Objectives}
 \noindent
 The specific objectives of this thesis work are:\\
 %should be investigate the effluent water quality in SWHEPP?
-(1) To investigate the daily patterns of Color and Ammonia concentration in SWHEPP.\\
-(2) To build deep learning models for training Color and NH$_{3}$N forecasting models.\\
-(3) To develop methods of data pre-processing and feature engineering for training forecasting models.\\
-(4) To elucidate the architecture design of the deep neural networks.
+(1) To build baseline univariate forecasting models using machine learning and deep learning models.\\
+(2) To develop data preprocessing methods for enhancing model forecasting performance.\\
+(3) To extract features and hidden relations of water parameters in MBR effluent by analyzing the wastewater collected upstream of the WWTPs.\\
+(4) To develop methods for improving performance of forecasting models using the hidden features and relations of the water parameters.
 
 \section{Organization of the thesis}

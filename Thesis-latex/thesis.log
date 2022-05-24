@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.27)  17 MAY 2022 21:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.27)  24 MAY 2022 11:29
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -547,7 +547,12 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 [4]
 Table of Contents
-(thesis.toc)
+(thesis.toc
+Overfull \hbox (2.34837pt too wide) in paragraph at lines 26--26
+ [][]  [][]\OT1/cmr/m/n/12 Comparison of the ar-ti-fi-cial in-tel-li-gence model and tra-di-tional model 
+ []
+
+)
 \tf@toc=\write3
 \openout3 = `thesis.toc'.
 
@@ -624,25 +629,25 @@ CHAPTER 1.
 
 ]) (chapters/chapter-2-lit-review.tex [2]
 CHAPTER 2.
-) (thesis.bbl
-References
 [3
 
-]) [4
+]) (thesis.bbl
+References
+[4]) [5
 
 ] (thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 16483 strings out of 478582
- 318818 string characters out of 2845288
- 574625 words of memory out of 3000000
- 34408 multiletter control sequences out of 15000+600000
+ 16496 strings out of 478582
+ 318959 string characters out of 2845288
+ 576582 words of memory out of 3000000
+ 34414 multiletter control sequences out of 15000+600000
  477006 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,6n,79p,940b,821s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 74i,6n,79p,1233b,821s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (13 pages, 117193 bytes).
+Output written on thesis.pdf (14 pages, 121080 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
- 36 named destinations out of 1000 (max. 500000)
- 193 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 256 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
+ 249 words of extra memory for PDF output out of 10000 (max. 10000000)
 
