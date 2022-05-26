@@ -32,10 +32,19 @@
   * Result3
     * nn.Linear1 output = 1
     * nn.Linear2 output = 4
-  * Result3
+  * Result4
     * change input 1 to only nh3 (without pos)
     * nn.Linear1 output = 2
     * nn.Linear2 output = 4
+  * Result 5 >> 1:49
+  * Result 5 >> 1:1
+  * Result 5 >> 1:2
+  * Result 5 >> 1:5
+  * Result 5 >> 1:10
+  * Result 5 >> 1:20
+  * Result 5 >> 1:30
+  * Result 5 >> 1:40
+  * Result 5 >> 1:50
 
 # Terminal
 * Exp 2

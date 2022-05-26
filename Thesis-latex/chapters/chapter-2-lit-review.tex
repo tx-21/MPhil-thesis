@@ -7,6 +7,21 @@ of machine learning. In artificial intelligence can be sued to solve four types 
 classification, regression, dimensionality reduction and clustering. 
 \subsection{Water quality control in drinking water treatment plants}
 %%it's better to find papers that can provide comparison between DL and ML or traditional models
+\subsection{Disinfection process}
+Disinfection is the last step of water treatment processes in drinking water treatment plants (DWTPs) to generate safe potable water. In this step, one or more chemical disinfectants like chlorine, chloramine, or chlorine dioxide are added into the water to inactivate any remaining pathogenic microorganisms. The residual disinfectant concentration in disinfected water must contains low levels of the chemical disinfectant to stop nuisance growths in the water distribution pipes, storage facilites and conduits. Nowadays, the widely used disinfectant in disinfection process is chlorine as gas or hypochlorite (i.e., in form of liquid solution), and the treatment process is known as "chlorination". According to World Health Organization's Guidelines for Drinking-water Quality (WHO Guidelines), the maximum allowable value for free chlorine residual in drinking water is 5 mg/L, and the minimum recommended valus is 0.2 mg/L. To ensure the concentration of free residual chlorine falls in the recommended range, chlorination process has been made automated to correct the chlorine dosage responding to the variability in water quality in many DWTPs. 
+
+Automatic control of chlorine dosage uses online tools for measuring water parameters along with Programmable Logic Controllers (PLCs) \cite{librantz_artificial_2018}. PLC is a system which enables making automatic engineering and chemical decisions for the administration of the type and amount of chemicals required to achieve desirable concentration of free residual chlorine.
+
+
+%1-Why there is chlorinatino process
+%2-The automation process in chlorination to control the conc. of residual chlorine
+Despite the benefit brought by dosing chlorine to the water, negative impacts also come along. In the real world case, the influent water quality and the efficiency of the drinking water treatment processes are not always stable, and the invariability of the treated water quality becomes an big issue for disinfection. For instance, chlorine dose can be excessive dosed when the treated water contains less pollutants (e.g., non-organic matters and ammonia nitrogen). Although the quality of disinfected water fulfill the regulation standard, it increases the costs and can potentially generate undesired disinfection by-products (e.g., trihalomethanes, which are carcinogenic to human) due to the chemcial reaction between pollutants and overly dosed chlorine. On the flip side, insufficient dosing of chlorine cuases the concentration of residual chlorine lower than the legal regulation. To prevent both senarios occur, a water quality control strategy is required to produce drinking water with satisfactory quality. 
+
+Up untill present, there are several ways to perform disinfected water quality. In the earliest time, feed-back.... PI... feed-foward...
+%Chlorine Chlorine is one of the most commonly used disinfectants for water disinfection
+%Chlorination in drinking water treatment plants (DWTP) is the final process applied to water before it is sent to storage tanks in the supply network for subsequent human consumption. An excessive dosage of chlorine or, conversely, too small a dosage, may breach existing legal regulations on mandatory limits. Furthermore, excessive amounts generate an unnecessary cost in terms of chlorine and, collaterally, problems due to an increase in the maximum permitted amounts of such by-products as trihalomethanes, which are carcinogenic compounds for humans. In DWTP where there is no significant variability in the quality of the water to be treated, a type of control that is proportional to the flow rate in the effluent can have fully satisfactory results. However, in a control strategy applied when there are inherently long delays in the process, variability in the quality of the water to be treated and considerable variations in flow, a proportional type of control does not tend to work and an alternative type is needed. This article presents the strategy and results of a control method that combines a feed-forward system with gain scheduling in a (ProportionalIntegral) PI control. The control system design was validated beforehand by simulation and then applied to a real DWTP, producing satisfactory experimental results.\cite{gamiz_fuzzy_2020}
+
+
 \subsubsection{Membrane fouling}
 Madfs
 %membrane fouling
@@ -54,7 +69,11 @@ the MBR effluent to meet the endorsed reclaimed water standard.
 %Explain the difference between DL and ML
 \subsection{Comparison of the artificial intelligence model and traditional model in drinking water treatment}
 \subsubsection{Traditional modeling methods}
-In traditional modeling methods, numerical simulations or physical formulas to model target prediction objects
+In traditional modeling methods, numerical simulations or physical formulas to model target prediction objects. 
+ame training set to process batches and feed batches for ultrafiltration. The interpretation of this model is 
+more accessible than simply using ANN because it is based on physical mechanisms. A semi-physical model can 
+be defined as an aid to a mechanism because it provides an efficient way to determine specific parameters. 
+Nevertheless, its further applications are limited by the assumptions established by the model.
 %The mathematical model or theoretical equation used was limited to the analysis and prediction of membrane pollution under simple conditions (such as a single pollutant or specific working conditions)
 \section{Different techniques for enchancing the performance of forecasting models}
 \subsection{Data preprocessing}
