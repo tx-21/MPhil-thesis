@@ -2,17 +2,43 @@
 %\label{sec:ob_rel}
 
 \section{The application of machine learning techniques for water quality control}
+\subsection{Automated control system for water quality control}
+%%%%%%%%%%PLC and some real application cases in WTP
+A proportional–integral–derivative controller (PID controller or three-term controller) is a control loop mechanism employing feedback that is widely used in industrial control systems and a variety of other applications requiring continuously modulated control. A PID controller continuously calculates an error value e(t) as the difference between a desired setpoint (SP) and a measured process variable (PV) and applies a correction based on proportional, integral, and derivative terms (denoted P, I, and D respectively), hence the name.
+
+%%%%%%%%%%PID and examples
+
+
+%%%%%%%%%%Transition to how the algorithms in PLC or PID can be replace my AI, ML, 
+
+In practical terms, PID automatically applies an accurate and responsive correction to a control function. An everyday example is the cruise control on a car, where ascending a hill would lower speed if constant engine power were applied. The controller's PID algorithm restores the measured speed to the desired speed with minimal delay and overshoot by increasing the power output of the engine in a controlled manner.
+
+In general terms PLCs are probably one of most widely used pieces of control and automation technology. The clue really comes from the name PLC, or “programmable logic controller”. It is the fact that they are programmable that makes them so versatile in their application. PLCs contain a processor, memory to hold their programming and other data and input and output modules. They are usually programmed via a PC and there are a number of different industry standard (IEC 61131-3) languages that may be used.
+
+A PID Controller is different to a PLC. It still requires inputs and outputs to receive information from the process and send signals back to control it but it contains specialist algorithms designed to control a process with one or multiple control loops. The term ‘PID’ relates to “Proportional Integral Derivative” control. 
+
+%%Transition to introducing the model predictive control is usually incorporated with PID, or PI system.
+So that the machine learning nowadays focus on how to develop a better mathematical algorithms to replace the outdated algorithms in PID system.
+
+To ensure the concentration of free residual chlorine falls in the recommended range, chlorination process has been made automated to correct the chlorine dosage responding to the variability in water quality in many DWTPs. 
+
+%PLC and PID are confusing now, better to distinguish the difference between the two, and the use transition to introduce the model predicdtive control, or the AI part
+%Which requires the set point?
+%only talk about the PID not PLC
+To operate a automatic control system, Programmable Logic Controller (PLC) is selected by industrial processes that involve in any sorts of control systems. In DWTPs, PLC system in chlorination process makes automatic decisions for the administration of chlorine dose required to achieve desirable concentration of FRC. One of the earliest mathematical modeling used with PLC to control chlorine dosage is proposed by Dieu, Garrett Jr., Ahmad, and Young (1995), which is a single variable Proportional-Integral Derivative (PID) chlorine dosage control system. PID system is built with online analyzer of FRC, PLC, and chlorine dosers to formulate a robust control loop for dosing chlorine. However, PID system is merely a temporarily solution to the precise control of chlorination. 
+
+%PID control is used where greater levels of precision in control are required. It combines three control terms to give a single output to drive the setpoint. 
+%
+
+Since the WTP postchlorination dosage has several variables that directly impact the FRC rate in the treated water, the use of the traditional PID controller is restricted, as reported by Escobar and Trierweiler (2013).
+
 Machine learning is a subset of artificial intelligence, and deep learning is a subset 
 of machine learning. In artificial intelligence can be sued to solve four types of problems: 
 classification, regression, dimensionality reduction and clustering. 
 \subsection{Water quality control in drinking water treatment plants}
 %%it's better to find papers that can provide comparison between DL and ML or traditional models
-\subsection{Disinfection process}
-Disinfection is the last step of water treatment processes in drinking water treatment plants (DWTPs) to generate safe potable water. In this step, one or more chemical disinfectants like chlorine, chloramine, or chlorine dioxide are added into the water to inactivate any remaining pathogenic microorganisms. The residual disinfectant concentration in disinfected water must contains low levels of the chemical disinfectant to stop nuisance growths in the water distribution pipes, storage facilites and conduits. Nowadays, the widely used disinfectant in disinfection process is chlorine as gas or hypochlorite (i.e., in form of liquid solution), and the treatment process is known as "chlorination". According to World Health Organization's Guidelines for Drinking-water Quality (WHO Guidelines), the maximum allowable value for free chlorine residual in drinking water is 5 mg/L, and the minimum recommended valus is 0.2 mg/L. To ensure the concentration of free residual chlorine falls in the recommended range, chlorination process has been made automated to correct the chlorine dosage responding to the variability in water quality in many DWTPs. 
-
-To operate a automatic control system, Programmable Logic Controller (PLC) is selected by industrial processes that involve in any sorts of control systems. In DWTPs, PLC system in chlorination process makes automatic decisions for the administration of chlorine dose required to achieve desirable concentration of FRC. %how to link PID with PLC
-
-Dieu, Garrett Jr., Ahmad, and Young (1995) proposed a single variable Proportional-IntegralDerivative (PID) chlorine control dosage, with all the required devices, such as online analyzer free residual chlorine, PLCs and chlorine dosers, demonstrating a control loop similar to that used in WTP under analysis. Since the WTP postchlorination dosage has several variables that directly impact the FRC rate in the treated water, the use of the traditional PID controller is restricted, as reported by Escobar and Trierweiler (2013).
+\subsubsection{Disinfection process}
+Disinfection is the last step of water treatment processes in drinking water treatment plants (DWTPs) to generate safe potable water. In this step, one or more chemical disinfectants like chlorine, chloramine, or chlorine dioxide are added into the water to inactivate any remaining pathogenic microorganisms. The residual disinfectant concentration in disinfected water must contains low levels of the chemical disinfectant to stop nuisance growths in the water distribution pipes, storage facilites and conduits. Nowadays, the widely used disinfectant in disinfection process is chlorine as gas or hypochlorite (i.e., in form of liquid solution), and the treatment process is known as "chlorination". According to World Health Organization's Guidelines for Drinking-water Quality (WHO Guidelines), the maximum allowable value for free chlorine residual in drinking water is 5 mg/L, and the minimum recommended valus is 0.2 mg/L. 
 
 Current analysis proposes a multivariable control for post-chlorination dosage system in a WTP using artificial neural networks applied to the disinfection process to reduce free residual chlorine variations of treated water in the water tank and, consequently, in the main water distribution \cite{librantz_artificial_2018}.
 

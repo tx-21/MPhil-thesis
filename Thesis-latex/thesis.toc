@@ -12,22 +12,23 @@
 \contentsline {section}{\numberline {1.3}Organization of the thesis}{2}{section.1.3}%
 \contentsline {chapter}{{Chapter 2}\hspace {1em}Literature Review}{3}{chapter.2}%
 \contentsline {section}{\numberline {2.1}The application of machine learning techniques for water quality control}{3}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}Water quality control in drinking water treatment plants}{3}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Disinfection process}{3}{subsection.2.1.2}%
-\contentsline {subsubsection}{\numberline {2.1.2.1}Membrane fouling}{4}{subsubsection.2.1.2.1}%
-\contentsline {subsubsection}{\numberline {2.1.2.2}Analysis of precursors of DBPs}{4}{subsubsection.2.1.2.2}%
-\contentsline {subsubsection}{\numberline {2.1.2.3}Disinfection}{4}{subsubsection.2.1.2.3}%
-\contentsline {subsubsection}{\numberline {2.1.2.4}Prediction of the source water contaminants}{4}{subsubsection.2.1.2.4}%
-\contentsline {subsubsection}{\numberline {2.1.2.5}Coagulation}{4}{subsubsection.2.1.2.5}%
-\contentsline {subsection}{\numberline {2.1.3}Water quality control in wastewater treatment plants}{5}{subsection.2.1.3}%
-\contentsline {subsection}{\numberline {2.1.4}Water quality control in reclaimed water system}{5}{subsection.2.1.4}%
-\contentsline {section}{\numberline {2.2}Recent advances in time series models for water quality forecasting}{5}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Machine learning models}{5}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Deep learning models}{5}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Comparison of the artificial intelligence model and traditional model in drinking water treatment}{5}{subsection.2.2.3}%
-\contentsline {subsubsection}{\numberline {2.2.3.1}Traditional modeling methods}{5}{subsubsection.2.2.3.1}%
-\contentsline {section}{\numberline {2.3}Different techniques for enchancing the performance of forecasting models}{5}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Data preprocessing}{5}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Feature engineering}{5}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.1.1}Automated control system for water quality control}{3}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Water quality control in drinking water treatment plants}{4}{subsection.2.1.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.1}Disinfection process}{4}{subsubsection.2.1.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.2.2}Membrane fouling}{5}{subsubsection.2.1.2.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.3}Analysis of precursors of DBPs}{5}{subsubsection.2.1.2.3}%
+\contentsline {subsubsection}{\numberline {2.1.2.4}Disinfection}{5}{subsubsection.2.1.2.4}%
+\contentsline {subsubsection}{\numberline {2.1.2.5}Prediction of the source water contaminants}{5}{subsubsection.2.1.2.5}%
+\contentsline {subsubsection}{\numberline {2.1.2.6}Coagulation}{5}{subsubsection.2.1.2.6}%
+\contentsline {subsection}{\numberline {2.1.3}Water quality control in wastewater treatment plants}{6}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.1.4}Water quality control in reclaimed water system}{6}{subsection.2.1.4}%
+\contentsline {section}{\numberline {2.2}Recent advances in time series models for water quality forecasting}{6}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Machine learning models}{6}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Deep learning models}{6}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Comparison of the artificial intelligence model and traditional model in drinking water treatment}{6}{subsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.2.3.1}Traditional modeling methods}{6}{subsubsection.2.2.3.1}%
+\contentsline {section}{\numberline {2.3}Different techniques for enchancing the performance of forecasting models}{7}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Data preprocessing}{7}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Feature engineering}{7}{subsection.2.3.2}%
 \vspace \bigskipamount 
-\contentsline {chapter}{References}{6}{chapter*.5}%
+\contentsline {chapter}{References}{8}{chapter*.5}%
