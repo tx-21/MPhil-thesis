@@ -1,23 +1,55 @@
 \begin{thebibliography}{1}
 
-\bibitem{chen_assessing_2003}
+\bibitem{andhareSCADAToolIncrease2014}
+Sunil~L Andhare and Prasad~J Palkar.
+\newblock {{SCADA}} a tool to increase efficiency of water treatment plant.
+\newblock page~8, 2014.
+
+\bibitem{badosDesignPIDControl2020}
+Jhon Stalin~Figueroa Bados and Iralmy Yipsy~Platero Morejon.
+\newblock Design of a {{PID Control System}} for a {{Wastewater Treatment
+  Plant}}.
+\newblock In {\em 2020 3rd {{International Conference}} on {{Robotics}},
+  {{Control}} and {{Automation Engineering}} ({{RCAE}})}, pages 31--35,
+  {Chongqing, China}, November 2020. {IEEE}.
+
+\bibitem{chenAssessingWastewaterReclamation2003}
 J.C. Chen, N.B. Chang, and W.K. Shieh.
 \newblock Assessing wastewater reclamation potential by neural network model.
 \newblock {\em Engineering Applications of Artificial Intelligence},
   16(2):149--157, March 2003.
 
-\bibitem{li_recent_2021}
+\bibitem{kobylinskiLineControlStrategies2006}
+Edmund~A. Kobylinski, Gary~L. Hunter, and Andrew~R. Shaw.
+\newblock On {{Line Control Strategies}} for {{Disinfection Systems}}:
+  {{Success}} and {{Failure}}.
+\newblock {\em Proceedings of the Water Environment Federation},
+  2006(5):6371--6394, January 2006.
+
+\bibitem{liRecentAdvancesArtificial2021}
 Lei Li, Shuming Rong, Rui Wang, and Shuili Yu.
 \newblock Recent advances in artificial intelligence and machine learning for
   nonlinear relationship analysis and process control in drinking water
-  treatment: {A} review.
+  treatment: {{A}} review.
 \newblock {\em Chemical Engineering Journal}, 405:126673, February 2021.
 
-\bibitem{librantz_artificial_2018}
-André~Felipe Librantz, Fábio Cosme Rodrigues~dos Santos, and Cleber~Gustavo
-  Dias.
-\newblock {\textless}b{\textgreater}{Artificial} neural networks to control
-  chlorine dosing in a water treatment plant.
+\bibitem{librantzArtificialNeuralNetworks2018}
+Andr{\'e}~Felipe Librantz, F{\'a}bio Cosme~Rodrigues dos Santos, and
+  Cleber~Gustavo Dias.
+\newblock {\textbf{Artificial Neural Networks to Control Chlorine Dosing in a
+  Water Treatment Plant}}.
 \newblock {\em Acta Scientiarum. Technology}, 40(1):37275, September 2018.
+
+\bibitem{wangCompositeControlPostChlorine2019}
+Dongsheng Wang and Hao Xiang.
+\newblock Composite {{Control}} of {{Post-Chlorine Dosage During Drinking Water
+  Treatment}}.
+\newblock {\em IEEE Access}, 7:27893--27898, 2019.
+
+\bibitem{zhuApplicationPLCSewage2017}
+Huijun Zhu and Xinglei Qiu.
+\newblock The {{Application}} of {{PLC}} in {{Sewage Treatment}}.
+\newblock {\em Journal of Water Resource and Protection}, 09(07):841--850,
+  2017.
 
 \end{thebibliography}
