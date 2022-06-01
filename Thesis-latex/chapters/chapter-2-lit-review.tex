@@ -1,56 +1,47 @@
 \chapter{Literature Review}
 %\label{sec:ob_rel}
-
-\section{The application of machine learning techniques for water quality control}
+\section{Introduction to water quality control}
 \subsection{Automated control system for water quality control}
 %%%%%%%%%%PLC and some real application cases in WTP
 %Explain PLC better by \cite{WasteWaterTreatment2018}
 %re organize this section
-Programmable logic controller (PLC) is an industrial computer system designed for any process requiring a series of devices and equipment operates cohesively to achieve multiple purposes in manufacturing or treatment processes. The main components of PLC include a center process unit (CPU), input modules and output modules (I/O). CPU is responsible to process digital signals from input modules and send commands through output modules based on the control logics programmed on the PLC. For chemical dosing control in water treatment plants (WTPs), PLC system receives readings from turbidity and pH sensors and uses pumps to dose aluminum solution automatically \cite{andhareSCADAToolIncrease2014}. The PLC system with the capability of producing real-time output commands in response to the input sigals also makes it widely used in the wastewater treatment plants (WWTPs). For oxygen concentration control in the aeration tank, PLC system receives signals of dissovled oxygen (DO) detectors and transmits signals to open or close the electric butterfly valves to further alter the DO concentration \cite{zhuApplicationPLCSewage2017}. However, the PLC is merely a device that can be programmed to control other operative devices with on-off logic (i.e., a logic control with two states). 
-
-plication. As everyone knows, the characteristic of PLC is stable and reliable control, simple programming, but the program memory and instruction resources are limited. It cannot carry out too complicated sewage treatment program. But sewage treatment has various steps and each actuator is complex, not easy to coordinate each other. Therefore, the easy use of PLC programming and the complexity of the control on the formation make a contradiction.
-
-For many control processes in WTPs or WWTPs, on-off logic is inadequate to achieve the desired operation. 
-
-Awaring of the limitation of a PLC system, a more advanced controller called proportional–integral–derivative (PID) controller for receiving analog signals was developed to generate more sophisticated commands to the operative devices.
+Programmable logic controller (PLC) is an industrial computer system designed for any process requiring a series of devices and equipment operates cohesively to achieve multiple purposes in manufacturing or treatment processes. The main components of PLC include a center process unit (CPU), input modules and output modules (I/O). CPU is responsible to process digital signals from input modules and send commands through output modules based on the control logics programmed on the PLC. For chemical dosing control in water treatment plants (WTPs), PLC system receives readings from turbidity and pH sensors and uses pumps to dose aluminum solution automatically \citep{andhareSCADAToolIncrease2014}. The PLC system with the capability of producing real-time output commands in response to the input sigals also makes it widely used in the wastewater treatment plants (WWTPs). For oxygen concentration control in the aeration tank, PLC system receives signals of dissovled oxygen (DO) detectors and transmits signals to open or close the electric butterfly valves to further alter the DO concentration \citep{zhuApplicationPLCSewage2017}. Although PLC systems are the most used system across industries for its easy programming and reliable control, PLC system is merely a device that can be programmed to control operative devices with on-off logic (i.e., a logic control with two states) and the capability of complex control is compromised. In reality, many WTPs or WWTPs have the need of precise control of the treatment processes. Being awared of the limitations of the PLC systems, a more advanced controller called proportional–interal–derivative (PID) controller for receiving analog signals was developed to obtain more sophisticated controls over the operative devices.
 
 %%%%%%%%%%PID and examples
-A PID controller generates an output value based on continuously calculates an error value e(t) as the difference between a desired setpoint (SP) and a measured process variable and applies a correction based on proportional, integral, and derivative terms. Therefore, a PID controller is essentially a technology (i.e., a specialist algorithm) for contorlling a single device with more complex logics, while a PLC system is a physical system consists of different modules and capable of controlling dozens of devices with two-state logic. In addition, A PID controller can be implementated with a PLC device and provide a more precise control strategy to a designated device. For instance, a single-variable feedback analog control loop in PID can be used to control the temperature in the activated sludge treatment by stablizing the system temperature in a shorter time \cite{badosDesignPIDControl2020}. The feedback control scheme is also applied in WTPs to adjust the addition of chlorine dosage to reach the target concentration of free chlorine residual (FRC) \cite{wangCompositeControlPostChlorine2019}.
-
-%%%%%%%%%%Transition to how the algorithms in PLC or PID can be replace my AI, ML, 
-
-Turning a PID controlled to make use of the three control functions is a separate topic for another paper. The key issue to remember when using a PID controller is that it is a feedback control system designed to control rapidly-changing process conditions. Disinfection is a plug flow process. The retention time needed for disinfection is a lag time that makes feedback control difficult \cite{kobylinskiLineControlStrategies2006}.
-
-In practical terms, PID automatically applies an accurate and responsive correction to a control function. An everyday example is the cruise control on a car, where ascending a hill would lower speed if constant engine power were applied. The controller's PID algorithm restores the measured speed to the desired speed with minimal delay and overshoot by increasing the power output of the engine in a controlled manner.
-
-In general terms PLCs are probably one of most widely used pieces of control and automation technology. The clue really comes from the name PLC, or “programmable logic controller”. It is the fact that they are programmable that makes them so versatile in their application. PLCs contain a processor, memory to hold their programming and other data and input and output modules. They are usually programmed via a PC and there are a number of different industry standard (IEC 61131-3) languages that may be used.
-
-A PID Controller is different to a PLC. It still requires inputs and outputs to receive information from the process and send signals back to control it but it contains specialist algorithms designed to control a process with one or multiple control loops. The term ‘PID’ relates to “Proportional Integral Derivative” control. 
-
-%%Transition to introducing the model predictive control is usually incorporated with PID, or PI system.
-So that the machine learning nowadays focus on how to develop a better mathematical algorithms to replace the outdated algorithms in PID system.
-
-To ensure the concentration of free residual chlorine falls in the recommended range, chlorination process has been made automated to correct the chlorine dosage responding to the variability in water quality in many DWTPs. 
-
-%PLC and PID are confusing now, better to distinguish the difference between the two, and the use transition to introduce the model predicdtive control, or the AI part
-%Which requires the set point?
-%only talk about the PID not PLC
-To operate a automatic control system, Programmable Logic Controller (PLC) is selected by industrial processes that involve in any sorts of control systems. In DWTPs, PLC system in chlorination process makes automatic decisions for the administration of chlorine dose required to achieve desirable concentration of FRC. One of the earliest mathematical modeling used with PLC to control chlorine dosage is proposed by Dieu, Garrett Jr., Ahmad, and Young (1995), which is a single variable Proportional-Integral Derivative (PID) chlorine dosage control system. PID system is built with online analyzer of FRC, PLC, and chlorine dosers to formulate a robust control loop for dosing chlorine. However, PID system is merely a temporarily solution to the precise control of chlorination. 
-
 %PID control is used where greater levels of precision in control are required. It combines three control terms to give a single output to drive the setpoint. 
-%
+To react to rapidly-changing process conditions, a PID controller generates an output value based on continuous calculation of an error value e(t) as the difference between a desired setpoint (SP) and a measured process variable and applies a correction based on proportional, integral, and derivative terms. The use of the "P", "I", and "D" allows the system quickly reach steady state with a feedback control system (i.e., the system output is returned to the system input which is included in the decision making process in PID controller). Generally speaking, a PID controller is a technology (i.e., a specialist algorithm) for contorlling a single device with more complex logics, while a PLC system is a physical system consists of different modules and capable of controlling dozens of devices only with two-state logic. In addition, A PID controller can be implementated with a PLC device and provide a more precise control strategy to a designated device. For instance, a single-variable feedback analog control loop in PID can be used to control the temperature in the activated sludge treatment by stablizing the system temperature in a shorter time \citep{badosDesignPIDControl2020}. The feedback control scheme is also applied in WTPs to adjust the addition of chlorine dosage (i.e., also known as the disinfection process, chlorination, or postchlorination) to reach the target concentration of free chlorine residual (FRC) \citep{wangCompositeControlPostChlorine2019}. Disinfection process is carried out in a chlorine contact tank which provides sufficient time for chlorine to disinfect pollutants. Since the chlorine added by the dosing device requires time to travel from the entry to the exit, the system output can only reflect the changes of water quality in a delayed time of 30 minutes (i.e., the designed time for water to travel in chlorine contact tank is usually 30 minutes or longer). In the case of chlorination, the lag of time makes feedback control difficult \citep{kobylinskiLineControlStrategies2006} as the system is delayed in responding to any sudden surge of the pollutants when it can only receive output at the end of the disinfection process. To improve on the PID controller, researchers begins to explore using artificial intelligence to assist the control processes in WTPs and WWTPs.
 
-Since the WTP postchlorination dosage has several variables that directly impact the FRC rate in the treated water, the use of the traditional PID controller is restricted, as reported by Escobar and Trierweiler (2013).
+%%%%%%%%%%Transition to how the algorithms in PID can be replace by AI, ML, 
+%Introduce to MPC, feedforward control in comparison with PID controller
+There are serveral major concerns in the disinfection process that can lower the efficiency of a PLC controller, such as high variability in influent quality, complex reactions between chlorine and pollutants, lack of adequate sensors and actuators, and the difficulties in designing an appropriate porcess control system \citep{demirFeedbackControlChlorine2014a}. To solve the above mentioned issues there are solutions proposed, including forward-feedback control, linearized and optimal control,model-predictive control, and fuzzy control, etc. Among all the solutions, solutions relating to artificial intelligence (AI) received the most attentions by the researchers in the world. According to \citet{liRecentAdvancesArtificial2021}, 
 
+\subsection{Artificial Intelligence}
 Machine learning is a subset of artificial intelligence, and deep learning is a subset 
 of machine learning. In artificial intelligence can be sued to solve four types of problems: 
-classification, regression, dimensionality reduction and clustering. 
-\subsection{Water quality control in drinking water treatment plants}
+classification, regression, dimensionality reduction and clustering.
+\subsection{Comparison of the artificial intelligence model and traditional model in drinking water treatment}
+\subsubsection{Traditional modeling methods}
+In traditional modeling methods, numerical simulations or physical formulas to model target prediction objects. 
+ame training set to process batches and feed batches for ultrafiltration. The interpretation of this model is 
+more accessible than simply using ANN because it is based on physical mechanisms. A semi-physical model can 
+be defined as an aid to a mechanism because it provides an efficient way to determine specific parameters. 
+Nevertheless, its further applications are limited by the assumptions established by the model.
+%The mathematical model or theoretical equation used was limited to the analysis and prediction of membrane pollution under simple conditions (such as a single pollutant or specific working conditions)
+\subsection{Recent advances in time series models for water quality forecasting}
+\subsubsection{Machine learning models}
+%why DL is better than ML?
+\subsubsection{Deep learning models}
+%why we need to use this?
+%Explain the difference between DL and ML
+
+\section{Water quality control with the use of machine learning modeling}
 %%it's better to find papers that can provide comparison between DL and ML or traditional models
-\subsubsection{Disinfection process}
+\subsection{Drinking water treatment plants}
+\citet{librantzArtificialNeuralNetworks2018} uses 6 inputs to train a predictive model to generate chlorination reference set-point and chlorine dosage. 
+
 Disinfection is the last step of water treatment processes in drinking water treatment plants (DWTPs) to generate safe potable water. In this step, one or more chemical disinfectants like chlorine, chloramine, or chlorine dioxide are added into the water to inactivate any remaining pathogenic microorganisms. The residual disinfectant concentration in disinfected water must contains low levels of the chemical disinfectant to stop nuisance growths in the water distribution pipes, storage facilites and conduits. Nowadays, the widely used disinfectant in disinfection process is chlorine as gas or hypochlorite (i.e., in form of liquid solution), and the treatment process is known as "chlorination". According to World Health Organization's Guidelines for Drinking-water Quality (WHO Guidelines), the maximum allowable value for free chlorine residual in drinking water is 5 mg/L, and the minimum recommended valus is 0.2 mg/L. 
 
-Current analysis proposes a multivariable control for post-chlorination dosage system in a WTP using artificial neural networks applied to the disinfection process to reduce free residual chlorine variations of treated water in the water tank and, consequently, in the main water distribution \cite{librantzArtificialNeuralNetworks2018}.
+Current analysis proposes a multivariable control for post-chlorination dosage system in a WTP using artificial neural networks applied to the disinfection process to reduce free residual chlorine variations of treated water in the water tank and, consequently, in the main water distribution \citep{librantzArtificialNeuralNetworks2018}.
 
 %1-Why there is chlorinatino process
 %2-The automation process in chlorination to control the conc. of residual chlorine
@@ -83,8 +74,8 @@ simulation is that it can ex    plain the behaviour evolution mechanism of parti
 treatment process in a very specific way because it is usually based on the collision mechanism 
 with physical meaning and mathematical description
 
-\subsection{Water quality control in wastewater treatment plants}
-\subsection{Water quality control in reclaimed water system}
+\subsection{Wastewater treatment plants}
+\subsection{Reclaimed water system and water body}
 %Describe the need of using decision-making processes for water quality
 %Using examples to show how the decision-making process can benefit water quality control
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -99,24 +90,12 @@ and ammonia concentration in the MBR effluent and at the same time provide
 a predictive model to assist the disinfection control strategy for disinfecting 
 the MBR effluent to meet the endorsed reclaimed water standard.
 
-\section{Recent advances in time series models for water quality forecasting}
-\subsection{Machine learning models}
-%why DL is better than ML?
 
-\subsection{Deep learning models}
-%why we need to use this?
-%Explain the difference between DL and ML
-\subsection{Comparison of the artificial intelligence model and traditional model in drinking water treatment}
-\subsubsection{Traditional modeling methods}
-In traditional modeling methods, numerical simulations or physical formulas to model target prediction objects. 
-ame training set to process batches and feed batches for ultrafiltration. The interpretation of this model is 
-more accessible than simply using ANN because it is based on physical mechanisms. A semi-physical model can 
-be defined as an aid to a mechanism because it provides an efficient way to determine specific parameters. 
-Nevertheless, its further applications are limited by the assumptions established by the model.
-%The mathematical model or theoretical equation used was limited to the analysis and prediction of membrane pollution under simple conditions (such as a single pollutant or specific working conditions)
-\section{Different techniques for enchancing the performance of forecasting models}
-\subsection{Data preprocessing}
+\section{Tools and techniques for enchancing the performance of machine learning modeling}
+\subsection{Programming languages}
 %why python? compared to matlab
+%the library and support
+\subsection{Data preprocessing}
 
 \subsection{Feature engineering}
 %what are the frameworks, and why using them
