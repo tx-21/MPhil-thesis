@@ -1,0 +1,148 @@
+\begin{thebibliography}{15}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Andhare and Palkar(2014)]{andhareSCADAToolIncrease2014}
+Sunil~L Andhare and Prasad~J Palkar.
+\newblock {{SCADA}} a tool to increase efficiency of water treatment plant.
+\newblock \emph{Asian Journal of Engineering and Technology Innovation},
+  page~8, 2014.
+
+\bibitem[Bados and Morejon(2020)]{badosDesignPIDControl2020}
+Jhon Stalin~Figueroa Bados and Iralmy Yipsy~Platero Morejon.
+\newblock Design of a {{PID Control System}} for a {{Wastewater Treatment
+  Plant}}.
+\newblock In \emph{2020 3rd {{International Conference}} on {{Robotics}},
+  {{Control}} and {{Automation Engineering}} ({{RCAE}})}, pages 31--35,
+  {Chongqing, China}, November 2020. {IEEE}.
+\newblock ISBN 978-1-72818-638-2.
+\newblock \doi{10.1109/RCAE51546.2020.9294199}.
+
+\bibitem[{Bulacan State University, City of Malolos, Bulacan, Philippines. He
+  is also with AMA University Quezon City, Philippines} et~al.(2020){Bulacan
+  State University, City of Malolos, Bulacan, Philippines. He is also with AMA
+  University Quezon City, Philippines}, Victoriano, Lacatan, and
+  Vinluan]{bulacanstateuniversitycityofmalolosbulacanphilippines.heisalsowithamauniversityquezoncityphilippinesPredictingRiverPollution2020}
+{Bulacan State University, City of Malolos, Bulacan, Philippines. He is also
+  with AMA University Quezon City, Philippines}, Jayson~M. Victoriano,
+  Luisito~L. Lacatan, and Albert~A. Vinluan.
+\newblock Predicting {{River Pollution Using Random Forest Decision Tree}} with
+  {{GIS Model}}: {{A Case Study}} of {{MMORS}}, {{Philippines}}.
+\newblock \emph{International Journal of Environmental Science and
+  Development}, 11\penalty0 (1):\penalty0 36--42, 2020.
+\newblock ISSN 20100264.
+\newblock \doi{10.18178/ijesd.2020.11.1.1222}.
+
+\bibitem[Cecconi and Rosso(2021)]{cecconiSoftSensingOnLine2021}
+Francesca Cecconi and Diego Rosso.
+\newblock Soft {{Sensing}} for {{On-Line Fault Detection}} of {{Ammonium
+  Sensors}} in {{Water Resource Recovery Facilities}}.
+\newblock \emph{Environmental Science: Water Research and Technology}, 2021.
+\newblock \doi{10.1021/acs.est.0c06111}.
+
+\bibitem[Chen et~al.(2003)Chen, Chang, and
+  Shieh]{chenAssessingWastewaterReclamation2003}
+J.C. Chen, N.B. Chang, and W.K. Shieh.
+\newblock Assessing wastewater reclamation potential by neural network model.
+\newblock \emph{Engineering Applications of Artificial Intelligence},
+  16\penalty0 (2):\penalty0 149--157, March 2003.
+\newblock ISSN 09521976.
+\newblock \doi{10.1016/S0952-1976(03)00056-3}.
+
+\bibitem[Demir and Woo(2014)]{demirFeedbackControlChlorine2014a}
+Feridun Demir and Wilbur~W. Woo.
+\newblock Feedback control over the chlorine disinfection process at a
+  wastewater treatment plant using a {{Smith}} predictor, a method of
+  characteristics and odometric transformation.
+\newblock \emph{Journal of Environmental Chemical Engineering}, 2\penalty0
+  (2):\penalty0 1088--1097, June 2014.
+\newblock ISSN 22133437.
+\newblock \doi{10.1016/j.jece.2014.04.006}.
+
+\bibitem[Guo et~al.(2015)Guo, Jeong, Lim, Jo, Kim, pyo Park, Kim, and
+  Cho]{guoPredictionEffluentConcentration2015}
+Hong Guo, Kwanho Jeong, Jiyeon Lim, Jeongwon Jo, Young~Mo Kim, Jong pyo Park,
+  Joon~Ha Kim, and Kyung~Hwa Cho.
+\newblock Prediction of effluent concentration in a wastewater treatment plant
+  using machine learning models.
+\newblock \emph{Journal of Environmental Sciences (China)}, 32:\penalty0
+  90--101, 2015.
+\newblock \doi{10.1016/j.jes.2015.01.007}.
+
+\bibitem[Kobylinski et~al.(2006)Kobylinski, Hunter, and
+  Shaw]{kobylinskiLineControlStrategies2006}
+Edmund~A. Kobylinski, Gary~L. Hunter, and Andrew~R. Shaw.
+\newblock On {{Line Control Strategies}} for {{Disinfection Systems}}:
+  {{Success}} and {{Failure}}.
+\newblock \emph{Proceedings of the Water Environment Federation}, 2006\penalty0
+  (5):\penalty0 6371--6394, January 2006.
+\newblock ISSN 1938-6478.
+\newblock \doi{10.2175/193864706783761716}.
+
+\bibitem[Li et~al.(2021)Li, Rong, Wang, and Yu]{liRecentAdvancesArtificial2021}
+Lei Li, Shuming Rong, Rui Wang, and Shuili Yu.
+\newblock Recent advances in artificial intelligence and machine learning for
+  nonlinear relationship analysis and process control in drinking water
+  treatment: {{A}} review.
+\newblock \emph{Chemical Engineering Journal}, 405:\penalty0 126673, February
+  2021.
+\newblock ISSN 13858947.
+\newblock \doi{10.1016/j.cej.2020.126673}.
+
+\bibitem[Li et~al.(2022)Li, Zhang, and Krebs]{liPredictionFlowBased2022}
+Peifeng Li, Jin Zhang, and Peter Krebs.
+\newblock Prediction of {{Flow Based}} on a {{CNN-LSTM Combined Deep Learning
+  Approach}}.
+\newblock \emph{Water}, 14\penalty0 (6):\penalty0 993, March 2022.
+\newblock ISSN 2073-4441.
+\newblock \doi{10.3390/w14060993}.
+
+\bibitem[Li et~al.(2018)Li, Ding, Wang, Wen, Zhuo, Liu, Qiu, Xu, Lin, Qian, and
+  Wang]{liERNNDesignOptimization2018}
+Zhe Li, Caiwen Ding, Siyue Wang, Wujie Wen, Youwei Zhuo, Chang Liu, Qinru Qiu,
+  Wenyao Xu, Xue Lin, Xuehai Qian, and Yanzhi Wang.
+\newblock E-{{RNN}}: {{Design Optimization}} for {{Efficient Recurrent Neural
+  Networks}} in {{FPGAs}}, December 2018.
+
+\bibitem[Librantz et~al.(2018)Librantz, dos Santos, and
+  Dias]{librantzArtificialNeuralNetworks2018}
+Andr{\'e}~Felipe Librantz, F{\'a}bio Cosme~Rodrigues dos Santos, and
+  Cleber~Gustavo Dias.
+\newblock Artificial neural networks to control chlorine dosing in a water
+  treatment plant.
+\newblock \emph{Acta Scientiarum. Technology}, 40\penalty0 (1):\penalty0 37275,
+  September 2018.
+\newblock ISSN 1807-8664, 1806-2563.
+\newblock \doi{10.4025/actascitechnol.v40i1.37275}.
+
+\bibitem[Wang and Xiang(2019)]{wangCompositeControlPostChlorine2019}
+Dongsheng Wang and Hao Xiang.
+\newblock Composite {{Control}} of {{Post-Chlorine Dosage During Drinking Water
+  Treatment}}.
+\newblock \emph{IEEE Access}, 7:\penalty0 27893--27898, 2019.
+\newblock ISSN 2169-3536.
+\newblock \doi{10.1109/ACCESS.2019.2901059}.
+
+\bibitem[Xu et~al.(2021)Xu, Xu, Kuang, Lin, Xiao, Huang, and
+  Zhang]{xuAlternativeLaboratoryTesting2021}
+Jianlong Xu, Zhuo Xu, Jianjun Kuang, Che Lin, Lianghong Xiao, Xingshan Huang,
+  and Yufeng Zhang.
+\newblock An {{Alternative}} to {{Laboratory Testing}}: {{Random Forest-Based
+  Water Quality Prediction Framework}} for {{Inland}} and {{Nearshore Water
+  Bodies}}.
+\newblock \emph{Water}, 13\penalty0 (22):\penalty0 3262, November 2021.
+\newblock ISSN 2073-4441.
+\newblock \doi{10.3390/w13223262}.
+
+\bibitem[Zhu and Qiu(2017)]{zhuApplicationPLCSewage2017}
+Huijun Zhu and Xinglei Qiu.
+\newblock The {{Application}} of {{PLC}} in {{Sewage Treatment}}.
+\newblock \emph{Journal of Water Resource and Protection}, 09\penalty0
+  (07):\penalty0 841--850, 2017.
+\newblock ISSN 1945-3094, 1945-3108.
+\newblock \doi{10.4236/jwarp.2017.97056}.
+
+\end{thebibliography}
