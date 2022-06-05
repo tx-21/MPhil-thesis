@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.4.16)  3 JUN 2022 22:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.4.16)  5 JUN 2022 23:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -655,39 +655,39 @@ CHAPTER 1.
 CHAPTER 2.
 [3
 
-] [4] [5] [6] [7]) (/Users/tinghsi/Github/MPhil-thesis/Thesis-latex/chapters/chapter-3-methods.tex [8] [9]
+] [4] [5] [6] [7] [8]) (/Users/tinghsi/Github/MPhil-thesis/Thesis-latex/chapters/chapter-3-methods.tex [9] [10]
 CHAPTER 3.
-) (/Users/tinghsi/Github/MPhil-thesis/Thesis-latex/chapters/chapter-4-results.tex [10
+) (/Users/tinghsi/Github/MPhil-thesis/Thesis-latex/chapters/chapter-4-results.tex [11
 
-] [11]
+] [12]
 CHAPTER 4.
-</Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/fix-length-time-window.png, id=266, 544.0325pt x 435.6275pt>
+</Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/fix-length-time-window.png, id=285, 544.0325pt x 435.6275pt>
 File: /Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/fix-length-time-window.png Graphic file (type png)
 <use /Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/fix-length-time-window.png>
 Package pdftex.def Info: /Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/fix-length-time-window.png  used on input line 7.
 (pdftex.def)             Requested size: 341.43307pt x 273.40982pt.
-) (/Users/tinghsi/Github/MPhil-thesis/Thesis-latex/chapters/chapter-5-conclusion.tex [12
+) (/Users/tinghsi/Github/MPhil-thesis/Thesis-latex/chapters/chapter-5-conclusion.tex [13
 
  </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/fix-length-time-window.png>]
 CHAPTER 5.
-) (/Users/tinghsi/Github/MPhil-thesis/Thesis-latex/thesis.bbl [13
+) (/Users/tinghsi/Github/MPhil-thesis/Thesis-latex/thesis.bbl [14
 
-] [14
+] [15
 
-]) [15] (/Users/tinghsi/Github/MPhil-thesis/Thesis-latex/thesis.aux) ) 
+] [16] [17]) [18] (/Users/tinghsi/Github/MPhil-thesis/Thesis-latex/thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 14833 strings out of 478715
- 258046 string characters out of 5855630
- 537770 words of memory out of 5000000
- 32258 multiletter control sequences out of 15000+600000
+ 14865 strings out of 478715
+ 258978 string characters out of 5855630
+ 538169 words of memory out of 5000000
+ 32283 multiletter control sequences out of 15000+600000
  478418 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,6n,80p,2490b,848s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on /Users/tinghsi/Github/MPhil-thesis/Thesis-latex/thesis.pdf (25 pages, 195080 bytes).
+ 74i,6n,80p,2490b,880s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on /Users/tinghsi/Github/MPhil-thesis/Thesis-latex/thesis.pdf (28 pages, 212342 bytes).
 PDF statistics:
- 492 PDF objects out of 1000 (max. 8388607)
- 453 compressed objects within 5 object streams
- 93 named destinations out of 1000 (max. 500000)
- 438 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 508 PDF objects out of 1000 (max. 8388607)
+ 465 compressed objects within 5 object streams
+ 100 named destinations out of 1000 (max. 500000)
+ 398 words of extra memory for PDF output out of 10000 (max. 10000000)
 

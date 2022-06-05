@@ -1,4 +1,4 @@
-\begin{thebibliography}{15}
+\begin{thebibliography}{24}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -20,21 +20,6 @@ Jhon Stalin~Figueroa Bados and Iralmy Yipsy~Platero Morejon.
   {Chongqing, China}, November 2020. {IEEE}.
 \newblock ISBN 978-1-72818-638-2.
 \newblock \doi{10.1109/RCAE51546.2020.9294199}.
-
-\bibitem[{Bulacan State University, City of Malolos, Bulacan, Philippines. He
-  is also with AMA University Quezon City, Philippines} et~al.(2020){Bulacan
-  State University, City of Malolos, Bulacan, Philippines. He is also with AMA
-  University Quezon City, Philippines}, Victoriano, Lacatan, and
-  Vinluan]{bulacanstateuniversitycityofmalolosbulacanphilippines.heisalsowithamauniversityquezoncityphilippinesPredictingRiverPollution2020}
-{Bulacan State University, City of Malolos, Bulacan, Philippines. He is also
-  with AMA University Quezon City, Philippines}, Jayson~M. Victoriano,
-  Luisito~L. Lacatan, and Albert~A. Vinluan.
-\newblock Predicting {{River Pollution Using Random Forest Decision Tree}} with
-  {{GIS Model}}: {{A Case Study}} of {{MMORS}}, {{Philippines}}.
-\newblock \emph{International Journal of Environmental Science and
-  Development}, 11\penalty0 (1):\penalty0 36--42, 2020.
-\newblock ISSN 20100264.
-\newblock \doi{10.18178/ijesd.2020.11.1.1222}.
 
 \bibitem[Cecconi and Rosso(2021)]{cecconiSoftSensingOnLine2021}
 Francesca Cecconi and Diego Rosso.
@@ -61,6 +46,38 @@ Feridun Demir and Wilbur~W. Woo.
   (2):\penalty0 1088--1097, June 2014.
 \newblock ISSN 22133437.
 \newblock \doi{10.1016/j.jece.2014.04.006}.
+
+\bibitem[Gamiz et~al.(2020)Gamiz, Vilanova, {Martinez-Garcia}, Bolea, and
+  Grau]{gamizFuzzyGainScheduling2020}
+Javier Gamiz, Ramon Vilanova, Herminio {Martinez-Garcia}, Yolanda Bolea, and
+  Antoni Grau.
+\newblock Fuzzy {{Gain Scheduling}} and {{Feed-Forward Control}} for {{Drinking
+  Water Treatment Plants}} ({{DWTP}}) {{Chlorination Process}}.
+\newblock \emph{IEEE Access}, 8:\penalty0 110018--110032, 2020.
+\newblock ISSN 2169-3536.
+\newblock \doi{10.1109/ACCESS.2020.3002156}.
+
+\bibitem[Gani et~al.(2017)Gani, Mohamed~Sunar, {Matias-Peralta}, and
+  Abdul~Latiff]{ganiEffectPHAlum2017}
+Paran Gani, Norshuhaila Mohamed~Sunar, Hazel {Matias-Peralta}, and Ab~Aziz
+  Abdul~Latiff.
+\newblock Effect of {{pH}} and alum dosage on the efficiency of microalgae
+  harvesting via flocculation technique.
+\newblock \emph{International Journal of Green Energy}, 14\penalty0
+  (4):\penalty0 395--399, March 2017.
+\newblock ISSN 1543-5075, 1543-5083.
+\newblock \doi{10.1080/15435075.2016.1261707}.
+
+\bibitem[{Godo-Pla} et~al.(2021){Godo-Pla}, Rodr{\'i}guez, Suquet, Emiliano,
+  Valero, Poch, and Moncl{\'u}s]{godo-plaControlPrimaryDisinfection2021}
+Llu{\'i}s {Godo-Pla}, Jose~Javier Rodr{\'i}guez, Jordi Suquet, Pere Emiliano,
+  Fernando Valero, Manel Poch, and H{\`e}ctor Moncl{\'u}s.
+\newblock Control of primary disinfection in a drinking water treatment plant
+  based on a fuzzy inference system.
+\newblock \emph{Process Safety and Environmental Protection}, 145:\penalty0
+  63--70, January 2021.
+\newblock ISSN 09575820.
+\newblock \doi{10.1016/j.psep.2020.07.037}.
 
 \bibitem[Guo et~al.(2015)Guo, Jeong, Lim, Jo, Kim, pyo Park, Kim, and
   Cho]{guoPredictionEffluentConcentration2015}
@@ -118,6 +135,23 @@ Andr{\'e}~Felipe Librantz, F{\'a}bio Cosme~Rodrigues dos Santos, and
 \newblock ISSN 1807-8664, 1806-2563.
 \newblock \doi{10.4025/actascitechnol.v40i1.37275}.
 
+\bibitem[Sant{\'i}n et~al.(2015)Sant{\'i}n, Pedret, and
+  Vilanova]{santinFuzzyControlModel2015}
+I.~Sant{\'i}n, C.~Pedret, and R.~Vilanova.
+\newblock Fuzzy {{Control}} and {{Model Predictive Control Configurations}} for
+  {{Effluent Violations Removal}} in {{Wastewater Treatment Plants}}.
+\newblock \emph{Industrial \& Engineering Chemistry Research}, 54\penalty0
+  (10):\penalty0 2763--2775, March 2015.
+\newblock ISSN 0888-5885, 1520-5045.
+\newblock \doi{10.1021/ie504079q}.
+
+\bibitem[Stevenson and Bravo(2019)]{stevensonAdvancedTurbidityPrediction2019}
+Matthew Stevenson and Cristi{\'a}n Bravo.
+\newblock Advanced turbidity prediction for operational water supply planning.
+\newblock \emph{Decision Support Systems}, 119:\penalty0 72--84, April 2019.
+\newblock ISSN 01679236.
+\newblock \doi{10.1016/j.dss.2019.02.009}.
+
 \bibitem[Wang and Xiang(2019)]{wangCompositeControlPostChlorine2019}
 Dongsheng Wang and Hao Xiang.
 \newblock Composite {{Control}} of {{Post-Chlorine Dosage During Drinking Water
@@ -125,6 +159,32 @@ Dongsheng Wang and Hao Xiang.
 \newblock \emph{IEEE Access}, 7:\penalty0 27893--27898, 2019.
 \newblock ISSN 2169-3536.
 \newblock \doi{10.1109/ACCESS.2019.2901059}.
+
+\bibitem[Wang et~al.(2020)Wang, Shen, Zhu, and
+  Jiang]{wangModelPredictiveControl2020}
+Dongsheng Wang, Jingjin Shen, Songhao Zhu, and Guoping Jiang.
+\newblock Model predictive control for chlorine dosing of drinking water
+  treatment based on support vector machine model.
+\newblock \emph{DESALINATION AND WATER TREATMENT}, 173:\penalty0 133--141,
+  2020.
+\newblock \doi{10.5004/dwt.2020.24144}.
+
+\bibitem[Wang et~al.(2022)Wang, Asefa, and
+  Thornburgh]{wangIntegratingWaterQuality2022}
+Hui Wang, Tirusew Asefa, and Jack Thornburgh.
+\newblock Integrating water quality and streamflow into prediction of chemical
+  dosage in a drinking water treatment plant using machine learning algorithms.
+\newblock \emph{Water Supply}, 22\penalty0 (3):\penalty0 2803--2815, March
+  2022.
+\newblock ISSN 1606-9749, 1607-0798.
+\newblock \doi{10.2166/ws.2021.435}.
+
+\bibitem[{World Health
+  Organization}(2017)]{worldhealthorganizationWaterQualityHealth2017}
+{World Health Organization}.
+\newblock Water quality and health - review of turbidity: Information for
+  regulators and water suppliers.
+\newblock Technical report, {World Health Organization}, {Geneva}, 2017.
 
 \bibitem[Xu et~al.(2021)Xu, Xu, Kuang, Lin, Xiao, Huang, and
   Zhang]{xuAlternativeLaboratoryTesting2021}
@@ -136,6 +196,25 @@ Jianlong Xu, Zhuo Xu, Jianjun Kuang, Che Lin, Lianghong Xiao, Xingshan Huang,
 \newblock \emph{Water}, 13\penalty0 (22):\penalty0 3262, November 2021.
 \newblock ISSN 2073-4441.
 \newblock \doi{10.3390/w13223262}.
+
+\bibitem[Xu et~al.(2022)Xu, Shen, Qu, Chen, Zhou, Hong, Sun, Lin, Deng, and
+  Wu]{xuUsingSimpleEasy2022}
+Zeqiong Xu, Jiao Shen, Yuqing Qu, Huangfei Chen, Xiaoling Zhou, Huachang Hong,
+  Hongjie Sun, Hongjun Lin, Wenjing Deng, and Fuyong Wu.
+\newblock Using simple and easy water quality parameters to predict
+  trihalomethane occurrence in tap water.
+\newblock \emph{Chemosphere}, 286:\penalty0 131586, January 2022.
+\newblock ISSN 00456535.
+\newblock \doi{10.1016/j.chemosphere.2021.131586}.
+
+\bibitem[Zaghloul et~al.(2021)Zaghloul, Iorhemen, Hamza, Tay, and
+  Achari]{zaghloulDevelopmentEnsembleMachine2021}
+Mohamed~Sherif Zaghloul, Oliver~Terna Iorhemen, Rania~Ahmed Hamza, Joo~Hwa Tay,
+  and Gopal Achari.
+\newblock Development of an ensemble of machine learning algorithms to model
+  aerobic granular sludge reactors.
+\newblock \emph{Water Research}, 189:\penalty0 116657--116657, 2021.
+\newblock \doi{10.1016/j.watres.2020.116657}.
 
 \bibitem[Zhu and Qiu(2017)]{zhuApplicationPLCSewage2017}
 Huijun Zhu and Xinglei Qiu.
