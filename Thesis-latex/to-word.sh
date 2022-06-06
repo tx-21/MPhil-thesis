@@ -1,0 +1,1 @@
+pandoc --citeproc --number-sections --csl water-research.csl --bibliography MPhil-thesis-papers.bib -M reference-section-title="Reference" -M link-citations=true thesis.tex -o thesis.docx

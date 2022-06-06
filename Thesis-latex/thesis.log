@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.4.16)  5 JUN 2022 23:11
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.4.16)  6 JUN 2022 11:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -678,13 +678,13 @@ CHAPTER 5.
 Here is how much of TeX's memory you used:
  14865 strings out of 478715
  258978 string characters out of 5855630
- 538169 words of memory out of 5000000
+ 538174 words of memory out of 5000000
  32283 multiletter control sequences out of 15000+600000
  478418 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,6n,80p,2490b,880s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on /Users/tinghsi/Github/MPhil-thesis/Thesis-latex/thesis.pdf (28 pages, 212342 bytes).
+Output written on /Users/tinghsi/Github/MPhil-thesis/Thesis-latex/thesis.pdf (28 pages, 212359 bytes).
 PDF statistics:
  508 PDF objects out of 1000 (max. 8388607)
  465 compressed objects within 5 object streams
