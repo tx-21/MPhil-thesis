@@ -1,6 +1,5 @@
 \addvspace {1pt}
 \addvspace {1pt}
 \addvspace {1pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces The network structure for the actor-evaluation estimation. It is a combination of convolutional networks for feature extraction and fullyconnected layers for policy learning. They have been separately proven to be effective in our previous works.\relax }}{13}{figure.caption.5}%
 \addvspace {1pt}
 \addvspace {1pt}
