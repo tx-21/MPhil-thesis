@@ -42,8 +42,8 @@
 \contentsline {section}{\numberline {3.4}Implementation of regularization}{13}{section.3.4}%
 \contentsline {subsection}{\numberline {3.4.1}Scheduler}{13}{subsection.3.4.1}%
 \contentsline {chapter}{{Chapter 4}\hspace {1em}Results and Discussion}{14}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Baseline performance}{14}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Pre-processing}{14}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Feature engineering}{14}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Architecture desing}{14}{section.4.4}%
+\contentsline {section}{\numberline {4.1}Baseline performance of ammonia concentration and colour level forecasting models}{14}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Improved performance on forecasting models using data pre-processing techniques}{14}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Data enrichment via feature engineering based on effluent quality pattern}{14}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Design of model architecture through analyzing wastewater composition in sewer system}{14}{section.4.4}%
 \contentsline {chapter}{{Chapter 5}\hspace {1em}Conclusion}{15}{chapter.5}%
