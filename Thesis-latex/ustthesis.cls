@@ -635,6 +635,9 @@
 % Chan:
 %	Make changes according to the guidelines released on March 2001.
 %	"Authorsation" is changed to "Authorization" instead.
+
+
+
 \def\authorise{
 %	\pchapter{Authorisation}
 %        \addcontentsline{toc}{chapter}{Authorisation Page}

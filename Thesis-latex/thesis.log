@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.27)  10 JUN 2022 10:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.27)  10 JUN 2022 20:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -395,29 +395,40 @@ Package geometry Warning: Over-specification in `h'-direction.
 Package geometry Warning: Over-specification in `v'-direction.
     `height' (702.78307pt) is ignored.
 
+) (C:\Users\Tim\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
+Package: fancyhdr 2022/05/18 v4.0.3 Extensive control of page headers and footers
+\f@nch@headwidth=\skip65
+\f@nch@O@elh=\skip66
+\f@nch@O@erh=\skip67
+\f@nch@O@olh=\skip68
+\f@nch@O@orh=\skip69
+\f@nch@O@elf=\skip70
+\f@nch@O@erf=\skip71
+\f@nch@O@olf=\skip72
+\f@nch@O@orf=\skip73
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 120.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 121.
  (thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 120.
-LaTeX Font Info:    ... okay on input line 120.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 121.
+LaTeX Font Info:    ... okay on input line 121.
  (C:\Users\Tim\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count321
@@ -439,14 +450,14 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 )) (C:\Users\Tim\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 120.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 121.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: changepage package is loaded.
 \caption@adjustwidth@hsize=\dimen184
 \caption@adjustwidth@linewidth=\dimen185
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 120.
+Package hyperref Info: Link coloring OFF on input line 121.
  (C:\Users\Tim\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (C:\Users\Tim\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
@@ -456,9 +467,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count327
 )
-LaTeX Info: Redefining \ref on input line 120.
-LaTeX Info: Redefining \pageref on input line 120.
-LaTeX Info: Redefining \nameref on input line 120.
+LaTeX Info: Redefining \ref on input line 121.
+LaTeX Info: Redefining \pageref on input line 121.
+LaTeX Info: Redefining \nameref on input line 121.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -505,32 +516,32 @@ Warning: \subject {Subject Name} not yet defined.
 Title page
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\nbi' on input line 133.
+(hyperref)                removing `\nbi' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\nbi' on input line 133.
+(hyperref)                removing `\nbi' on input line 134.
 
 [1
 
 
 {C:/Users/Tim/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 133.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 134.
  (C:\Users\Tim\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 133.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 134.
  (C:\Users\Tim\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Authorization Page
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\nbi' on input line 133.
+(hyperref)                removing `\nbi' on input line 134.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\nbi' on input line 133.
+(hyperref)                removing `\nbi' on input line 134.
 
 [2] (sections/signature.tex
 Signature Page
@@ -545,11 +556,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [3]) (sections/ack.tex)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\nbi' on input line 173.
+(hyperref)                removing `\nbi' on input line 178.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\nbi' on input line 173.
+(hyperref)                removing `\nbi' on input line 178.
 
 [4]
 Table of Contents
@@ -571,11 +582,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\nbi' on input line 181.
+(hyperref)                removing `\nbi' on input line 186.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\nbi' on input line 181.
+(hyperref)                removing `\nbi' on input line 186.
 
 [6]
 List of Figures
@@ -586,11 +597,11 @@ List of Figures
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\nbi' on input line 189.
+(hyperref)                removing `\nbi' on input line 194.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\nbi' on input line 189.
+(hyperref)                removing `\nbi' on input line 194.
 
 [7
 
@@ -641,33 +652,118 @@ CHAPTER 1.
 CHAPTER 2.
 [3
 
-] [4] [5] [6] [7] [8] [9] [10]) (chapters/chapter-3-methods.tex [11]
+] [4] [5] [6] [7] [8] [9] [10] [11]) (chapters/chapter-3-methods.tex [12]
 CHAPTER 3.
-) (chapters/chapter-4-results.tex [12
 
-] [13]
+Overfull \hbox (63.83107pt too wide) in paragraph at lines 6--7
+[]\OT1/cmr/m/n/12 TheMBRisaprocessthatintegratesbiodegradationofcontaminants byactivatedsludge,withdirectsolid-
+ []
+
+
+Overfull \hbox (654.65968pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/n/12 liquidseparationbymembrane fil-tra-tion,i.e.throughaMForUFmembrane.TheMBRtechnologyiscurrentlywidelyacceptedasanalternativekeytechnologytoCAStreatmentutilizedinurbanWWTPsandwaterreuseapplications.The
+ []
+
+
+Overfull \hbox (7.69276pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/n/12 wideuse-ofM-BR-shas-beenat-tribut-ed-toit-sno-tablead-van-tages,such ashigh-qual-i-ty-of-pro-duced-wa-
+ []
+
+
+Overfull \hbox (47.51596pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/n/12 ter,highbiodegradationefficiencyof con-tam-i-nants,andanoverallsmallerfootprint(JuddandJudd,2011).
+ []
+
+
+Overfull \hbox (57.59372pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/n/12 solids(MLSS)concentrationthanCAS sys-tems,whicharelimitedbysludgesettlingphenomena.Theprocess
+ []
+
+
+Overfull \hbox (498.32936pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/n/12 in-M-BR-sistyp-i-cal-ly-op-er-ate-datMLSSintherangeof8{12g/L,while CA-Sisop-er-ate-dintherangeof2{3g/L(Melinetal.,2006),thusprovidinghighbiologicalactivityperunitvolume.Thisfeaturefavoursthe
+ []
+
+
+Overfull \hbox (182.9701pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/n/12 generationofslow-growingbacteria,whichhavetheabilitytodegrade certainbiologically-recalcitrantorganicandinorganicpollutants
+ []
+
+
+Overfull \hbox (10.63855pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/n/12 (Clouzote-tal.,2011).Therefore,despitenotbeendesignedtoremove or-gan-i-can-di-nor-gan-icmi-crop-
+ []
+
+
+Overfull \hbox (73.64905pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/n/12 ol-lu-tants,MBRsmayprovideeffectiveremovalofsomeoftheCEC.EarlystudiesreportedimprovedCECremoval
+ []
+
+
+Overfull \hbox (7.31502pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/n/12 withM-BRscom-pared-to-CAS,asMBRsoperateatahigherSRTthanCAS, thusen-hanc-ing-con-tam-
+ []
+
+
+Overfull \hbox (97.54507pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/n/12 i-nant-biodegrad-abil-ity(Holbrooketal.,2002; Stephen-sone-tal.,2007).However,whenMBRsandCASwerecompared
+ []
+
+
+Overfull \hbox (165.82863pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/n/12 un-der-sim-i-lar-op-er-at-ing-con-di-tions(i.e.,SRT,temperature)intheremovalofCEC,nosignificantdifferenceswereobserved(Jossetal.,
+ []
+
+
+Overfull \hbox (183.66318pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/n/12 2006;Bou-jue-tal.,2009;WeissandReemtsma,2008;Abegglenetal., 2009).There-fore,itwaspostulatedthatMBRsandCASsystemsmay
+ []
+
+
+Overfull \hbox (7.56221pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/n/12 per-form-sim-i-la-ras-lon-gas-the-same-op-er-at-ing-con-di-tion-sare-pro-vided, al-thoughM-BRs-may-out-per-
+ []
+
+
+Overfull \hbox (5.27751pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/n/12 form-CASathigh-er-SRT.Thisisbecause CE-Care-gen-er-al-ly-high-lysol-uble-an-drel-a-tivelysmall-com-
+ []
+
+
+Overfull \hbox (13.40244pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/n/12 pounds,typicallybelow1000Da,whichcanfreelypassthroughthemembranes used-in-M-BRsys-tem-
+ []
+
+
+Overfull \hbox (729.51862pt too wide) in paragraph at lines 6--7
+\OT1/cmr/m/n/12 s-there-byindi-cat-ingth-atthose-mem-brane-shave nodi-rectim-pacton-ther-e-moval-ofCEC(Snyderetal.,2007).OthersreportthatMBRsareabletoeffectivelyremoveawidespectrumofCECincludingcompoundsthatarenoteliminatedduringCASprocesses
+ []
+
+[13
+
+]) (chapters/chapter-4-results.tex [14] [15]
 CHAPTER 4.
-) (chapters/chapter-5-conclusion.tex [14
+) (chapters/chapter-5-conclusion.tex [16
 
 ]
 CHAPTER 5.
-) (thesis.bbl [15
+) (thesis.bbl [17
 
-] [16
+] [18
 
-] [17] [18]) [19] (thesis.aux) ) 
+] [19] [20]) [21] (thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 16997 strings out of 478582
- 328028 string characters out of 2845288
- 584776 words of memory out of 3000000
- 34845 multiletter control sequences out of 15000+600000
- 477006 words of font info for 56 fonts, out of 8000000 for 9000
+ 17190 strings out of 478582
+ 331173 string characters out of 2845288
+ 588393 words of memory out of 3000000
+ 35027 multiletter control sequences out of 15000+600000
+ 477343 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,6n,79p,2499b,925s stack positions out of 10000i,1000n,20000p,200000b,80000s
-<C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (29 pages, 204455 bytes).
+ 74i,6n,79p,2499b,927s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ <C:\Users\Tim\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
+Output written on thesis.pdf (31 pages, 215422 bytes).
 PDF statistics:
- 508 PDF objects out of 1000 (max. 8388607)
- 100 named destinations out of 1000 (max. 500000)
- 393 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 538 PDF objects out of 1000 (max. 8388607)
+ 106 named destinations out of 1000 (max. 500000)
+ 401 words of extra memory for PDF output out of 10000 (max. 10000000)
 

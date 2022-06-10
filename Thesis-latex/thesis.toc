@@ -19,31 +19,32 @@
 \contentsline {subsection}{\numberline {2.2.1}Drinking water treatment plants}{7}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Wastewater treatment plants}{10}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Reclaimed water system and water body}{11}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}Tools and techniques for enchancing the performance of machine learning modeling}{11}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Programming languages}{11}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Data preprocessing}{11}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Feature engineering}{11}{subsection.2.3.3}%
-\contentsline {chapter}{{Chapter 3}\hspace {1em}Methods and Materials}{12}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Wastewater treatment plant description}{12}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Treatment processes}{12}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Reclaimed water standard }{12}{subsection.3.1.2}%
-\contentsline {section}{\numberline {3.2}Data collection and preparation}{12}{section.3.2}%
-\contentsline {subsection}{\numberline {3.2.1}Ammonia data monitoring and collection}{12}{subsection.3.2.1}%
-\contentsline {subsection}{\numberline {3.2.2}Color data monitoring and collection}{12}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Data cleaning and pre-processing}{12}{subsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.3.1}Data smoothing with Savitzky-Golay filter}{12}{subsubsection.3.2.3.1}%
-\contentsline {subsubsection}{\numberline {3.2.3.2}Exponentially Weighted Moving Average}{12}{subsubsection.3.2.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.3.3}Outlier Removal}{12}{subsubsection.3.2.3.3}%
-\contentsline {subsection}{\numberline {3.2.4}Data transformation}{12}{subsection.3.2.4}%
-\contentsline {section}{\numberline {3.3}Architecture design of the selected baseline models}{13}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}LSTM}{13}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}RNN}{13}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}GRU}{13}{subsection.3.3.3}%
-\contentsline {section}{\numberline {3.4}Implementation of regularization}{13}{section.3.4}%
-\contentsline {subsection}{\numberline {3.4.1}Scheduler}{13}{subsection.3.4.1}%
-\contentsline {chapter}{{Chapter 4}\hspace {1em}Results and Discussion}{14}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Baseline performance of ammonia concentration and colour level forecasting models}{14}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Improved performance on forecasting models using data pre-processing techniques}{14}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Data enrichment via feature engineering based on effluent quality pattern}{14}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Design of model architecture through analyzing wastewater composition in sewer system}{14}{section.4.4}%
-\contentsline {chapter}{{Chapter 5}\hspace {1em}Conclusion}{15}{chapter.5}%
+\contentsline {section}{\numberline {2.3}Tools and techniques for enchancing the performance of machine learning modeling}{12}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Programming languages}{12}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Data preprocessing}{12}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Feature engineering}{12}{subsection.2.3.3}%
+\contentsline {chapter}{{Chapter 3}\hspace {1em}Methods and Materials}{13}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Wastewater treatment plant description}{13}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Treatment processes}{13}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}Reclaimed water standard }{14}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Data collection and preparation}{14}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Ammonia data monitoring and collection}{14}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Color data monitoring and collection}{14}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Metrics for model evaluation}{14}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Data cleaning and pre-processing}{14}{subsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.4.1}Data smoothing with Savitzky-Golay filter}{14}{subsubsection.3.2.4.1}%
+\contentsline {subsubsection}{\numberline {3.2.4.2}Exponentially Weighted Moving Average}{14}{subsubsection.3.2.4.2}%
+\contentsline {subsubsection}{\numberline {3.2.4.3}Outlier Removal}{14}{subsubsection.3.2.4.3}%
+\contentsline {subsection}{\numberline {3.2.5}Data transformation}{14}{subsection.3.2.5}%
+\contentsline {section}{\numberline {3.3}Architecture design of the selected baseline models}{15}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}LSTM}{15}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}RNN}{15}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}GRU}{15}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Implementation of regularization}{15}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Scheduler}{15}{subsection.3.4.1}%
+\contentsline {chapter}{{Chapter 4}\hspace {1em}Results and Discussion}{16}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Baseline performance of ammonia concentration and colour level forecasting models}{16}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Improved performance on forecasting models using data pre-processing techniques}{16}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Data enrichment via feature engineering based on effluent quality pattern}{16}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Design of model architecture through analyzing wastewater composition in sewer system}{16}{section.4.4}%
+\contentsline {chapter}{{Chapter 5}\hspace {1em}Conclusion}{17}{chapter.5}%
