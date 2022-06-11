@@ -1,4 +1,4 @@
-\begin{thebibliography}{27}
+\begin{thebibliography}{32}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -98,6 +98,16 @@ Hong Guo, Kwanho Jeong, Jiyeon Lim, Jeongwon Jo, Young~Mo Kim, Jong pyo Park,
   90--101, 2015.
 \newblock \doi{10.1016/j.jes.2015.01.007}.
 
+\bibitem[Haimi et~al.(2015)Haimi, Corona, Mulas, Sundell, Heinonen, and
+  Vahala]{haimiShallWeUse2015}
+Henri Haimi, Francesco Corona, Michela Mulas, Laura Sundell, Mari Heinonen, and
+  Riku Vahala.
+\newblock Shall we use hardware sensor measurements or soft-sensor estimates?
+  {{Case}} study in a full-scale {{WWTP}}.
+\newblock \emph{Environmental Modelling and Software}, 72:\penalty0 215--229,
+  2015.
+\newblock \doi{10.1016/j.envsoft.2015.07.013}.
+
 \bibitem[Kobylinski et~al.(2006)Kobylinski, Hunter, and
   Shaw]{kobylinskiLineControlStrategies2006}
 Edmund~A. Kobylinski, Gary~L. Hunter, and Andrew~R. Shaw.
@@ -168,6 +178,16 @@ Giorgio Mannina, Taise~Ferreira Rebou{\c c}as, Alida Cosenza, Miquel
 \newblock ISSN 09608524.
 \newblock \doi{10.1016/j.biortech.2019.121814}.
 
+\bibitem[Pattnaik et~al.(2021)Pattnaik, Pattanayak, Udgata, and
+  Panda]{pattnaikMachineLearningBased2021}
+Bhawani~Shankar Pattnaik, Arunima~Sambhuta Pattanayak, Siba~Kumar Udgata, and
+  Ajit~Kumar Panda.
+\newblock Machine learning based soft sensor model for {{BOD}} estimation using
+  intelligence at edge.
+\newblock \emph{Complex \& Intelligent Systems}, 7\penalty0 (2):\penalty0
+  961--976, 2021.
+\newblock \doi{10.1007/s40747-020-00259-9}.
+
 \bibitem[Sant{\'i}n et~al.(2015)Sant{\'i}n, Pedret, and
   Vilanova]{santinFuzzyControlModel2015}
 I.~Sant{\'i}n, C.~Pedret, and R.~Vilanova.
@@ -184,6 +204,17 @@ Matthew Stevenson and Cristi{\'a}n Bravo.
 \newblock \emph{Decision Support Systems}, 119:\penalty0 72--84, April 2019.
 \newblock ISSN 01679236.
 \newblock \doi{10.1016/j.dss.2019.02.009}.
+
+\bibitem[Wang et~al.(2021)Wang, Thun{\'e}ll, Lindberg, Jiang, Trygg, Tysklind,
+  and Souihi]{wangMachineLearningFramework2021}
+Dong Wang, Sven Thun{\'e}ll, Ulrika Lindberg, Lili Jiang, Johan Trygg, Mats
+  Tysklind, and Nabil Souihi.
+\newblock A machine learning framework to improve effluent quality control in
+  wastewater treatment plants.
+\newblock \emph{Science of The Total Environment}, 784:\penalty0 147138, August
+  2021.
+\newblock ISSN 00489697.
+\newblock \doi{10.1016/j.scitotenv.2021.147138}.
 
 \bibitem[Wang and Xiang(2019)]{wangCompositeControlPostChlorine2019}
 Dongsheng Wang and Hao Xiang.
@@ -211,6 +242,25 @@ Hui Wang, Tirusew Asefa, and Jack Thornburgh.
   2022.
 \newblock ISSN 1606-9749, 1607-0798.
 \newblock \doi{10.2166/ws.2021.435}.
+
+\bibitem[Wang et~al.(2019)Wang, Kvaal, and
+  Ratnaweera]{wangExplicitInterpretableNonlinear2019}
+Xiaodong Wang, Knut Kvaal, and Harsha Ratnaweera.
+\newblock Explicit and interpretable nonlinear soft sensor models for influent
+  surveillance at a full-scale wastewater treatment plant.
+\newblock \emph{Journal of Process Control}, 77:\penalty0 1--6, 2019.
+\newblock \doi{10.1016/j.jprocont.2019.03.005}.
+
+\bibitem[Wil{\'e}n et~al.(2018)Wil{\'e}n, Li{\'e}bana, Persson, Modin, and
+  Hermansson]{wilenMechanismsGranulationActivated2018}
+Britt-Marie Wil{\'e}n, Raquel Li{\'e}bana, Frank Persson, Oskar Modin, and
+  Malte Hermansson.
+\newblock The mechanisms of granulation of activated sludge in wastewater
+  treatment, its optimization, and impact on effluent quality.
+\newblock \emph{Applied Microbiology and Biotechnology}, 102\penalty0
+  (12):\penalty0 5005--5020, June 2018.
+\newblock ISSN 0175-7598, 1432-0614.
+\newblock \doi{10.1007/s00253-018-8990-9}.
 
 \bibitem[{World Health
   Organization}(2017)]{worldhealthorganizationWaterQualityHealth2017}

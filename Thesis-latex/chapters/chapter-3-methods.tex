@@ -12,12 +12,17 @@ Most AI techniques were modeled using experimental data to simulate, predict con
 \subsection{Metrics for model evaluation}
 AI methods have been demonstrated to be effective in controlling chlorination, while ML models are effective in modeling DBP concentrations, as well as modeling important parameters for adsorption and membrane-filtration processes. The results are often evaluated using various statistical measures including the coefficient of correlation (R), the coefficient of determination (R2), the mean average error (MAE), the mean square error (MSE), the root mean square error (RMSE), and relative error (RE).
 \subsection{Data cleaning and pre-processing}
+However, the raw high-resolution data from each meter were compressed by averaging over 10-minute periods to obtain time series with temporal resolutions of 10 min.
+
+he original data were embedded in multiple matrices and were very messy, with missing values, bad data cells, and unnecessary information. Therefore, the Python modules Numpy (Oliphant, 2006) and Pandas (McKinney, 2010) were used to prepare an organized ‘clean’ dataset for analysis. This dataset contained 105,861 samples (data points) with 34 variables, giving a matrix size of 105,861 × 34. The samples were organized in time series with 10min intervals.
 \subsubsection{Data smoothing with Savitzky-Golay filter}
 \subsubsection{Exponentially Weighted Moving Average}
 \subsubsection{Outlier Removal}
 \subsection{Data transformation}
 Split of Train/valid/test dataset 
 \section{Architecture design of the selected baseline models}
+\subsection{Random Forest}
+F can be described as an ensemble method in which the final result is obtained by aggregating (through averaging in the case of regression) results from multiple weak learners known as Classification and Regression Trees (CARTs) (Breiman, 2017). Each weak learner (tree) is trained on the bootstrap set, which is obtained by sampling with replacement from the original training set. For trees, the input variables are used to generate nodes. These variables are selected partially and randomly as a subset in every split, then the variable contributing to the smallest sum of impurity of two child nodes at a certain split point is chosen as the split variable. This is done repeatedly until the trees don't need to split anymore. The regression impurity of a particular node is defined by Eqs. (2), (3) and (4), \citep{wangMachineLearningFramework2021}
 \subsection{LSTM}
 \subsection{RNN}
 \subsection{GRU}
