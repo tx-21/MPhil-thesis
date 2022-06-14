@@ -1,48 +1,46 @@
-This is BibTeX, Version 0.99d
+This is BibTeX, Version 0.99d (TeX Live 2021)
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
-Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: plainnat.bst
-Reallocating 'name_of_file' (item size: 1) to 20 items.
 Database file #1: MPhil-thesis-papers.bib
-You've used 32 entries,
+You've used 34 entries,
             2773 wiz_defined-function locations,
-            868 strings with 15378 characters,
-and the built_in function-call counts, 18884 in all, are:
-= -- 1717
-> -- 1372
+            884 strings with 16158 characters,
+and the built_in function-call counts, 20035 in all, are:
+= -- 1816
+> -- 1468
 < -- 11
-+ -- 458
-- -- 426
-* -- 1789
-:= -- 3008
-add.period$ -- 147
-call.type$ -- 32
-change.case$ -- 239
-chr.to.int$ -- 32
-cite$ -- 64
-duplicate$ -- 665
-empty$ -- 1265
-format.name$ -- 474
-if$ -- 3846
++ -- 490
+- -- 456
+* -- 1900
+:= -- 3195
+add.period$ -- 155
+call.type$ -- 34
+change.case$ -- 255
+chr.to.int$ -- 34
+cite$ -- 68
+duplicate$ -- 706
+empty$ -- 1337
+format.name$ -- 506
+if$ -- 4077
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 30
-newline$ -- 218
-num.names$ -- 128
-pop$ -- 375
+missing$ -- 32
+newline$ -- 230
+num.names$ -- 136
+pop$ -- 401
 preamble$ -- 1
-purify$ -- 206
+purify$ -- 220
 quote$ -- 0
-skip$ -- 532
+skip$ -- 567
 stack$ -- 0
-substring$ -- 761
-swap$ -- 61
+substring$ -- 790
+swap$ -- 63
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 352
+type$ -- 374
 warning$ -- 0
-while$ -- 147
+while$ -- 155
 width$ -- 0
-write$ -- 524
+write$ -- 554

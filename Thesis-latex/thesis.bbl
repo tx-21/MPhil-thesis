@@ -1,4 +1,4 @@
-\begin{thebibliography}{32}
+\begin{thebibliography}{34}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -168,6 +168,16 @@ Andr{\'e}~Felipe Librantz, F{\'a}bio Cosme~Rodrigues dos Santos, and
 \newblock ISSN 1807-8664, 1806-2563.
 \newblock \doi{10.4025/actascitechnol.v40i1.37275}.
 
+\bibitem[Mamandipoor et~al.(2020)Mamandipoor, Majd, Sheikhalishahi, Modena, and
+  Osmani]{mamandipoorMonitoringDetectingFaults2020}
+Behrooz Mamandipoor, Mahshid Majd, Seyedmostafa Sheikhalishahi, Claudio Modena,
+  and Venet Osmani.
+\newblock Monitoring and detecting faults in wastewater treatment plants using
+  deep learning.
+\newblock \emph{Environmental Monitoring and Assessment}, 192\penalty0 (2),
+  2020.
+\newblock \doi{10.1007/s10661-020-8064-1}.
+
 \bibitem[Mannina et~al.(2019)Mannina, Rebou{\c c}as, Cosenza,
   {S{\`a}nchez-Marr{\`e}}, and Gibert]{manninaDecisionSupportSystems2019}
 Giorgio Mannina, Taise~Ferreira Rebou{\c c}as, Alida Cosenza, Miquel
@@ -298,6 +308,16 @@ Mohamed~Sherif Zaghloul, Oliver~Terna Iorhemen, Rania~Ahmed Hamza, Joo~Hwa Tay,
   aerobic granular sludge reactors.
 \newblock \emph{Water Research}, 189:\penalty0 116657--116657, 2021.
 \newblock \doi{10.1016/j.watres.2020.116657}.
+
+\bibitem[Zhu et~al.(2021)Zhu, Wang, Zhang, Yang, and
+  Li]{zhuPredictionMethodElectrocoagulation2021}
+Hongqiu Zhu, Qiling Wang, Fengxue Zhang, Chunhua Yang, and Yonggang Li.
+\newblock A prediction method of electrocoagulation reactor removal rate based
+  on {{Long Term}} and {{Short Term Memory}} - {{Autoregressive Integrated
+  Moving Average Model}}.
+\newblock \emph{Process Safety and Environmental Protection}, 152:\penalty0
+  462--470, 2021.
+\newblock \doi{10.1016/j.psep.2021.06.020}.
 
 \bibitem[Zhu and Qiu(2017)]{zhuApplicationPLCSewage2017}
 Huijun Zhu and Xinglei Qiu.
