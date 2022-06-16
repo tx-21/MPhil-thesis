@@ -76,77 +76,11 @@ The automated treatment operation and management heavily relies on the reliabili
 
 Two main types algorithms, which is regression and classification can be used for finding fouling signals. A regression algorithm can identify fouling signals by comparing model predicted outputs (e.g., ammonium or COD concentration) to the actual signals; a classification algorithm can distinguish fouling signals through the direct outputs of the model (i.e., the model outputs 2 class labels, one can be assigned as normal and the other is abnormal signal). \citet{cecconiSoftSensingOnLine2021} proposed a ammonium fault detection mechanism, utilizing a regression ANN model, along with principal component analysis (PCA) and Shewhart monitoring charts (i.e., statistical control chart). The remarkable idea from this study is to analyze the residaul between the predicted ammonium and the real ammonium snesor signal and identify the individual and contextual faults with the help of statistical tools. Despite the accuracy of fault detection mechanism can reach R$^2$ value of 0.87, the method comes with great limitations. The author points out to maintain the high accuracy of the predictive model, the quality of the input data needs to be carefully attended by performing manual cleaning procedures on a weekly basis. 
 
-Classification algorithms as an alternative solution to address fault detection problem in the works of \citet{mamandipoorMonitoringDetectingFaults2020}. The author 
-
-Limitation 
-The data were labelled by an expert to classify normal and faulty data points. The classification rules were as follows: with the increase in the level of ammonia, the oxygen is released; consequently, the ammonia level decreases, and the oxygen flow is stopped. This cycle is repeated through time. The fault occurs when the ammonia level does not decrease although oxygen is released. An example of normal and faulty behaviour of the data is shown in Fig. 3a and b, respectively, where the levels of ammonia and oxygen are shown.
-
-WWTPs are key infrastructure for the protection of the environment. However, being a major energy consumer, it is particularly important to ensure that these plants are operated in a manner that optimizes treatment efficiency and energy consumption. One important aspect is the detection and management of faults in a timely manner. The results presented in this paper have shown that there is a vast potential in using deep neural networks in managing WWTP faults, and this work is only the first step in this direction. The proposed method not only outperformed traditional methods but the performance achieved a fault detection (recall) of over 92% which will enable a new class of WWTP monitoring and management that requires very little human supervision. In addition, these methods allow integration with environmental decision support systems that enable WWTPs to maintain a high performance and low emissions, even in response to unexpected events, where faults can be acted upon in a timely manner with minimal environmental impact. It is expected that the work will further encourage the use of deep neural networks, not only in WWTP management but also in the general field of environmental protection.
- 
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-Wastewater treatment plants use many sensors to control energy consumption and discharge quality. These sensors produce a vast amount of data which can be efficiently monitored by automatic systems. Consequently, several different statistical and learning methods are proposed in the literature which can automatically detect faults. While these methods have shown promising results, the nonlinear dynamics and complex interactions of the variables in wastewater data necessitate more powerful methods with higher learning capacities. In response, this study focusses on modelling faults in the oxidation and nitrification process. Specifically, this study investigates a method based on deep neural networks (specifically, long short-term memory) compared with statistical and traditional machinelearning methods. The network is specifically designed to capture temporal behaviour of sensor data. The proposed method is evaluated on a real-life dataset containing over 5.1 million sensor data points. The method achieved a fault detection rate (recall) of over 92%, thus outperforming traditional methods and enabling timely detection of collective faults.
-
-In the study of \citet{mamandipoorMonitoringDetectingFaults2020}, the fault detection technuique used to identify the collective faults is demonstrated using machine learning in a WWTP. 
-
-and this work is only the first step in this direction. The proposed method not only outperformed traditional methods but the performance achieved a fault detection (recall) of over 92\% which will enable a new class of WWTP monitoring and management that requires very little human supervision. In addition, these methods allow integration with environmental decision support systems that enable WWTPs to maintain a high performance and low emissions, even in response to unexpected events, where faults can be acted upon in a timely manner with minimal environmental impact. It is expected that the work will further encourage the use of deep neural networks, not only in WWTP management but also in the general field of environmental protection
-
-%One solution for the real-time measurement challenges is to utilize the process data collected in modern-day WWTPs and the modeling algorithms, e.g. for the on-line estimation of the key variables. Software sensor (i.e. soft-sensor) is a common name for software where several measurements are processed together in a predictive inputeoutput model providing a virtual instrument that produces similar information as a hardware instrument. Frequently and easily measured variables are typically applied as the model inputs whereas hard-to-measure variables are the predicted outputs. When using data-driven techniques for soft-sensor design, the model parameters are derived from a representative set of historical data. In the process industry, for instance, various types of data derived soft-sensors have shown great potential (Kadlec et al., 2009). A considerable amount of data derived soft-sensors have also been proposed for applications in mineral processing (Gonzalez, 2010), building systems (Li et al., 2011), bioprocessing * Corresponding author. E-mail addresses: henri.haimi@aalto.fi (H. Haimi), francesco.corona@aalto.fi (F. Corona), michela.mulas@aalto.fi (M. Mulas), laura.sundell@hsy.fi (L. Sundell), mari.heinonen@hsy.fi (M. Heinonen), riku.vahala@aalto.fi (R. Vahala). Contents lists available at ScienceDirect Environmental Modelling & Software journal homepage: www.elsevier.com/locate/envsoft http://dx.doi.org/10.1016/j.envsoft.2015.07.013 1364-8152/© 2015 Elsevier Ltd. All rights reserved. Environmental Modelling & Software 72 (2015) 215e22
-
-(Luttmann et al., 2012) and electronics (Liukkonen et al., 2012). Data derived soft-sensors have also been developed for biological wastewater treatment processes. As for the municipal WWTPs, the most typical methods used for designing soft-sensors based on operation data are multivariate statistical (e.g., Rosen and Olsson, 1998; Rosen and Lennox, 2001; Moon et al., 2009) and artificial neural network (e.g., Bongards, 2001; Hong et al., 2003; Lee et al., 2008) techniques. The majority of the data derived soft-sensors that have been proposed for the biological wastewater treatment concern estimation of variables associated with the content of organic matter or nitrogen compounds (Haimi et al., 2013). One example of data derived soft-sensors for predicting the contents of a nitrogen compound in a municipal WWTP has been presented in our earlier works
-
-%In wastewater treatment plants, the most adopted sensors are those with the properties of low cost and fast response. Soft sensors are alternative solutions to the hardware sensor for online monitoring of hardto-measure variables, such as chemical oxygen demand (COD) and total phosphorus (TP). The purpose of this study is to obtain a modelling approach which is able to identify the nonlinearity of influent and explain the correlation of inputs-outputs. Thus, the variation of influent characteristics was investigated at the first stage, which provided the basis to build global and local multiple linear regression models. Secondly, a nonlinear modelling tool multivariate adaptive regression splines (MARS) was applied for influent COD and TP prediction. Satisfactory prediction accuracy was obtained in terms of root mean square error (RMSE) and R2. Unlike other machine learning techniques which are  ̈ black box  ̈ models, MARS provided interpretable models which explained the nonlinearity and correlation of inputs-outputs. The MARS models can be used not only for prediction, but also to provide insight of influent variation. © 2019 Elsevier Ltd. All rights reserv
-
-
-
-%. In this study, a machine learning model was developed for simulating the AGS process using 475 days of data collected from three labbased reactors. Inputs were selected based on RReliefF ranking after multicollinearity reduction. A fivestage model structure was adopted in which each parameter was predicted using separate models for the preceding parameters as inputs. An ensemble of artificial neural networks, support vector regression and adaptive neuro-fuzzy inference systems was used to improve the models’ performance. The developed model was able to predict the MLSS, MLVSS, SVI5, SVI30, granule size, and effluent COD, NH4-N, and PO43− with average R2, nRMSE and sMAPE of 95.7%, 0.032 and 3.7% respectively.
-
-DSSs can be applied to WWTPs in order to predict the effluent quality under known WWTP operational conditions (Nadiri et al., 2018). For example, it is possible to adopt DSSs in view of calculating treatment efficiency and evaluating the removal of substances even prior to initiate the treatment under different operational conditions, implemented processes and influent features (Hamed et al., 2004; Sonaje and Berlekar, 2015).
-
-Improve on effluent quality 
-analyses was developed and used to model WWTP processes and investigate how operational variables influence effluent quality.
-
-%prediction of polluants in treatment process
-
-%disinfecion?
-
-%BOD
-The importance of BOD5 modeling stems from the extensive laboratory procedures performed to measure the BOD5 concentration, as these tests require approximately five days. 
-
-The above soft sensor is expected to decrease the five-day period of the BOD5 measurement to several hours, which will allow the use of online control systems. \citep{alsulailiArtificialNeuralNetwork2021}
-
-%Commonly targeted water paramters
-%secondary
-%%BOD5, COD, ammonia
-%%Heavy metals
-%%Orgainic pollutants
-
-%tertiary
-%%Disinfection
-Disinfection in a water- and wastewater-treatment plant is the process by which microorganisms and viruses are killed or inactivated, mainly with chlorine-based disinfectants [64]. While chlorination is effective as a disinfectant, it also poses human health hazards [65]. Beyond its ability to cause acute toxicity in humans, chlorine is also known to interact with bromide and organic matter naturally found in water systems to form what is known as disinfection by-products. Disinfection by-products (DBPs) are suspected human carcinogens and reproductive disruptors, and have received increased scrutiny from regulators all over the world [66]. DBPs mainly belong to two larger subcategories: trihalomethanes (THMs) and haloacetic acids (HAAs). THMs are regarded as the most common form of DBPs as their formation is associated with chlorine disinfectants [67]. Haloacetic acids are commonly tested for five or nine common haloacetic acids and are commonly referred to as HAA5 or HAA9. The entire mechanism behind the formation of DBPs in drinking water is not known, making their prediction and mitigation an ideal candidate for ML technologies. When learning has been achieved, mitigation through control using AI methods is possible.
-%%DBP
-
-
-
+Classification algorithms as an alternative solution is used to address fault detection problem in the works of \citet{mamandipoorMonitoringDetectingFaults2020}. It is believed that this is the first research paper using a LSTM network to achieve a fully automatic fault detection method in WWTPs. Contrast to others works, input variables for model training heavily relies on the manual selection of the experts before inputing into models like PCA and fuzzy nerual networks. The significance of using a LSTM network, which is a deep learning model, is it's capability of capturing long-term temperol dependencies from a large dataset compared to machine learning models (i.e., PCA-SVM model). The results showed that the accuracy (i.e., F1-score) from LSTM model is 92\%, outperformed the PCA-SVM model of 87\%. This finding can suggest DL models fits more in solving classification problems for fault detection compared to ML models. 
 
 \subsection{Reclaimed water system and water body}
-%Describe the need of using decision-making processes for water quality
-%Using examples to show how the decision-making process can benefit water quality control
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%Organization of the paragraph 
-%What is a critical water parameter(turbidity for example), and then the difficulties in %%%%%%
-%predicting the water parameter, for example, what are the related parameters to turbidity%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-In this study the new control objectives for the reclaimed water system in Shek Wu Hui Effluent Polish Plant have been established: to monitor color and ammonia concentration in the MBR effluent and at the same time provide a predictive model to assist the disinfection control strategy for disinfecting the MBR effluent to meet the endorsed reclaimed water standard.
 
-From many of the literatures proposing using AI models to build predictive models, we can observe that nonlinear models (e.g., Random Forest and Support Vector Regression) outperform the linear model (e.g., General Linear Model and Principal Component Regression). In 
-
-Model Predictive Control (MPC) regardless of using AI models or ML models, both showed the superior performance over the PID controller. Despite the use of ML models has proved to outperformed the AI models in other industires, ML and AI models seem to be eqaully good in the process control in WTPs. Based on the senario, non-linear ML models don't always outperform linear AI models, and there is even a hybrid model (i.e., neuro-fuzzy inference systems (ANFIS)) developed to solve control issues in aerobic granular sludge reactors \citep{zaghloulDevelopmentEnsembleMachine2021}.
 \section{Tools and techniques for enchancing the performance of machine learning modeling}
 \subsection{Programming languages}
 %why python? compared to matlab
