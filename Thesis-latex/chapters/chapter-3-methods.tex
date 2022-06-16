@@ -8,7 +8,8 @@ TheMBRisaprocessthatintegratesbiodegradationofcontaminants byactivatedsludge,wit
 \section{Data collection and preparation}
 Most AI techniques were modeled using experimental data to simulate, predict confirm, and optimize contaminant removal in wastewater treatment processes. Experimental data set were either divided into three parts (training, validation, and testing) or two parts (training and testing). The training set was used to develop the model, the validation data set was used to optimize the model, and the testing data set was used to test the model in the prediction stage.
 \subsection{Ammonia data monitoring and collection}
-
+Ammonium and Potassium Probe for IQ Sensor Net System
+The WTW ISE sensor AmmoLyt®Plus 700 IQ is a rugged, ion selective electrode (ISE) probe for the IQ Sensor Net process monitoring system. The AmmoLyt provides continuous and reagentless monitoring of ammonium and potassium using the most precise and reliable electrodes on the market. The individually replaceable electrodes have a typical lifetime of 18 to 24 months and are warrantied for 1 year minimizing maintenance effort and ownership cost.  
 \subsection{Color data monitoring and collection}
 
 \subsection{Metrics for model evaluation}
@@ -27,6 +28,11 @@ Split of Train/valid/test dataset
 \subsection{Random Forest}
 F can be described as an ensemble method in which the final result is obtained by aggregating (through averaging in the case of regression) results from multiple weak learners known as Classification and Regression Trees (CARTs) (Breiman, 2017). Each weak learner (tree) is trained on the bootstrap set, which is obtained by sampling with replacement from the original training set. For trees, the input variables are used to generate nodes. These variables are selected partially and randomly as a subset in every split, then the variable contributing to the smallest sum of impurity of two child nodes at a certain split point is chosen as the split variable. This is done repeatedly until the trees don't need to split anymore. The regression impurity of a particular node is defined by Eqs. (2), (3) and (4), \citep{wangMachineLearningFramework2021}
 \subsection{LSTM}
+Recently, deep recurrent neural networks (RNN) such as long short-term memory networks (LSTM) have shown breakthrough results over state-of-the-art machinelearning methods in many applications with non-linear temporal data, including robotics, high-energy physics and computational geometry (Goodfellow et al. 2016). These methods can successfully engineer appropriate long-term temporal dependencies and variable length features, significantly lessening the need to pre-process data with respect to traditional machine-learning methods or statistical approaches. It is the ability to capture the long-term dependencies that make LSTM networks particularity fitting for the problem at hand. 
+
+Fig. 1 The general schema of a RNN unit versus a LSTM one (adapted from Olah 2015)
+
+
 
 \subsection{RNN}
 
