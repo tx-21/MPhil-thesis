@@ -1,50 +1,52 @@
-This is BibTeX, Version 0.99d (TeX Live 2021)
+This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: thesis.aux
+Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: plainnat.bst
+Reallocating 'name_of_file' (item size: 1) to 20 items.
 Database file #1: MPhil-thesis-papers.bib
 Warning--empty journal in chandolaAnomalyDetectionSurvey
 Warning--empty year in chandolaAnomalyDetectionSurvey
 Warning--empty year in chandolaAnomalyDetectionSurvey
-You've used 34 entries,
+You've used 39 entries,
             2773 wiz_defined-function locations,
-            881 strings with 15978 characters,
-and the built_in function-call counts, 19898 in all, are:
-= -- 1795
-> -- 1457
-< -- 12
-+ -- 487
-- -- 453
-* -- 1877
-:= -- 3171
-add.period$ -- 153
-call.type$ -- 34
-change.case$ -- 254
-chr.to.int$ -- 34
-cite$ -- 71
-duplicate$ -- 711
-empty$ -- 1330
-format.name$ -- 501
-if$ -- 4051
+            926 strings with 17708 characters,
+and the built_in function-call counts, 22682 in all, are:
+= -- 2056
+> -- 1643
+< -- 14
++ -- 549
+- -- 510
+* -- 2134
+:= -- 3611
+add.period$ -- 177
+call.type$ -- 39
+change.case$ -- 288
+chr.to.int$ -- 39
+cite$ -- 81
+duplicate$ -- 820
+empty$ -- 1523
+format.name$ -- 565
+if$ -- 4625
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 32
-newline$ -- 228
-num.names$ -- 136
-pop$ -- 411
+missing$ -- 37
+newline$ -- 262
+num.names$ -- 156
+pop$ -- 462
 preamble$ -- 1
-purify$ -- 219
+purify$ -- 248
 quote$ -- 0
-skip$ -- 567
+skip$ -- 650
 stack$ -- 0
-substring$ -- 763
-swap$ -- 66
-text.length$ -- 3
+substring$ -- 864
+swap$ -- 80
+text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 374
+type$ -- 429
 warning$ -- 3
-while$ -- 154
+while$ -- 179
 width$ -- 0
-write$ -- 548
+write$ -- 631
 (There were 3 warnings)

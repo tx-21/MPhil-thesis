@@ -1,9 +1,19 @@
-\begin{thebibliography}{34}
+\begin{thebibliography}{39}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Al-Ghazawi} and Alawneh(2021)]{al-ghazawiUseArtificialNeural2021}
+Ziad {Al-Ghazawi} and Rami Alawneh.
+\newblock Use of artificial neural network for predicting effluent quality
+  parameters and enabling wastewater reuse for climate change resilience
+  \textendash{} {{A}} case from {{Jordan}}.
+\newblock \emph{Journal of Water Process Engineering}, 44:\penalty0 102423,
+  December 2021.
+\newblock ISSN 22147144.
+\newblock \doi{10.1016/j.jwpe.2021.102423}.
 
 \bibitem[Andhare and Palkar(2014)]{andhareSCADAToolIncrease2014}
 Sunil~L Andhare and Prasad~J Palkar.
@@ -41,6 +51,16 @@ J.C. Chen, N.B. Chang, and W.K. Shieh.
   16\penalty0 (2):\penalty0 149--157, March 2003.
 \newblock ISSN 09521976.
 \newblock \doi{10.1016/S0952-1976(03)00056-3}.
+
+\bibitem[Costa et~al.(2021)Costa, Mesquita, Ferreira, Rosa, and
+  Viegas]{costaIdentificationModellingChlorine2021}
+Joana Costa, Elsa Mesquita, Filipa Ferreira, Maria~Jo{\~a}o Rosa, and Rui~M.C.
+  Viegas.
+\newblock Identification and modelling of chlorine decay mechanisms in
+  reclaimed water containing ammonia.
+\newblock \emph{Sustainability (Switzerland)}, 13\penalty0 (24):\penalty0
+  1--13, 2021.
+\newblock \doi{10.3390/su132413548}.
 
 \bibitem[Demir and Woo(2014)]{demirFeedbackControlChlorine2014a}
 Feridun Demir and Wilbur~W. Woo.
@@ -164,6 +184,16 @@ Andr{\'e}~Felipe Librantz, F{\'a}bio Cosme~Rodrigues dos Santos, and
 \newblock ISSN 1807-8664, 1806-2563.
 \newblock \doi{10.4025/actascitechnol.v40i1.37275}.
 
+\bibitem[Lyu et~al.(2016)Lyu, Chen, Zhang, Fan, and
+  Jiao]{lyuWastewaterReclamationReuse2016}
+Sidan Lyu, Weiping Chen, Weiling Zhang, Yupeng Fan, and Wentao Jiao.
+\newblock Wastewater reclamation and reuse in {{China}}: {{Opportunities}} and
+  challenges.
+\newblock \emph{Journal of Environmental Sciences}, 39:\penalty0 86--96,
+  January 2016.
+\newblock ISSN 10010742.
+\newblock \doi{10.1016/j.jes.2015.11.012}.
+
 \bibitem[Mamandipoor et~al.(2020)Mamandipoor, Majd, Sheikhalishahi, Modena, and
   Osmani]{mamandipoorMonitoringDetectingFaults2020}
 Behrooz Mamandipoor, Mahshid Majd, Seyedmostafa Sheikhalishahi, Claudio Modena,
@@ -183,6 +213,16 @@ Giorgio Mannina, Taise~Ferreira Rebou{\c c}as, Alida Cosenza, Miquel
 \newblock \emph{Bioresource Technology}, 290:\penalty0 121814, October 2019.
 \newblock ISSN 09608524.
 \newblock \doi{10.1016/j.biortech.2019.121814}.
+
+\bibitem[{Norton-Brand{\~a}o} et~al.(2013){Norton-Brand{\~a}o}, Scherrenberg,
+  and {van Lier}]{norton-brandaoReclamationUsedUrban2013}
+Diana {Norton-Brand{\~a}o}, Sigrid~M. Scherrenberg, and Jules~B. {van Lier}.
+\newblock Reclamation of used urban waters for irrigation purposes
+  \textendash{} {{A}} review of treatment technologies.
+\newblock \emph{Journal of Environmental Management}, 122:\penalty0 85--98,
+  June 2013.
+\newblock ISSN 03014797.
+\newblock \doi{10.1016/j.jenvman.2013.03.012}.
 
 \bibitem[Pattnaik et~al.(2021)Pattnaik, Pattanayak, Udgata, and
   Panda]{pattnaikMachineLearningBased2021}
@@ -210,6 +250,17 @@ Matthew Stevenson and Cristi{\'a}n Bravo.
 \newblock \emph{Decision Support Systems}, 119:\penalty0 72--84, April 2019.
 \newblock ISSN 01679236.
 \newblock \doi{10.1016/j.dss.2019.02.009}.
+
+\bibitem[Viet et~al.(2021)Viet, Jang, Yoon, and
+  Jang]{vietEnhancementMembraneSystem2021}
+Nguyen~Duc Viet, Duksoo Jang, Yeomin Yoon, and Am~Jang.
+\newblock Enhancement of membrane system performance using artificial
+  intelligence technologies for sustainable water and wastewater treatment:
+  {{A}} critical review.
+\newblock \emph{Critical Reviews in Environmental Science and Technology},
+  pages 1--31, June 2021.
+\newblock ISSN 1064-3389, 1547-6537.
+\newblock \doi{10.1080/10643389.2021.1940031}.
 
 \bibitem[Wang et~al.(2021)Wang, Thun{\'e}ll, Lindberg, Jiang, Trygg, Tysklind,
   and Souihi]{wangMachineLearningFramework2021}
