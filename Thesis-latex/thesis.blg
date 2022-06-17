@@ -8,45 +8,45 @@ Database file #1: MPhil-thesis-papers.bib
 Warning--empty journal in chandolaAnomalyDetectionSurvey
 Warning--empty year in chandolaAnomalyDetectionSurvey
 Warning--empty year in chandolaAnomalyDetectionSurvey
-You've used 39 entries,
+You've used 42 entries,
             2773 wiz_defined-function locations,
-            926 strings with 17708 characters,
-and the built_in function-call counts, 22682 in all, are:
-= -- 2056
-> -- 1643
+            952 strings with 18716 characters,
+and the built_in function-call counts, 24483 in all, are:
+= -- 2217
+> -- 1778
 < -- 14
-+ -- 549
-- -- 510
-* -- 2134
-:= -- 3611
-add.period$ -- 177
-call.type$ -- 39
-change.case$ -- 288
-chr.to.int$ -- 39
-cite$ -- 81
-duplicate$ -- 820
-empty$ -- 1523
-format.name$ -- 565
-if$ -- 4625
++ -- 594
+- -- 552
+* -- 2313
+:= -- 3901
+add.period$ -- 192
+call.type$ -- 42
+change.case$ -- 311
+chr.to.int$ -- 42
+cite$ -- 87
+duplicate$ -- 883
+empty$ -- 1642
+format.name$ -- 610
+if$ -- 4990
 int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 37
-newline$ -- 262
-num.names$ -- 156
-pop$ -- 462
+missing$ -- 40
+newline$ -- 283
+num.names$ -- 168
+pop$ -- 496
 preamble$ -- 1
-purify$ -- 248
+purify$ -- 268
 quote$ -- 0
-skip$ -- 650
+skip$ -- 697
 stack$ -- 0
-substring$ -- 864
-swap$ -- 80
+substring$ -- 931
+swap$ -- 86
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 429
+type$ -- 462
 warning$ -- 3
-while$ -- 179
+while$ -- 192
 width$ -- 0
-write$ -- 631
+write$ -- 682
 (There were 3 warnings)

@@ -1,9 +1,19 @@
-\begin{thebibliography}{39}
+\begin{thebibliography}{42}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Adewumi et~al.(2010)Adewumi, Ilemobade, and
+  Van~Zyl]{adewumiTreatedWastewaterReuse2010}
+J.R. Adewumi, A.A. Ilemobade, and J.E. Van~Zyl.
+\newblock Treated wastewater reuse in {{South Africa}}: {{Overview}}, potential
+  and challenges.
+\newblock \emph{Resources, Conservation and Recycling}, 55\penalty0
+  (2):\penalty0 221--231, December 2010.
+\newblock ISSN 09213449.
+\newblock \doi{10.1016/j.resconrec.2010.09.012}.
 
 \bibitem[{Al-Ghazawi} and Alawneh(2021)]{al-ghazawiUseArtificialNeural2021}
 Ziad {Al-Ghazawi} and Rami Alawneh.
@@ -51,6 +61,29 @@ J.C. Chen, N.B. Chang, and W.K. Shieh.
   16\penalty0 (2):\penalty0 149--157, March 2003.
 \newblock ISSN 09521976.
 \newblock \doi{10.1016/S0952-1976(03)00056-3}.
+
+\bibitem[Chojnacka et~al.(2020)Chojnacka, {Witek-Krowiak}, Moustakas,
+  Skrzypczak, Mikula, and
+  Loizidou]{chojnackaTransitionConventionalIrrigation2020}
+K.~Chojnacka, A.~{Witek-Krowiak}, K.~Moustakas, D.~Skrzypczak, K.~Mikula, and
+  M.~Loizidou.
+\newblock A transition from conventional irrigation to fertigation with
+  reclaimed wastewater: {{Prospects}} and challenges.
+\newblock \emph{Renewable and Sustainable Energy Reviews}, 130:\penalty0
+  109959, September 2020.
+\newblock ISSN 13640321.
+\newblock \doi{10.1016/j.rser.2020.109959}.
+
+\bibitem[Colella et~al.(2021)Colella, Ripa, Cocozza, Panfilo, and
+  Ulgiati]{colellaChallengesOpportunitiesMore2021}
+M.~Colella, M.~Ripa, A.~Cocozza, C.~Panfilo, and S.~Ulgiati.
+\newblock Challenges and opportunities for more efficient water use and
+  circular wastewater management. {{The}} case of {{Campania Region}},
+  {{Italy}}.
+\newblock \emph{Journal of Environmental Management}, 297:\penalty0 113171,
+  November 2021.
+\newblock ISSN 03014797.
+\newblock \doi{10.1016/j.jenvman.2021.113171}.
 
 \bibitem[Costa et~al.(2021)Costa, Mesquita, Ferreira, Rosa, and
   Viegas]{costaIdentificationModellingChlorine2021}
