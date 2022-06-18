@@ -1,9 +1,12 @@
-\begin{thebibliography}{44}
+\begin{thebibliography}{51}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Wha()]{WhatPythonExecutive}
+What is {{Python}}? {{Executive Summary}}.
 
 \bibitem[Adewumi et~al.(2010)Adewumi, Ilemobade, and
   Van~Zyl]{adewumiTreatedWastewaterReuse2010}
@@ -31,6 +34,18 @@ Sunil~L Andhare and Prasad~J Palkar.
 \newblock \emph{Asian Journal of Engineering and Technology Innovation},
   page~8, 2014.
 
+\bibitem[Bachis et~al.(2015)Bachis, Maru{\'e}jouls, Tik, Amerlinck, Melcer,
+  Nopens, Lessard, and
+  Vanrolleghem]{bachisModellingCharacterizationPrimary2015}
+Giulia Bachis, Thibaud Maru{\'e}jouls, Sovanna Tik, Youri Amerlinck, Henryk
+  Melcer, Ingmar Nopens, Paul Lessard, and Peter~A. Vanrolleghem.
+\newblock Modelling and characterization of primary settlers in view of whole
+  plant and resource recovery modelling.
+\newblock \emph{Water Science and Technology}, 72\penalty0 (12):\penalty0
+  2251--2261, December 2015.
+\newblock ISSN 0273-1223, 1996-9732.
+\newblock \doi{10.2166/wst.2015.455}.
+
 \bibitem[Bados and Morejon(2020)]{badosDesignPIDControl2020}
 Jhon Stalin~Figueroa Bados and Iralmy Yipsy~Platero Morejon.
 \newblock Design of a {{PID Control System}} for a {{Wastewater Treatment
@@ -40,6 +55,24 @@ Jhon Stalin~Figueroa Bados and Iralmy Yipsy~Platero Morejon.
   {Chongqing, China}, November 2020. {IEEE}.
 \newblock ISBN 978-1-72818-638-2.
 \newblock \doi{10.1109/RCAE51546.2020.9294199}.
+
+\bibitem[Ballhysa et~al.(2020)Ballhysa, Kim, and
+  Byeon]{ballhysaWastewaterTreatmentPlant2020}
+Nobel Ballhysa, Soyeon Kim, and Seongjoon Byeon.
+\newblock Wastewater {{Treatment Plant Control Strategies}}.
+\newblock \emph{International journal of advanced smart convergence},
+  9\penalty0 (4):\penalty0 16--25, December 2020.
+\newblock \doi{10.7236/IJASC.2020.9.4.16}.
+
+\bibitem[bin Talib(2011)]{talibModelingControlWastewater2011}
+Adi~Hasif bin Talib.
+\newblock \emph{Modeling and {{Control}} of {{Wastewater Treatment Process}}}.
+\newblock PhD thesis, Universiti Teknologi Petronas, May 2011.
+
+\bibitem[Castro(2018)]{castroWhyShouldChoose2018}
+Sebastian Castro.
+\newblock Why should {{I}} choose matlab deep learning toolbox over other
+  opensource frameworks like caffe, onnx, pytorch, torch etc?, October 2018.
 
 \bibitem[Cecconi and Rosso(2021)]{cecconiSoftSensingOnLine2021}
 Francesca Cecconi and Diego Rosso.
@@ -157,6 +190,16 @@ Henri Haimi, Francesco Corona, Michela Mulas, Laura Sundell, Mari Heinonen, and
   2015.
 \newblock \doi{10.1016/j.envsoft.2015.07.013}.
 
+\bibitem[Hong et~al.(2012)Hong, Lee, Lee, Park, and
+  Lee]{hongApplicationNeurofuzzyPID2012}
+Sung-Taek Hong, An-Kyu Lee, Ho-Hyun Lee, No-Suk Park, and Seung-Hwan Lee.
+\newblock Application of neuro-fuzzy {{PID}} controller for effective
+  post-chlorination in water treatment plant.
+\newblock \emph{Desalination and Water Treatment}, 47\penalty0 (1-3):\penalty0
+  211--220, September 2012.
+\newblock ISSN 1944-3994, 1944-3986.
+\newblock \doi{10.1080/19443994.2012.696810}.
+
 \bibitem[Kehrein et~al.(2020)Kehrein, {van Loosdrecht}, Osseweijer, Garf{\'i},
   Dewulf, and Posada]{kehreinCriticalReviewResource2020}
 Philipp Kehrein, Mark {van Loosdrecht}, Patricia Osseweijer, Marianna
@@ -259,6 +302,15 @@ Giorgio Mannina, Taise~Ferreira Rebou{\c c}as, Alida Cosenza, Miquel
 \newblock ISSN 09608524.
 \newblock \doi{10.1016/j.biortech.2019.121814}.
 
+\bibitem[MathWorks(2022{\natexlab{a}})]{mathworksCallPythonFunction2022}
+MathWorks.
+\newblock Call {{Python Function Using MATLAB Function}} and {{MATLAB System
+  Block}}, April 2022{\natexlab{a}}.
+
+\bibitem[MathWorks(2022{\natexlab{b}})]{mathworksMATLABMachineLearning2022}
+MathWorks.
+\newblock {{MATLAB}} for {{Machine Learning}}, June 2022{\natexlab{b}}.
+
 \bibitem[{Norton-Brand{\~a}o} et~al.(2013){Norton-Brand{\~a}o}, Scherrenberg,
   and {van Lier}]{norton-brandaoReclamationUsedUrban2013}
 Diana {Norton-Brand{\~a}o}, Sigrid~M. Scherrenberg, and Jules~B. {van Lier}.
@@ -295,11 +347,6 @@ Matthew Stevenson and Cristi{\'a}n Bravo.
 \newblock \emph{Decision Support Systems}, 119:\penalty0 72--84, April 2019.
 \newblock ISSN 01679236.
 \newblock \doi{10.1016/j.dss.2019.02.009}.
-
-\bibitem[Tadayon(2020)]{tadayonPythonVsVs2020}
-Manie Tadayon.
-\newblock Python vs {{R}} vs {{Matlab}} for {{Machine Learning}}, {{Causal
-  Inference}}, {{Signal Processing}}, and {{More}}., December 2020.
 
 \bibitem[Viet et~al.(2021)Viet, Jang, Yoon, and
   Jang]{vietEnhancementMembraneSystem2021}
