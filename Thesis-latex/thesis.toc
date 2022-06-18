@@ -21,8 +21,8 @@
 \contentsline {subsection}{\numberline {2.2.3}Water reclamation system}{13}{subsection.2.2.3}%
 \contentsline {section}{\numberline {2.3}Tools and techniques for enchancing the performance of machine learning modeling}{14}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Programming languages}{14}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Data preprocessing}{14}{subsection.2.3.2}%
-\contentsline {subsection}{\numberline {2.3.3}Feature engineering}{14}{subsection.2.3.3}%
+\contentsline {subsection}{\numberline {2.3.2}Data preprocessing}{15}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Feature engineering}{15}{subsection.2.3.3}%
 \contentsline {chapter}{{Chapter 3}\hspace {1em}Methods and Materials}{16}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Wastewater treatment plant description}{16}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Treatment processes}{16}{subsection.3.1.1}%

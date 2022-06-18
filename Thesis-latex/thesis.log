@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.27)  17 JUN 2022 23:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.27)  18 JUN 2022 13:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -753,17 +753,17 @@ CHAPTER 5.
 
 ] [23] [24] [25] [26]) [27] (thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 17261 strings out of 478582
- 333823 string characters out of 2845288
- 590505 words of memory out of 3000000
- 35075 multiletter control sequences out of 15000+600000
+ 17269 strings out of 478582
+ 334097 string characters out of 2845288
+ 590633 words of memory out of 3000000
+ 35081 multiletter control sequences out of 15000+600000
  477343 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,6n,79p,3573b,957s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 74i,6n,79p,3573b,959s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\Tim\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (37 pages, 248528 bytes).
+Output written on thesis.pdf (37 pages, 251198 bytes).
 PDF statistics:
- 643 PDF objects out of 1000 (max. 8388607)
- 129 named destinations out of 1000 (max. 500000)
+ 649 PDF objects out of 1000 (max. 8388607)
+ 131 named destinations out of 1000 (max. 500000)
  417 words of extra memory for PDF output out of 10000 (max. 10000000)
 
