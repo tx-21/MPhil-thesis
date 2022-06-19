@@ -26,6 +26,9 @@
 \usepackage{changepage}
 \usepackage[a4paper, margin=25mm,textheight=247mm,textwidth=145mm]{geometry} % page requriement from the university ---added by Lei.
 \usepackage{fancyhdr}
+\usepackage[inline]{enumitem}
+\newlist{myenumerate}{enumerate*}{1}
+\setlist[myenumerate]{itemjoin=\\,label=\arabic*),after=\\}
 % Alan: begin the font trial
 % Euler for math | Palatino for rm | Helvetica for ss | Courier for tt
 % \renewcommand{\rmdefault}{ppl} % rm

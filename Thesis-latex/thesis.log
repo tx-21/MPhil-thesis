@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.27)  19 JUN 2022 00:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.27)  19 JUN 2022 22:17
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -406,58 +406,74 @@ Package: fancyhdr 2022/05/18 v4.0.3 Extensive control of page headers and footer
 \f@nch@O@erf=\skip71
 \f@nch@O@olf=\skip72
 \f@nch@O@orf=\skip73
+) (C:\Users\Tim\AppData\Local\Programs\MiKTeX\tex/latex/enumitem\enumitem.sty
+Package: enumitem 2019/06/20 v3.9 Customized lists
+\labelindent=\skip74
+\enit@outerparindent=\dimen182
+\enit@toks=\toks32
+\enit@inbox=\box64
+\enit@count@id=\count321
+\enitdp@description=\count322
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 121.
+\c@myenumeratei=\count323
+\enitdp@myenumerate=\count324
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 124.
  (thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 121.
-LaTeX Font Info:    ... okay on input line 121.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
  (C:\Users\Tim\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count321
-\scratchdimen=\dimen182
-\scratchbox=\box64
-\nofMPsegments=\count322
-\nofMParguments=\count323
-\everyMPshowfont=\toks32
-\MPscratchCnt=\count324
-\MPscratchDim=\dimen183
-\MPnumerator=\count325
-\makeMPintoPDFobject=\count326
-\everyMPtoPDFconversion=\toks33
+\scratchcounter=\count325
+\scratchdimen=\dimen183
+\scratchbox=\box65
+\nofMPsegments=\count326
+\nofMParguments=\count327
+\everyMPshowfont=\toks33
+\MPscratchCnt=\count328
+\MPscratchDim=\dimen184
+\MPnumerator=\count329
+\makeMPintoPDFobject=\count330
+\everyMPtoPDFconversion=\toks34
 ) (C:\Users\Tim\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+ (C:\Users\Tim\AppData\Local\Programs\MiKTeX\tex/latex/grfext\grfext.sty
+Package: grfext 2019/12/03 v1.3 Manage graphics extensions (HO)
+)
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 504.
  (C:\Users\Tim\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 )) (C:\Users\Tim\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 121.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 124.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen184
-\caption@adjustwidth@linewidth=\dimen185
+\caption@adjustwidth@hsize=\dimen185
+\caption@adjustwidth@linewidth=\dimen186
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 121.
+Package hyperref Info: Link coloring OFF on input line 124.
  (C:\Users\Tim\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (C:\Users\Tim\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
@@ -465,11 +481,11 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (C:\Users\Tim\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count327
+\c@section@level=\count331
 )
-LaTeX Info: Redefining \ref on input line 121.
-LaTeX Info: Redefining \pageref on input line 121.
-LaTeX Info: Redefining \nameref on input line 121.
+LaTeX Info: Redefining \ref on input line 124.
+LaTeX Info: Redefining \pageref on input line 124.
+LaTeX Info: Redefining \nameref on input line 124.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -516,32 +532,32 @@ Warning: \subject {Subject Name} not yet defined.
 Title page
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\nbi' on input line 134.
+(hyperref)                removing `\nbi' on input line 137.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\nbi' on input line 134.
+(hyperref)                removing `\nbi' on input line 137.
 
 [1
 
 
 {C:/Users/Tim/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 134.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 137.
  (C:\Users\Tim\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 134.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 137.
  (C:\Users\Tim\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Authorization Page
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\nbi' on input line 134.
+(hyperref)                removing `\nbi' on input line 137.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\nbi' on input line 134.
+(hyperref)                removing `\nbi' on input line 137.
 
 [2] (sections/signature.tex
 Signature Page
@@ -556,11 +572,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [3]) (sections/ack.tex)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\nbi' on input line 178.
+(hyperref)                removing `\nbi' on input line 181.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\nbi' on input line 178.
+(hyperref)                removing `\nbi' on input line 181.
 
 [4]
 Table of Contents
@@ -582,11 +598,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\nbi' on input line 186.
+(hyperref)                removing `\nbi' on input line 189.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\nbi' on input line 186.
+(hyperref)                removing `\nbi' on input line 189.
 
 [6]
 List of Figures
@@ -597,11 +613,11 @@ List of Figures
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\nbi' on input line 194.
+(hyperref)                removing `\nbi' on input line 197.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\nbi' on input line 194.
+(hyperref)                removing `\nbi' on input line 197.
 
 [7
 
@@ -652,7 +668,17 @@ CHAPTER 1.
 CHAPTER 2.
 [3
 
-] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15]) (chapters/chapter-3-methods.tex [16]
+] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13] [14] [15]
+Underfull \hbox (badness 10000) in paragraph at lines 100--111
+
+ []
+
+[16]
+Underfull \hbox (badness 10000) in paragraph at lines 114--122
+
+ []
+
+[17]) (chapters/chapter-3-methods.tex [18]
 CHAPTER 3.
 
 Overfull \hbox (63.83107pt too wide) in paragraph at lines 6--7
@@ -739,31 +765,31 @@ Overfull \hbox (729.51862pt too wide) in paragraph at lines 6--7
 \OT1/cmr/m/n/12 s-there-byindi-cat-ingth-atthose-mem-brane-shave nodi-rectim-pacton-ther-e-moval-ofCEC(Snyderetal.,2007).OthersreportthatMBRsareabletoeffectivelyremoveawidespectrumofCECincludingcompoundsthatarenoteliminatedduringCASprocesses
  []
 
-[17
+[19
 
-] [18] [19]) (chapters/chapter-4-results.tex [20]
+] [20] [21]) (chapters/chapter-4-results.tex [22]
 CHAPTER 4.
-) (chapters/chapter-5-conclusion.tex [21
+) (chapters/chapter-5-conclusion.tex [23
 
 ]
 CHAPTER 5.
-) (thesis.bbl [22
+) (thesis.bbl [24
 
-] [23
+] [25
 
-] [24] [25] [26] [27] [28]) [29] (thesis.aux) ) 
+] [26] [27] [28] [29] [30]) [31] (thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 17299 strings out of 478582
- 335242 string characters out of 2845288
- 590976 words of memory out of 3000000
- 35102 multiletter control sequences out of 15000+600000
+ 17724 strings out of 478582
+ 343183 string characters out of 2845288
+ 599697 words of memory out of 3000000
+ 35500 multiletter control sequences out of 15000+600000
  477343 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  74i,6n,79p,3573b,977s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\Tim\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (39 pages, 260316 bytes).
+Output written on thesis.pdf (41 pages, 269805 bytes).
 PDF statistics:
- 679 PDF objects out of 1000 (max. 8388607)
- 140 named destinations out of 1000 (max. 500000)
+ 718 PDF objects out of 1000 (max. 8388607)
+ 159 named destinations out of 1000 (max. 500000)
  417 words of extra memory for PDF output out of 10000 (max. 10000000)
 

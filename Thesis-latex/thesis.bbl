@@ -1,4 +1,4 @@
-\begin{thebibliography}{51}
+\begin{thebibliography}{55}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -27,6 +27,19 @@ Ziad {Al-Ghazawi} and Rami Alawneh.
   December 2021.
 \newblock ISSN 22147144.
 \newblock \doi{10.1016/j.jwpe.2021.102423}.
+
+\bibitem[Alferes et~al.(2013)Alferes, {Lynggaard-Jensen}, {Munk-Nielsen}, Tik,
+  Vezzaro, Sharma, Mikkelsen, and
+  Vanrolleghem]{alferesValidatingDataQuality2013}
+Janelcy Alferes, Anders {Lynggaard-Jensen}, Thomas {Munk-Nielsen}, Sovanna Tik,
+  Luca Vezzaro, Anitha~Kumari Sharma, Peter~Steen Mikkelsen, and Peter~A.
+  Vanrolleghem.
+\newblock Validating data quality during wet weather monitoring of wastewater
+  treatment plant influents.
+\newblock \emph{Proceedings of the Water Environment Federation}, 2013\penalty0
+  (12):\penalty0 4507--4520, January 2013.
+\newblock ISSN 19386478.
+\newblock \doi{10.2175/193864713813686060}.
 
 \bibitem[Andhare and Palkar(2014)]{andhareSCADAToolIncrease2014}
 Sunil~L Andhare and Prasad~J Palkar.
@@ -127,6 +140,16 @@ Joana Costa, Elsa Mesquita, Filipa Ferreira, Maria~Jo{\~a}o Rosa, and Rui~M.C.
 \newblock \emph{Sustainability (Switzerland)}, 13\penalty0 (24):\penalty0
   1--13, 2021.
 \newblock \doi{10.3390/su132413548}.
+
+\bibitem[De~Mulder et~al.(2018)De~Mulder, Flameling, Weijers, Amerlinck, and
+  Nopens]{demulderOpenSoftwarePackage2018}
+C.~De~Mulder, T.~Flameling, S.~Weijers, Y.~Amerlinck, and I.~Nopens.
+\newblock An open software package for data reconciliation and gap filling in
+  preparation of {{Water}} and {{Resource Recovery Facility Modeling}}.
+\newblock \emph{Environmental Modelling \& Software}, 107:\penalty0 186--198,
+  September 2018.
+\newblock ISSN 13648152.
+\newblock \doi{10.1016/j.envsoft.2018.05.015}.
 
 \bibitem[Demir and Woo(2014)]{demirFeedbackControlChlorine2014a}
 Feridun Demir and Wilbur~W. Woo.
@@ -311,6 +334,15 @@ MathWorks.
 MathWorks.
 \newblock {{MATLAB}} for {{Machine Learning}}, June 2022{\natexlab{b}}.
 
+\bibitem[Newhart et~al.(2019)Newhart, Holloway, Hering, and
+  Cath]{newhartDatadrivenPerformanceAnalyses2019}
+Kathryn~B. Newhart, Ryan~W. Holloway, Amanda~S. Hering, and Tzahi~Y. Cath.
+\newblock Data-driven performance analyses of wastewater treatment plants:
+  {{A}} review.
+\newblock \emph{Water Research}, 157:\penalty0 498--513, June 2019.
+\newblock ISSN 00431354.
+\newblock \doi{10.1016/j.watres.2019.03.030}.
+
 \bibitem[{Norton-Brand{\~a}o} et~al.(2013){Norton-Brand{\~a}o}, Scherrenberg,
   and {van Lier}]{norton-brandaoReclamationUsedUrban2013}
 Diana {Norton-Brand{\~a}o}, Sigrid~M. Scherrenberg, and Jules~B. {van Lier}.
@@ -330,6 +362,15 @@ Bhawani~Shankar Pattnaik, Arunima~Sambhuta Pattanayak, Siba~Kumar Udgata, and
 \newblock \emph{Complex \& Intelligent Systems}, 7\penalty0 (2):\penalty0
   961--976, 2021.
 \newblock \doi{10.1007/s40747-020-00259-9}.
+
+\bibitem[Rosen et~al.(2008)Rosen, Rieger, Jeppsson, and
+  Vanrolleghem]{rosenAddingRealismSimulated2008}
+C.~Rosen, L.~Rieger, U.~Jeppsson, and P.~A. Vanrolleghem.
+\newblock Adding realism to simulated sensors and actuators.
+\newblock \emph{Water Science and Technology}, 57\penalty0 (3):\penalty0
+  337--344, February 2008.
+\newblock ISSN 0273-1223, 1996-9732.
+\newblock \doi{10.2166/wst.2008.130}.
 
 \bibitem[Sant{\'i}n et~al.(2015)Sant{\'i}n, Pedret, and
   Vilanova]{santinFuzzyControlModel2015}
