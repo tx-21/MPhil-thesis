@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.27)  19 JUN 2022 22:17
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.27)  20 JUN 2022 13:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -678,7 +678,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 114--122
 
  []
 
-[17]) (chapters/chapter-3-methods.tex [18]
+[17] [18]) (chapters/chapter-3-methods.tex [19]
 CHAPTER 3.
 
 Overfull \hbox (63.83107pt too wide) in paragraph at lines 6--7
@@ -765,31 +765,31 @@ Overfull \hbox (729.51862pt too wide) in paragraph at lines 6--7
 \OT1/cmr/m/n/12 s-there-byindi-cat-ingth-atthose-mem-brane-shave nodi-rectim-pacton-ther-e-moval-ofCEC(Snyderetal.,2007).OthersreportthatMBRsareabletoeffectivelyremoveawidespectrumofCECincludingcompoundsthatarenoteliminatedduringCASprocesses
  []
 
-[19
+[20
 
-] [20] [21]) (chapters/chapter-4-results.tex [22]
+] [21] [22]) (chapters/chapter-4-results.tex [23]
 CHAPTER 4.
-) (chapters/chapter-5-conclusion.tex [23
+) (chapters/chapter-5-conclusion.tex [24
 
 ]
 CHAPTER 5.
-) (thesis.bbl [24
+) (thesis.bbl [25
 
-] [25
+] [26
 
-] [26] [27] [28] [29] [30]) [31] (thesis.aux) ) 
+] [27] [28] [29] [30] [31]) [32] (thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 17724 strings out of 478582
- 343183 string characters out of 2845288
- 599697 words of memory out of 3000000
- 35500 multiletter control sequences out of 15000+600000
+ 17730 strings out of 478582
+ 343363 string characters out of 2845288
+ 599722 words of memory out of 3000000
+ 35504 multiletter control sequences out of 15000+600000
  477343 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 74i,6n,79p,3573b,977s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 74i,6n,79p,3573b,979s stack positions out of 10000i,1000n,20000p,200000b,80000s
  <C:\Users\Tim\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on thesis.pdf (41 pages, 269805 bytes).
+Output written on thesis.pdf (42 pages, 273990 bytes).
 PDF statistics:
- 718 PDF objects out of 1000 (max. 8388607)
- 159 named destinations out of 1000 (max. 500000)
+ 732 PDF objects out of 1000 (max. 8388607)
+ 161 named destinations out of 1000 (max. 500000)
  417 words of extra memory for PDF output out of 10000 (max. 10000000)
 

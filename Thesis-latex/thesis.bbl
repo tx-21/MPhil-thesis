@@ -1,4 +1,4 @@
-\begin{thebibliography}{55}
+\begin{thebibliography}{56}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -352,6 +352,11 @@ Diana {Norton-Brand{\~a}o}, Sigrid~M. Scherrenberg, and Jules~B. {van Lier}.
   June 2013.
 \newblock ISSN 03014797.
 \newblock \doi{10.1016/j.jenvman.2013.03.012}.
+
+\bibitem[Patel(2021)]{patelWhatFeatureEngineering2021a}
+Harshil Patel.
+\newblock What is {{Feature Engineering}} \textemdash{} {{Importance}},
+  {{Tools}} and {{Techniques}} for {{Machine Learning}}, August 2021.
 
 \bibitem[Pattnaik et~al.(2021)Pattnaik, Pattanayak, Udgata, and
   Panda]{pattnaikMachineLearningBased2021}
