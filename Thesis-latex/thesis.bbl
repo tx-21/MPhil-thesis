@@ -1,4 +1,4 @@
-\begin{thebibliography}{56}
+\begin{thebibliography}{54}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -245,20 +245,6 @@ Edmund~A. Kobylinski, Gary~L. Hunter, and Andrew~R. Shaw.
 \newblock ISSN 1938-6478.
 \newblock \doi{10.2175/193864706783761716}.
 
-\bibitem[Krzeminski et~al.(2019)Krzeminski, Tomei, Karaolia, Langenhoff,
-  Almeida, Felis, Gritten, Andersen, Fernandes, Manaia, Rizzo, and
-  {Fatta-Kassinos}]{krzeminskiPerformanceSecondaryWastewater2019}
-Pawel Krzeminski, Maria~Concetta Tomei, Popi Karaolia, Alette Langenhoff,
-  C.~Marisa~R. Almeida, Ewa Felis, Fanny Gritten, Henrik~Rasmus Andersen, Telma
-  Fernandes, Celia~M. Manaia, Luigi Rizzo, and Despo {Fatta-Kassinos}.
-\newblock Performance of secondary wastewater treatment methods for the removal
-  of contaminants of emerging concern implicated in crop uptake and antibiotic
-  resistance spread: {{A}} review.
-\newblock \emph{Science of The Total Environment}, 648:\penalty0 1052--1081,
-  January 2019.
-\newblock ISSN 00489697.
-\newblock \doi{10.1016/j.scitotenv.2018.08.130}.
-
 \bibitem[Li et~al.(2021)Li, Rong, Wang, and Yu]{liRecentAdvancesArtificial2021}
 Lei Li, Shuming Rong, Rui Wang, and Shuili Yu.
 \newblock Recent advances in artificial intelligence and machine learning for
@@ -352,11 +338,6 @@ Diana {Norton-Brand{\~a}o}, Sigrid~M. Scherrenberg, and Jules~B. {van Lier}.
   June 2013.
 \newblock ISSN 03014797.
 \newblock \doi{10.1016/j.jenvman.2013.03.012}.
-
-\bibitem[Patel(2021)]{patelWhatFeatureEngineering2021a}
-Harshil Patel.
-\newblock What is {{Feature Engineering}} \textemdash{} {{Importance}},
-  {{Tools}} and {{Techniques}} for {{Machine Learning}}, August 2021.
 
 \bibitem[Pattnaik et~al.(2021)Pattnaik, Pattanayak, Udgata, and
   Panda]{pattnaikMachineLearningBased2021}
