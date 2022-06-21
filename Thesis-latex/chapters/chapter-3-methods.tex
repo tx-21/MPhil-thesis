@@ -39,12 +39,12 @@ Reclaimed water for non-potable reuses can serve for irrigation for agricultures
 Ammonium and Potassium Probe for IQ Sensor Net System
 The WTW ISE sensor AmmoLyt®Plus 700 IQ is a rugged, ion selective electrode (ISE) probe for the IQ Sensor Net process monitoring system. The AmmoLyt provides continuous and reagentless monitoring of ammonium and potassium using the most precise and reliable electrodes on the market. The individually replaceable electrodes have a typical lifetime of 18 to 24 months and are warrantied for 1 year minimizing maintenance effort and ownership cost.  
 \subsection{Color data monitoring and collection}
+In addition to the weekly monitoring of the colour level of TSE, an hourly monitoring of the colour level of TSE was conducted from 5 October 2021 to 26 February 2022 by using a custom-made online colour monitoring system. As shown in Figure 1, the system consists of a spectrophotometer (DR 3900, Hach Company), a peristaltic pump (SIP 10 Sipper module, Hach Company), and a laptop, which was assembled to realise the online monitoring of TSE colour at a frequency of one (1) measurement per hour. A single measurement was initiated by the peristaltic pump at one (1) hour intervals, with 3 mL of TSE sample collected from the MBR effluent container and delivered to the spectrophotometer cell. The colour level of collected TSE sample was subsequentially analysed by the spectrophotometer with the data transmitted to an automatic data acquisition and storage software pre-installed in the laptop. The DR3900 is connected to a laptop, which receives the real-time data and stores on a data management software from Hach company. To access the real-time data from the laptop, Google Remote Desktop is used to operate the laptop via Internet cloud services using any devices having access to the Internet. After the measurement, the TSE sample was discharged to the MBR effluent container and the online colour monitoring system was left idle until next measurement. The Study Team checks the status of the online colour monitoring system and acquires the data from the data acquisition and storage software and performs the manual cleaning every two (2) weeks. Trouble shooting were also performed once any abnormal reading of the colour level was identified. 
 
 \subsection{Metrics for model evaluation}
-
 AI methods have been demonstrated to be effective in controlling chlorination, while ML models are effective in modeling DBP concentrations, as well as modeling important parameters for adsorption and membrane-filtration processes. The results are often evaluated using various statistical measures including the coefficient of correlation (R), the coefficient of determination (R2), the mean average error (MAE), the mean square error (MSE), the root mean square error (RMSE), and relative error (RE).
-\subsection{Data cleaning and pre-processing}
 
+\subsection{Data cleaning and pre-processing}
 The original data were embedded in multiple matrices and were very messy, with missing values, bad data cells, and unnecessary information. Therefore, the Python modules Numpy (Oliphant, 2006) and Pandas (McKinney, 2010) were used to prepare an organized ‘clean’ dataset for analysis. This dataset contained 105,861 samples (data points) with 34 variables, giving a matrix size of 105,861 × 34. The samples were organized in time series with 10min intervals. 
 
 However, the raw high-resolution data from each meter were compressed by averaging over 10-minute periods to obtain time series with temporal resolutions of 10 min.
@@ -52,12 +52,15 @@ However, the raw high-resolution data from each meter were compressed by averagi
 Most AI techniques were modeled using experimental data to simulate, predict confirm, and optimize contaminant removal in wastewater treatment processes. Experimental data set were either divided into three parts (training, validation, and testing) or two parts (training and testing). The training set was used to develop the model, the validation data set was used to optimize the model, and the testing data set was used to test the model in the prediction stage.
 
 \subsubsection{Data smoothing with Savitzky-Golay filter}
+
 \subsubsection{Exponentially Weighted Moving Average}
+
 \subsubsection{Outlier Removal}
 
 \subsection{Data transformation}
 Split of Train/valid/test dataset 
 \section{Architecture design of the selected baseline models}
+
 \subsection{Random Forest}
 F can be described as an ensemble method in which the final result is obtained by aggregating (through averaging in the case of regression) results from multiple weak learners known as Classification and Regression Trees (CARTs) (Breiman, 2017). Each weak learner (tree) is trained on the bootstrap set, which is obtained by sampling with replacement from the original training set. For trees, the input variables are used to generate nodes. These variables are selected partially and randomly as a subset in every split, then the variable contributing to the smallest sum of impurity of two child nodes at a certain split point is chosen as the split variable. This is done repeatedly until the trees don't need to split anymore. The regression impurity of a particular node is defined by Eqs. (2), (3) and (4), \citep{wangMachineLearningFramework2021}
 \subsection{LSTM}
