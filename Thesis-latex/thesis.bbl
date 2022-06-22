@@ -1,4 +1,4 @@
-\begin{thebibliography}{54}
+\begin{thebibliography}{59}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -94,6 +94,10 @@ Francesca Cecconi and Diego Rosso.
 \newblock \emph{Environmental Science: Water Research and Technology}, 2021.
 \newblock \doi{10.1021/acs.est.0c06111}.
 
+\bibitem[CFI(2022)]{cfiExponentiallyWeightedMoving2022}
+CFI.
+\newblock Exponentially {{Weighted Moving Average}} ({{EWMA}}), January 2022.
+
 \bibitem[Chandola()]{chandolaAnomalyDetectionSurvey}
 Varun Chandola.
 \newblock Anomaly {{Detection}} : {{A Survey}}.
@@ -150,6 +154,10 @@ C.~De~Mulder, T.~Flameling, S.~Weijers, Y.~Amerlinck, and I.~Nopens.
   September 2018.
 \newblock ISSN 13648152.
 \newblock \doi{10.1016/j.envsoft.2018.05.015}.
+
+\bibitem[DeepAI(2022)]{deepaiLossFunction2022}
+DeepAI.
+\newblock Loss {{Function}}, June 2022.
 
 \bibitem[Demir and Woo(2014)]{demirFeedbackControlChlorine2014a}
 Feridun Demir and Wilbur~W. Woo.
@@ -320,6 +328,12 @@ MathWorks.
 MathWorks.
 \newblock {{MATLAB}} for {{Machine Learning}}, June 2022{\natexlab{b}}.
 
+\bibitem[{National Center for Biotechnology
+  Information}(2022)]{nationalcenterforbiotechnologyinformationPubChemCompoundSummary2022}
+{National Center for Biotechnology Information}.
+\newblock "{{PubChem Compound Summary}} for {{CID}} 222, {{Ammonia}}"
+  {{PubChem}}, June 2022.
+
 \bibitem[Newhart et~al.(2019)Newhart, Holloway, Hering, and
   Cath]{newhartDatadrivenPerformanceAnalyses2019}
 Kathryn~B. Newhart, Ryan~W. Holloway, Amanda~S. Hering, and Tzahi~Y. Cath.
@@ -374,6 +388,11 @@ Matthew Stevenson and Cristi{\'a}n Bravo.
 \newblock \emph{Decision Support Systems}, 119:\penalty0 72--84, April 2019.
 \newblock ISSN 01679236.
 \newblock \doi{10.1016/j.dss.2019.02.009}.
+
+\bibitem[Taal(2017)]{taalSmoothingYourData2017}
+Cees Taal.
+\newblock Smoothing your data with polynomial fitting: A signal processing
+  perspective, April 2017.
 
 \bibitem[Viet et~al.(2021)Viet, Jang, Yoon, and
   Jang]{vietEnhancementMembraneSystem2021}
@@ -431,6 +450,10 @@ Xiaodong Wang, Knut Kvaal, and Harsha Ratnaweera.
   surveillance at a full-scale wastewater treatment plant.
 \newblock \emph{Journal of Process Control}, 77:\penalty0 1--6, 2019.
 \newblock \doi{10.1016/j.jprocont.2019.03.005}.
+
+\bibitem[Wikipedia(2022)]{wikipediaSavitzkyGolayFilter2022}
+Wikipedia.
+\newblock Savitzky\textendash{{Golay}} filter, June 2022.
 
 \bibitem[Wil{\'e}n et~al.(2018)Wil{\'e}n, Li{\'e}bana, Persson, Modin, and
   Hermansson]{wilenMechanismsGranulationActivated2018}

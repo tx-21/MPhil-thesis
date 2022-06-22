@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.27)  21 JUN 2022 21:07
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.27)  23 JUN 2022 00:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -896,7 +896,7 @@ CHAPTER 2.
 [3
 
 ] [4] [5] [6] [7] [8] [9] [10] [11] [12] [13]
-<imgs/propose-frameworks-for-control-strategy-design.png, id=373, 911.54839pt x 426.30696pt>
+<imgs/propose-frameworks-for-control-strategy-design.png, id=387, 911.54839pt x 426.30696pt>
 File: imgs/propose-frameworks-for-control-strategy-design.png Graphic file (type png)
 <use imgs/propose-frameworks-for-control-strategy-design.png>
 Package pdftex.def Info: imgs/propose-frameworks-for-control-strategy-design.png  used on input line 95.
@@ -917,11 +917,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 121--129
 
 [17]) (chapters/chapter-3-methods.tex [18] [19]
 CHAPTER 3.
-<imgs/Sewage-treatment-process-flowchart.png, id=463, 924.02357pt x 377.6968pt>
+<imgs/Sewage-treatment-process-flowchart.png, id=477, 1004.03679pt x 412.54124pt>
 File: imgs/Sewage-treatment-process-flowchart.png Graphic file (type png)
 <use imgs/Sewage-treatment-process-flowchart.png>
 Package pdftex.def Info: imgs/Sewage-treatment-process-flowchart.png  used on input line 8.
-(pdftex.def)             Requested size: 409.71692pt x 167.47229pt.
+(pdftex.def)             Requested size: 409.71692pt x 168.34355pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -948,31 +948,104 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 \l__nicematrix_initial_j_int=\count382
 \l__nicematrix_final_i_int=\count383
 \l__nicematrix_final_j_int=\count384
+<imgs/instrument/sampling-tank.png, id=479, 677.10107pt x 488.25269pt>
+File: imgs/instrument/sampling-tank.png Graphic file (type png)
+<use imgs/instrument/sampling-tank.png>
+Package pdftex.def Info: imgs/instrument/sampling-tank.png  used on input line 41.
+(pdftex.def)             Requested size: 364.19667pt x 262.61696pt.
 [20
 
-] [21 <./imgs/Sewage-treatment-process-flowchart.png>] [22] [23]) (chapters/chapter-4-results.tex [24]
+]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[21 <./imgs/Sewage-treatment-process-flowchart.png>]
+<imgs/instrument/ammonium-sensor.png, id=501, 283.0575pt x 325.215pt>
+File: imgs/instrument/ammonium-sensor.png Graphic file (type png)
+<use imgs/instrument/ammonium-sensor.png>
+Package pdftex.def Info: imgs/instrument/ammonium-sensor.png  used on input line 54.
+(pdftex.def)             Requested size: 136.57462pt x 156.92021pt.
+<imgs/instrument/controller-for-iq-sensor.png, id=502, 335.53929pt x 326.93571pt>
+File: imgs/instrument/controller-for-iq-sensor.png Graphic file (type png)
+<use imgs/instrument/controller-for-iq-sensor.png>
+Package pdftex.def Info: imgs/instrument/controller-for-iq-sensor.png  used on input line 59.
+(pdftex.def)             Requested size: 136.57462pt x 133.07172pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--60
+[]\OT1/cmr/m/n/10.95 (b) |DIQ/S 284-EF con-
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[22 <./imgs/instrument/sampling-tank.png>]
+<imgs/instrument/SIP10.png, id=513, 424.15607pt x 353.1766pt>
+File: imgs/instrument/SIP10.png Graphic file (type png)
+<use imgs/instrument/SIP10.png>
+Package pdftex.def Info: imgs/instrument/SIP10.png  used on input line 73.
+(pdftex.def)             Requested size: 136.57462pt x 113.71939pt.
+<imgs/instrument/DR3900_PS.png, id=514, 521.80661pt x 394.04356pt>
+File: imgs/instrument/DR3900_PS.png Graphic file (type png)
+<use imgs/instrument/DR3900_PS.png>
+Package pdftex.def Info: imgs/instrument/DR3900_PS.png  used on input line 78.
+(pdftex.def)             Requested size: 136.57462pt x 103.13434pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 79--79
+[]\OT1/cmr/m/n/10.95 (b) |DR3900 spec-tropho-
+ []
+
+<imgs/instrument/actuator-mount.png, id=515, 1152.01822pt x 508.0409pt>
+File: imgs/instrument/actuator-mount.png Graphic file (type png)
+<use imgs/instrument/actuator-mount.png>
+Package pdftex.def Info: imgs/instrument/actuator-mount.png  used on input line 83.
+(pdftex.def)             Requested size: 318.66948pt x 140.52951pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[23 <./imgs/instrument/ammonium-sensor.png> <./imgs/instrument/controller-for-iq-sensor.png>]
+<imgs/instrument/colour-sampler.png, id=523, 835.83696pt x 498.14679pt>
+File: imgs/instrument/colour-sampler.png Graphic file (type png)
+<use imgs/instrument/colour-sampler.png>
+Package pdftex.def Info: imgs/instrument/colour-sampler.png  used on input line 93.
+(pdftex.def)             Requested size: 364.19667pt x 217.05695pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[24 <./imgs/instrument/SIP10.png> <./imgs/instrument/DR3900_PS.png> <./imgs/instrument/actuator-mount.png>] [25 <./imgs/instrument/colour-sampler.png>]
+<imgs/pre-processing/demo-polynomial-fitting.png, id=547, 502.9992pt x 402.5439pt>
+File: imgs/pre-processing/demo-polynomial-fitting.png Graphic file (type png)
+<use imgs/pre-processing/demo-polynomial-fitting.png>
+Package pdftex.def Info: imgs/pre-processing/demo-polynomial-fitting.png  used on input line 125.
+(pdftex.def)             Requested size: 182.09486pt x 145.72647pt.
+<imgs/pre-processing/demo-weight-ewma.png, id=552, 479.391pt x 308.95425pt>
+File: imgs/pre-processing/demo-weight-ewma.png Graphic file (type png)
+<use imgs/pre-processing/demo-weight-ewma.png>
+Package pdftex.def Info: imgs/pre-processing/demo-weight-ewma.png  used on input line 130.
+(pdftex.def)             Requested size: 227.62206pt x 146.69821pt.
+ [26 <./imgs/pre-processing/demo-polynomial-fitting.png> <./imgs/pre-processing/demo-weight-ewma.png>] [27]) (chapters/chapter-4-results.tex [28]
 CHAPTER 4.
-) (chapters/chapter-5-conclusion.tex [25
+) (chapters/chapter-5-conclusion.tex [29
 
 ]
 CHAPTER 5.
-) (thesis.bbl [26
+) (thesis.bbl [30
 
-] [27
+] [31
 
-] [28] [29] [30] [31] [32]) [33] (thesis.aux) ) 
+] [32] [33] [34] [35] [36]) [37] (thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 27954 strings out of 478582
- 583597 string characters out of 2845288
- 817578 words of memory out of 3000000
- 45548 multiletter control sequences out of 15000+600000
- 477695 words of font info for 58 fonts, out of 8000000 for 9000
+ 28099 strings out of 478582
+ 587755 string characters out of 2845288
+ 820662 words of memory out of 3000000
+ 45658 multiletter control sequences out of 15000+600000
+ 482013 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,14n,90p,3573b,979s stack positions out of 10000i,1000n,20000p,200000b,80000s
- <C:\Users\Tim\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm1200.pk><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on thesis.pdf (43 pages, 1718267 bytes).
+ 85i,14n,90p,3573b,985s stack positions out of 10000i,1000n,20000p,200000b,80000s
+<C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbsy10.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx8.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on thesis.pdf (47 pages, 13252976 bytes).
 PDF statistics:
- 767 PDF objects out of 1000 (max. 8388607)
- 165 named destinations out of 1000 (max. 500000)
- 439 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 873 PDF objects out of 1000 (max. 8388607)
+ 180 named destinations out of 1000 (max. 500000)
+ 484 words of extra memory for PDF output out of 10000 (max. 10000000)
 
