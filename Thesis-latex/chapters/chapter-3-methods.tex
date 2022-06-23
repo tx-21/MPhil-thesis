@@ -110,14 +110,37 @@ Before the high-resolution data from colour and ammonia datasets were compressed
 \subsubsection{Data smoothing with Savitzky-Golay and EWMA filter}
 Data smoothing was performed on both ammonia and colour datasets using the same method. One of the effective ways to remove the noise from the dataset is to apply data smoothing filters. Two filteres were applied in this study, Savitzky-Golay (SG) and Exponentially Weighted Moving Average (EWMA) filters.
 
-A SG filter is a digital filter that can be applied to a set of digital data points for the purpose of smoothing the data, that is, to increase the precision of the data without distorting the signal tendency. This is achieved, in a process known as convolution, by fitting successive sub-sets of adjacent data points with a low-degree polynomial by the method of linear least squares. \citep{wikipediaSavitzkyGolayFilter2022}
+A SG filter is a digital filter that can be applied to a set of digital data points for the purpose of smoothing the data without distorting the data tendency. This is achieved via convolution, by fitting successive sub-sets of adjacent data points with a low-degree polynomial by the method of linear least squares \citep{wikipediaSavitzkyGolayFilter2022}. The illustration is shown in Fig.~\ref{fig:filters-sg} and the procedures of how data points are smoothed is presented in the following steps:
 
-a polynomial curve based on the  and  Extract short-time window 
-Determine polynomial degree
-Find the smoothed data point (i.e., at center of the window)
-Repeat for shifted window (e.g., similar to moving average)
+\noindent
+\begin{myenumerate}
+    \item Extract short-time window (i.e., blue dots in Fig.\ref{fig:filters-sg})
+    \item Determine polynomial degree (e.g., different polynomial degree is compared in Fig.~\ref{fig:filters-sg}).
+    \item Find the smoothed data point (i.e., at center of the window).
+    \item Repeat for shifted window (e.g., similar to moving average).
+\end{myenumerate}
 
-EWMA
+The equation to decribed the smoothed value of \boldmath$Y_j$ can be expressed in Eq.~\ref{sg-eq}:
+
+\begin{equation}\label{sg-eq}
+    Y_j=(C\otimes y)_j=\sum_{i=\frac{1-m}{2}}^{\frac{m-1}{2}}C_iy_{j+i},\,\frac{m+1}{2}\le j\le n-\frac{m-1}{2}
+\end{equation}
+
+\noindent
+where $Y_j$ corresponds to the $j^{th}$ smoothed data point, $m$ to the window size (i.e., numer of data points intended to smooth out) and $C_i$ to the convolution coefficients (i.e., determined by \citet{savitzkySmoothingDifferentiationData1964}). 
+
+Exponentially weighted moving average (EWMA), also known as auto-regressive (AR) filtering, is a technique that filters measurements. An EWMA filter smoothes a measured data point by exponentially averaging that particular point with all previous measurements. The EWMA equation can be expressed in Eq.~\ref{ewma-eq}:
+
+\begin{equation}\label{ewma-eq}
+    \begin{aligned}
+        &\alpha=\frac{2}{span+1} \\
+        &y_0=x_0 \\
+        &y_t=(1-\alpha)y_{t-1}+\alpha x_t
+    \end{aligned}
+\end{equation}
+
+\noindent
+where $\alpha$ corresponds to the decay paratmeter, $x_t$ to the value at a time period, $y_t$ to the value of the EWMA at any time period t, span to the window size.
 
 \begin{figure}[h]
     \centering
@@ -125,15 +148,50 @@ EWMA
       \includegraphics[width=\linewidth]{imgs/pre-processing/demo-polynomial-fitting.png}
       \caption{SG filter with different polynomial degree \citep{taalSmoothingYourData2017}.} \label{fig:filters-sg}
     \end{subfigure}%
-    \hspace{3em}%   % maximize separation between the subfigures
+    \hspace{2em}%   % maximize separation between the subfigures
     \begin{subfigure}{0.5\textwidth}
       \includegraphics[width=\linewidth]{imgs/pre-processing/demo-weight-ewma.png}
-      \caption{EWMA weight with varied alpha values \citep{cfiExponentiallyWeightedMoving2022}.} \label{fig:filters-ewma}
+      \caption{Examples of weights with exponential decay at varied alpha values \citep{cfiExponentiallyWeightedMoving2022}.} \label{fig:filters-ewma}
     \end{subfigure}%  
   \caption{Illustration of the influence of different polynomial degrees in the fitting of SG filter and the weigth decay with varied alpha values in EWMA filter.} \label{fig:filters}
 \end{figure}
 
+Both SG and EWMA filters are required to select the hyperparamters, the selected values are presented in Table.~\ref{tab:filter-hyperparameters}.
+
+\begin{table}[!ht]
+    \centering
+    \caption{The selected hyperparameters for SG and EWMA filters.}\label{tab:filter-hyperparameters}
+    \begin{NiceTabular}{lcc}
+        \toprule
+        Group Name & Window size & Polynomial degree \\
+        \midrule
+        SG-5   & 5 & 2 \\ 
+        SG-7   & 7 & 2 \\ 
+        SG-9   & 9 & 2 \\ 
+        EWMA-2 & 2 & - \\ 
+        EWMA-3 & 3 & - \\ 
+        EWMA-4 & 4 & - \\ 
+        \bottomrule
+    \end{NiceTabular}
+\end{table}
+
 \subsubsection{Outlier Removal}
+Despite the extreme values in the ammonia raw dataset were removed based on simple conditions (i.e., concentration higher than 7.0 mg/L), the ammonia sensor can still capture unideal data points collectively. In the outlier removal process, we intended to identify the collective faults of ammonia data in the unit of an entire day. To determine whether the ammonia data on a specific day shows collective fault, two abnormal conditions are defined:
+
+\noindent
+\begin{myenumerate}
+    \item NH$_{3}$-N fluctuation $\le$ 0.1 (i.e., lower than the sensor resolution).
+    \item No diurnal fluctuation (i.e., Fluctuation = peak value – bottom line value).
+\end{myenumerate}
+
+To automiatically realize the identification of noraml or abnormal signals, peak analysis was performed on the daily ammonia data. The analysis takes a one-dimension array (i.e., the data form of ammonia in a day) and finds all local maximum values by simple comparison of neighboring values. This function will also provide information such as width and prominence in Fig.~\ref{fig:prominence} to help us identify whether the diurnal fluctuation is existed.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.55\columnwidth]{imgs/pre-processing/prominence.png}
+    \caption{Illustration of peak analysis. Four important elements are automatic caculated by the function \citep{mathworksDocumentationFindpeaks2022}.}
+    \label{fig:prominence}
+ \end{figure}
 
 \subsection{Data transformation}
 Split of Train/valid/test dataset 

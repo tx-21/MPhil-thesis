@@ -1,4 +1,4 @@
-\begin{thebibliography}{59}
+\begin{thebibliography}{61}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -324,9 +324,13 @@ MathWorks.
 \newblock Call {{Python Function Using MATLAB Function}} and {{MATLAB System
   Block}}, April 2022{\natexlab{a}}.
 
-\bibitem[MathWorks(2022{\natexlab{b}})]{mathworksMATLABMachineLearning2022}
+\bibitem[MathWorks(2022{\natexlab{b}})]{mathworksDocumentationFindpeaks2022}
 MathWorks.
-\newblock {{MATLAB}} for {{Machine Learning}}, June 2022{\natexlab{b}}.
+\newblock Documentation-{{Findpeaks}}, June 2022{\natexlab{b}}.
+
+\bibitem[MathWorks(2022{\natexlab{c}})]{mathworksMATLABMachineLearning2022}
+MathWorks.
+\newblock {{MATLAB}} for {{Machine Learning}}, June 2022{\natexlab{c}}.
 
 \bibitem[{National Center for Biotechnology
   Information}(2022)]{nationalcenterforbiotechnologyinformationPubChemCompoundSummary2022}
@@ -381,6 +385,15 @@ I.~Sant{\'i}n, C.~Pedret, and R.~Vilanova.
   (10):\penalty0 2763--2775, March 2015.
 \newblock ISSN 0888-5885, 1520-5045.
 \newblock \doi{10.1021/ie504079q}.
+
+\bibitem[Savitzky and Golay(1964)]{savitzkySmoothingDifferentiationData1964}
+Abraham. Savitzky and M.~J.~E. Golay.
+\newblock Smoothing and {{Differentiation}} of {{Data}} by {{Simplified Least
+  Squares Procedures}}.
+\newblock \emph{Analytical Chemistry}, 36\penalty0 (8):\penalty0 1627--1639,
+  July 1964.
+\newblock ISSN 0003-2700.
+\newblock \doi{10.1021/ac60214a047}.
 
 \bibitem[Stevenson and Bravo(2019)]{stevensonAdvancedTurbidityPrediction2019}
 Matthew Stevenson and Cristi{\'a}n Bravo.
