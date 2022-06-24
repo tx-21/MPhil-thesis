@@ -10,45 +10,45 @@ Warning--empty year in WhatPythonExecutive
 Warning--empty journal in chandolaAnomalyDetectionSurvey
 Warning--empty year in chandolaAnomalyDetectionSurvey
 Warning--empty year in chandolaAnomalyDetectionSurvey
-You've used 61 entries,
+You've used 65 entries,
             2773 wiz_defined-function locations,
-            1067 strings with 22654 characters,
-and the built_in function-call counts, 32287 in all, are:
-= -- 2914
-> -- 2199
-< -- 25
-+ -- 744
-- -- 681
-* -- 2955
-:= -- 5088
-add.period$ -- 253
-call.type$ -- 61
-change.case$ -- 410
-chr.to.int$ -- 59
-cite$ -- 128
-duplicate$ -- 1216
-empty$ -- 2315
-format.name$ -- 759
-if$ -- 6611
+            1086 strings with 23208 characters,
+and the built_in function-call counts, 33619 in all, are:
+= -- 3026
+> -- 2259
+< -- 28
++ -- 766
+- -- 699
+* -- 3047
+:= -- 5291
+add.period$ -- 264
+call.type$ -- 65
+change.case$ -- 428
+chr.to.int$ -- 63
+cite$ -- 136
+duplicate$ -- 1282
+empty$ -- 2447
+format.name$ -- 781
+if$ -- 6892
 int.to.chr$ -- 3
 int.to.str$ -- 1
-missing$ -- 48
-newline$ -- 382
-num.names$ -- 240
-pop$ -- 717
+missing$ -- 49
+newline$ -- 401
+num.names$ -- 256
+pop$ -- 764
 preamble$ -- 1
-purify$ -- 349
+purify$ -- 363
 quote$ -- 0
-skip$ -- 959
+skip$ -- 1012
 stack$ -- 0
-substring$ -- 1176
-swap$ -- 125
+substring$ -- 1190
+swap$ -- 133
 text.length$ -- 4
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 671
+type$ -- 715
 warning$ -- 5
-while$ -- 262
+while$ -- 275
 width$ -- 0
-write$ -- 926
+write$ -- 973
 (There were 5 warnings)

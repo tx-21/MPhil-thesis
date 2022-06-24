@@ -7,8 +7,15 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Instrument of on-line ammonium monitoring system.\relax }}{23}{figure.caption.9}%
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Instruments of on-line colour analysis system.\relax }}{24}{figure.caption.10}%
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Schematic diagram of the custom-made on-line colour anlaysis system.\relax }}{25}{figure.caption.11}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Illustration of the influence of different polynomial degrees in the fitting of SG filter and the weigth decay with varied alpha values in EWMA filter.\relax }}{27}{figure.caption.12}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Illustration of peak analysis. Four important elements are automatic caculated by the function \citep {mathworksDocumentationFindpeaks2022}.\relax }}{28}{figure.caption.14}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Machine learning model training steps.\relax }}{26}{figure.caption.12}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Illustration of the influence of different polynomial degrees in the fitting of SG filter and the weigth decay with varied alpha values in EWMA filter.\relax }}{28}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Illustration of peak analysis. Four important elements are automatic caculated by the function \citep {mathworksDocumentationFindpeaks2022}.\relax }}{29}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Sewer system coverage of SHWEPP. The covered areas (i.e., area circled in red boundary) include Fanling/Sheung-Shui new towns and NENT landfill leachate treament plant.\relax }}{30}{figure.caption.16}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Analysis of influent quality composition and the illustration of the positional encoding.\relax }}{31}{figure.caption.17}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Illustration of feature selections for model training.\relax }}{32}{figure.caption.18}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Illustration of feature selections for model training.\relax }}{32}{figure.caption.19}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Random \relax }}{33}{figure.caption.20}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Different recurrent neural networks (adapted from \citet {olahUnderstandingLSTMNetworks2015})..\relax }}{34}{figure.caption.21}%
 \addvspace {1pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Illustration of the influence of different polynomial degrees in the fitting of SG filter and the weigth decay with varied alpha values in EWMA filter.\relax }}{31}{figure.caption.15}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Illustration of the influence of different polynomial degrees in the fitting of SG filter and the weigth decay with varied alpha values in EWMA filter.\relax }}{35}{figure.caption.22}%
 \addvspace {1pt}
