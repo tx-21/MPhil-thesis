@@ -19,32 +19,31 @@
 \contentsline {subsection}{\numberline {2.2.1}Drinking water treatment plants}{7}{subsection.2.2.1}%
 \contentsline {subsection}{\numberline {2.2.2}Wastewater treatment plants}{9}{subsection.2.2.2}%
 \contentsline {subsection}{\numberline {2.2.3}Water reclamation system}{13}{subsection.2.2.3}%
-\contentsline {section}{\numberline {2.3}Tools and techniques for enchancing the performance of machine learning modeling}{14}{section.2.3}%
-\contentsline {subsection}{\numberline {2.3.1}Programming languages}{14}{subsection.2.3.1}%
-\contentsline {subsection}{\numberline {2.3.2}Data pre-processing}{16}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.3}Tools and techniques for enchancing the performance of machine learning modeling}{15}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Programming languages}{15}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Data pre-processing}{17}{subsection.2.3.2}%
 \contentsline {subsection}{\numberline {2.3.3}Feature engineering}{18}{subsection.2.3.3}%
-\contentsline {chapter}{{Chapter 3}\hspace {1em}Methods and Materials}{20}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Wastewater treatment plant description}{20}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Process and data sources in SWHEPP}{20}{subsection.3.1.1}%
-\contentsline {subsection}{\numberline {3.1.2}Reclaimed water standard}{20}{subsection.3.1.2}%
+\contentsline {chapter}{{Chapter 3}\hspace {1em}Methods and Materials}{21}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Wastewater treatment plant description}{21}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Process and data sources in SWHEPP}{21}{subsection.3.1.1}%
 \contentsline {section}{\numberline {3.2}Data collection and preparation}{21}{section.3.2}%
 \contentsline {subsection}{\numberline {3.2.1}On-line data monitoring and collection}{21}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Loss function for model evaluation}{24}{subsection.3.2.2}%
-\contentsline {subsection}{\numberline {3.2.3}Data cleaning and pre-processing}{25}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.3}Data cleaning and pre-processing}{24}{subsection.3.2.3}%
 \contentsline {subsubsection}{\numberline {3.2.3.1}Data smoothing with Savitzky-Golay and EWMA filter}{26}{subsubsection.3.2.3.1}%
-\contentsline {subsubsection}{\numberline {3.2.3.2}Outlier Removal}{28}{subsubsection.3.2.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.3.2}Outlier Removal}{29}{subsubsection.3.2.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.3.3}Feature Engineering}{29}{subsubsection.3.2.3.3}%
 \contentsline {subsection}{\numberline {3.2.4}Data transformation}{31}{subsection.3.2.4}%
-\contentsline {subsection}{\numberline {3.2.5}The use of software and machine learning framework}{32}{subsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.2.6}Random Forest}{33}{subsection.3.2.6}%
-\contentsline {subsection}{\numberline {3.2.7}Deep Neural Networks}{34}{subsection.3.2.7}%
-\contentsline {subsection}{\numberline {3.2.8}Recurrent Neural Network}{34}{subsection.3.2.8}%
-\contentsline {subsection}{\numberline {3.2.9}Gate Recurrent Unit}{34}{subsection.3.2.9}%
-\contentsline {subsection}{\numberline {3.2.10}Long Short-term Memory}{34}{subsection.3.2.10}%
-\contentsline {chapter}{{Chapter 4}\hspace {1em}Results and Discussion}{35}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Baseline performance of ammonia concentration and colour level forecasting models}{35}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Machine learning vs deep learning}{35}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Improved performance on forecasting models using data pre-processing techniques}{36}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Data enrichment via feature engineering based on effluent quality pattern}{36}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Design of model architecture through analyzing wastewater composition in sewer system}{36}{section.4.4}%
-\contentsline {chapter}{{Chapter 5}\hspace {1em}Conclusion}{37}{chapter.5}%
+\contentsline {section}{\numberline {3.3}Machine learning models}{33}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Random Forest}{33}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Deep Neural Networks}{34}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Recurrent Neural Network}{34}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Long Short-term Memory}{35}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Gate Recurrent Unit}{36}{subsection.3.3.5}%
+\contentsline {chapter}{{Chapter 4}\hspace {1em}Results and Discussion}{38}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Baseline performance of ammonia concentration and colour level forecasting models}{38}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Machine learning vs deep learning}{38}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Improved performance on forecasting models using data pre-processing techniques}{39}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Data enrichment via feature engineering based on effluent quality pattern}{39}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Design of model architecture through analyzing wastewater composition in sewer system}{39}{section.4.4}%
+\contentsline {chapter}{{Chapter 5}\hspace {1em}Conclusion}{40}{chapter.5}%

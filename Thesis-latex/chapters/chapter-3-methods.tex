@@ -10,30 +10,6 @@ Shek Wu Hui Effluent Polish Plant (SWHEPP) is a secondary sewage treatment plant
     \label{fig:SHWEPP-flowchart}
 \end{figure}
 
-\subsection{Reclaimed water standard}
-Reclaimed water for non-potable reuses can serve for irrigation for agricultures, toilet flushing and irrigation for landscaping, etc. Water Supply Department (WSD) will soon implement a reclaimed water supply system in SWHEPP by disinfecting the teriary treated sewage (i.e., MBR permeate). The produced reclaimed water will be served for non-potable reuses and is required to satisfy the water quality standards, shown in Table.~\ref{tab:reclaimed-standard}.
-
-\begin{table}[!ht]
-    \centering
-    \caption{\label{tab:reclaimed-standard}Endorsed Reclaimed Water Quality Standards from Water Supply Department.}
-    \begin{NiceTabular}{lcl}
-        \toprule
-        Parameter & Unit & Requirement \tabularnote{The water quality standards for all parameters are applicable at the point-of-use of the system.} \\
-        \midrule
-        \textit{E. coli} & cfu/100 mL & Not detectable \\ 
-        Colour & Hazen Unit & $\le$ 20 \\ 
-        Ammoniacal Nitrogen (NH$_3$-N) & mg/L as N & $\le$ 1 \\ 
-        Total Residual Chlorine & mg/L & $\ge$ 0.2 \\ 
-        Dissolved Oxygen & mg/L & $\ge$ 0.2 \\ 
-        Turbidity & NTU & $\le$ 5 \\ 
-        5-day Biochemical Oxygen Demand & mg/L & $\le$ 1 \\ 
-        pH & - & 6-9 \\ 
-        Threshold Odour Number & - & $\le$ 100 \\ 
-        Synthetic detergents & mg/L & $\le$ 5 \\
-        \bottomrule
-    \end{NiceTabular}
-\end{table}
-
 \section{Data collection and preparation}
 
 \begin{figure}[h]
@@ -95,7 +71,7 @@ The maintenance and calibration of the DR3900 spectrophotometer is performed on 
  \end{figure}
 
 \subsection{Loss function for model evaluation}
-Loss functions are used to determine the error between the model outputs (i.e., prediction or forecasting values) and the given target value \citep{deepaiLossFunction2022}. The bigger the difference between the ground truth \boldmath${y}$ and the model outputs \boldmath${\hat{y}}$, the higher the value of the loss function is, meaning the model perfomred poorer. A low value for the loss means the modle perfomred well. The selection of the types of the loss function is essential for training the model to perform specific tasks. In this study, Mean Squared Error (MSE) is used for evaluating the regression models. The values of MSE will never be negative, and is formally defined by the following equation:
+Loss functions are used to determine the error between the model outputs (i.e., prediction or forecasting values) and the given target value \citep{deepaiLossFunction2022}. The bigger the difference between the ground truth $\bm{y}$ and the model outputs $\bm{\hat{y}}$, the higher the value of the loss function is, meaning the model perfomred poorer. A low value for the loss means the modle perfomred well. The selection of the types of the loss function is essential for training the model to perform specific tasks. In this study, Mean Squared Error (MSE) is used for evaluating the regression models. The values of MSE will never be negative, and is formally defined by the following equation:
 
 \begin{equation}\label{eq-mse}
     MSE=\frac{\sum (y_i-\hat{y_i})^2}{n}
@@ -128,7 +104,7 @@ A SG filter is a digital filter that can be applied to a set of digital data poi
     \item Repeat for shifted window (e.g., similar to moving average).
 \end{myenumerate}
 
-The equation to decribed the smoothed value of \boldmath$Y_j$ can be expressed in Eq.~\ref{sg-eq}:
+The equation to decribed the smoothed value of $\bm{Y_j}$ can be expressed in Eq.~\ref{sg-eq}:
 
 \begin{equation}\label{sg-eq}
     Y_j=(C\otimes y)_j=\sum_{i=\frac{1-m}{2}}^{\frac{m-1}{2}}C_iy_{j+i},\,\frac{m+1}{2}\le j\le n-\frac{m-1}{2}
@@ -246,7 +222,9 @@ Due to the size of the datasets used in this study for training ammonia and colo
  \end{figure}
 
 \subsection{Data transformation}
-Before the pre-processed data is fed into the models for training, we need to split the data into three clusters, which are training (60\%), validation (20\%), and testing dataset (20\%). A taining dataset is a set of examples (e.g., historical data) for models to learn the hidden trends and information in the data, shown in (a) in Fig.~\ref{fig:training-scheme}, and the training loss is calculated by taking the sum of loss for each example in the training dataset after each epoch. Since it is impossible to have the optimized hyperparameters in the first try of the training, a validation dataset as in (b) in Fig.~\ref{fig:training-scheme} is used to assess the model performance until we obtain the optimzed settings. The validation loss plays an important role during the model training, the adjustments of the hyperparameters will directly reflect on the change of the validation loss, the lower the values, the better the model performance is. As the optimzed model is obtained, testing dataset is used to evaluate the performance of the forecasting model, as shown in (c) in Fig.~\ref{fig:training-scheme}. To the forecasting Models, testing dataset has never been seen by the models. If the model tuning process was performed on the testing dataset, the model performance would be a biased result since the hyperparameters are revised in favor to the evalution of the testing dataset.
+Before the pre-processed data is fed into the models for training, we need to split the data into three clusters, which are training (60\%), validation (20\%), and testing dataset (20\%). Among each training dataset, the data will be further split into input variables $\bm{X}$ and output variable $\bm{Y}$ (i.e., training X/training Y, testing X/testing Y). During the training process, machine learning algorithms will learn a target function $\bm{f}$ to best map $\bm{X}$ to $\bm{Y}$. 
+
+A taining dataset is a set of examples (e.g., historical data) for models to learn the hidden trends and information in the data, shown in (a) in Fig.~\ref{fig:training-scheme}, and the training loss is calculated by taking the sum of loss for each example in the training dataset after each epoch. Since it is impossible to have the optimized hyperparameters in the first try of the training, a validation dataset as in (b) in Fig.~\ref{fig:training-scheme} is used to assess the model performance until we obtain the optimzed settings. The validation loss plays an important role during the model training, the adjustments of the hyperparameters will directly reflect on the change of the validation loss, the lower the values, the better the model performance is. As the optimzed model is obtained, testing dataset is used to evaluate the performance of the forecasting model, as shown in (c) in Fig.~\ref{fig:training-scheme}. To the forecasting Models, testing dataset has never been seen by the models. If the model tuning process was performed on the testing dataset, the model performance would be a biased result since the hyperparameters are revised in favor to the evalution of the testing dataset.
 
 In Fig.~\ref{fig:training-scheme}, the hyperparameters will remained the same once the optimzed values are found, thus generating a baseline model perfromance of a specific machine learning model. The baseline results will be further compared with the results from the model trained by the proposed model trianing steps, which include datasets that have been performed data smoothing and feature engineering techniques.
 
@@ -257,41 +235,51 @@ In Fig.~\ref{fig:training-scheme}, the hyperparameters will remained the same on
     \label{fig:feature-selection}
  \end{figure}
 
-%\section{Architecture design of selected baseline models}
-\subsection{The use of software and machine learning framework}
-To efficiently build machine learning models, PyTorch framework was used in this study. 
-
-PyTorch is an open source machine learning framework based on the Torch library,[3][4][5] used for applications such as computer vision and natural language processing,[6] primarily developed by Meta AI.[7][8][9] It is free and open-source software released under the Modified BSD license. Although the Python interface is more polished and the primary focus of development, PyTorch also has a C++ interface.[10]
-
-A number of pieces of deep learning software are built on top of PyTorch, including Tesla Autopilot,[11] Uber's Pyro,[12] Hugging Face's Transformers,[13] PyTorch Lightning,[14][15] and Catalyst.[16][17]
-
-PyTorch provides two high-level features:[18]
-
-Tensor computing (like NumPy) with strong acceleration via graphics processing units (GPU)
-Deep neural networks built on a tape-based automatic differentiation system
-
-
+\section{Machine learning models}
 \subsection{Random Forest}
+The machine learning model used in this study (i.e., not deep learning models) is random forest (RF). It is an ensemble method which the final output is obtained by averaging the results from multiple tree learners \citep{wangMachineLearningFramework2021}, as shown in Fig.~\ref{fig:rf}. The training algorithm applies the general technique of bootstrap aggregating, also known as bagging, to tree learners. Given a training set $X = x_1, ..., x_n$ with targets $Y = y_1, ..., y_n$, bagging repeatedly (B times) selects a random sample with replacement (i.e., not putting the samples back to the population) of the training set and fits trees to these samples \citep{wikipediaRandomForest2022}, RF generate an output through the following steps:
 
-\begin{figure}[h]
-    \centering
-    \begin{subfigure}[t]{0.45\textwidth}
-      \includegraphics[width=\linewidth]{imgs/models/random-forest.png}
-      \caption{Random Forest (RF) \citep{riebesellRandomForest2022}.} \label{fig:rf}
-    \end{subfigure}%
-    \hspace{3em}%   % maximize separation between the subfigures
-    \begin{subfigure}[t]{0.45\textwidth}
-        \includegraphics[width=\linewidth]{imgs/models/DNN.png}
-        \caption{Deep Neural Network (DNN) \citep{ibmNeuralNetworks2022}.} \label{fig:dnn}
-    \end{subfigure}%
-  \caption{Random } \label{fig:rf-dnn}
-\end{figure}
+For $b=1, ..., B:$
 
-F can be described as an ensemble method in which the final result is obtained by aggregating (through averaging in the case of regression) results from multiple weak learners known as Classification and Regression Trees (CARTs) (Breiman, 2017). Each weak learner (tree) is trained on the bootstrap set, which is obtained by sampling with replacement from the original training set. For trees, the input variables are used to generate nodes. These variables are selected partially and randomly as a subset in every split, then the variable contributing to the smallest sum of impurity of two child nodes at a certain split point is chosen as the split variable. This is done repeatedly until the trees don't need to split anymore. The regression impurity of a particular node is defined by Eqs. (2), (3) and (4), \citep{wangMachineLearningFramework2021}
+\noindent
+\begin{myenumerate}
+  \item Sample (with replacement) n training examples from $X$, $Y$, call these $X_b, Y_b$.
+  \item Train a regression tree $f_b$ on $X_b, Y_b$.
+  \item Predict unseen samples $x^{'}$ by averaging the predicdtions from all the regression tree learners on $x^{'}$ as in Eq.~\ref{eq-rf}:
+\end{myenumerate}
+
+\begin{equation}\label{eq-rf}
+  \hat{f}=\frac{1}{B}\sum_{b=1}^{B}f_b(x^{'})
+\end{equation}
 
 \subsection{Deep Neural Networks}
+Artificial Neural Network (ANN) is a very broad term that encompasses any form of Deep Learning model. A typical ANN consists with input, hidden and output layers, and each layer comprises multiple neurons (i.e., nodes). The connected neurons are to simulate the human brain by process and transmit input signals to the next nodes \citep{mohseni-dargahChapter12Machine2022} . What sets apart from a ANN model to a DNN model is that the former contains only one hidden layer while the latter has more than one, as shown in Fig.~\ref{fig:dnn}. The DNN models are nonlinear, which finds the correct mathematical manipulation to turn the input into the output \citep{bangaloreaiDeepNeuralNetwork2018}.
+
+\begin{figure}[h]
+  \centering
+  \begin{subfigure}[t]{0.5\textwidth}
+    \includegraphics[width=\linewidth]{imgs/models/random-forest.png}
+    \caption{Random Forest (RF) \citep{riebesellRandomForest2022}.} \label{fig:rf}
+  \end{subfigure}%
+  \hspace{3em}%   % maximize separation between the subfigures
+  \begin{subfigure}[t]{0.4\textwidth}
+      \includegraphics[width=\linewidth]{imgs/models/DNN.png}
+      \caption{Deep Neural Network (DNN) \citep{ibmNeuralNetworks2022}.} \label{fig:dnn}
+  \end{subfigure}%
+\caption{Illustration of RF and DNN model structure.} \label{fig:rf-dnn}
+\end{figure}
+
+%An ANN is based on a collection of connected units or nodes called artificial neurons, which loosely model the neurons in a biological brain. Each connection, like the synapses in a biological brain, can transmit a signal to other neurons. An artificial neuron receives signals then processes them and can signal neurons connected to it. The "signal" at a connection is a real number, and the output of each neuron is computed by some non-linear function of the sum of its inputs. The connections are called edges. Neurons and edges typically have a weight that adjusts as learning proceeds. The weight increases or decreases the strength of the signal at a connection. Neurons may have a threshold such that a signal is sent only if the aggregate signal crosses that threshold. Typically, neurons are aggregated into layers. Different layers may perform different transformations on their inputs. Signals travel from the first layer (the input layer), to the last layer (the output layer), possibly after traversing the layers multiple times.
 
 \subsection{Recurrent Neural Network}
+A recurrent neural network (RNN) is a type of Artificial Neural Network which designed to work with sequence data. For instance, sequence data are time series, DNA, language, speech and sequences of user actions data, etc. The ammonia concentration and colour level data are time series data, which is a series of data points listed in minute orders \citep{dongesGuideRNNUnderstanding2021}. A distinguished characteristic of RNN is that they share parameters across each layer of the network by allowing information to be passed from last step of the network to the next. Unlike RNN, feedforward networks like DNN have different weights across each node. The reuse of previous information for making decision on RNN makes it capable of "learning" from the previous inputs. The realization of the memorizing function is through a memory unit called hidden state (i.e., a vector contains weights) in RNN architecture, which enable RNN to presist data, thus capture short term dependencies. The RNN architecture is presented in Fig.~\ref{fig:rnn}. The general formulation of a RNN is expressed in Eq.~\ref{eq-rnn} \citep{mamandipoorMonitoringDetectingFaults2020}:
+
+\begin{equation}\label{eq-rnn}
+  h_t=\sigma(W^hh_{t-1}+W^xx_t+b)
+\end{equation}
+
+\noindent
+where $x_t$ is the current input, $h_t$ is the current hidden state (output), $h_{t-1}$ is the previous output, $W^x$ is the weights of the hidden state, $W^h$ is the weight of the input, $b$ is the bias, $\sigma$ is the sigmoid activation function.
 
 \begin{figure}[h]
     \centering
@@ -301,27 +289,48 @@ F can be described as an ensemble method in which the final result is obtained b
     \end{subfigure}%
     \hspace{1em}%   % maximize separation between the subfigures
     \begin{subfigure}[t]{0.3\textwidth}
-        \includegraphics[width=\linewidth]{imgs/models/gru-2.png}
-        \caption{Gate Recurrent Unit (GRU).} \label{fig:gru}
+      \includegraphics[width=\linewidth]{imgs/models/lstm-2.png}
+      \caption{Long Short-term Memory (LSTM).} \label{fig:lstm}
     \end{subfigure}%
     \hspace{1em}
     \begin{subfigure}[t]{0.3\textwidth}
-      \includegraphics[width=\linewidth]{imgs/models/lstm-2.png}
-      \caption{Long Short-term Memory (LSTM).} \label{fig:lstm}
+      \includegraphics[width=\linewidth]{imgs/models/gru-2.png}
+      \caption{Gate Recurrent Unit (GRU).} \label{fig:gru}
     \end{subfigure}%  
-  \caption{Different recurrent neural networks (adapted from \citet{olahUnderstandingLSTMNetworks2015})..} \label{fig:recurrent-nn}
+  \caption{Variant architectures of Recurrent Neural Networks (adapted from \citet{olahUnderstandingLSTMNetworks2015}).  $x_t$ corresponds to the current input, $h_{t-1}$ to the last hidden state (output), $h_t$ to the current output, tanh is the tangent activation function, $\sigma$ is the sigmoid activation function,$\times$ is the vector pointwise multiplication, $+$ is the vector pointwise addition.} \label{fig:recurrent-nn}
 \end{figure}
 
+\subsection{Long Short-term Memory}
+Long Short-term Memory (LSTM) is a deep recurrent neural networks (RNN), an advanced and improved version of RNN. The advent of LSTM is to solve problems requiring learning long-term temporal dependencies which cannot be learned by RNN due to the simple model architecture. The fundmental of LSTM network is built on memory blocks called "cells", which are responsible for tranferring and receiving the states (i.e., vectors) recording the information from the previous cells. In a cell block, there are input gate, forget gate and the output gate. The function of these three gates is to control the movement of the information into and out of the cell via the sigmoid function. The inputs of the cell will first go through a forget gate ($f_t$) as Eq.~\ref{lstm-(1)}, where the function will mutiply each element in the input states by values ranging from 0 to 1 to realize the effect of "forget". Next, a input gate ($i_t$) as in Eq.~\ref{lstm-(2)} will decide whether the new information should be updated or ignored by sigmoid function (i.e., 0 or 1), followed by a tangent function giving weight of importance (i.e., -1 to 1) to the values which passed by as in Eq.~\ref{lstm-(3)}. New memory then is appended to the previous memory $C_{t-1}$ resulting a new $C_t$. Lastly, output values ($h_t$) is obtained based on output cell state ($O_t$) as in Eq.~\ref{lstm-(5)} and Eq.~\ref{lstm-(6)} \citep{leApplicationLongShortTerm2019}. The equations for LSTM structure are shown in Eq.~\ref{eq-lstm}:
+
+\begin{subequations} \label{eq-lstm}
+  \begin{align}
+      &f_t=\sigma(W_f[h_{t-1},X_t]+b_f) \label{lstm-(1)}\\
+      &i_t=\sigma(W_i[h_{t-1},X_t]+b_i) \label{lstm-(2)}\\
+      &\tilde{C_t}=tanh(W_n[h_{t-1},X_t]+b_n) \label{lstm-(3)}\\
+      &C_t=C_{t-1}f_t+\tilde{C_t}i_t \label{lstm-(4)}\\
+      &O_t=\sigma(W_o[h_{t-1},X_t]+b_o) \label{lstm-(5)}\\
+      &h_t=O_ttanh(C_t) \label{lstm-(6)}
+  \end{align}
+\end{subequations}
+
+\noindent
+where $f_t$ corresponds to the forget gate, $i_t$ to the input gate, $\tilde{C_t}$ to the candidate cell state, $C_t$ to the current cell state, $O_t$ to the output cell state, $h_t$ to the output values, $\sigma$ to the sigmoid function, $X_t$ to the current input, tanh to the tangent function, $W$ and $b$ are the weight matrices and bias of the corresponding output gate, respectively.
 
 \subsection{Gate Recurrent Unit}
+Gated Recurrent Unit (GRU) model is a variant of LSTM model, by combining the forget gate and input gate into an update gate as in Fig.~\ref{fig:gru}, GRU has less parameters compared to LSTM. The advantage of GRU over LSTM is less computing power required while maintaining a similar model performance compared to LSTM. The inputs of GRU model first enter the update gate ($z_t$) as in Eq.~\ref{gru-(1)}, where the function will help the model to determine how much of the past information needs to be passed along to the future via sigmoid functions. Followed by the reset gate ($r_t$) as in Eq.~\ref{gru-(2)}, which is used to decide how much of the past information to forget. Althogh Eq.~\ref{gru-(1)} and Eq.~\ref{gru-(2)} have the same inputs of $X_t$ and $h_{t-1}$, the usages of the gates are different. The outputs of reset gate will be used to determine the candidate hidden state ($]tilde{h}$) as in Eq.~\ref{gru-(3)}, where the tangent fucntion will determine the importance of current input ($X_t$), reset gate output, and previous hidden state ($h_t$). At the last step, the output values ($h_t$) is calculated from the candidate hidden state ($\tilde{h_t}$), previous hidden state ($h_{t-1}$), and the outputs of update gate as in Eq.~\ref{gru-(4)}. The equations of GRU structures are presented in Eq.~\ref{eq-gru} \citep{chengForecastingWastewaterTreatment2020}:
 
-\subsection{Long Short-term Memory}
-Recently, deep recurrent neural networks (RNN) such as long short-term memory networks (LSTM) have shown breakthrough results over state-of-the-art machinelearning methods in many applications with non-linear temporal data, including robotics, high-energy physics and computational geometry (Goodfellow et al. 2016). These methods can successfully engineer appropriate long-term temporal dependencies and variable length features, significantly lessening the need to pre-process data with respect to traditional machine-learning methods or statistical approaches. It is the ability to capture the long-term dependencies that make LSTM networks particularity fitting for the problem at hand. 
+\begin{subequations} \label{eq-gru}
+  \begin{align}
+      &z_t=\sigma(X_tW_{xz}+h_{t-1}W_{hz}+b_z) \label{gru-(1)}\\
+      &r_t=\sigma(X_tW_{xr}+h_{t-1}W_{hr}+b_r) \label{gru-(2)}\\
+      &\tilde{h_t}=tanh(X_tW_{xh}+(r_t\circ h_{t-1})W_{hh}+b_h) \label{gru-(3)}\\
+      &h_t=z_t\circ h_{t-1}+(1-z_t)\circ \tilde{h_t} \label{gru-(4)}
+  \end{align}
+\end{subequations}
 
-Fig. 1 The general schema of a RNN unit versus a LSTM one (adapted from Olah 2015)
-
-Architecture of the method proposed by Mamandipoor et al. (2020)
+\noindent
+where $z_t$ corresponds to the update gate, $r_t$ to the reset gate, $\tilde{h_t}$ to the candidate hidden state, $h_t$ to the output values, $\sigma$ to the sigmoid function, tanh to the tangent function, $X_t$ to the current input, $W$ and the $b$ are the weight matrices and bias of the corresponding output gate, respectively.
 
 %\section{Implementation of regularization}
 %\subsection{Scheduler}
-

@@ -1,4 +1,4 @@
-\begin{thebibliography}{65}
+\begin{thebibliography}{70}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -86,6 +86,11 @@ Nobel Ballhysa, Soyeon Kim, and Seongjoon Byeon.
   9\penalty0 (4):\penalty0 16--25, December 2020.
 \newblock \doi{10.7236/IJASC.2020.9.4.16}.
 
+\bibitem[Bangaloreai(2018)]{bangaloreaiDeepNeuralNetwork2018}
+Bangaloreai.
+\newblock Deep neural network ({{DNN}}) is an artificial neural network
+  ({{ANN}}), March 2018.
+
 \bibitem[bin Talib(2011)]{talibModelingControlWastewater2011}
 Adi~Hasif bin Talib.
 \newblock \emph{Modeling and {{Control}} of {{Wastewater Treatment Process}}}.
@@ -121,6 +126,14 @@ J.C. Chen, N.B. Chang, and W.K. Shieh.
 \newblock ISSN 09521976.
 \newblock \doi{10.1016/S0952-1976(03)00056-3}.
 
+\bibitem[Cheng et~al.(2020)Cheng, Harrou, Kadri, Sun, and
+  Leiknes]{chengForecastingWastewaterTreatment2020}
+Tuoyuan Cheng, Fouzi Harrou, Farid Kadri, Ying Sun, and Torove Leiknes.
+\newblock Forecasting of wastewater treatment plant key features using deep
+  learning-based models: {{A}} case study.
+\newblock \emph{IEEE Access}, 8:\penalty0 184475--184485, 2020.
+\newblock \doi{10.1109/ACCESS.2020.3030820}.
+
 \bibitem[Chojnacka et~al.(2020)Chojnacka, {Witek-Krowiak}, Moustakas,
   Skrzypczak, Mikula, and
   Loizidou]{chojnackaTransitionConventionalIrrigation2020}
@@ -143,16 +156,6 @@ M.~Colella, M.~Ripa, A.~Cocozza, C.~Panfilo, and S.~Ulgiati.
   November 2021.
 \newblock ISSN 03014797.
 \newblock \doi{10.1016/j.jenvman.2021.113171}.
-
-\bibitem[Costa et~al.(2021)Costa, Mesquita, Ferreira, Rosa, and
-  Viegas]{costaIdentificationModellingChlorine2021}
-Joana Costa, Elsa Mesquita, Filipa Ferreira, Maria~Jo{\~a}o Rosa, and Rui~M.C.
-  Viegas.
-\newblock Identification and modelling of chlorine decay mechanisms in
-  reclaimed water containing ammonia.
-\newblock \emph{Sustainability (Switzerland)}, 13\penalty0 (24):\penalty0
-  1--13, 2021.
-\newblock \doi{10.3390/su132413548}.
 
 \bibitem[De~Mulder et~al.(2018)De~Mulder, Flameling, Weijers, Amerlinck, and
   Nopens]{demulderOpenSoftwarePackage2018}
@@ -177,6 +180,11 @@ Feridun Demir and Wilbur~W. Woo.
   (2):\penalty0 1088--1097, June 2014.
 \newblock ISSN 22133437.
 \newblock \doi{10.1016/j.jece.2014.04.006}.
+
+\bibitem[Donges(2021)]{dongesGuideRNNUnderstanding2021}
+Niklas Donges.
+\newblock A {{Guide}} to {{RNN}}: {{Understanding Recurrent Neural Networks}}
+  and {{LSTM Networks}}, July 2021.
 
 \bibitem[Gamiz et~al.(2020)Gamiz, Vilanova, {Martinez-Garcia}, Bolea, and
   Grau]{gamizFuzzyGainScheduling2020}
@@ -266,6 +274,15 @@ Edmund~A. Kobylinski, Gary~L. Hunter, and Andrew~R. Shaw.
 \newblock ISSN 1938-6478.
 \newblock \doi{10.2175/193864706783761716}.
 
+\bibitem[{Le} et~al.(2019){Le}, {Ho}, {Lee}, and
+  {Jung}]{leApplicationLongShortTerm2019}
+{Le}, {Ho}, {Lee}, and {Jung}.
+\newblock Application of {{Long Short-Term Memory}} ({{LSTM}}) {{Neural
+  Network}} for {{Flood Forecasting}}.
+\newblock \emph{Water}, 11\penalty0 (7):\penalty0 1387, July 2019.
+\newblock ISSN 2073-4441.
+\newblock \doi{10.3390/w11071387}.
+
 \bibitem[Li et~al.(2021)Li, Rong, Wang, and Yu]{liRecentAdvancesArtificial2021}
 Lei Li, Shuming Rong, Rui Wang, and Shuili Yu.
 \newblock Recent advances in artificial intelligence and machine learning for
@@ -344,6 +361,19 @@ MathWorks.
 \bibitem[MathWorks(2022{\natexlab{c}})]{mathworksMATLABMachineLearning2022}
 MathWorks.
 \newblock {{MATLAB}} for {{Machine Learning}}, June 2022{\natexlab{c}}.
+
+\bibitem[{Mohseni-Dargah} et~al.(2022){Mohseni-Dargah}, Falahati, Dabirmanesh,
+  Nasrollahi, and Khajeh]{mohseni-dargahChapter12Machine2022}
+Masoud {Mohseni-Dargah}, Zahra Falahati, Bahareh Dabirmanesh, Parisa
+  Nasrollahi, and Khosro Khajeh.
+\newblock Chapter 12 - {{Machine}} learning in surface plasmon resonance for
+  environmental monitoring.
+\newblock In Mohsen Asadnia, Amir Razmjou, and Amin Beheshti, editors,
+  \emph{Artificial {{Intelligence}} and {{Data Science}} in {{Environmental
+  Sensing}}}, Cognitive {{Data Science}} in {{Sustainable Computing}}, pages
+  269--298. {Academic Press}, January 2022.
+\newblock ISBN 978-0-323-90508-4.
+\newblock \doi{10.1016/B978-0-323-90508-4.00012-5}.
 
 \bibitem[{National Center for Biotechnology
   Information}(2022)]{nationalcenterforbiotechnologyinformationPubChemCompoundSummary2022}
@@ -485,9 +515,13 @@ Xiaodong Wang, Knut Kvaal, and Harsha Ratnaweera.
 \newblock \emph{Journal of Process Control}, 77:\penalty0 1--6, 2019.
 \newblock \doi{10.1016/j.jprocont.2019.03.005}.
 
-\bibitem[Wikipedia(2022)]{wikipediaSavitzkyGolayFilter2022}
+\bibitem[Wikipedia(2022{\natexlab{a}})]{wikipediaRandomForest2022}
 Wikipedia.
-\newblock Savitzky\textendash{{Golay}} filter, June 2022.
+\newblock Random forest, June 2022{\natexlab{a}}.
+
+\bibitem[Wikipedia(2022{\natexlab{b}})]{wikipediaSavitzkyGolayFilter2022}
+Wikipedia.
+\newblock Savitzky\textendash{{Golay}} filter, June 2022{\natexlab{b}}.
 
 \bibitem[Wil{\'e}n et~al.(2018)Wil{\'e}n, Li{\'e}bana, Persson, Modin, and
   Hermansson]{wilenMechanismsGranulationActivated2018}
