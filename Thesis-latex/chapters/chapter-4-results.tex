@@ -1,59 +1,120 @@
 \chapter{Results and Discussion}
 \section{Baseline performance of ammonia concentration and colour level forecasting models}
+Based on the proposed model training methods, which ammonia and colour data are used as the second features of training colour and ammonia forecasting models, the size and time of the ammonia and colour datasets should be the same. In addition, abnormal data caused by sensor downtime should also be excluded. Thus, we chose the ammonia and colour data from 23 December 2021 to 22 January, as shown in Fig.~\ref{fig:nh3-color-data}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.0\columnwidth]{imgs/results/data.png}
+    \caption{Ammonia and colour data collected from 23 December 2021 to 22 January 2022.}
+    \label{fig:nh3-color-data}
+  \end{figure}
+
+\subsection{Machine learning vs deep learning}
+We first review the ammonia and colour forecasting models trained by single-feature datasets, including the raw datasets (i.e., datasets which were only processed by data cleaning) and the datasets which were applied with different data smoothing filters (i.e., SG and EWMA filters). The baseline performance of LSTM model (LSTM-obs) in forecasting ammonia revealed the lowest test loss value of 0.0405 compared to GRU, RNN, DNN, RF models (GRU-obs, RNN-obs, DNN-obs and RF-obs) with the values of 0.0414, 0.0440, 0.0561 and 0.1158, respectively, as shown in Table.~\ref{tab:baseline-result-jan-nh3}.
+
+With the best baseline performance is known, we found that SG filters improved the quality of the raw dataset, as the top lowest test loss values are from GRU models trained by a single-feature dataset processed with SG filter at the window size of 7 and 5 (GRU-sg7 and GRU-sg5), followed by LSTM models trained by a single-feature dataset processed with EWMA filter at window size of 3 and SG filters at window size of 5 and 7. The improvements of model performance resulted from the use of data smoothing methods are not consistant across different models, in other words, the best combination of Model-Dataset to GRU model is SG filter at window size of 7, while it is EWMA at the window size of 3 for LSTM model.
+
+Empirically, when different models are evaluated by the same testing dataset, the order of test and validation loss from the smallest to largest values should be identical. However, we observed that the top three lowest validation loss values, which are 1.0796 from LSTM-ew3, 1.0969 from LSTM-ew2, and 1.1219 from LSTM-ew4, do not have the top three lowest test loss values. This finding points to the potential of the heterogeneity between the trianing and testing datasets. Further tests were carried out using testing dataset from October to exclude the posstibilty of having heterogeneity between the two datasets. To the best of my understanding, the comparisons between testing and validation loss are not discussed on the currently availabe research papers in modelling in wastewater treatment industry.
 
 \begin{table}[!ht]
   \centering
-  \caption{\label{tab:baseline-result}Baseline.}
-  \begin{NiceTabular}{clcccc}
+  \caption{Baseline performance of ammonia forecasting model, evaluated on test dataset from \textbf{16 to 22 Janurary 2022}. Loss values are calculated by MSE.}\label{tab:baseline-result-jan-nh3}
+  \begin{NiceTabular}{lcclcc}
       \toprule
-      Rank & Model-Dataset & Test loss & Improvement & test & test \\
+      Model-Dataset & Test loss & Valid loss & Model-Dataset & Test loss & Valid loss \\
       \midrule
-      1  & LSTM-ew3 & 0.0379$\pm$0.0009 & 3.32\%  &LSTM-ew3 & 0.0379$\pm$0.0009 \\
-      2  & LSTM-sg7 & 0.0379$\pm$0.0004 & 4.77\%  &LSTM-sg7 & 0.0379$\pm$0.0004 \\
-      3  & LSTM-ew4 & 0.0380$\pm$0.0003 & 2.06\%  &LSTM-ew4 & 0.0380$\pm$0.0003 \\
-      4  & GRU-ew3  & 0.0386$\pm$0.0004 & 1.53\%  &GRU-ew3  & 0.0386$\pm$0.0004 \\
-      5  & LSTM-sg5 & 0.0387$\pm$0.0004 & 4.44\%  &LSTM-sg5 & 0.0387$\pm$0.0004 \\
-      6  & LSTM-ew2 & 0.0389$\pm$0.0004 & 1.77\%  &LSTM-ew2 & 0.0389$\pm$0.0004 \\
-      7  & GRU-sg7  & 0.0390$\pm$0.0009 & -1.30\% &GRU-sg7  & 0.0390$\pm$0.0009 \\
-      8  & GRU-sg5  & 0.0392$\pm$0.0008 & 3.21\%  &GRU-sg5  & 0.0392$\pm$0.0008 \\
-      9  & GRU-ew4  & 0.0394$\pm$0.0004 & -0.77\% &GRU-ew4  & 0.0394$\pm$0.0004 \\
-      10 & GRU-sg9  & 0.0400$\pm$0.0010 & -4.44\% &GRU-sg9  & 0.0400$\pm$0.0010 \\
-      11 & GRU-ew2  & 0.0402$\pm$0.0012 & -3.34\% &GRU-ew2  & 0.0402$\pm$0.0012 \\
-      12 & LSTM-sg9 & 0.0409$\pm$0.0006 & -5.41\% &LSTM-sg9 & 0.0409$\pm$0.0006 \\
-      13 & LSTM-obs & 0.0411$\pm$0.0007 & -4.05\% &LSTM-obs & 0.0411$\pm$0.0007 \\
-      14 & RNN-sg5  & 0.0413$\pm$0.0009 & 0.48\%  &RNN-sg5  & 0.0413$\pm$0.0009 \\
-      15 & RNN-sg7  & 0.0417$\pm$0.0007 & 1.42\%  &RNN-sg7  & 0.0417$\pm$0.0007 \\
-      16 & GRU-obs  & 0.0420$\pm$0.0006 & -1.45\% &GRU-obs  & 0.0420$\pm$0.0006 \\
-      17 & RNN-ew2  & 0.0424$\pm$0.0006 & -9.28\% &RNN-ew2  & 0.0424$\pm$0.0006 \\
-      18 & RNN-ew3  & 0.0426$\pm$0.0003 & -3.90\% &RNN-ew3  & 0.0426$\pm$0.0003 \\
-      19 & RNN-ew4  & 0.0427$\pm$0.0005 & -1.43\% &RNN-ew4  & 0.0427$\pm$0.0005 \\
-      20 & RNN-obs  & 0.0437$\pm$0.0012 & -1.16\% &RNN-obs  & 0.0437$\pm$0.0012 \\
+      GRU-sg7  & 0.0383 &1.2508&RNN-or  & 0.0432&1.6345 \\
+      GRU-sg5  & 0.0385 &1.2644&RNN-ew3 & 0.0434&1.6041 \\
+      LSTM-ew3 & 0.0388 &1.0796&RNN-obs & 0.0440&1.6734 \\
+      LSTM-sg5 & 0.0388 &1.2346&RNN-sg9 & 0.0442&1.7046 \\
+      LSTM-sg7 & 0.0388 &1.1804&DNN-obs & 0.0561&3.2383 \\
+      GRU-ew2  & 0.0389 &1.1891&DNN-sg5 & 0.0562&3.2170 \\
+      GRU-ew4  & 0.0391 &1.2390&DNN-ew2 & 0.0563&3.1677 \\
+      GRU-ew3  & 0.0392 &1.2199&DNN-ew3 & 0.0569&3.2317 \\
+      LSTM-ew2 & 0.0392 &1.0969&DNN-sg7 & 0.0570&3.2014 \\
+      LSTM-ew4 & 0.0395 &1.1219&DNN-ew4 & 0.0571&3.2188 \\
+      GRU-sg9  & 0.0396 &1.3097&DNN-or  & 0.0572&3.1972 \\
+      LSTM-or  & 0.0398 &1.2612&DNN-sg9 & 0.0574&3.2484 \\
+      LSTM-obs & 0.0405 &1.3993&RF-obs  & 0.1158&- \\
+      GRU-or   & 0.0405 &1.2366&RF-sg9  & 0.1196&- \\
+      LSTM-sg9 & 0.0410 &1.3076&RF-ew2  & 0.1286&- \\
+      GRU-obs  & 0.0414 &1.3638&RF-or   & 0.1294&- \\
+      RNN-sg5  & 0.0415 &1.5088&RF-sg5  & 0.1298&- \\
+      RNN-ew2  & 0.0421 &1.5425&RF-ew3  & 0.1313&- \\
+      RNN-sg7  & 0.0423 &1.6267&RF-sg7  & 0.1409&- \\
+      RNN-ew4  & 0.0432 &1.5992&RF-ew4  & 0.1441&- \\
       \bottomrule
   \end{NiceTabular}
 \end{table}
 
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=1.0\columnwidth]{imgs/results/data.png}
-  \caption{Ammonia and colour data collected from }
-  \label{fig:nh3-color-data}
-\end{figure}
+As shown in Table.~\ref{tab:baseline-result-oct-nh3}, the rank of top three lowest validation loss from the smallest to the largest values is identical to the rank of the test loss values. This is in good agreement with how the heterogeneity of the datasets can impact on the model performance. The evluations of ammonia forecasting models in October 2021 showed different outcomes compared to the one in January 2022. Despite the rank of the baseline performance remained the same, LSTM models trained by EMWA filters took the top three lowest test loss values, which are 0.0158 from LSTM-ew3, 0.0161 from LSTM-ew2 and 0.0163 from LSTM-ew4. 
 
-\begin{figure}[h]
+\begin{table}[!ht]
     \centering
-    \begin{subfigure}{0.45\textwidth}
-      \includegraphics[width=\linewidth]{imgs/pre-processing/sg-filter.png}
-      \caption{} \label{fig:smoothed-sg}
-    \end{subfigure}%
-    \hspace{2em}%   % maximize separation between the subfigures
-    \begin{subfigure}{0.45\textwidth}
-      \includegraphics[width=\linewidth]{imgs/pre-processing/ew-filter.png}
-      \caption{} \label{fig:smoothed-ew}
-    \end{subfigure}%  
-  \caption{Illustration of the influence of different polynomial degrees in the fitting of SG filter and the weigth decay with varied alpha values in EWMA filter.} \label{fig:smoothed}
-\end{figure}
-\subsection{Machine learning vs deep learning}
-RF is used in this work as a representative tree-based modeling strategy because RF models have some major advantages over alternative tree-based models; notably, they require fewer hyperparameters for tuning, their performance is robust to hyperparameter changes, and they are less likely to suffer from overfitting (Breiman, 2001;Breiman, 2002 ;Chen and Guestrin, 2016;Fawagreh et al., 2014 ;Ke et al., 2017).
+    \caption{Baseline performance of ammonia forecasting model, evaluated on test dataset from \textbf{10 to 16 October 2021}. Loss values are calculated by MSE.}\label{tab:baseline-result-oct-nh3}
+    \begin{NiceTabular}{lcclcc}
+        \toprule
+        Model-Dataset & Test loss & Valid loss & Model-Dataset & Test loss & Valid loss \\
+        \midrule
+        LSTM-ew3 & 0.0158 & 1.0796 & RNN-or  & 0.0197 & 1.6345 \\
+        LSTM-ew2 & 0.0161 & 1.0969 & RNN-sg7 & 0.0201 & 1.6267 \\
+        LSTM-ew4 & 0.0163 & 1.1219 & RNN-sg9 & 0.0205 & 1.7046 \\
+        LSTM-sg5 & 0.0166 & 1.2346 & RNN-obs & 0.0206 & 1.6734 \\
+        GRU-ew3  & 0.0167 & 1.2199 & DNN-ew3 & 0.0316 & 3.2317 \\
+        GRU-ew4  & 0.0169 & 1.2390 & DNN-or  & 0.0316 & 3.1972 \\
+        GRU-ew2  & 0.0170 & 1.1891 & DNN-sg7 & 0.0316 & 3.2014 \\
+        GRU-sg9  & 0.0174 & 1.3097 & DNN-ew2 & 0.0318 & 3.1677 \\
+        LSTM-obs & 0.0175 & 1.2366 & DNN-ew4 & 0.0319 & 3.2188 \\
+        LSTM-or  & 0.0177 & 1.2612 & DNN-obs & 0.0319 & 3.2383 \\
+        GRU-sg5  & 0.0178 & 1.2644 & DNN-sg5 & 0.0319 & 3.2170 \\
+        GRU-sg7  & 0.0180 & 1.2508 & DNN-sg9 & 0.0319 & 3.2484 \\
+        LSTM-sg7 & 0.0180 & 1.1804 & RF-sg9  & 0.1307 & - \\
+        GRU-or   & 0.0187 & 1.3993 & RF-sg7  & 0.1311 & - \\
+        LSTM-sg9 & 0.0188 & 1.3076 & RF-sg5  & 0.1343 & - \\
+        GRU-obs  & 0.0189 & 1.3638 & RF-ew2  & 0.1346 & - \\
+        RNN-ew4  & 0.0190 & 1.5992 & RF-ew3  & 0.1368 & - \\
+        RNN-ew2  & 0.0191 & 1.5425 & RF-obs  & 0.1443 & - \\
+        RNN-ew3  & 0.0193 & 1.6041 & RF-ew4  & 0.1451 & - \\
+        RNN-sg5  & 0.0195 & 1.5088 & RF-or   & 0.1477 & - \\
+        \bottomrule
+    \end{NiceTabular}
+\end{table}
+
+In the baseline performance of colour forecasting model, LSTM-obs has the lowest test loss values of 0.0148, followed by GRU-obs, RNN-obs, DNN-obs and RF-obs, as shown in Table.~\ref{tab:baseline-result-jan-colour}. The best performed models are the LSTM models trained by EWMA filters, which are 0.0136 from LSTM-ew4, 0.0138 from LSTM-ew2 and LSTM-ew3. Interstingly, the use of LSTM models and pre-processed with EWMA filters can generate the best performed models for both the forecasting of ammonia concentration and colour levels.
+
+\begin{table}[!ht]
+  \centering
+  \caption{Baseline performance of colour forecasting model, evaluated on test dataset from \textbf{16 to 22 Janurary 2022}. Loss values are calculated by MSE.}\label{tab:baseline-result-jan-colour}
+  \begin{NiceTabular}{lcclcc}
+      \toprule
+      Model-Dataset & Test loss & Valid loss & Model-Dataset & Test loss & Valid loss \\
+      \midrule
+      LSTM-ew4 & 0.0136 &0.7515&RNN-obs  & 0.0160 &1.0623 \\
+      LSTM-ew2 & 0.0138 &0.8011&LSTM-sg7 & 0.0161 &0.7439 \\
+      LSTM-ew3 & 0.0138 &0.7547&LSTM-sg5 & 0.0168 &0.8355 \\
+      GRU-ew3  & 0.0140 &0.8068&DNN-sg5  & 0.0180 &1.4702 \\
+      GRU-ew2  & 0.0142 &0.8330&DNN-sg7  & 0.0180 &1.4823 \\
+      GRU-ew4  & 0.0143 &0.7694&DNN-sg9  & 0.0180 &1.4574 \\
+      LSTM-sg9 & 0.0143 &0.7137&DNN-ew4  & 0.0181 &1.4632 \\
+      RNN-ew3  & 0.0144 &0.8492&DNN-ew3  & 0.0182 &1.4716 \\
+      RNN-ew4  & 0.0147 &0.8476&DNN-ew2  & 0.0183 &1.4946 \\
+      RNN-sg9  & 0.0147 &0.8363&DNN-obs  & 0.0186 &1.5397 \\
+      LSTM-obs & 0.0148 &0.9744&RF-sg9   & 63.6847& \\
+      GRU-obs  & 0.0149 &0.9927&RF-sg7   & 73.8263& \\
+      RNN-ew2  & 0.0150 &0.9083&RF-ew3   & 75.1974&- \\
+      GRU-sg9  & 0.0151 &0.7575&RF-ew4   & 77.8829&- \\
+      RNN-sg5  & 0.0158 &0.8846&RF-obs   & 78.5296&- \\
+      RNN-sg7  & 0.0158 &0.8755&RF-ew2   & 78.8753&- \\
+      GRU-sg7  & 0.0159 &0.7791&RF-sg5   & 81.0696&- \\
+      GRU-sg5  & 0.0160 &0.8080&    -    &     -  &- \\
+      \bottomrule
+  \end{NiceTabular}
+\end{table}
+
+From comparing the baseline performance and the influence of data smoothing methods on different models, our findings appear to be well substantiated the use of LSTM models for training ammonia and colour forecasting models due to it's outstanding model performance on test loss. The influence of pre-processing methods are not consistant on improving the model performance. Thus, datasets applied with all the data smoothing methods will be remained to test how the additional features will affect the model performance.
+
 \section{Improved performance on forecasting models using data pre-processing techniques}
+
 \section{Data enrichment via feature engineering based on effluent quality pattern}
+
 \section{Design of model architecture through analyzing wastewater composition in sewer system}

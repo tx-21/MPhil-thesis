@@ -28,12 +28,12 @@ The instrument records ammonium concentration as NH$_{4}$-N mg/L, a form to expr
     \centering
     \begin{subfigure}{0.3\textwidth}
       \includegraphics[width=\linewidth]{imgs/instrument/ammonium-sensor.png}
-      \caption{AmmoLyt$^\circledR$Plus 700 IQ, Xylem} \label{fig:nh3-sensor-a}
+      \caption{AmmoLyt$^\circledR$Plus 700 IQ, Xylem.} \label{fig:nh3-sensor-a}
     \end{subfigure}%
     \hspace{5em}%   % maximize separation between the subfigures
     \begin{subfigure}{0.3\textwidth}
       \includegraphics[width=\linewidth]{imgs/instrument/controller-for-iq-sensor.png}
-      \caption{DIQ/S 284-EF controller, Xylem} \label{fig:nh3-sensor-b}
+      \caption{DIQ/S 284-EF controller, Xylem.} \label{fig:nh3-sensor-b}
     \end{subfigure}%  
   \caption{Instrument of on-line ammonium monitoring system.} \label{fig:nh3-sensor}
 \end{figure}
@@ -159,6 +159,22 @@ Both SG and EWMA filters are required to select the hyperparamters, the selected
     \end{NiceTabular}
 \end{table}
 
+Fig.~\ref{fig:smoothed} shows the influences of different windows sizes on SG filters as in Fig.~\ref{fig:smoothed-sg} and on EWMA filters as in Fig.~\ref{smoothed-ew}.
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}{0.45\textwidth}
+      \includegraphics[width=\linewidth]{imgs/pre-processing/sg-filter.png}
+      \caption{} \label{fig:smoothed-sg}
+    \end{subfigure}%
+    \hspace{2em}%   % maximize separation between the subfigures
+    \begin{subfigure}{0.45\textwidth}
+      \includegraphics[width=\linewidth]{imgs/pre-processing/ew-filter.png}
+      \caption{} \label{fig:smoothed-ew}
+    \end{subfigure}%  
+  \caption{Illustration of the influence of different polynomial degrees in the fitting of SG filter and the weigth decay with varied alpha values in EWMA filter.} \label{fig:smoothed}
+\end{figure}
+
 \subsubsection{Outlier Removal}
 Despite the extreme values in the ammonia raw dataset were removed based on simple conditions (i.e., concentration higher than 7.0 mg/L), the ammonia sensor can still capture unideal data points collectively. In the outlier removal process, we intended to identify the collective faults of ammonia data in the unit of an entire day. To determine whether the ammonia data on a specific day shows collective fault, two abnormal conditions are defined:
 
@@ -178,7 +194,7 @@ To automiatically realize the identification of noraml or abnormal signals, peak
  \end{figure}
 
 \subsubsection{Feature Engineering}
-To create addition features from the raw datasets, we have carefully observed and analyzed the SWHEPP influent. We discovered that the SWHEPP influent is consisted of treated landfill effluent from NENT landfill leachate site and municipal wastewater, as shown in Fig.~\ref{fig:geomap}. Treated leachate effluent mainly contributes the colour levels in the SHWEPP influent, while the ammonia concentration is mostly from the municipal wastewater. During the mixing of both type of the wastewater as in Fig.~\ref{fig:blend-ratio}, pollutants contribute to colour levels will be diluted by the municipal wastewater, same as the opposite for the dilution of ammonia concentration. The changes of colour levels and ammonia concentration are related, thus, in feature engineering, colour level data was selected for training ammonia forecasting model; ammonia data was selected for training colour forecasting model, as shown in Fig.~\ref{fig:feature-selection}.
+To create addition features from the raw datasets, we have carefully observed and analyzed the SWHEPP influent. We discovered that the SWHEPP influent is consisted of treated landfill effluent from NENT landfill leachate site and municipal wastewater, as shown in Fig.~\ref{fig:geomap}. We observed that with higher blending ratio, which is calculated from the daily volume of treated leachate effluent divided by the daily inflow volume of SHWEPP, the colour level is also higher, as shown in Fig~\ref{fig:blend-colour-coef}. With the the Pearson coefficient of 0.68, the increased volume of treated leachate effluent in public sewege system is proportional to the increase of the colour levels in the SHWEPP influent, while the ammonia concentration is mostly from the municipal wastewater. During the mixing of both type of the wastewater as in Fig.~\ref{fig:blend-ratio}, pollutants contribute to colour levels will be diluted by the municipal wastewater, same as the opposite for the dilution of the ammonia concentration. In Fig.~\ref{fig:color-to-nh3-pattern}, we can observe the time when the lowest colour level of the day occured is close to when the highest of ammonia concentration was observed. The changes of colour levels and ammonia concentration are interative, thus, in feature engineering, colour level data was selected for training ammonia forecasting model; ammonia data was selected for training colour forecasting model, as shown in Fig.~\ref{fig:feature-selection}.
 
 \begin{figure}[h]
     \centering
@@ -201,21 +217,22 @@ To create addition features from the raw datasets, we have carefully observed an
   \caption{Analysis of influent quality composition and the illustration of the positional encoding.} \label{fig:blend-pos}
 \end{figure}
 
-\begin{figure}[h]
-  \centering
-  \includegraphics[width=0.8\columnwidth]{imgs/results/colour-pattern.png}
-  \caption{}
-  \label{fig:color-to-nh3-pattern}
-\end{figure}
 
 \begin{figure}[h]
-  \centering
-  \includegraphics[width=0.8\columnwidth]{imgs/leachate-effluent-blend-ratio-color-plot/colour-blend-coef.png}
-  \caption{}
-  \label{fig:blend-colour-coef}
+    \centering
+    \begin{subfigure}[t]{0.45\textwidth}
+        \includegraphics[width=\linewidth]{imgs/leachate-effluent-blend-ratio-color-plot/colour-blend-coef.png}
+        \caption{Coefficienct between blending ratio and colour levles.} \label{fig:blend-colour-coef}
+      \end{subfigure}%  
+    \hspace{2em}%   % maximize separation between the subfigures
+    \begin{subfigure}[t]{0.45\textwidth}
+        \includegraphics[width=\linewidth]{imgs/results/colour-pattern.png}
+        \caption{Trend comparison of ammonia concentration and colour levels.} \label{fig:color-to-nh3-pattern}
+      \end{subfigure}%
+  \caption{Observatios of ammonia concentration and colour levels in SHWEPP influent.} \label{fig:observation-shweep-influent}
 \end{figure}
 
-The new features are inspired from the research work of \citet{abu-bakarQuantifyingImpactCOVID192021}. The author pointed out the four types of hourly household water consumption patterns as in Fig.~\ref{fig:water-consumption-pattern}, which correlates the specific time of the day to the volume of the water consumed in households. In other words, as fresh water is consumed, wastewater is generated at the same time, the wastewater then enters the public sewage system and result in the increase of ammonia concentration. Thus, it is convinced that time features will be able to help the machine learning models to better correlate and predict the change of ammonia concentration in the wastewater. 
+The new features are inspired from the research work of \citet{abu-bakarQuantifyingImpactCOVID192021}. The author pointed out the four types of hourly household water consumption patterns as in Fig.~\ref{fig:water-consumption-pattern}, which correlates the specific time of the day to the volume of the water consumed in households. In other words, as fresh water is consumed, wastewater is generated at the same time, the wastewater then enters the public sewage system and result in the increase of ammonia concentration. As shown in Fig.~\ref{fig:nh3-peak-pattern}, the peak analysis tool helped us to identify the peak hour of the ammonia concentration, which occured at around 13:00 to 14:00 o'clock at noon, and 20:00 to 21:00 o'clock at evening. Thus, it is convinced that time features will be able to help the machine learning models to better correlate and predict the change of ammonia concentration in the wastewater. 
 
 Time feature is realized through a technique called positional encoding (POS). The positioanl encoded feature was achieved as the following steps:
 
@@ -237,9 +254,23 @@ Due to the size of the datasets used in this study for training ammonia and colo
 
 \begin{figure}[h]
   \centering
-  \includegraphics[width=0.8\columnwidth]{imgs/results/nh3-pattern.png}
+  \includegraphics[width=0.6\columnwidth]{imgs/results/nh3-pattern.png}
   \caption{The daily patterns of ammonia concentration on 3, 7, 11, 15 Janurary 2022.}
   \label{fig:nh3-peak-pattern}
+\end{figure}
+
+\begin{figure}[!h]
+    \centering
+    \begin{subfigure}[t]{1.0\textwidth}
+      \includegraphics[width=\linewidth]{imgs/leachate-effluent-blend-ratio-color-plot/first-80d.png}
+      \caption{Data collected from 5 October 2021 to 22 December 2021.} \label{fig:data-oct}
+    \end{subfigure}%
+    \hspace{2em}%   % maximize separation between the subfigures
+    \begin{subfigure}[t]{1.0\textwidth}
+      \includegraphics[width=\linewidth]{imgs/leachate-effluent-blend-ratio-color-plot/second-80d.png}
+      \caption{Data collected from 23 December 2021 to 24 February 2022.} \label{fig:data-nov}
+    \end{subfigure}%  
+  \caption{Monitored colour level in MBR effluent and the change of blending ratio (v/v) of treated leachate effluent to municipal wastewater in the inflow of SWHEPP during December 2021–January 2022. Date of manually calibration and colour level measured in laboratory is also provided as black cross and green dot. The moving average of colour level is calculated by averaging the colour level in the past 24 hours. Note: The colour levels analysed by the on-line colour monitoring system were compared to the manually measured data obtained from the laboratory, which showed errors of 2.08\%, 4.05\%, 1.11\%, 65.25\%, 4.94\% and 11.0\% in the TSE samples collected 5 Oct, 22 Oct, 3 Nov, 15 Nov, 12 Dec, and 31 Dec 2021, respectively.} \label{fig:nh3-data}
 \end{figure}
 
 \subsection{Data transformation}
@@ -256,8 +287,12 @@ In Fig.~\ref{fig:training-scheme}, the hyperparameters will remained the same on
     \label{fig:feature-selection}
  \end{figure}
 
+\subsection{Feature selection}
+Fig.~\ref{fig:feature-selection} illustrates which features are selected during the model training processes. In baseline model trianing steps, for both ammonia and colour forecasting model, only one feature is used for training for each model, which is ammonia and colour data, respectively. The model trained by a single feature, followed the baseline model training steps, will generate baseline models. The results from the final evaluation will be defined as the baseline model performance, which will be compared with the model evaluated results from proposed model training steps. Once the baseline model performance is obtained, more features will be input to the model training processes in the order of 2 inputs, 3 inputs, and 4 inputs.
+
 \section{Machine learning models}
 \subsection{Random Forest}
+%RF is used in this work as a representative tree-based modeling strategy because RF models have some major advantages over alternative tree-based models; notably, they require fewer hyperparameters for tuning, their performance is robust to hyperparameter changes, and they are less likely to suffer from overfitting (Breiman, 2001;Breiman, 2002 ;Chen and Guestrin, 2016;Fawagreh et al., 2014 ;Ke et al., 2017).
 The machine learning model used in this study (i.e., not deep learning models) is random forest (RF). It is an ensemble method which the final output is obtained by averaging the results from multiple tree learners \citep{wangMachineLearningFramework2021}, as shown in Fig.~\ref{fig:rf}. The training algorithm applies the general technique of bootstrap aggregating, also known as bagging, to tree learners. Given a training set $X = x_1, ..., x_n$ with targets $Y = y_1, ..., y_n$, bagging repeatedly (B times) selects a random sample with replacement (i.e., not putting the samples back to the population) of the training set and fits trees to these samples \citep{wikipediaRandomForest2022}, RF generate an output through the following steps:
 
 For $b=1, ..., B:$

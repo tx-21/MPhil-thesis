@@ -4,8 +4,8 @@
 \contentsline {chapter}{Acknowledgments}{\nbi iv}{figure.caption.1}%
 \contentsline {chapter}{Table of Contents}{\nbi v}{chapter*.2}%
 \contentsline {chapter}{List of Figures}{\nbi vii}{chapter*.3}%
-\contentsline {chapter}{List of Tables}{\nbi viii}{chapter*.4}%
-\contentsline {chapter}{Abstract}{\nbi ix}{chapter*.4}%
+\contentsline {chapter}{List of Tables}{\nbi ix}{chapter*.4}%
+\contentsline {chapter}{Abstract}{\nbi x}{chapter*.4}%
 \contentsline {chapter}{{Chapter 1}\hspace {1em}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Background}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Objectives}{2}{section.1.2}%
@@ -33,17 +33,18 @@
 \contentsline {subsubsection}{\numberline {3.2.3.1}Data smoothing with Savitzky-Golay and EWMA filter}{26}{subsubsection.3.2.3.1}%
 \contentsline {subsubsection}{\numberline {3.2.3.2}Outlier Removal}{29}{subsubsection.3.2.3.2}%
 \contentsline {subsubsection}{\numberline {3.2.3.3}Feature Engineering}{29}{subsubsection.3.2.3.3}%
-\contentsline {subsection}{\numberline {3.2.4}Data transformation}{31}{subsection.3.2.4}%
-\contentsline {section}{\numberline {3.3}Machine learning models}{33}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Random Forest}{33}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Deep Neural Networks}{34}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.2.4}Data transformation}{32}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Feature selection}{33}{subsection.3.2.5}%
+\contentsline {section}{\numberline {3.3}Machine learning models}{34}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Random Forest}{34}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Deep Neural Networks}{35}{subsection.3.3.2}%
 \contentsline {subsection}{\numberline {3.3.3}Recurrent Neural Network}{35}{subsection.3.3.3}%
 \contentsline {subsection}{\numberline {3.3.4}Long Short-term Memory}{37}{subsection.3.3.4}%
-\contentsline {subsection}{\numberline {3.3.5}Gate Recurrent Unit}{38}{subsection.3.3.5}%
-\contentsline {chapter}{{Chapter 4}\hspace {1em}Results and Discussion}{39}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Baseline performance of ammonia concentration and colour level forecasting models}{39}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Machine learning vs deep learning}{39}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Improved performance on forecasting models using data pre-processing techniques}{40}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Data enrichment via feature engineering based on effluent quality pattern}{40}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Design of model architecture through analyzing wastewater composition in sewer system}{40}{section.4.4}%
-\contentsline {chapter}{{Chapter 5}\hspace {1em}Conclusion}{41}{chapter.5}%
+\contentsline {subsection}{\numberline {3.3.5}Gate Recurrent Unit}{39}{subsection.3.3.5}%
+\contentsline {chapter}{{Chapter 4}\hspace {1em}Results and Discussion}{41}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Baseline performance of ammonia concentration and colour level forecasting models}{41}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Machine learning vs deep learning}{41}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Improved performance on forecasting models using data pre-processing techniques}{44}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Data enrichment via feature engineering based on effluent quality pattern}{44}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Design of model architecture through analyzing wastewater composition in sewer system}{44}{section.4.4}%
+\contentsline {chapter}{{Chapter 5}\hspace {1em}Conclusion}{46}{chapter.5}%

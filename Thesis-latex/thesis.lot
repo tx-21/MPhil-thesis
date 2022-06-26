@@ -4,5 +4,7 @@
 \addvspace {1pt}
 \contentsline {table}{\numberline {3.1}{\ignorespaces The selected hyperparameters for SG and EWMA filters.\relax }}{28}{table.caption.14}%
 \addvspace {1pt}
-\contentsline {table}{\numberline {4.1}{\ignorespaces Baseline.\relax }}{39}{table.caption.25}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces Baseline performance of ammonia forecasting model, evaluated on test dataset from \textbf {16 to 22 Janurary 2022}. Loss values are calculated by MSE.\relax }}{43}{table.caption.27}%
+\contentsline {table}{\numberline {4.2}{\ignorespaces Baseline performance of ammonia forecasting model, evaluated on test dataset from \textbf {10 to 16 October 2021}. Loss values are calculated by MSE.\relax }}{44}{table.caption.28}%
+\contentsline {table}{\numberline {4.3}{\ignorespaces Baseline performance of colour forecasting model, evaluated on test dataset from \textbf {16 to 22 Janurary 2022}. Loss values are calculated by MSE.\relax }}{45}{table.caption.29}%
 \addvspace {1pt}

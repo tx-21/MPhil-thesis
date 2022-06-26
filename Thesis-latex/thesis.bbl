@@ -1,4 +1,4 @@
-\begin{thebibliography}{70}
+\begin{thebibliography}{71}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -156,6 +156,16 @@ M.~Colella, M.~Ripa, A.~Cocozza, C.~Panfilo, and S.~Ulgiati.
   November 2021.
 \newblock ISSN 03014797.
 \newblock \doi{10.1016/j.jenvman.2021.113171}.
+
+\bibitem[Costa et~al.(2021)Costa, Mesquita, Ferreira, Rosa, and
+  Viegas]{costaIdentificationModellingChlorine2021}
+Joana Costa, Elsa Mesquita, Filipa Ferreira, Maria~Jo{\~a}o Rosa, and Rui~M.C.
+  Viegas.
+\newblock Identification and modelling of chlorine decay mechanisms in
+  reclaimed water containing ammonia.
+\newblock \emph{Sustainability (Switzerland)}, 13\penalty0 (24):\penalty0
+  1--13, 2021.
+\newblock \doi{10.3390/su132413548}.
 
 \bibitem[De~Mulder et~al.(2018)De~Mulder, Flameling, Weijers, Amerlinck, and
   Nopens]{demulderOpenSoftwarePackage2018}
