@@ -37,13 +37,13 @@
 \contentsline {section}{\numberline {3.3}Machine learning models}{33}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Random Forest}{33}{subsection.3.3.1}%
 \contentsline {subsection}{\numberline {3.3.2}Deep Neural Networks}{34}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Recurrent Neural Network}{34}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Long Short-term Memory}{35}{subsection.3.3.4}%
-\contentsline {subsection}{\numberline {3.3.5}Gate Recurrent Unit}{36}{subsection.3.3.5}%
-\contentsline {chapter}{{Chapter 4}\hspace {1em}Results and Discussion}{38}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Baseline performance of ammonia concentration and colour level forecasting models}{38}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}Machine learning vs deep learning}{38}{subsection.4.1.1}%
-\contentsline {section}{\numberline {4.2}Improved performance on forecasting models using data pre-processing techniques}{39}{section.4.2}%
-\contentsline {section}{\numberline {4.3}Data enrichment via feature engineering based on effluent quality pattern}{39}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Design of model architecture through analyzing wastewater composition in sewer system}{39}{section.4.4}%
-\contentsline {chapter}{{Chapter 5}\hspace {1em}Conclusion}{40}{chapter.5}%
+\contentsline {subsection}{\numberline {3.3.3}Recurrent Neural Network}{35}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Long Short-term Memory}{37}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Gate Recurrent Unit}{38}{subsection.3.3.5}%
+\contentsline {chapter}{{Chapter 4}\hspace {1em}Results and Discussion}{39}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Baseline performance of ammonia concentration and colour level forecasting models}{39}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Machine learning vs deep learning}{39}{subsection.4.1.1}%
+\contentsline {section}{\numberline {4.2}Improved performance on forecasting models using data pre-processing techniques}{40}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Data enrichment via feature engineering based on effluent quality pattern}{40}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Design of model architecture through analyzing wastewater composition in sewer system}{40}{section.4.4}%
+\contentsline {chapter}{{Chapter 5}\hspace {1em}Conclusion}{41}{chapter.5}%
