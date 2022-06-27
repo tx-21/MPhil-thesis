@@ -1,25 +1,4 @@
 \addvspace {1pt}
-\addvspace {1pt}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Proposed framework for control strategy design by \citet {ballhysaWastewaterTreatmentPlant2020}.\relax }}{15}{figure.caption.6}%
-\addvspace {1pt}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Sewage treatment process flowchart at SWHEPP (adapted from Drainage Services Department 2020)\relax }}{22}{figure.caption.7}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Colour levels and ammonia concentration are measure in the effluent container (i.e., on the right of the image.) A water pump transports MBR effluent to the effluent container continuously at real-time. The black vault on the left of the image contains a laptop and a colour spectrophotometer.\relax }}{23}{figure.caption.8}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Instrument of on-line ammonium monitoring system.\relax }}{24}{figure.caption.9}%
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Instruments of on-line colour analysis system.\relax }}{25}{figure.caption.10}%
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Schematic diagram of the custom-made on-line colour anlaysis system.\relax }}{26}{figure.caption.11}%
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Machine learning model training steps.\relax }}{27}{figure.caption.12}%
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Illustration of the influence of different polynomial degrees in the fitting of SG filter and the weigth decay with varied alpha values in EWMA filter.\relax }}{28}{figure.caption.13}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Illustration of the influence of different polynomial degrees in the fitting of SG filter and the weigth decay with varied alpha values in EWMA filter.\relax }}{29}{figure.caption.15}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Illustration of peak analysis. Four important elements are automatic caculated by the function \citep {mathworksDocumentationFindpeaks2022}.\relax }}{30}{figure.caption.16}%
-\contentsline {figure}{\numberline {3.10}{\ignorespaces Sewer system coverage of SHWEPP. The covered areas (i.e., area circled in red boundary) include Fanling/Sheung-Shui new towns and NENT landfill leachate treament plant.\relax }}{31}{figure.caption.17}%
-\contentsline {figure}{\numberline {3.11}{\ignorespaces Analysis of influent quality composition and the illustration of the positional encoding.\relax }}{32}{figure.caption.18}%
-\contentsline {figure}{\numberline {3.12}{\ignorespaces Observatios of ammonia concentration and colour levels in SHWEPP influent.\relax }}{33}{figure.caption.19}%
-\contentsline {figure}{\numberline {3.13}{\ignorespaces Hourly water consumption patterns in households \citep {abu-bakarQuantifyingImpactCOVID192021}. (a) Cumulative pattern and percentage of hourly consumption for households in the “Evening Peak (EP)” cluster (b) Cumulative pattern and percentage of hourly consumption for households in the “Late Morning Peak Peak (LM)” cluster. (c) Cumulative pattern and percentage of hourly consumption for households in the “Early Morning Peak (EM)” cluster. (d) Cummulative pattern and percentage of hourly consumption for households in the “Multiple Peak (MP)” cluster. Consumption is in (m3).\relax }}{34}{figure.caption.20}%
-\contentsline {figure}{\numberline {3.14}{\ignorespaces The daily patterns of ammonia concentration on 3, 7, 11, 15 Janurary 2022.\relax }}{35}{figure.caption.21}%
-\contentsline {figure}{\numberline {3.15}{\ignorespaces Monitored colour level in MBR effluent and the change of blending ratio (v/v) of treated leachate effluent to municipal wastewater in the inflow of SWHEPP during December 2021–January 2022. Date of manually calibration and colour level measured in laboratory is also provided as black cross and green dot. The moving average of colour level is calculated by averaging the colour level in the past 24 hours. Note: The colour levels analysed by the on-line colour monitoring system were compared to the manually measured data obtained from the laboratory, which showed errors of 2.08\%, 4.05\%, 1.11\%, 65.25\%, 4.94\% and 11.0\% in the TSE samples collected 5 Oct, 22 Oct, 3 Nov, 15 Nov, 12 Dec, and 31 Dec 2021, respectively.\relax }}{36}{figure.caption.22}%
-\contentsline {figure}{\numberline {3.16}{\ignorespaces Illustration of feature selections for model training.\relax }}{37}{figure.caption.23}%
-\contentsline {figure}{\numberline {3.17}{\ignorespaces Illustration of RF and DNN model structure.\relax }}{37}{figure.caption.24}%
-\contentsline {figure}{\numberline {3.18}{\ignorespaces Variant architectures of Recurrent Neural Networks (adapted from \citet {olahUnderstandingLSTMNetworks2015}). $x_t$ corresponds to the current input, $h_{t-1}$ to the last hidden state (output), $h_t$ to the current output, tanh is the tangent activation function, $\sigma $ is the sigmoid activation function,$\times $ is the vector pointwise multiplication, $+$ is the vector pointwise addition.\relax }}{38}{figure.caption.25}%
-\addvspace {1pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Ammonia and colour data collected from 23 December 2021 to 22 January 2022.\relax }}{41}{figure.caption.26}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Baseline performance of ammonia and colour forecasting models.\relax }}{1}{figure.caption.5}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Visulization of the model forecasting results.\relax }}{2}{figure.caption.6}%
 \addvspace {1pt}

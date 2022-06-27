@@ -1,20 +1,56 @@
 \chapter{Results and Discussion}
-\section{Baseline performance of ammonia concentration and colour level forecasting models}
-Based on the proposed model training methods, which ammonia and colour data are used as the second features of training colour and ammonia forecasting models, the size and time of the ammonia and colour datasets should be the same. In addition, abnormal data caused by sensor downtime should also be excluded. Thus, we chose the ammonia and colour data from 23 December 2021 to 22 January, as shown in Fig.~\ref{fig:nh3-color-data}.
+\section{Baseline performance of the forecasting models}
+We first review the ammonia and colour forecasting models trained by single-featured datasets. Suprisingly, the performance of RF models in Fig.~\ref{fig:baseline-nh3} and Fig.~\ref{fig:baseline-nh3} showed poorer performance compared to the other four deep learning models, while the LSTM and GRU models showed the lowest values of test loss. 
+
+
+The baseline performance of LSTM model in forecasting ammonia revealed the lowest test loss value of 0.0405 compared to GRU, RNN, DNN, RF models (GRU-obs, RNN-obs, DNN-obs and RF-obs) with the values of 0.0414, 0.0440, 0.0561 and 0.1158, respectively, as shown in Fig.~\ref{fig:baseline-performance}.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=1.0\columnwidth]{imgs/results/data.png}
-    \caption{Ammonia and colour data collected from 23 December 2021 to 22 January 2022.}
-    \label{fig:nh3-color-data}
-  \end{figure}
+    \begin{subfigure}[t]{0.45\textwidth}
+      \includegraphics[width=\linewidth]{imgs/results/baseline-models-nh3.png}
+      \caption{Test loss values from five ammonia forecasting models.} \label{fig:baseline-nh3}
+    \end{subfigure}%
+    \hspace{2em}%   % maximize separation between the subfigures
+    \begin{subfigure}[t]{0.45\textwidth}
+      \includegraphics[width=\linewidth]{imgs/results/baseline-models-colour.png}
+      \caption{Test loss values from five colour forecasting models.} \label{fig:baseline-colour}
+    \end{subfigure}%  
+  \caption{Baseline performance of ammonia and colour forecasting models.} \label{fig:baseline-performance}
+\end{figure}
 
-\subsection{Machine learning vs deep learning}
-We first review the ammonia and colour forecasting models trained by single-feature datasets, including the raw datasets (i.e., datasets which were only processed by data cleaning) and the datasets which were applied with different data smoothing filters (i.e., SG and EWMA filters). The baseline performance of LSTM model (LSTM-obs) in forecasting ammonia revealed the lowest test loss value of 0.0405 compared to GRU, RNN, DNN, RF models (GRU-obs, RNN-obs, DNN-obs and RF-obs) with the values of 0.0414, 0.0440, 0.0561 and 0.1158, respectively, as shown in Table.~\ref{tab:baseline-result-jan-nh3}.
 
+\begin{figure}[h]
+    \centering
+    \hspace{1em}%
+    \begin{subfigure}[t]{0.45\textwidth}
+      \includegraphics[width=\linewidth]{imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-nh3.png}
+      \caption{Baseline RF model forecasting ammonia concentration.} \label{fig:baseline-nh3-plot-rf}
+    \end{subfigure}%
+    \hspace{1em}%   % maximize separation between the subfigures
+    \begin{subfigure}[t]{0.45\textwidth}
+      \includegraphics[width=\linewidth]{imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-nh3.png}
+      \caption{Baseline LSTM model forecasting ammonia concentration.} \label{fig:baseline-nh3-plot-lstm}
+    \end{subfigure}%
+    \hspace{1em}%   % maximize separation between the subfigures
+    \begin{subfigure}[t]{0.45\textwidth}
+      \includegraphics[width=\linewidth]{imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-colour.png}
+      \caption{Baseline RF model forecasting colour levels.} \label{fig:baseline-colour-plot-rf}
+    \end{subfigure}% 
+    \hspace{1em}%   % maximize separation between the subfigures
+    \begin{subfigure}[t]{0.45\textwidth}
+      \includegraphics[width=\linewidth]{imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-colour.png}
+      \caption{Baseline LSTM model forecasting colour levels.} \label{fig:baseline-colour-plot-lstm}
+    \end{subfigure}% 
+  \caption{Visulization of the model forecasting results.} \label{fig:baseline-plot}
+\end{figure}
+
+RF models have the worst model performance with baseline model, even with the models trained by any of the pre-processing methods. There is a clear gap between the largest test loss values of 0.0574 from DNN-sg9 and the smallest test loss values of 0.1158 from RF models. The results highlighted the use of deep learning models have a stable and superior performance over the traditional machine learning models.
+
+\section{Improved performance on forecasting models using data pre-processing techniques}
 With the best baseline performance is known, we found that SG filters improved the quality of the raw dataset, as the top lowest test loss values are from GRU models trained by a single-feature dataset processed with SG filter at the window size of 7 and 5 (GRU-sg7 and GRU-sg5), followed by LSTM models trained by a single-feature dataset processed with EWMA filter at window size of 3 and SG filters at window size of 5 and 7. The improvements of model performance resulted from the use of data smoothing methods are not consistant across different models, in other words, the best combination of Model-Dataset to GRU model is SG filter at window size of 7, while it is EWMA at the window size of 3 for LSTM model.
 
-Empirically, when different models are evaluated by the same testing dataset, the order of test and validation loss from the smallest to largest values should be identical. However, we observed that the top three lowest validation loss values, which are 1.0796 from LSTM-ew3, 1.0969 from LSTM-ew2, and 1.1219 from LSTM-ew4, do not have the top three lowest test loss values. This finding points to the potential of the heterogeneity between the trianing and testing datasets. Further tests were carried out using testing dataset from October to exclude the posstibilty of having heterogeneity between the two datasets. To the best of my understanding, the comparisons between testing and validation loss are not discussed on the currently availabe research papers in modelling in wastewater treatment industry.
+Empirically, when different models are evaluated by the same testing dataset, the Model-Dataset order of test and validation loss from the smallest to largest values should be identical. However, we observed that the top three lowest validation loss values, which are 1.0796 from LSTM-ew3, 1.0969 from LSTM-ew2, and 1.1219 from LSTM-ew4, do not correspond to the Model-Dataset top three lowest test loss values. This finding points to the potential of the heterogeneity between the trianing and testing datasets. Further tests were carried out using testing dataset from October to exclude the posstibilty of having heterogeneity between the two datasets. To the best of my understanding, the comparisons between testing and validation loss are not discussed on the currently availabe research papers in modelling in wastewater treatment industry.
 
 \begin{table}[!ht]
   \centering
@@ -47,7 +83,7 @@ Empirically, when different models are evaluated by the same testing dataset, th
   \end{NiceTabular}
 \end{table}
 
-As shown in Table.~\ref{tab:baseline-result-oct-nh3}, the rank of top three lowest validation loss from the smallest to the largest values is identical to the rank of the test loss values. This is in good agreement with how the heterogeneity of the datasets can impact on the model performance. The evluations of ammonia forecasting models in October 2021 showed different outcomes compared to the one in January 2022. Despite the rank of the baseline performance remained the same, LSTM models trained by EMWA filters took the top three lowest test loss values, which are 0.0158 from LSTM-ew3, 0.0161 from LSTM-ew2 and 0.0163 from LSTM-ew4. 
+As shown in Table.~\ref{tab:baseline-result-oct-nh3}, the Model-Dataset ranks of top three lowest validation loss from the smallest to the largest values is identical to the ranks of the test loss values. This is in good agreement with how the heterogeneity of the datasets can impact on the model performance. The evluations of ammonia forecasting models in October 2021 showed different outcomes compared to the one in January 2022. Despite the ranks of the baseline performance remained the same, LSTM models trained by EMWA filters took the top three lowest test loss values, which are 0.0158 from LSTM-ew3, 0.0161 from LSTM-ew2 and 0.0163 from LSTM-ew4. 
 
 \begin{table}[!ht]
     \centering
@@ -80,6 +116,7 @@ As shown in Table.~\ref{tab:baseline-result-oct-nh3}, the rank of top three lowe
     \end{NiceTabular}
 \end{table}
 
+\subsection{Colour forecasting model}
 In the baseline performance of colour forecasting model, LSTM-obs has the lowest test loss values of 0.0148, followed by GRU-obs, RNN-obs, DNN-obs and RF-obs, as shown in Table.~\ref{tab:baseline-result-jan-colour}. The best performed models are the LSTM models trained by EWMA filters, which are 0.0136 from LSTM-ew4, 0.0138 from LSTM-ew2 and LSTM-ew3. Interstingly, the use of LSTM models and pre-processed with EWMA filters can generate the best performed models for both the forecasting of ammonia concentration and colour levels.
 
 \begin{table}[!ht]
@@ -111,10 +148,10 @@ In the baseline performance of colour forecasting model, LSTM-obs has the lowest
   \end{NiceTabular}
 \end{table}
 
-From comparing the baseline performance and the influence of data smoothing methods on different models, our findings appear to be well substantiated the use of LSTM models for training ammonia and colour forecasting models due to it's outstanding model performance on test loss. The influence of pre-processing methods are not consistant on improving the model performance. Thus, datasets applied with all the data smoothing methods will be remained to test how the additional features will affect the model performance.
-
-\section{Improved performance on forecasting models using data pre-processing techniques}
+From comparing the baseline performance and the influence of data smoothing methods on different models, our findings appear to be well substantiated the use of LSTM models for training ammonia and colour forecasting models due to it's outstanding model performance on test loss. The influence of pre-processing methods are not consistant on improving the model performance. Thus, datasets applied with all the pre-processing methods will be remained to test how the additional features affect the model performance.
 
 \section{Data enrichment via feature engineering based on effluent quality pattern}
+
+
 
 \section{Design of model architecture through analyzing wastewater composition in sewer system}

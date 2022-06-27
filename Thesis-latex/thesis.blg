@@ -4,51 +4,47 @@ The top-level auxiliary file: thesis.aux
 Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: plainnat.bst
 Reallocating 'name_of_file' (item size: 1) to 20 items.
+I found no \citation commands---while reading file thesis.aux
 Database file #1: MPhil-thesis-papers.bib
-Warning--to sort, need author or key in WhatPythonExecutive
-Warning--empty year in WhatPythonExecutive
-Warning--empty journal in chandolaAnomalyDetectionSurvey
-Warning--empty year in chandolaAnomalyDetectionSurvey
-Warning--empty year in chandolaAnomalyDetectionSurvey
-You've used 71 entries,
+You've used 0 entries,
             2773 wiz_defined-function locations,
-            1121 strings with 24632 characters,
-and the built_in function-call counts, 36517 in all, are:
-= -- 3281
-> -- 2435
-< -- 32
-+ -- 827
-- -- 753
-* -- 3289
-:= -- 5734
-add.period$ -- 285
-call.type$ -- 71
-change.case$ -- 463
-chr.to.int$ -- 68
-cite$ -- 148
-duplicate$ -- 1403
-empty$ -- 2682
-format.name$ -- 841
-if$ -- 7502
-int.to.chr$ -- 4
+            592 strings with 4843 characters,
+and the built_in function-call counts, 33 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 2
+:= -- 10
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 1
+format.name$ -- 0
+if$ -- 1
+int.to.chr$ -- 1
 int.to.str$ -- 1
-missing$ -- 52
-newline$ -- 433
-num.names$ -- 282
-pop$ -- 841
+missing$ -- 0
+newline$ -- 8
+num.names$ -- 0
+pop$ -- 0
 preamble$ -- 1
-purify$ -- 392
+purify$ -- 0
 quote$ -- 0
-skip$ -- 1108
+skip$ -- 1
 stack$ -- 0
-substring$ -- 1289
-swap$ -- 155
-text.length$ -- 5
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 781
-warning$ -- 5
-while$ -- 300
+type$ -- 0
+warning$ -- 0
+while$ -- 0
 width$ -- 0
-write$ -- 1054
-(There were 5 warnings)
+write$ -- 7
+(There was 1 error message)

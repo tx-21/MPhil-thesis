@@ -70,6 +70,15 @@ The maintenance and calibration of the DR3900 spectrophotometer is performed on 
     \label{fig:diagram-colour-analysis}
  \end{figure}
 
+Based on the proposed model training methods, which ammonia and colour data are used as the second features of training colour and ammonia forecasting models, the size and time of the ammonia and colour datasets should be the same. In addition, abnormal data caused by sensor downtime should also be excluded. Thus, we chose the ammonia and colour data from 23 December 2021 to 22 January, as shown in Fig.~\ref{fig:nh3-color-data}.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1.0\columnwidth]{imgs/results/data.png}
+    \caption{Ammonia and colour data collected from 23 December 2021 to 22 January 2022.}
+    \label{fig:nh3-color-data}
+\end{figure}
+
 \subsection{Loss function for model evaluation}
 Loss functions are used to determine the error between the model outputs (i.e., prediction or forecasting values) and the given target value \citep{deepaiLossFunction2022}. The bigger the difference between the ground truth $\bm{y}$ and the model outputs $\bm{\hat{y}}$, the higher the value of the loss function is, meaning the model perfomred poorer. A low value for the loss means the modle perfomred well. The selection of the types of the loss function is essential for training the model to perform specific tasks. In this study, Mean Squared Error (MSE) is used for evaluating the regression models. The values of MSE will never be negative, and is formally defined by the following equation:
 

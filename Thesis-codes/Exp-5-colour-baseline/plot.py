@@ -24,22 +24,23 @@ def plot_prediction_horizon(pred_fh, true_fh, horizon_num, Mname, path_to_save, 
         plt.rcParams.update(params)
         sns.set_style("ticks")
         fig, ax = plt.subplots(figsize=(5,4))
-        plt.suptitle(f'Model:{Mname}\nObserved vs Predicted (RMSE:{round(rmse_val,4)}, R2:{round(R2,4)})')
+        plt.suptitle(f'The colour forecasting results.\n(R-sqaured={round(R2,4)})')
 
         size=5
         # plot pred
-        plt.plot(np.arange(0,len(pred_fh)), pred_fh.values, '-', color = 'red', lw=1.2, label='prediction Colour')
+        plt.plot(np.arange(0,len(pred_fh)), pred_fh.values, '-', color = 'red', lw=1.2, label='Forecasted colour')
         plt.scatter(np.arange(0,len(pred_fh)), pred_fh.values, s=size, color='darkred')
 
         # plot true
         ax.scatter(np.arange(0,len(pred_fh)), true_fh.values,s=size,color='blue')
-        ax.plot(np.arange(0,len(pred_fh)), true_fh.values, label='Observed Colour',lw=1.2)
+        ax.plot(np.arange(0,len(pred_fh)), true_fh.values, label='Observed colour',lw=1.2)
 
-        ax.legend(loc='upper right')
+        ax.legend(loc='best')
         #ax.grid(which='both')
         ax.set_xlabel('Date')
         ax.set_ylabel('Pt-Co')
         ax.margins(x=0.01)
+        ax.set_ylim(60,160)
 
         plt.grid(b=True, which='major', linestyle = 'solid')
         plt.minorticks_on()

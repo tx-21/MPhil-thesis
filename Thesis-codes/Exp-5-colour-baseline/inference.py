@@ -96,8 +96,8 @@ def inference(model_number, path_to_save_predictions, forecast_window, dataloade
         forecast_horizon['fh2_true'] = fh2_true
         forecast_horizon['fh3_true'] = fh3_true       
         
-        # date_range = ['1-16','1-17','1-18','1-19','1-20','1-21','1-22']
-        date_range = ['11-25','11-26','11-27','11-28','11-29','11-30']
+        date_range = ['1-17','1-18','1-19','1-20','1-21','1-22','1-23']
+        #date_range = ['11-25','11-26','11-27','11-28','11-29','11-30']
         rmse_1, r2_1 = plot_prediction_horizon(forecast_horizon['fh1'], forecast_horizon['fh1_true'], '1', model_dic_keys_ls[model_number], path_to_save_predictions,date_range,current_exp,last_exp_num)
         rmse_2, r2_2 = plot_prediction_horizon(forecast_horizon['fh2'], forecast_horizon['fh2_true'], '2', model_dic_keys_ls[model_number], path_to_save_predictions,date_range,current_exp,last_exp_num)
         rmse_3, r2_3 = plot_prediction_horizon(forecast_horizon['fh3'], forecast_horizon['fh3_true'], '3', model_dic_keys_ls[model_number], path_to_save_predictions,date_range,current_exp,last_exp_num)
