@@ -13,14 +13,8 @@ def rmse(pred, actual):
     sqerror= np.sum(np.square(error))/actual.shape[0]
     return np.sqrt(sqerror)
 
-def plot_prediction_horizon(pred_fh, true_fh, horizon_num, Mname, path_to_save, date_range, current_exp, last_exp_num, species):
+def plot_prediction_horizon(pred_fh, true_fh, horizon_num, Mname, path_to_save, date_range, current_exp, last_exp_num):
 
-    if species == 'NH3':
-        s_name = '$NH_3-N$'
-        l_name = 'mg/L'
-    else:
-        s_name = 'Colour'
-        l_name = 'Pt-Co'
     # %config InlineBackend.figure_format='retina'
     R2 = r2_score(true_fh, pred_fh) #[y_true,y_pred]
     rmse_val = rmse(pred_fh, true_fh) #[y_pred,y_true]
@@ -30,21 +24,22 @@ def plot_prediction_horizon(pred_fh, true_fh, horizon_num, Mname, path_to_save, 
         plt.rcParams.update(params)
         sns.set_style("ticks")
         fig, ax = plt.subplots(figsize=(5,4))
-        plt.suptitle(f'Model:{Mname}\nObserved vs Predicted (RMSE:{round(rmse_val,4)}, R2:{round(R2,4)})')
+        plt.suptitle(f'The ammonia forecasting results.\n(R-sqaured={round(R2,4)})')
 
         size=5
         # plot pred
-        plt.plot(np.arange(0,len(pred_fh)), pred_fh.values, '-', color = 'red', lw=1.2, label=f'prediction {s_name}')
+        plt.plot(np.arange(0,len(pred_fh)), pred_fh.values, '-', color = 'red', lw=1.2, label='Forecasted $NH_3-N$')
         plt.scatter(np.arange(0,len(pred_fh)), pred_fh.values, s=size, color='darkred')
 
         # plot true
         ax.scatter(np.arange(0,len(pred_fh)), true_fh.values,s=size,color='blue')
-        ax.plot(np.arange(0,len(pred_fh)), true_fh.values, label=f'Observed {s_name}',lw=1.2)
+        ax.plot(np.arange(0,len(pred_fh)), true_fh.values, label='Observed $NH_3-N$',lw=1.2)
 
-        ax.legend(loc='upper right')
+        ax.legend(loc='best')
         #ax.grid(which='both')
         ax.set_xlabel('Date')
-        ax.set_ylabel(f'{l_name}')
+        ax.set_ylabel('mg/L')
+        ax.set_ylim(0,5.4)
         ax.margins(x=0.01)
 
         plt.grid(b=True, which='major', linestyle = 'solid')
@@ -82,13 +77,7 @@ def plot_loss(model_name, path_to_save, train=True):
     plt.close('all')
 
 
-def plot_prediction(title, path_to_save, src, tgt, prediction, index_in, index_tar,species):
-    if species == 'NH3':
-        s_name = '$NH_3-N$'
-        l_name = 'mg/L'
-    else:
-        s_name = 'Colour'
-        l_name = 'Pt-Co'
+def plot_prediction(title, path_to_save, src, tgt, prediction, index_in, index_tar):
     idx_scr = index_in[0, 1:].tolist()
     idx_tgt = index_tar[0].tolist()
     # print(idx_scr)
@@ -113,7 +102,7 @@ def plot_prediction(title, path_to_save, src, tgt, prediction, index_in, index_t
     plt.minorticks_on()
     plt.grid(b=True, which='minor', linestyle = 'dashed', alpha=0.5)
     plt.xlabel("Time Elapsed")
-    plt.ylabel(f"{s_name} ({l_name})")
+    plt.ylabel("NH3-N (mg/L)")
     plt.legend()
     plt.title("Forecast from ....")
 
@@ -145,3 +134,30 @@ def plot_training(epoch, path_to_save, src, prediction, index_in, index_tar, mod
     # plt.legend()
     # plt.savefig(path_to_save+f"{model_name}_Epoch_{str(epoch)}.png")
     # plt.close('all')
+
+def plot_training_3(epoch, path_to_save, src, sampled_src, prediction, index_in, index_tar):
+
+    # idx_scr = index_in.tolist()[0]
+    # idx_tar = index_tar.tolist()[0]
+    # idx_pred = idx_scr.append(idx_tar.append([idx_tar[-1] + 1]))
+
+    idx_scr = [i for i in range(len(src))]
+    idx_pred = [i for i in range(1, len(prediction)+1)]
+    idx_sampled_src = [i for i in range(len(sampled_src))]
+
+    plt.figure(figsize=(15,6))
+    plt.rcParams.update({"font.size" : 18})
+    plt.grid(b=True, which='major', linestyle = '-')
+    plt.grid(b=True, which='minor', linestyle = '--', alpha=0.5)
+    plt.minorticks_on()
+
+    ## REMOVE DROPOUT FOR THIS PLOT TO APPEAR AS EXPECTED !! DROPOUT INTERFERES WITH HOW THE SAMPLED SOURCES ARE PLOTTED
+    plt.plot(idx_sampled_src, sampled_src, 'o-.', color='red', label = 'sampled source', linewidth=1, markersize=10)
+    plt.plot(idx_scr, src, 'o-.', color = 'blue', label = 'input sequence', linewidth=1)
+    plt.plot(idx_pred, prediction, 'o-.', color = 'limegreen', label = 'prediction sequence', linewidth=1)
+    plt.title("Teaching Forcing from ...... " + ", Epoch " + str(epoch))
+    plt.xlabel("Time Elapsed")
+    plt.ylabel("NH3-N (mg/L)")
+    plt.legend()
+    plt.savefig(path_to_save+f"/Epoch_{str(epoch)}.png")
+    plt.close('all')

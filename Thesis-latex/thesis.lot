@@ -1,5 +1,7 @@
 \addvspace {1pt}
-\contentsline {table}{\numberline {1.1}{\ignorespaces Baseline performance of ammonia forecasting model, evaluated on test dataset from \textbf {16 to 22 Janurary 2022}. Loss values are calculated by MSE.\relax }}{3}{table.caption.7}%
-\contentsline {table}{\numberline {1.2}{\ignorespaces Baseline performance of ammonia forecasting model, evaluated on test dataset from \textbf {10 to 16 October 2021}. Loss values are calculated by MSE.\relax }}{4}{table.caption.8}%
-\contentsline {table}{\numberline {1.3}{\ignorespaces Baseline performance of colour forecasting model, evaluated on test dataset from \textbf {16 to 22 Janurary 2022}. Loss values are calculated by MSE.\relax }}{5}{table.caption.9}%
+\contentsline {table}{\numberline {1.1}{\ignorespaces The selected hyperparameters for SG and EWMA filters.\relax }}{9}{table.caption.13}%
+\addvspace {1pt}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Baseline performance of ammonia forecasting model, evaluated on test dataset from \textbf {16 to 22 Janurary 2022}. Loss values are calculated by MSE.\relax }}{23}{table.caption.27}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Baseline performance of ammonia forecasting model, evaluated on test dataset from \textbf {10 to 16 October 2021}. Loss values are calculated by MSE.\relax }}{24}{table.caption.28}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces Baseline performance of colour forecasting model, evaluated on test dataset from \textbf {16 to 22 Janurary 2022}. Loss values are calculated by MSE.\relax }}{25}{table.caption.29}%
 \addvspace {1pt}

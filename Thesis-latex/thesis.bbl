@@ -1,8 +1,130 @@
-\begin{thebibliography}{0}
+\begin{thebibliography}{19}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
   \providecommand{\doi}[1]{doi: #1}\else
   \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[{Abu-Bakar} et~al.(2021){Abu-Bakar}, Williams, and
+  Hallett]{abu-bakarQuantifyingImpactCOVID192021}
+Halidu {Abu-Bakar}, Leon Williams, and Stephen~H. Hallett.
+\newblock Quantifying the impact of the {{COVID-19}} lockdown on household
+  water consumption patterns in {{England}}.
+\newblock \emph{npj Clean Water}, 4\penalty0 (1):\penalty0 13, December 2021.
+\newblock ISSN 2059-7037.
+\newblock \doi{10.1038/s41545-021-00103-8}.
+
+\bibitem[Bangaloreai(2018)]{bangaloreaiDeepNeuralNetwork2018}
+Bangaloreai.
+\newblock Deep neural network ({{DNN}}) is an artificial neural network
+  ({{ANN}}), March 2018.
+
+\bibitem[CFI(2022)]{cfiExponentiallyWeightedMoving2022}
+CFI.
+\newblock Exponentially {{Weighted Moving Average}} ({{EWMA}}), January 2022.
+
+\bibitem[Cheng et~al.(2020)Cheng, Harrou, Kadri, Sun, and
+  Leiknes]{chengForecastingWastewaterTreatment2020}
+Tuoyuan Cheng, Fouzi Harrou, Farid Kadri, Ying Sun, and Torove Leiknes.
+\newblock Forecasting of wastewater treatment plant key features using deep
+  learning-based models: {{A}} case study.
+\newblock \emph{IEEE Access}, 8:\penalty0 184475--184485, 2020.
+\newblock \doi{10.1109/ACCESS.2020.3030820}.
+
+\bibitem[DeepAI(2022)]{deepaiLossFunction2022}
+DeepAI.
+\newblock Loss {{Function}}, June 2022.
+
+\bibitem[Donges(2021)]{dongesGuideRNNUnderstanding2021}
+Niklas Donges.
+\newblock A {{Guide}} to {{RNN}}: {{Understanding Recurrent Neural Networks}}
+  and {{LSTM Networks}}, July 2021.
+
+\bibitem[IBM(2022)]{ibmNeuralNetworks2022}
+IBM.
+\newblock Neural {{Networks}}, June 2022.
+
+\bibitem[{Le} et~al.(2019){Le}, {Ho}, {Lee}, and
+  {Jung}]{leApplicationLongShortTerm2019}
+{Le}, {Ho}, {Lee}, and {Jung}.
+\newblock Application of {{Long Short-Term Memory}} ({{LSTM}}) {{Neural
+  Network}} for {{Flood Forecasting}}.
+\newblock \emph{Water}, 11\penalty0 (7):\penalty0 1387, July 2019.
+\newblock ISSN 2073-4441.
+\newblock \doi{10.3390/w11071387}.
+
+\bibitem[Mamandipoor et~al.(2020)Mamandipoor, Majd, Sheikhalishahi, Modena, and
+  Osmani]{mamandipoorMonitoringDetectingFaults2020}
+Behrooz Mamandipoor, Mahshid Majd, Seyedmostafa Sheikhalishahi, Claudio Modena,
+  and Venet Osmani.
+\newblock Monitoring and detecting faults in wastewater treatment plants using
+  deep learning.
+\newblock \emph{Environmental Monitoring and Assessment}, 192\penalty0 (2),
+  2020.
+\newblock \doi{10.1007/s10661-020-8064-1}.
+
+\bibitem[MathWorks(2022)]{mathworksDocumentationFindpeaks2022}
+MathWorks.
+\newblock Documentation-{{Findpeaks}}, June 2022.
+
+\bibitem[{Mohseni-Dargah} et~al.(2022){Mohseni-Dargah}, Falahati, Dabirmanesh,
+  Nasrollahi, and Khajeh]{mohseni-dargahChapter12Machine2022}
+Masoud {Mohseni-Dargah}, Zahra Falahati, Bahareh Dabirmanesh, Parisa
+  Nasrollahi, and Khosro Khajeh.
+\newblock Chapter 12 - {{Machine}} learning in surface plasmon resonance for
+  environmental monitoring.
+\newblock In Mohsen Asadnia, Amir Razmjou, and Amin Beheshti, editors,
+  \emph{Artificial {{Intelligence}} and {{Data Science}} in {{Environmental
+  Sensing}}}, Cognitive {{Data Science}} in {{Sustainable Computing}}, pages
+  269--298. {Academic Press}, January 2022.
+\newblock ISBN 978-0-323-90508-4.
+\newblock \doi{10.1016/B978-0-323-90508-4.00012-5}.
+
+\bibitem[{National Center for Biotechnology
+  Information}(2022)]{nationalcenterforbiotechnologyinformationPubChemCompoundSummary2022}
+{National Center for Biotechnology Information}.
+\newblock "{{PubChem Compound Summary}} for {{CID}} 222, {{Ammonia}}"
+  {{PubChem}}, June 2022.
+
+\bibitem[Olah(2015)]{olahUnderstandingLSTMNetworks2015}
+Christopher Olah.
+\newblock Understanding {{LSTM Networks}}, August 2015.
+
+\bibitem[Riebesell(2022)]{riebesellRandomForest2022}
+Janosh Riebesell.
+\newblock Random {{Forest}}, June 2022.
+
+\bibitem[Savitzky and Golay(1964)]{savitzkySmoothingDifferentiationData1964}
+Abraham. Savitzky and M.~J.~E. Golay.
+\newblock Smoothing and {{Differentiation}} of {{Data}} by {{Simplified Least
+  Squares Procedures}}.
+\newblock \emph{Analytical Chemistry}, 36\penalty0 (8):\penalty0 1627--1639,
+  July 1964.
+\newblock ISSN 0003-2700.
+\newblock \doi{10.1021/ac60214a047}.
+
+\bibitem[Taal(2017)]{taalSmoothingYourData2017}
+Cees Taal.
+\newblock Smoothing your data with polynomial fitting: A signal processing
+  perspective, April 2017.
+
+\bibitem[Wang et~al.(2021)Wang, Thun{\'e}ll, Lindberg, Jiang, Trygg, Tysklind,
+  and Souihi]{wangMachineLearningFramework2021}
+Dong Wang, Sven Thun{\'e}ll, Ulrika Lindberg, Lili Jiang, Johan Trygg, Mats
+  Tysklind, and Nabil Souihi.
+\newblock A machine learning framework to improve effluent quality control in
+  wastewater treatment plants.
+\newblock \emph{Science of The Total Environment}, 784:\penalty0 147138, August
+  2021.
+\newblock ISSN 00489697.
+\newblock \doi{10.1016/j.scitotenv.2021.147138}.
+
+\bibitem[Wikipedia(2022{\natexlab{a}})]{wikipediaRandomForest2022}
+Wikipedia.
+\newblock Random forest, June 2022{\natexlab{a}}.
+
+\bibitem[Wikipedia(2022{\natexlab{b}})]{wikipediaSavitzkyGolayFilter2022}
+Wikipedia.
+\newblock Savitzky\textendash{{Golay}} filter, June 2022{\natexlab{b}}.
 
 \end{thebibliography}

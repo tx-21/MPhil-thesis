@@ -91,6 +91,8 @@ class TestDataset(Dataset):
         _list = np.arange(_len - 24*5, _len) #last 7 days is no.506 ~ no.697, input = last 8 ~ last 1, output = last 7 ~ last
         start = _list[index] # index len = 10
         # start = index - self.T - self.S
+        print(self.df)
+        exit()
         index_in = torch.tensor([i for i in range(start, start+self.T)])
         index_tar = torch.tensor([i for i in range(start + self.T, start + self.T + self.S)])
         _input = torch.tensor(self.df[["NH3_N", "Colour", "sin_hour", "cos_hour"]][start : start + self.T].values)
