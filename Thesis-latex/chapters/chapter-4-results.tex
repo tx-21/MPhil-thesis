@@ -44,11 +44,28 @@ The significant higher test loss of RF models compared to other models can be vi
 \end{figure}
 
 \section{Improved performance on forecasting models using data pre-processing techniques}
-\subsection{Ammonia forecasting models}
-With the baseline model performance is known, we investigated the influence of pre-processed datasets on the ammonia forecasting models. In Table.~\ref{tab:baseline-result-jan-nh3}, we listed all the test loss of models trained with each proposed pre-processed methods. The models trained by SG filters at different window size are denoted as model-sg5, model-sg7, model-sg9; the naming rule applies the same to EWMA filters, and for the method of outlier removal for ammonia data is denoted as model-or.
+
+\begin{figure}[h]
+    \centering
+    \begin{subfigure}[t]{0.45\textwidth}
+      \includegraphics[width=\linewidth]{imgs/results/feature-engineering/pre-processing-nh3-jan.png}
+      \caption{.} \label{fig:preprocessing-nh3}
+    \end{subfigure}%
+    \hspace{2em}%   % maximize separation between the subfigures
+    \begin{subfigure}[t]{0.45\textwidth}
+      \includegraphics[width=\linewidth]{imgs/results/feature-engineering/pre-processing-colour.png}
+      \caption{.} \label{fig:preprocessing-colour}
+    \end{subfigure}%  
+  \caption{Baseline performance of ammonia and colour forecasting models.} \label{fig:preprocessing-comparison}
+\end{figure}
+
+With the baseline model performance is known, we investigated the influence of pre-processed datasets on the ammonia forecasting models. In Fig.~\ref{fig:preprocessing-nh3}, we listed all the test loss of models trained with each proposed pre-processed methods. The models trained by SG filters at different window size are denoted as model-sg5, model-sg7, model-sg9; the naming rule applies the same to EWMA filters, and for the method of outlier removal for ammonia data is denoted as model-or.
 
 We found that SG filters improved most in the quality of the raw dataset, as the top lowest test loss values are from GRU-sg7 and GRU-sg9 (i.e., at the window size of 7 and 9, respectively), followed by LSTM-ew3. However, the improvements of model performance resulted from the use of data smoothing methods are not consistant across different models. In other words, the best training datasets for GRU, LSTM, and DNN models are different.
 
+The best performed colour forecasting models are the LSTM models trained by EWMA filters, which are 0.0136 from LSTM-ew4, 0.0138 from LSTM-ew2 and LSTM-ew3 as shown in Fig.~\ref{fig:preprocessing-colour}. Interestingly, LSTM models trained by EWMA also showed the best performance in ammonia forecasting models. The top three ranks of Model-Dataset in the lowest validation loss ranks the 6th, 20th, and 1st from the lowest test loss values. However, we don't have extra testing datasets for re-evaluating the colour forecasting models. Compromises have to be made during the analysis of colour forecasting models.
+
+\subsection{Ammonia forecasting models}
 \begin{table}[!ht]
   \centering
   \caption{Baseline performance of ammonia forecasting model, evaluated on test dataset from \textbf{16 to 22 Janurary 2022}. Loss values are calculated by MSE.}\label{tab:baseline-result-jan-nh3}
@@ -116,7 +133,6 @@ As shown in Table.~\ref{tab:baseline-result-oct-nh3}, the top three ranks of Mod
 \end{table}
 
 \subsection{Colour forecasting models}
-The best performed colour forecasting models are the LSTM models trained by EWMA filters, which are 0.0136 from LSTM-ew4, 0.0138 from LSTM-ew2 and LSTM-ew3 as shown in Fig.~\ref{tab:baseline-result-jan-colour}. Interestingly, LSTM models trained by EWMA also showed the best performance in ammonia forecasting models. The top three ranks of Model-Dataset in the lowest validation loss ranks the 6th, 20th, and 1st from the lowest test loss values. However, we don't have extra testing datasets for re-evaluating the colour forecasting models. Compromises have to be made during the analysis of colour forecasting models.
 
 \begin{table}[!ht]
   \centering
@@ -185,4 +201,4 @@ Looking at the color forecasting model with the lowest test loss values of 0.012
     \label{fig:colour-feature-engineering}
  \end{figure}
 
-\section{Design of model architecture through analyzing wastewater composition in sewer system}
+%\section{Design of model architecture through analyzing wastewater composition in sewer system}
