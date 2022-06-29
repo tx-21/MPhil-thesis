@@ -1,23 +1,21 @@
 \chapter{Introduction}
 \section{Background}
-Urban water challenge increases as the cities grow larger. The World Bank estimates that the urban population in worldwide will double by 2050---with serious implications of escalating water demands in cities by 50--70 precent \citep{theworldbankCircularEconomyOpportunity2021}. The amount, distribution, and quality of the available fresh water in urban water cycle has largely been affected by the global climate change. The report from \citep{unicefURBANWATERSCARCITY2021} points out that one in four cities are facing challegnes to supply adequate water to inhabitants, the situation is even worse in cities from developing wrold. Consequently, the rise of urban water usage will also generate more wastewater, thus, the conversion of municipal/industrial wastewater into reusable water is drawing much attentions over the years. Reuse water increases the water availability by substituting the use of freshwater on non-potable (drinkable) uses for agricultural irrigation, industrial, and urban water reuses, etc. 
+Urban water challenge increases as the cities grow larger. The World Bank estimates that the urban population in worldwide will double by 2050---with serious implications of escalating water demands in cities by 50--70 precent \citep{theworldbankCircularEconomyOpportunity2021}. The amount, distribution, and quality of the available fresh water in urban water cycle has largely been affected by the global climate change. The report from \citep{unicefURBANWATERSCARCITY2021} points out that one in four cities are facing challegnes to supply adequate water to inhabitants, the situation is even worse in cities from developing wrold. The rise of urban water usage will generate more wastewater, thus, the conversion of municipal/industrial wastewater into reusable water is drawing much attentions over the years. Reuse water increases the water availability by substituting the use of freshwater on non-potable (drinkable) uses for agricultural irrigation, industrial, and urban water reuses, etc. The alternative reuse water can supply many activities and save drinking water for other purposes elsewhere \citep{adewumiTreatedWastewaterReuse2010}.
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-. Costly projects for drinking water supply may also be delayed due to the reduced demand for drinking as a result of reuse. Lastly, reuse is attractive in many communities because the cost of producing treated wastewater has been found to be lower than the cost of producing drinking water. 
+The construction of reclaimed water facilites often require a huge amount of capital investment. Upgrading available wastewater treatment plants with the reuse water treatment facilities is an economic solution which accompanied with the benefits of the potential of realizing resource recovery (e.g., nitrogen and phosphorus recovery) \citep{maryamWastewaterReclamationReuse2019,kehreinCriticalReviewResource2020}. The primary concern of reusing treated wastewater is the the potential risks caused to the public health. Under unexpected circumstances, it is possible for the reclaimed water facilites to produce unqualified reclaimed water, which is harmful to the living beings (i.e., as reuse water is ingested directly or through irrigated crops) and irrigated soil \citep{adewumiTreatedWastewaterReuse2010}. In Hong Kong, reclaimed water quality is regulated with up to 10 or more water quality parameters, and any parameters fail to meet the standard will lead to disqualification. The common practice for controlling the treated water quality is achieved through water quality control strategy. The market controllers have evoled from a simple on-off logic controller called Programmable Logic Controller (PLC), to a more advanced multi-step response controller called proportional-integral-derivative (PID), and finally to the controller consists of machine learning models. 
 
-In addition, reuse can provide an alternative water supply for many activities that do not require drinking water quality and as such, permit the saved drinking water to be used elsewhere
+%controller can refer to the entire system or the mathematical equations
 
-. \citep{adewumiTreatedWastewaterReuse2010}
-%%%%%%%%%%%%%%%%%%%
-Wastewater reuse can form an important component of both wastewater management and water resource management and can offer an environmentally sound option for managing wastewater that dramatically reduces environmental impacts associated with the discharge of wastewater to surface waters. 
+The deployment of machine learning models in the water quality controllers for assisting water quality control strategy is a ground-breaking application. Many research papers have proposed various machine learning models for replacing the PLC and PID controllers, and demonstrated the benefits machine learning have brought. From the study of \citep{librantzArtificialNeuralNetworks2018}, the disinfection process in a drinking water treatment plant, a PID and machine learning based controller were depolyed to compare the operational costs of meeting the chlorine concentration set-point (i.e., the controller is set to increase or decrease the chlorine dosage until a specific concentration is reached). The results showed that Artificial Nerual Network based model has a more satisfied cost reduction in a chlorination dosing control system comapred to PID controller. Another reseach finding suggests using a Support Vector Regression (SVR) model as the controller required less time in reaching the set-point concentration of free chlorine residual compared to PID controller in both simulation and experimental conditions \citet{wangModelPredictiveControl2020}.
 
-The construction of reclaimed water facilites often require a huge amount of capital investment. Upgrading available wastewater treatment plants with the reuse water treatment facilities is an economic solution which accompanied with the benefits of the potential of realizing resource recovery (e.g., nitrogen and phosphorus recovery). \citep{maryamWastewaterReclamationReuse2019,kehreinCriticalReviewResource2020}.
+The superior performance of machine learning models comes from the tranining of high-quality datasets with good amount of data and data which can fairly represents the dynamic of the system. Previous work has only focused on how the models were trained by the dataset and the performance comparisons between models and PID controllers in water quality control. This raises many questions such as in the senarios when the amount of data is insufficient in length or types (i.e., only a few variable such as pH values or chlorine concentration are available), or the collected data is in poor quality (i.e., missing values or exists extreme values). Although a few papers have discussion the use of data pre-processing methods for removing the noise in raw dataset using data smoothing filters \citep{chengForecastingWastewaterTreatment2020}, or creating new features in addition to the raw dataset \citep{mamandipoorMonitoringDetectingFaults2020}, the influence of data pre-processing methods on the model outputs were not revealed.
 
+Machine learning models for water quality control have two main types of algorithms, regression and classification. The former provides forecasting results of specific values, while the latter provides a decision of yes or no (i.e., 1 or 0). Regression model is also called forecasting models, which play an important roles in water quality control in drinking water treatment plants (DTPs) 
+and wastewater treatment plants (WWTPs). The need of using forecasting models are becuase the unpredictable nature of water quality, and the treatment operations are subjected to the change of water quality to produce effluent complied the government regulation \cite{chenAssessingWastewaterReclamation2003}. In the reclaimed water system in Shek Wu Hui Effluent Polish Plant (SWHEPP), forecasting models are needed for the effluent treatment management and operation. However, only limited online sensors are availabe onsite. Despite the access to limisted data for model training, it's still possible to train a forecasting model with one input, which is also called a self-prediction model. In this study, we will attempt to build machine learing models for forecasting water quality patameter in reclaimed water. Meanwhile, the issue of insufficienct data in quantity will be addressed with data pre-processing methods. 
 
+%6. Explaining the key terminology in your field
 
-
-The most significant restraints to reuse include the potential risks to public health, and the potential for reduced sewer or stream flows. If implemented under uncontrolled or unregulated circumstances, treated wastewater can be harmful to living beings (if ingested directly or through irrigated crops) and irrigated soil (due to the chemicals and potential bacteria within the effluent)
-
+%Explaining how you will use terminology and acronyms in your paper
 
 
 
@@ -25,40 +23,9 @@ The most significant restraints to reuse include the potential risks to public h
 %paragraph 2 Water reclamation-why is it a good choice for solving urban water scarcity
 %paragraph 3 Decision-making processing-how does this help water reclamation
 %paragraph 4 Deep learning model to replace fuzzy supervisor and machine learning models-the need of using it
-AI technologies have been successfully applied to different DWT processes, such as the prediction of the coagulant 
-dosage, discrimination of the DBP formation potential, advanced control of membrane fouling, membrane preparation 
-and optimization, and water quality prediction. \cite{liRecentAdvancesArtificial2021}
-
-%%%% Paragraph 1
-
-
-
-Forecasting models play an important roles in water quality control in drinking water treatment plants (DTPs) 
-and wastewater treatment plants (WWTPs). The need of using forecasting models are becuase the unpredictable 
-nature of water quality, and the treatment operations are subjected to the change of water quality to prodcue
-effluent complied the government regulation \cite{chenAssessingWastewaterReclamation2003}
-
-%%%% Paragraph 2
-Forecasting models can also be called time series model becuase the data is consisted of the values and the 
-time (need to be further revised). For the well-know time series models are for example, RNN, ... These are 
-used to replace the theory-based models, for example Activated Sludege Model (ASM). The difference between 
-these two models are, machine learning based models require to learn from historic data, while the thoery-based
-models only need to enter the basic operational parameters (e.g., influent flow, tempearture, and pH, etc).
-
-%%%% Paragraph 3
-Despite the promising usage and performance of machine learning models, the collection of the data became
-the most difficult tasks. Many small scale or old treatment plants do not have the capital or the available
-environment for the set-ups of the online sensors to collect data.
-Although these are the major issues, it's still possible to train a forecasting model with one input, which 
-is also called a self-prediction model. Although the accuracy or stability compared to multi-input models, 
-the forecasted results can be used at some cases. To increase the model performance, there are several ways.
-Paper included weather data, or perform data-preprocessing methods to improve the model performance.
-
-%%%% Paragraph 4
-These solutions (data preprocessing, feature engineering) are not well discussed in this field, also the 
-potential of using univariate models are under estimated.
-
-Keeping an effective disinfectant residual concentration in reclaimed water is still a challenge, due to its high levels of ammonia and organic matter when compared with those in drinking water. \citep{costaIdentificationModellingChlorine2021}
+%AI technologies have been successfully applied to different DWT processes, such as the prediction of the coagulant 
+%dosage, discrimination of the DBP formation potential, advanced control of membrane fouling, membrane preparation 
+%and optimization, and water quality prediction. \cite{liRecentAdvancesArtificial2021}
 
 
 %\begin{figure}[!t]
@@ -81,7 +48,6 @@ The specific objectives of this thesis work are:\\
 In Chapter 1, “Introduction”, the background information, objectives and organization of the thesis were presented.
 
 Chapter 2, “Literature Review”, provides the overview of water quality process controls, the reviews cover the water treatment plant, wastewater treatment plant, and in reclaimed water system.
-....
 
 In Chapter 3, “Materials and Methods”, the instruments for ammonia and colour data collection, programming environment, and data preparation methods were summarized. The processes of the formulation of extra features for training forecasting models were illustrated.
 
