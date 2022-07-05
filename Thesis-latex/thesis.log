@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.4.16)  29 JUN 2022 21:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2022.4.16)  4 JUL 2022 01:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -793,17 +793,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\nbi' on input line 139.
 
-[2] (/Users/tinghsi/Github/MPhil-thesis/Thesis-latex/sections/signature.tex
-Signature Page
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\nbi' on input line 19.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\nbi' on input line 19.
-
-[3]) (/Users/tinghsi/Github/MPhil-thesis/Thesis-latex/sections/ack.tex)
+[2] (/Users/tinghsi/Github/MPhil-thesis/Thesis-latex/sections/ack.tex)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\nbi' on input line 183.
@@ -812,9 +802,20 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\nbi' on input line 183.
 
-[4]
+[3]
 Table of Contents
-(/Users/tinghsi/Github/MPhil-thesis/Thesis-latex/thesis.toc)
+(/Users/tinghsi/Github/MPhil-thesis/Thesis-latex/thesis.toc
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nbi' on input line 28.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\nbi' on input line 28.
+
+[4
+
+])
 \tf@toc=\write4
 \openout4 = `thesis.toc'.
 
@@ -827,11 +828,20 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\nbi' on input line 191.
 
-[5
-
-]
+[5]
 List of Figures
-(/Users/tinghsi/Github/MPhil-thesis/Thesis-latex/thesis.lof)
+(/Users/tinghsi/Github/MPhil-thesis/Thesis-latex/thesis.lof
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nbi' on input line 21.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\nbi' on input line 21.
+
+[6
+
+])
 \tf@lof=\write5
 \openout5 = `thesis.lof'.
 
@@ -844,9 +854,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\nbi' on input line 199.
 
-[6
-
-]
+[7]
 List of Tables
 (/Users/tinghsi/Github/MPhil-thesis/Thesis-latex/thesis.lot)
 \tf@lot=\write6
@@ -862,7 +870,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\nbi' on input line 1.
 
-[7
+[8
 
 ]
 
@@ -873,7 +881,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\nbi' on input line 25.
 
-[8]) (/Users/tinghsi/Github/MPhil-thesis/Thesis-latex/chapters/chapter-1-intro.tex
+[9]) (/Users/tinghsi/Github/MPhil-thesis/Thesis-latex/chapters/chapter-1-intro.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\nbi' on input line 1.
@@ -882,7 +890,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\nbi' on input line 1.
 
-[9]
+[10]
 
 Warning: No abstract. 
 
@@ -920,7 +928,7 @@ CHAPTER 2.
 \l__nicematrix_final_i_int=\count379
 \l__nicematrix_final_j_int=\count380
  [16]
-<imgs/propose-frameworks-for-control-strategy-design.png, id=353, 911.54839pt x 426.30696pt>
+<imgs/propose-frameworks-for-control-strategy-design.png, id=522, 911.54839pt x 426.30696pt>
 File: imgs/propose-frameworks-for-control-strategy-design.png Graphic file (type png)
 <use imgs/propose-frameworks-for-control-strategy-design.png>
 Package pdftex.def Info: imgs/propose-frameworks-for-control-strategy-design.png  used on input line 118.
@@ -935,22 +943,370 @@ Underfull \hbox (badness 10000) in paragraph at lines 144--152
 
  []
 
-[20]) [21] (/Users/tinghsi/Github/MPhil-thesis/Thesis-latex/thesis.bbl [22] [23
+[20]) (/Users/tinghsi/Github/MPhil-thesis/Thesis-latex/chapters/chapter-3-methods.tex [21] [22]
+CHAPTER 3.
+<imgs/Sewage-treatment-process-flowchart.png, id=611, 1004.03679pt x 412.54124pt>
+File: imgs/Sewage-treatment-process-flowchart.png Graphic file (type png)
+<use imgs/Sewage-treatment-process-flowchart.png>
+Package pdftex.def Info: imgs/Sewage-treatment-process-flowchart.png  used on input line 8.
+(pdftex.def)             Requested size: 409.71692pt x 168.34355pt.
 
-] [24] [25] [26] [27] [28]) [29] (/Users/tinghsi/Github/MPhil-thesis/Thesis-latex/thesis.aux) ) 
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<imgs/instrument/sampling-tank.png, id=612, 677.10107pt x 488.25269pt>
+File: imgs/instrument/sampling-tank.png Graphic file (type png)
+<use imgs/instrument/sampling-tank.png>
+Package pdftex.def Info: imgs/instrument/sampling-tank.png  used on input line 17.
+(pdftex.def)             Requested size: 364.19667pt x 262.61696pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[23
+
+]
+<imgs/instrument/ammonium-sensor.png, id=623, 283.0575pt x 325.215pt>
+File: imgs/instrument/ammonium-sensor.png Graphic file (type png)
+<use imgs/instrument/ammonium-sensor.png>
+Package pdftex.def Info: imgs/instrument/ammonium-sensor.png  used on input line 30.
+(pdftex.def)             Requested size: 136.57462pt x 156.92021pt.
+<imgs/instrument/controller-for-iq-sensor.png, id=624, 335.53929pt x 326.93571pt>
+File: imgs/instrument/controller-for-iq-sensor.png Graphic file (type png)
+<use imgs/instrument/controller-for-iq-sensor.png>
+Package pdftex.def Info: imgs/instrument/controller-for-iq-sensor.png  used on input line 35.
+(pdftex.def)             Requested size: 136.57462pt x 133.07172pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 36--36
+[]\OT1/cmr/m/n/10.95 (b) |DIQ/S 284-EF con-
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[24 </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/Sewage-treatment-process-flowchart.png>]
+<imgs/instrument/SIP10.png, id=635, 424.15607pt x 353.1766pt>
+File: imgs/instrument/SIP10.png Graphic file (type png)
+<use imgs/instrument/SIP10.png>
+Package pdftex.def Info: imgs/instrument/SIP10.png  used on input line 48.
+(pdftex.def)             Requested size: 136.57462pt x 113.71939pt.
+<imgs/instrument/DR3900_PS.png, id=636, 521.80661pt x 394.04356pt>
+File: imgs/instrument/DR3900_PS.png Graphic file (type png)
+<use imgs/instrument/DR3900_PS.png>
+Package pdftex.def Info: imgs/instrument/DR3900_PS.png  used on input line 53.
+(pdftex.def)             Requested size: 136.57462pt x 103.13434pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--54
+[]\OT1/cmr/m/n/10.95 (b) |DR3900 spec-tropho-
+ []
+
+<imgs/instrument/actuator-mount.png, id=637, 1152.01822pt x 508.0409pt>
+File: imgs/instrument/actuator-mount.png Graphic file (type png)
+<use imgs/instrument/actuator-mount.png>
+Package pdftex.def Info: imgs/instrument/actuator-mount.png  used on input line 58.
+(pdftex.def)             Requested size: 318.66948pt x 140.52951pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[25 </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/instrument/sampling-tank.png>]
+<imgs/instrument/colour-sampler.png, id=643, 835.83696pt x 498.14679pt>
+File: imgs/instrument/colour-sampler.png Graphic file (type png)
+<use imgs/instrument/colour-sampler.png>
+Package pdftex.def Info: imgs/instrument/colour-sampler.png  used on input line 68.
+(pdftex.def)             Requested size: 364.19667pt x 217.05695pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<imgs/results/data.png, id=645, 1197.97563pt x 373.395pt>
+File: imgs/results/data.png Graphic file (type png)
+<use imgs/results/data.png>
+Package pdftex.def Info: imgs/results/data.png  used on input line 77.
+(pdftex.def)             Requested size: 455.24411pt x 141.89157pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[26 </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/instrument/ammonium-sensor.png> </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/instrument/controller-for-iq-sensor.png>]
+<imgs/pre-processing/training-scheme.png, id=660, 657.74304pt x 526.1084pt>
+File: imgs/pre-processing/training-scheme.png Graphic file (type png)
+<use imgs/pre-processing/training-scheme.png>
+Package pdftex.def Info: imgs/pre-processing/training-scheme.png  used on input line 94.
+(pdftex.def)             Requested size: 409.71692pt x 327.72516pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[27 </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/instrument/SIP10.png> </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/instrument/DR3900_PS.png> </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/instrument/actuator-mount.png>] [28 </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/instrument/colour-sampler.png> </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/results/data.png>]
+Overfull \hbox (2.997pt too wide) in paragraph at lines 108--115
+[]\OT1/cmr/m/n/12 2)[]  De-ter-mine poly-no-mial de-gree (e.g., dif-fer-ent poly-no-mial de-gree is com-pared in Fig. []3.8a[]).[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 108--115
+
+ []
+
+[29 </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/pre-processing/training-scheme.png>]
+<imgs/pre-processing/demo-polynomial-fitting.png, id=690, 502.9992pt x 402.5439pt>
+File: imgs/pre-processing/demo-polynomial-fitting.png Graphic file (type png)
+<use imgs/pre-processing/demo-polynomial-fitting.png>
+Package pdftex.def Info: imgs/pre-processing/demo-polynomial-fitting.png  used on input line 141.
+(pdftex.def)             Requested size: 182.09486pt x 145.72647pt.
+<imgs/pre-processing/demo-weight-ewma.png, id=695, 479.391pt x 308.95425pt>
+File: imgs/pre-processing/demo-weight-ewma.png Graphic file (type png)
+<use imgs/pre-processing/demo-weight-ewma.png>
+Package pdftex.def Info: imgs/pre-processing/demo-weight-ewma.png  used on input line 146.
+(pdftex.def)             Requested size: 227.62206pt x 146.69821pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+
+LaTeX Warning: Reference `smoothed-ew' on page 30 undefined on input line 171.
+
+<imgs/pre-processing/sg-filter.png, id=703, 483.30562pt x 318.69063pt>
+File: imgs/pre-processing/sg-filter.png Graphic file (type png)
+<use imgs/pre-processing/sg-filter.png>
+Package pdftex.def Info: imgs/pre-processing/sg-filter.png  used on input line 176.
+(pdftex.def)             Requested size: 204.85846pt x 135.08429pt.
+<imgs/pre-processing/ew-filter.png, id=704, 483.30562pt x 318.69063pt>
+File: imgs/pre-processing/ew-filter.png Graphic file (type png)
+<use imgs/pre-processing/ew-filter.png>
+Package pdftex.def Info: imgs/pre-processing/ew-filter.png  used on input line 181.
+(pdftex.def)             Requested size: 204.85846pt x 135.08429pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[30]
+Underfull \hbox (badness 10000) in paragraph at lines 190--195
+
+ []
+
+<imgs/pre-processing/prominence.png, id=722, 451.6875pt x 365.65178pt>
+File: imgs/pre-processing/prominence.png Graphic file (type png)
+<use imgs/pre-processing/prominence.png>
+Package pdftex.def Info: imgs/pre-processing/prominence.png  used on input line 200.
+(pdftex.def)             Requested size: 250.38564pt x 202.69922pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[31 </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/pre-processing/demo-polynomial-fitting.png> </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/pre-processing/demo-weight-ewma.png>] [32 </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/pre-processing/sg-filter.png> </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/pre-processing/ew-filter.png> </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/pre-processing/prominence.png>]
+<imgs/pre-processing/geomap.png, id=749, 782.925pt x 511.48232pt>
+File: imgs/pre-processing/geomap.png Graphic file (type png)
+<use imgs/pre-processing/geomap.png>
+Package pdftex.def Info: imgs/pre-processing/geomap.png  used on input line 210.
+(pdftex.def)             Requested size: 432.48051pt x 282.54144pt.
+<imgs/pre-processing/blending-ratio.png, id=750, 492.98465pt x 475.34732pt>
+File: imgs/pre-processing/blending-ratio.png Graphic file (type png)
+<use imgs/pre-processing/blending-ratio.png>
+Package pdftex.def Info: imgs/pre-processing/blending-ratio.png  used on input line 218.
+(pdftex.def)             Requested size: 204.85846pt x 197.53381pt.
+
+Underfull \hbox (badness 1418) in paragraph at lines 219--219
+[]\OT1/cmr/m/n/10.95 (a) |Flowchart show-ing the blend-ing of
+ []
+
+<imgs/pre-processing/pos-encoding.png, id=751, 366.8907pt x 366.168pt>
+File: imgs/pre-processing/pos-encoding.png Graphic file (type png)
+<use imgs/pre-processing/pos-encoding.png>
+Package pdftex.def Info: imgs/pre-processing/pos-encoding.png  used on input line 223.
+(pdftex.def)             Requested size: 204.85846pt x 204.46042pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<imgs/leachate-effluent-blend-ratio-color-plot/colour-blend-coef.png, id=752, 443.4969pt x 331.4784pt>
+File: imgs/leachate-effluent-blend-ratio-color-plot/colour-blend-coef.png Graphic file (type png)
+<use imgs/leachate-effluent-blend-ratio-color-plot/colour-blend-coef.png>
+Package pdftex.def Info: imgs/leachate-effluent-blend-ratio-color-plot/colour-blend-coef.png  used on input line 233.
+(pdftex.def)             Requested size: 204.85846pt x 153.1192pt.
+<imgs/results/colour-pattern.png, id=753, 469.5141pt x 331.4784pt>
+File: imgs/results/colour-pattern.png Graphic file (type png)
+<use imgs/results/colour-pattern.png>
+Package pdftex.def Info: imgs/results/colour-pattern.png  used on input line 238.
+(pdftex.def)             Requested size: 204.85846pt x 144.63197pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[33 </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/pre-processing/geomap.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 248--254
+
+ []
+
+<imgs/pre-processing/hourly-consumption-pattern.png, id=765, 945.96268pt x 579.02036pt>
+File: imgs/pre-processing/hourly-consumption-pattern.png Graphic file (type png)
+<use imgs/pre-processing/hourly-consumption-pattern.png>
+Package pdftex.def Info: imgs/pre-processing/hourly-consumption-pattern.png  used on input line 259.
+(pdftex.def)             Requested size: 364.19667pt x 222.92795pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<imgs/results/nh3-pattern.png, id=770, 643.203pt x 428.5611pt>
+File: imgs/results/nh3-pattern.png Graphic file (type png)
+<use imgs/results/nh3-pattern.png>
+Package pdftex.def Info: imgs/results/nh3-pattern.png  used on input line 266.
+(pdftex.def)             Requested size: 273.14923pt x 181.99545pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<imgs/leachate-effluent-blend-ratio-color-plot/first-80d.png, id=771, 926.0196pt x 348.3414pt>
+File: imgs/leachate-effluent-blend-ratio-color-plot/first-80d.png Graphic file (type png)
+<use imgs/leachate-effluent-blend-ratio-color-plot/first-80d.png>
+Package pdftex.def Info: imgs/leachate-effluent-blend-ratio-color-plot/first-80d.png  used on input line 274.
+(pdftex.def)             Requested size: 455.24411pt x 171.2522pt.
+<imgs/leachate-effluent-blend-ratio-color-plot/second-80d.png, id=772, 926.0196pt x 348.3414pt>
+File: imgs/leachate-effluent-blend-ratio-color-plot/second-80d.png Graphic file (type png)
+<use imgs/leachate-effluent-blend-ratio-color-plot/second-80d.png>
+Package pdftex.def Info: imgs/leachate-effluent-blend-ratio-color-plot/second-80d.png  used on input line 279.
+(pdftex.def)             Requested size: 455.24411pt x 171.2522pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[34 </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/pre-processing/blending-ratio.png> </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/pre-processing/pos-encoding.png>]
+<imgs/pre-processing/feature-selection.png, id=786, 1011.78pt x 379.84767pt>
+File: imgs/pre-processing/feature-selection.png Graphic file (type png)
+<use imgs/pre-processing/feature-selection.png>
+Package pdftex.def Info: imgs/pre-processing/feature-selection.png  used on input line 294.
+(pdftex.def)             Requested size: 364.19667pt x 136.72766pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[35 </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/leachate-effluent-blend-ratio-color-plot/colour-blend-coef.png> </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/results/colour-pattern.png>] [36 </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/pre-processing/hourly-consumption-pattern.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 309--315
+
+ []
+
+[37 </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/results/nh3-pattern.png>] [38 </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/leachate-effluent-blend-ratio-color-plot/first-80d.png> </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/leachate-effluent-blend-ratio-color-plot/second-80d.png>]
+<imgs/models/random-forest.png, id=828, 2765.33125pt x 2001.4775pt>
+File: imgs/models/random-forest.png Graphic file (type png)
+<use imgs/models/random-forest.png>
+Package pdftex.def Info: imgs/models/random-forest.png  used on input line 326.
+(pdftex.def)             Requested size: 227.62206pt x 164.73302pt.
+<imgs/models/DNN.png, id=833, 450.39696pt x 302.84572pt>
+File: imgs/models/DNN.png Graphic file (type png)
+<use imgs/models/DNN.png>
+Package pdftex.def Info: imgs/models/DNN.png  used on input line 331.
+(pdftex.def)             Requested size: 182.09486pt x 122.43927pt.
+
+Underfull \hbox (badness 3229) in paragraph at lines 332--332
+[]\OT1/cmr/m/n/10.95 (b) |Deep Neu-ral Net-work (DNN)
+ []
+
+[39 </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/pre-processing/feature-selection.png> </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/models/random-forest.png> </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/models/DNN.png>]
+<imgs/models/rnn-2.png, id=856, 353.1766pt x 348.44464pt>
+File: imgs/models/rnn-2.png Graphic file (type png)
+<use imgs/models/rnn-2.png>
+Package pdftex.def Info: imgs/models/rnn-2.png  used on input line 352.
+(pdftex.def)             Requested size: 136.57462pt x 134.74442pt.
+<imgs/models/lstm-2.png, id=857, 346.29375pt x 352.31625pt>
+File: imgs/models/lstm-2.png Graphic file (type png)
+<use imgs/models/lstm-2.png>
+Package pdftex.def Info: imgs/models/lstm-2.png  used on input line 357.
+(pdftex.def)             Requested size: 136.57462pt x 138.95103pt.
+<imgs/models/gru-2.png, id=858, 336.82982pt x 347.15411pt>
+File: imgs/models/gru-2.png Graphic file (type png)
+<use imgs/models/gru-2.png>
+Package pdftex.def Info: imgs/models/gru-2.png  used on input line 362.
+(pdftex.def)             Requested size: 136.57462pt x 140.76085pt.
+
+Underfull \hbox (badness 4940) in paragraph at lines 363--363
+[]\OT1/cmr/m/n/10.95 (c) |Gate Re-cur-rent Unit
+ []
+
+[40 </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/models/rnn-2.png> </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/models/lstm-2.png> </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/models/gru-2.png>] [41]) (/Users/tinghsi/Github/MPhil-thesis/Thesis-latex/chapters/chapter-4-results.tex [42]
+CHAPTER 4.
+<imgs/results/baseline-models-nh3.png, id=918, 338.7054pt x 290.7663pt>
+File: imgs/results/baseline-models-nh3.png Graphic file (type png)
+<use imgs/results/baseline-models-nh3.png>
+Package pdftex.def Info: imgs/results/baseline-models-nh3.png  used on input line 10.
+(pdftex.def)             Requested size: 204.85846pt x 175.86313pt.
+<imgs/results/baseline-models-colour.png, id=919, 345.4506pt x 290.7663pt>
+File: imgs/results/baseline-models-colour.png Graphic file (type png)
+<use imgs/results/baseline-models-colour.png>
+Package pdftex.def Info: imgs/results/baseline-models-colour.png  used on input line 15.
+(pdftex.def)             Requested size: 204.85846pt x 172.43353pt.
+<imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-nh3.png, id=920, 354.123pt x 287.1528pt>
+File: imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-nh3.png Graphic file (type png)
+<use imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-nh3.png>
+Package pdftex.def Info: imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-nh3.png  used on input line 25.
+(pdftex.def)             Requested size: 204.85846pt x 166.11932pt.
+<imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-nh3.png, id=921, 353.1594pt x 284.9847pt>
+File: imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-nh3.png Graphic file (type png)
+<use imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-nh3.png>
+Package pdftex.def Info: imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-nh3.png  used on input line 30.
+(pdftex.def)             Requested size: 204.85846pt x 165.31297pt.
+<imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-colour.png, id=922, 353.8821pt x 287.1528pt>
+File: imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-colour.png Graphic file (type png)
+<use imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-colour.png>
+Package pdftex.def Info: imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-colour.png  used on input line 35.
+(pdftex.def)             Requested size: 204.85846pt x 166.22887pt.
+<imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-colour.png, id=923, 352.9185pt x 284.9847pt>
+File: imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-colour.png Graphic file (type png)
+<use imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-colour.png>
+Package pdftex.def Info: imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-colour.png  used on input line 40.
+(pdftex.def)             Requested size: 204.85846pt x 165.42604pt.
+
+Underfull \hbox (badness 3989) in paragraph at lines 41--41
+[]\OT1/cmr/m/n/10.95 (d) |Base-line LSTM model fore-cast-ing
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<imgs/results/feature-engineering/pre-processing-nh3-jan.png, id=924, 344.2461pt x 290.7663pt>
+File: imgs/results/feature-engineering/pre-processing-nh3-jan.png Graphic file (type png)
+<use imgs/results/feature-engineering/pre-processing-nh3-jan.png>
+Package pdftex.def Info: imgs/results/feature-engineering/pre-processing-nh3-jan.png  used on input line 51.
+(pdftex.def)             Requested size: 204.85846pt x 173.03693pt.
+<imgs/results/feature-engineering/pre-processing-colour.png, id=925, 344.2461pt x 290.7663pt>
+File: imgs/results/feature-engineering/pre-processing-colour.png Graphic file (type png)
+<use imgs/results/feature-engineering/pre-processing-colour.png>
+Package pdftex.def Info: imgs/results/feature-engineering/pre-processing-colour.png  used on input line 56.
+(pdftex.def)             Requested size: 204.85846pt x 173.03693pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[43
+
+ </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/results/baseline-models-nh3.png> </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/results/baseline-models-colour.png>] [44 </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-nh3.png> </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-nh3.png> </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-colour.png> </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-colour.png>] [45 </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/results/feature-engineering/pre-processing-nh3-jan.png> </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/results/feature-engineering/pre-processing-colour.png>] [46] [47] [48]
+<imgs/results/feature-engineering/nh3-input-1-4-comparison.png, id=965, 498.9039pt x 357.9774pt>
+File: imgs/results/feature-engineering/nh3-input-1-4-comparison.png Graphic file (type png)
+<use imgs/results/feature-engineering/nh3-input-1-4-comparison.png>
+Package pdftex.def Info: imgs/results/feature-engineering/nh3-input-1-4-comparison.png  used on input line 180.
+(pdftex.def)             Requested size: 318.66948pt x 228.6623pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 188--194
+
+ []
+
+[49 </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/results/feature-engineering/nh3-input-1-4-comparison.png>]
+<imgs/results/feature-engineering/colour-input-1-4-comparison.png, id=974, 498.9039pt x 357.9774pt>
+File: imgs/results/feature-engineering/colour-input-1-4-comparison.png Graphic file (type png)
+<use imgs/results/feature-engineering/colour-input-1-4-comparison.png>
+Package pdftex.def Info: imgs/results/feature-engineering/colour-input-1-4-comparison.png  used on input line 199.
+(pdftex.def)             Requested size: 318.66948pt x 228.6623pt.
+) (/Users/tinghsi/Github/MPhil-thesis/Thesis-latex/chapters/chapter-5-conclusion.tex [50 </Users/tinghsi/Github/MPhil-thesis/Thesis-latex/imgs/results/feature-engineering/colour-input-1-4-comparison.png>]
+CHAPTER 5.
+[51
+
+] [52]) (/Users/tinghsi/Github/MPhil-thesis/Thesis-latex/thesis.bbl [53] [54
+
+] [55] [56] [57] [58] [59] [60] [61]) [62] (/Users/tinghsi/Github/MPhil-thesis/Thesis-latex/thesis.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 25204 strings out of 478715
- 491458 string characters out of 5855630
- 759396 words of memory out of 5000000
- 42401 multiletter control sequences out of 15000+600000
- 481232 words of font info for 71 fonts, out of 8000000 for 9000
+ 30511 strings out of 478715
+ 604242 string characters out of 5855630
+ 969346 words of memory out of 5000000
+ 47506 multiletter control sequences out of 15000+600000
+ 486203 words of font info for 90 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 87i,14n,94p,3564b,936s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb>
-Output written on /Users/tinghsi/Github/MPhil-thesis/Thesis-latex/thesis.pdf (38 pages, 1145151 bytes).
+ 87i,14n,94p,3564b,980s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmib10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on /Users/tinghsi/Github/MPhil-thesis/Thesis-latex/thesis.pdf (72 pages, 19773415 bytes).
 PDF statistics:
- 606 PDF objects out of 1000 (max. 8388607)
- 548 compressed objects within 6 object streams
- 135 named destinations out of 1000 (max. 500000)
- 218 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1325 PDF objects out of 1440 (max. 8388607)
+ 1123 compressed objects within 12 object streams
+ 276 named destinations out of 1000 (max. 500000)
+ 666 words of extra memory for PDF output out of 10000 (max. 10000000)
 

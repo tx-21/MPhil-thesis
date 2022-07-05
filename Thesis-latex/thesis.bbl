@@ -1,4 +1,4 @@
-\begin{thebibliography}{57}
+\begin{thebibliography}{73}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -7,6 +7,15 @@
 
 \bibitem[Wha()]{WhatPythonExecutive}
 What is {{Python}}? {{Executive Summary}}.
+
+\bibitem[{Abu-Bakar} et~al.(2021){Abu-Bakar}, Williams, and
+  Hallett]{abu-bakarQuantifyingImpactCOVID192021}
+Halidu {Abu-Bakar}, Leon Williams, and Stephen~H. Hallett.
+\newblock Quantifying the impact of the {{COVID-19}} lockdown on household
+  water consumption patterns in {{England}}.
+\newblock \emph{npj Clean Water}, 4\penalty0 (1):\penalty0 13, December 2021.
+\newblock ISSN 2059-7037.
+\newblock \doi{10.1038/s41545-021-00103-8}.
 
 \bibitem[Adewumi et~al.(2010)Adewumi, Ilemobade, and
   Van~Zyl]{adewumiTreatedWastewaterReuse2010}
@@ -77,6 +86,11 @@ Nobel Ballhysa, Soyeon Kim, and Seongjoon Byeon.
   9\penalty0 (4):\penalty0 16--25, December 2020.
 \newblock \doi{10.7236/IJASC.2020.9.4.16}.
 
+\bibitem[Bangaloreai(2018)]{bangaloreaiDeepNeuralNetwork2018}
+Bangaloreai.
+\newblock Deep neural network ({{DNN}}) is an artificial neural network
+  ({{ANN}}), March 2018.
+
 \bibitem[bin Talib(2011)]{talibModelingControlWastewater2011}
 Adi~Hasif bin Talib.
 \newblock \emph{Modeling and {{Control}} of {{Wastewater Treatment Process}}}.
@@ -93,6 +107,10 @@ Francesca Cecconi and Diego Rosso.
   Sensors}} in {{Water Resource Recovery Facilities}}.
 \newblock \emph{Environmental Science: Water Research and Technology}, 2021.
 \newblock \doi{10.1021/acs.est.0c06111}.
+
+\bibitem[CFI(2022)]{cfiExponentiallyWeightedMoving2022}
+CFI.
+\newblock Exponentially {{Weighted Moving Average}} ({{EWMA}}), January 2022.
 
 \bibitem[Chandola()]{chandolaAnomalyDetectionSurvey}
 Varun Chandola.
@@ -149,6 +167,10 @@ C.~De~Mulder, T.~Flameling, S.~Weijers, Y.~Amerlinck, and I.~Nopens.
 \newblock ISSN 13648152.
 \newblock \doi{10.1016/j.envsoft.2018.05.015}.
 
+\bibitem[DeepAI(2022)]{deepaiLossFunction2022}
+DeepAI.
+\newblock Loss {{Function}}, June 2022.
+
 \bibitem[Demir and Woo(2014)]{demirFeedbackControlChlorine2014a}
 Feridun Demir and Wilbur~W. Woo.
 \newblock Feedback control over the chlorine disinfection process at a
@@ -158,6 +180,11 @@ Feridun Demir and Wilbur~W. Woo.
   (2):\penalty0 1088--1097, June 2014.
 \newblock ISSN 22133437.
 \newblock \doi{10.1016/j.jece.2014.04.006}.
+
+\bibitem[Donges(2021)]{dongesGuideRNNUnderstanding2021}
+Niklas Donges.
+\newblock A {{Guide}} to {{RNN}}: {{Understanding Recurrent Neural Networks}}
+  and {{LSTM Networks}}, July 2021.
 
 \bibitem[Gamiz et~al.(2020)Gamiz, Vilanova, {Martinez-Garcia}, Bolea, and
   Grau]{gamizFuzzyGainScheduling2020}
@@ -221,6 +248,10 @@ Sung-Taek Hong, An-Kyu Lee, Ho-Hyun Lee, No-Suk Park, and Seung-Hwan Lee.
 \newblock ISSN 1944-3994, 1944-3986.
 \newblock \doi{10.1080/19443994.2012.696810}.
 
+\bibitem[IBM(2022)]{ibmNeuralNetworks2022}
+IBM.
+\newblock Neural {{Networks}}, June 2022.
+
 \bibitem[Kehrein et~al.(2020)Kehrein, {van Loosdrecht}, Osseweijer, Garf{\'i},
   Dewulf, and Posada]{kehreinCriticalReviewResource2020}
 Philipp Kehrein, Mark {van Loosdrecht}, Patricia Osseweijer, Marianna
@@ -242,6 +273,15 @@ Edmund~A. Kobylinski, Gary~L. Hunter, and Andrew~R. Shaw.
   (5):\penalty0 6371--6394, January 2006.
 \newblock ISSN 1938-6478.
 \newblock \doi{10.2175/193864706783761716}.
+
+\bibitem[{Le} et~al.(2019){Le}, {Ho}, {Lee}, and
+  {Jung}]{leApplicationLongShortTerm2019}
+{Le}, {Ho}, {Lee}, and {Jung}.
+\newblock Application of {{Long Short-Term Memory}} ({{LSTM}}) {{Neural
+  Network}} for {{Flood Forecasting}}.
+\newblock \emph{Water}, 11\penalty0 (7):\penalty0 1387, July 2019.
+\newblock ISSN 2073-4441.
+\newblock \doi{10.3390/w11071387}.
 
 \bibitem[Li et~al.(2021)Li, Rong, Wang, and Yu]{liRecentAdvancesArtificial2021}
 Lei Li, Shuming Rong, Rui Wang, and Shuili Yu.
@@ -324,9 +364,32 @@ MathWorks.
 \newblock Call {{Python Function Using MATLAB Function}} and {{MATLAB System
   Block}}, April 2022{\natexlab{a}}.
 
-\bibitem[MathWorks(2022{\natexlab{b}})]{mathworksMATLABMachineLearning2022}
+\bibitem[MathWorks(2022{\natexlab{b}})]{mathworksDocumentationFindpeaks2022}
 MathWorks.
-\newblock {{MATLAB}} for {{Machine Learning}}, June 2022{\natexlab{b}}.
+\newblock Documentation-{{Findpeaks}}, June 2022{\natexlab{b}}.
+
+\bibitem[MathWorks(2022{\natexlab{c}})]{mathworksMATLABMachineLearning2022}
+MathWorks.
+\newblock {{MATLAB}} for {{Machine Learning}}, June 2022{\natexlab{c}}.
+
+\bibitem[{Mohseni-Dargah} et~al.(2022){Mohseni-Dargah}, Falahati, Dabirmanesh,
+  Nasrollahi, and Khajeh]{mohseni-dargahChapter12Machine2022}
+Masoud {Mohseni-Dargah}, Zahra Falahati, Bahareh Dabirmanesh, Parisa
+  Nasrollahi, and Khosro Khajeh.
+\newblock Chapter 12 - {{Machine}} learning in surface plasmon resonance for
+  environmental monitoring.
+\newblock In Mohsen Asadnia, Amir Razmjou, and Amin Beheshti, editors,
+  \emph{Artificial {{Intelligence}} and {{Data Science}} in {{Environmental
+  Sensing}}}, Cognitive {{Data Science}} in {{Sustainable Computing}}, pages
+  269--298. {Academic Press}, January 2022.
+\newblock ISBN 978-0-323-90508-4.
+\newblock \doi{10.1016/B978-0-323-90508-4.00012-5}.
+
+\bibitem[{National Center for Biotechnology
+  Information}(2022)]{nationalcenterforbiotechnologyinformationPubChemCompoundSummary2022}
+{National Center for Biotechnology Information}.
+\newblock "{{PubChem Compound Summary}} for {{CID}} 222, {{Ammonia}}"
+  {{PubChem}}, June 2022.
 
 \bibitem[Newhart et~al.(2019)Newhart, Holloway, Hering, and
   Cath]{newhartDatadrivenPerformanceAnalyses2019}
@@ -347,6 +410,10 @@ Diana {Norton-Brand{\~a}o}, Sigrid~M. Scherrenberg, and Jules~B. {van Lier}.
 \newblock ISSN 03014797.
 \newblock \doi{10.1016/j.jenvman.2013.03.012}.
 
+\bibitem[Olah(2015)]{olahUnderstandingLSTMNetworks2015}
+Christopher Olah.
+\newblock Understanding {{LSTM Networks}}, August 2015.
+
 \bibitem[Pattnaik et~al.(2021)Pattnaik, Pattanayak, Udgata, and
   Panda]{pattnaikMachineLearningBased2021}
 Bhawani~Shankar Pattnaik, Arunima~Sambhuta Pattanayak, Siba~Kumar Udgata, and
@@ -356,6 +423,10 @@ Bhawani~Shankar Pattnaik, Arunima~Sambhuta Pattanayak, Siba~Kumar Udgata, and
 \newblock \emph{Complex \& Intelligent Systems}, 7\penalty0 (2):\penalty0
   961--976, 2021.
 \newblock \doi{10.1007/s40747-020-00259-9}.
+
+\bibitem[Riebesell(2022)]{riebesellRandomForest2022}
+Janosh Riebesell.
+\newblock Random {{Forest}}, June 2022.
 
 \bibitem[Rosen et~al.(2008)Rosen, Rieger, Jeppsson, and
   Vanrolleghem]{rosenAddingRealismSimulated2008}
@@ -376,12 +447,26 @@ I.~Sant{\'i}n, C.~Pedret, and R.~Vilanova.
 \newblock ISSN 0888-5885, 1520-5045.
 \newblock \doi{10.1021/ie504079q}.
 
+\bibitem[Savitzky and Golay(1964)]{savitzkySmoothingDifferentiationData1964}
+Abraham. Savitzky and M.~J.~E. Golay.
+\newblock Smoothing and {{Differentiation}} of {{Data}} by {{Simplified Least
+  Squares Procedures}}.
+\newblock \emph{Analytical Chemistry}, 36\penalty0 (8):\penalty0 1627--1639,
+  July 1964.
+\newblock ISSN 0003-2700.
+\newblock \doi{10.1021/ac60214a047}.
+
 \bibitem[Stevenson and Bravo(2019)]{stevensonAdvancedTurbidityPrediction2019}
 Matthew Stevenson and Cristi{\'a}n Bravo.
 \newblock Advanced turbidity prediction for operational water supply planning.
 \newblock \emph{Decision Support Systems}, 119:\penalty0 72--84, April 2019.
 \newblock ISSN 01679236.
 \newblock \doi{10.1016/j.dss.2019.02.009}.
+
+\bibitem[Taal(2017)]{taalSmoothingYourData2017}
+Cees Taal.
+\newblock Smoothing your data with polynomial fitting: A signal processing
+  perspective, April 2017.
 
 \bibitem[TheWorldBank(2021)]{theworldbankCircularEconomyOpportunity2021}
 TheWorldBank.
@@ -449,6 +534,14 @@ Xiaodong Wang, Knut Kvaal, and Harsha Ratnaweera.
   surveillance at a full-scale wastewater treatment plant.
 \newblock \emph{Journal of Process Control}, 77:\penalty0 1--6, 2019.
 \newblock \doi{10.1016/j.jprocont.2019.03.005}.
+
+\bibitem[Wikipedia(2022{\natexlab{a}})]{wikipediaRandomForest2022}
+Wikipedia.
+\newblock Random forest, June 2022{\natexlab{a}}.
+
+\bibitem[Wikipedia(2022{\natexlab{b}})]{wikipediaSavitzkyGolayFilter2022}
+Wikipedia.
+\newblock Savitzky\textendash{{Golay}} filter, June 2022{\natexlab{b}}.
 
 \bibitem[Wil{\'e}n et~al.(2018)Wil{\'e}n, Li{\'e}bana, Persson, Modin, and
   Hermansson]{wilenMechanismsGranulationActivated2018}
