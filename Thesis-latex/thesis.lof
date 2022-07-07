@@ -22,9 +22,9 @@
 \contentsline {figure}{\numberline {3.18}{\ignorespaces Illustration of RF and DNN model structure.\relax }}{39}{figure.caption.24}%
 \contentsline {figure}{\numberline {3.19}{\ignorespaces Variant architectures of Recurrent Neural Networks (adapted from \citet {olahUnderstandingLSTMNetworks2015}). $x_t$ corresponds to the current input, $h_{t-1}$ to the last hidden state (output), $h_t$ to the current output, tanh is the tangent activation function, $\sigma $ is the sigmoid activation function,$\times $ is the vector pointwise multiplication, $+$ is the vector pointwise addition.\relax }}{40}{figure.caption.25}%
 \addvspace {1pt}
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Baseline performance of ammonia and colour forecasting models.\relax }}{43}{figure.caption.26}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Visulization of the model forecasting results.\relax }}{44}{figure.caption.27}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Baseline performance of ammonia and colour forecasting models.\relax }}{45}{figure.caption.28}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces cap\nobreakspace {}.\relax }}{49}{figure.caption.32}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces cap\nobreakspace {}.\relax }}{50}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Baseline performance of ammonia and colour forecasting models.\relax }}{44}{figure.caption.26}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Visulization of the model forecasting results.\relax }}{45}{figure.caption.27}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Baseline performance of ammonia and colour forecasting models.\relax }}{49}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Comparisons of the model performance in forecasitng ammonia concentrations.\relax }}{50}{figure.caption.32}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Comparisons of model performance in forecasting colour levels.\relax }}{51}{figure.caption.33}%
 \addvspace {1pt}

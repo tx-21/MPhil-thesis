@@ -1,4 +1,4 @@
-\begin{thebibliography}{73}
+\begin{thebibliography}{74}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -423,6 +423,15 @@ Bhawani~Shankar Pattnaik, Arunima~Sambhuta Pattanayak, Siba~Kumar Udgata, and
 \newblock \emph{Complex \& Intelligent Systems}, 7\penalty0 (2):\penalty0
   961--976, 2021.
 \newblock \doi{10.1007/s40747-020-00259-9}.
+
+\bibitem[Pisa et~al.(2019)Pisa, Santin, Morell, Vicario, and
+  Vilanova]{pisaLSTMBasedWastewaterTreatment2019}
+Ivan Pisa, Ignacio Santin, Antoni Morell, Jose~Lopez Vicario, and Ramon
+  Vilanova.
+\newblock {{LSTM-Based Wastewater Treatment Plants Operation Strategies}} for
+  {{Effluent Quality Improvement}}.
+\newblock \emph{IEEE Access}, 7:\penalty0 159773--159786, 2019.
+\newblock \doi{10.1109/ACCESS.2019.2950852}.
 
 \bibitem[Riebesell(2022)]{riebesellRandomForest2022}
 Janosh Riebesell.
