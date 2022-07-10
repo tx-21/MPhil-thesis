@@ -11,45 +11,45 @@ Warning--empty journal in chandolaAnomalyDetectionSurvey
 Warning--empty year in chandolaAnomalyDetectionSurvey
 Warning--empty year in chandolaAnomalyDetectionSurvey
 Warning--empty institution in unicefURBANWATERSCARCITY2021
-You've used 74 entries,
+You've used 75 entries,
             2773 wiz_defined-function locations,
-            1135 strings with 25164 characters,
-and the built_in function-call counts, 37615 in all, are:
-= -- 3384
-> -- 2476
-< -- 35
-+ -- 842
-- -- 765
-* -- 3365
-:= -- 5906
-add.period$ -- 295
-call.type$ -- 74
-change.case$ -- 477
-chr.to.int$ -- 71
-cite$ -- 155
-duplicate$ -- 1453
-empty$ -- 2783
-format.name$ -- 858
-if$ -- 7731
+            1142 strings with 25455 characters,
+and the built_in function-call counts, 38118 in all, are:
+= -- 3436
+> -- 2497
+< -- 36
++ -- 849
+- -- 771
+* -- 3409
+:= -- 5982
+add.period$ -- 300
+call.type$ -- 75
+change.case$ -- 482
+chr.to.int$ -- 72
+cite$ -- 157
+duplicate$ -- 1473
+empty$ -- 2825
+format.name$ -- 867
+if$ -- 7837
 int.to.chr$ -- 4
 int.to.str$ -- 1
-missing$ -- 53
-newline$ -- 449
-num.names$ -- 294
-pop$ -- 867
+missing$ -- 54
+newline$ -- 456
+num.names$ -- 298
+pop$ -- 873
 preamble$ -- 1
-purify$ -- 402
+purify$ -- 406
 quote$ -- 0
-skip$ -- 1146
+skip$ -- 1161
 stack$ -- 0
-substring$ -- 1340
-swap$ -- 160
+substring$ -- 1373
+swap$ -- 162
 text.length$ -- 5
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 814
+type$ -- 825
 warning$ -- 6
-while$ -- 310
+while$ -- 315
 width$ -- 0
-write$ -- 1093
+write$ -- 1110
 (There were 6 warnings)

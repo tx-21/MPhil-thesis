@@ -9,8 +9,8 @@
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Schematic diagram of the custom-made on-line colour anlaysis system.\relax }}{27}{figure.caption.10}%
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Ammonia and colour data collected from 23 December 2021 to 22 January 2022.\relax }}{27}{figure.caption.11}%
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Machine learning model training steps.\relax }}{28}{figure.caption.12}%
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Illustration of the influence of different polynomial degrees in the fitting of SG filter and the weigth decay with varied alpha values in EWMA filter.\relax }}{30}{figure.caption.13}%
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Illustration of the influence of different polynomial degrees in the fitting of SG filter and the weigth decay with varied alpha values in EWMA filter.\relax }}{31}{figure.caption.15}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Illustration of the influence of different polynomial degrees in the fitting of SG filter and the weigth decay with varied alpha values in EWMA filter.\relax }}{29}{figure.caption.13}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Illustration of the influence of different polynomial degrees in the fitting of SG filter and the weigth decay with varied alpha values in EWMA filter.\relax }}{30}{figure.caption.15}%
 \contentsline {figure}{\numberline {3.10}{\ignorespaces Illustration of peak analysis. Four important elements are automatic caculated by the function \citep {mathworksDocumentationFindpeaks2022}.\relax }}{31}{figure.caption.16}%
 \contentsline {figure}{\numberline {3.11}{\ignorespaces Sewer system coverage of SHWEPP. The covered areas (i.e., area circled in red boundary) include Fanling/Sheung-Shui new towns and NENT landfill leachate treament plant.\relax }}{32}{figure.caption.17}%
 \contentsline {figure}{\numberline {3.12}{\ignorespaces Analysis of influent quality composition and the illustration of the positional encoding.\relax }}{33}{figure.caption.18}%

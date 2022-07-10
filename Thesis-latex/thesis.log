@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.27)  9 JUL 2022 09:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.27)  10 JUL 2022 22:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -831,6 +831,15 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\nbi' on input line 191.
 
 [5]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\nbi' on input line 191.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\nbi' on input line 191.
+
+[6]
 List of Figures
 (thesis.lof
 
@@ -841,7 +850,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\nbi' on input line 21.
 
-[6
+[7
 
 ])
 \tf@lof=\write5
@@ -856,7 +865,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\nbi' on input line 199.
 
-[7]
+[8]
 List of Tables
 (thesis.lot)
 \tf@lot=\write6
@@ -872,7 +881,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\nbi' on input line 1.
 
-[8
+[9
 
 ]
 
@@ -883,7 +892,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\nbi' on input line 7.
 
-[9]) (chapters/chapter-1-intro.tex
+[10]) (chapters/chapter-1-intro.tex
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `\nbi' on input line 1.
@@ -892,7 +901,7 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 (hyperref)                removing `\nbi' on input line 1.
 
-[10]
+[11]
 
 Warning: No abstract. 
 
@@ -928,24 +937,24 @@ CHAPTER 2.
 \l__nicematrix_final_i_int=\count383
 \l__nicematrix_final_j_int=\count384
  [16]
-<imgs/propose-frameworks-for-control-strategy-design.png, id=521, 911.54839pt x 426.30696pt>
+<imgs/propose-frameworks-for-control-strategy-design.png, id=526, 911.54839pt x 426.30696pt>
 File: imgs/propose-frameworks-for-control-strategy-design.png Graphic file (type png)
 <use imgs/propose-frameworks-for-control-strategy-design.png>
-Package pdftex.def Info: imgs/propose-frameworks-for-control-strategy-design.png  used on input line 119.
+Package pdftex.def Info: imgs/propose-frameworks-for-control-strategy-design.png  used on input line 118.
 (pdftex.def)             Requested size: 409.71692pt x 191.61519pt.
  [17 <./imgs/propose-frameworks-for-control-strategy-design.png>] [18]
-Underfull \hbox (badness 10000) in paragraph at lines 131--142
+Underfull \hbox (badness 10000) in paragraph at lines 130--141
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 145--153
+Underfull \hbox (badness 10000) in paragraph at lines 144--152
 
  []
 
 [19] [20]) (chapters/chapter-3-methods.tex [21]
 CHAPTER 3.
-<imgs/Sewage-treatment-process-flowchart.png, id=604, 1004.03679pt x 412.54124pt>
+<imgs/Sewage-treatment-process-flowchart.png, id=614, 1004.03679pt x 412.54124pt>
 File: imgs/Sewage-treatment-process-flowchart.png Graphic file (type png)
 <use imgs/Sewage-treatment-process-flowchart.png>
 Package pdftex.def Info: imgs/Sewage-treatment-process-flowchart.png  used on input line 8.
@@ -953,7 +962,7 @@ Package pdftex.def Info: imgs/Sewage-treatment-process-flowchart.png  used on in
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<imgs/instrument/sampling-tank.png, id=605, 677.10107pt x 488.25269pt>
+<imgs/instrument/sampling-tank.png, id=615, 677.10107pt x 488.25269pt>
 File: imgs/instrument/sampling-tank.png Graphic file (type png)
 <use imgs/instrument/sampling-tank.png>
 Package pdftex.def Info: imgs/instrument/sampling-tank.png  used on input line 17.
@@ -964,12 +973,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [22
 
 ]
-<imgs/instrument/ammonium-sensor.png, id=616, 283.0575pt x 325.215pt>
+<imgs/instrument/ammonium-sensor.png, id=626, 283.0575pt x 325.215pt>
 File: imgs/instrument/ammonium-sensor.png Graphic file (type png)
 <use imgs/instrument/ammonium-sensor.png>
 Package pdftex.def Info: imgs/instrument/ammonium-sensor.png  used on input line 30.
 (pdftex.def)             Requested size: 136.57462pt x 156.92021pt.
-<imgs/instrument/controller-for-iq-sensor.png, id=617, 335.53929pt x 326.93571pt>
+<imgs/instrument/controller-for-iq-sensor.png, id=627, 335.53929pt x 326.93571pt>
 File: imgs/instrument/controller-for-iq-sensor.png Graphic file (type png)
 <use imgs/instrument/controller-for-iq-sensor.png>
 Package pdftex.def Info: imgs/instrument/controller-for-iq-sensor.png  used on input line 35.
@@ -983,12 +992,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 36--36
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [23 <./imgs/Sewage-treatment-process-flowchart.png>]
-<imgs/instrument/SIP10.png, id=628, 424.15607pt x 353.1766pt>
+<imgs/instrument/SIP10.png, id=638, 424.15607pt x 353.1766pt>
 File: imgs/instrument/SIP10.png Graphic file (type png)
 <use imgs/instrument/SIP10.png>
 Package pdftex.def Info: imgs/instrument/SIP10.png  used on input line 48.
 (pdftex.def)             Requested size: 136.57462pt x 113.71939pt.
-<imgs/instrument/DR3900_PS.png, id=629, 521.80661pt x 394.04356pt>
+<imgs/instrument/DR3900_PS.png, id=639, 521.80661pt x 394.04356pt>
 File: imgs/instrument/DR3900_PS.png Graphic file (type png)
 <use imgs/instrument/DR3900_PS.png>
 Package pdftex.def Info: imgs/instrument/DR3900_PS.png  used on input line 53.
@@ -998,7 +1007,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--54
 []\OT1/cmr/m/n/10.95 (b) |DR3900 spec-tropho-
  []
 
-<imgs/instrument/actuator-mount.png, id=630, 1152.01822pt x 508.0409pt>
+<imgs/instrument/actuator-mount.png, id=640, 1152.01822pt x 508.0409pt>
 File: imgs/instrument/actuator-mount.png Graphic file (type png)
 <use imgs/instrument/actuator-mount.png>
 Package pdftex.def Info: imgs/instrument/actuator-mount.png  used on input line 58.
@@ -1006,26 +1015,26 @@ Package pdftex.def Info: imgs/instrument/actuator-mount.png  used on input line 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[24 <./imgs/instrument/sampling-tank.png>]
-<imgs/instrument/colour-sampler.png, id=636, 835.83696pt x 498.14679pt>
+<imgs/instrument/colour-sampler.png, id=641, 835.83696pt x 498.14679pt>
 File: imgs/instrument/colour-sampler.png Graphic file (type png)
 <use imgs/instrument/colour-sampler.png>
 Package pdftex.def Info: imgs/instrument/colour-sampler.png  used on input line 68.
 (pdftex.def)             Requested size: 364.19667pt x 217.05695pt.
 
-
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<imgs/results/data.png, id=638, 1197.97563pt x 373.395pt>
+[24 <./imgs/instrument/sampling-tank.png>]
+<imgs/results/data.png, id=648, 1197.97563pt x 373.395pt>
 File: imgs/results/data.png Graphic file (type png)
 <use imgs/results/data.png>
 Package pdftex.def Info: imgs/results/data.png  used on input line 77.
 (pdftex.def)             Requested size: 455.24411pt x 141.89157pt.
 
+
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [25 <./imgs/instrument/ammonium-sensor.png> <./imgs/instrument/controller-for-iq-sensor.png>]
-<imgs/pre-processing/training-scheme.png, id=653, 657.74304pt x 526.1084pt>
+<imgs/pre-processing/training-scheme.png, id=663, 657.74304pt x 526.1084pt>
 File: imgs/pre-processing/training-scheme.png Graphic file (type png)
 <use imgs/pre-processing/training-scheme.png>
 Package pdftex.def Info: imgs/pre-processing/training-scheme.png  used on input line 94.
@@ -1034,7 +1043,12 @@ Package pdftex.def Info: imgs/pre-processing/training-scheme.png  used on input 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[26 <./imgs/instrument/SIP10.png> <./imgs/instrument/DR3900_PS.png> <./imgs/instrument/actuator-mount.png>] [27 <./imgs/instrument/colour-sampler.png> <./imgs/results/data.png>]
+[26 <./imgs/instrument/SIP10.png> <./imgs/instrument/DR3900_PS.png> <./imgs/instrument/actuator-mount.png>]
+Overfull \hbox (5.51222pt too wide) in paragraph at lines 104--105
+[]\OT1/cmr/m/n/12 Data smooth-ing was per-formed us-ing the same method on am-mo-nia and colour datasets.
+ []
+
+[27 <./imgs/instrument/colour-sampler.png> <./imgs/results/data.png>]
 Overfull \hbox (2.997pt too wide) in paragraph at lines 108--115
 []\OT1/cmr/m/n/12 2)[]  De-ter-mine poly-no-mial de-gree (e.g., dif-fer-ent poly-no-mial de-gree is com-pared in Fig. []3.8a[]).[] 
  []
@@ -1045,56 +1059,51 @@ Underfull \hbox (badness 10000) in paragraph at lines 108--115
  []
 
 [28 <./imgs/pre-processing/training-scheme.png>]
-<imgs/pre-processing/demo-polynomial-fitting.png, id=683, 502.9992pt x 402.5439pt>
+<imgs/pre-processing/demo-polynomial-fitting.png, id=697, 502.9992pt x 402.5439pt>
 File: imgs/pre-processing/demo-polynomial-fitting.png Graphic file (type png)
 <use imgs/pre-processing/demo-polynomial-fitting.png>
 Package pdftex.def Info: imgs/pre-processing/demo-polynomial-fitting.png  used on input line 141.
 (pdftex.def)             Requested size: 182.09486pt x 145.72647pt.
-<imgs/pre-processing/demo-weight-ewma.png, id=688, 479.391pt x 308.95425pt>
+<imgs/pre-processing/demo-weight-ewma.png, id=702, 479.391pt x 308.95425pt>
 File: imgs/pre-processing/demo-weight-ewma.png Graphic file (type png)
 <use imgs/pre-processing/demo-weight-ewma.png>
 Package pdftex.def Info: imgs/pre-processing/demo-weight-ewma.png  used on input line 146.
 (pdftex.def)             Requested size: 227.62206pt x 146.69821pt.
+ [29 <./imgs/pre-processing/demo-polynomial-fitting.png> <./imgs/pre-processing/demo-weight-ewma.png>]
 
+LaTeX Warning: Reference `smoothed-ew' on page 30 undefined on input line 171.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-
-LaTeX Warning: Reference `smoothed-ew' on page 29 undefined on input line 171.
-
-<imgs/pre-processing/sg-filter.png, id=696, 483.30562pt x 318.69063pt>
+<imgs/pre-processing/sg-filter.png, id=725, 483.30562pt x 318.69063pt>
 File: imgs/pre-processing/sg-filter.png Graphic file (type png)
 <use imgs/pre-processing/sg-filter.png>
 Package pdftex.def Info: imgs/pre-processing/sg-filter.png  used on input line 176.
 (pdftex.def)             Requested size: 204.85846pt x 135.08429pt.
-<imgs/pre-processing/ew-filter.png, id=697, 483.30562pt x 318.69063pt>
+<imgs/pre-processing/ew-filter.png, id=726, 483.30562pt x 318.69063pt>
 File: imgs/pre-processing/ew-filter.png Graphic file (type png)
 <use imgs/pre-processing/ew-filter.png>
 Package pdftex.def Info: imgs/pre-processing/ew-filter.png  used on input line 181.
 (pdftex.def)             Requested size: 204.85846pt x 135.08429pt.
 
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[29]
 Underfull \hbox (badness 10000) in paragraph at lines 190--195
 
  []
 
-<imgs/pre-processing/prominence.png, id=714, 451.6875pt x 365.65178pt>
+
+LaTeX Warning: Reference `fig: prominence' on page 30 undefined on input line 196.
+
+[30 <./imgs/pre-processing/sg-filter.png> <./imgs/pre-processing/ew-filter.png>]
+<imgs/pre-processing/prominence.png, id=735, 451.6875pt x 365.65178pt>
 File: imgs/pre-processing/prominence.png Graphic file (type png)
 <use imgs/pre-processing/prominence.png>
 Package pdftex.def Info: imgs/pre-processing/prominence.png  used on input line 200.
 (pdftex.def)             Requested size: 250.38564pt x 202.69922pt.
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[30 <./imgs/pre-processing/demo-polynomial-fitting.png> <./imgs/pre-processing/demo-weight-ewma.png>] [31 <./imgs/pre-processing/sg-filter.png> <./imgs/pre-processing/ew-filter.png> <./imgs/pre-processing/prominence.png>]
-<imgs/pre-processing/geomap.png, id=741, 782.925pt x 511.48232pt>
+ [31 <./imgs/pre-processing/prominence.png>]
+<imgs/pre-processing/geomap.png, id=750, 782.925pt x 511.48232pt>
 File: imgs/pre-processing/geomap.png Graphic file (type png)
 <use imgs/pre-processing/geomap.png>
 Package pdftex.def Info: imgs/pre-processing/geomap.png  used on input line 210.
 (pdftex.def)             Requested size: 432.48051pt x 282.54144pt.
-<imgs/pre-processing/blending-ratio.png, id=742, 492.98465pt x 475.34732pt>
+<imgs/pre-processing/blending-ratio.png, id=751, 492.98465pt x 475.34732pt>
 File: imgs/pre-processing/blending-ratio.png Graphic file (type png)
 <use imgs/pre-processing/blending-ratio.png>
 Package pdftex.def Info: imgs/pre-processing/blending-ratio.png  used on input line 218.
@@ -1104,7 +1113,7 @@ Underfull \hbox (badness 1418) in paragraph at lines 219--219
 []\OT1/cmr/m/n/10.95 (a) |Flowchart show-ing the blend-ing of
  []
 
-<imgs/pre-processing/pos-encoding.png, id=743, 366.8907pt x 366.168pt>
+<imgs/pre-processing/pos-encoding.png, id=752, 366.8907pt x 366.168pt>
 File: imgs/pre-processing/pos-encoding.png Graphic file (type png)
 <use imgs/pre-processing/pos-encoding.png>
 Package pdftex.def Info: imgs/pre-processing/pos-encoding.png  used on input line 223.
@@ -1112,12 +1121,12 @@ Package pdftex.def Info: imgs/pre-processing/pos-encoding.png  used on input lin
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<imgs/leachate-effluent-blend-ratio-color-plot/colour-blend-coef.png, id=744, 443.4969pt x 331.4784pt>
+<imgs/leachate-effluent-blend-ratio-color-plot/colour-blend-coef.png, id=753, 443.4969pt x 331.4784pt>
 File: imgs/leachate-effluent-blend-ratio-color-plot/colour-blend-coef.png Graphic file (type png)
 <use imgs/leachate-effluent-blend-ratio-color-plot/colour-blend-coef.png>
 Package pdftex.def Info: imgs/leachate-effluent-blend-ratio-color-plot/colour-blend-coef.png  used on input line 233.
 (pdftex.def)             Requested size: 204.85846pt x 153.1192pt.
-<imgs/results/colour-pattern.png, id=745, 469.5141pt x 331.4784pt>
+<imgs/results/colour-pattern.png, id=754, 469.5141pt x 331.4784pt>
 File: imgs/results/colour-pattern.png Graphic file (type png)
 <use imgs/results/colour-pattern.png>
 Package pdftex.def Info: imgs/results/colour-pattern.png  used on input line 238.
@@ -1125,62 +1134,64 @@ Package pdftex.def Info: imgs/results/colour-pattern.png  used on input line 238
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[32 <./imgs/pre-processing/geomap.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 248--254
+
+Underfull \hbox (badness 10000) in paragraph at lines 246--252
 
  []
 
-<imgs/pre-processing/hourly-consumption-pattern.png, id=756, 945.96268pt x 579.02036pt>
+[32 <./imgs/pre-processing/geomap.png>]
+<imgs/pre-processing/hourly-consumption-pattern.png, id=768, 945.96268pt x 579.02036pt>
 File: imgs/pre-processing/hourly-consumption-pattern.png Graphic file (type png)
 <use imgs/pre-processing/hourly-consumption-pattern.png>
-Package pdftex.def Info: imgs/pre-processing/hourly-consumption-pattern.png  used on input line 259.
+Package pdftex.def Info: imgs/pre-processing/hourly-consumption-pattern.png  used on input line 257.
 (pdftex.def)             Requested size: 364.19667pt x 222.92795pt.
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<imgs/results/nh3-pattern.png, id=761, 643.203pt x 428.5611pt>
+<imgs/results/nh3-pattern.png, id=773, 643.203pt x 428.5611pt>
 File: imgs/results/nh3-pattern.png Graphic file (type png)
 <use imgs/results/nh3-pattern.png>
-Package pdftex.def Info: imgs/results/nh3-pattern.png  used on input line 266.
+Package pdftex.def Info: imgs/results/nh3-pattern.png  used on input line 264.
 (pdftex.def)             Requested size: 273.14923pt x 181.99545pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<imgs/leachate-effluent-blend-ratio-color-plot/first-80d.png, id=762, 926.0196pt x 348.3414pt>
+<imgs/leachate-effluent-blend-ratio-color-plot/first-80d.png, id=774, 926.0196pt x 348.3414pt>
 File: imgs/leachate-effluent-blend-ratio-color-plot/first-80d.png Graphic file (type png)
 <use imgs/leachate-effluent-blend-ratio-color-plot/first-80d.png>
-Package pdftex.def Info: imgs/leachate-effluent-blend-ratio-color-plot/first-80d.png  used on input line 274.
+Package pdftex.def Info: imgs/leachate-effluent-blend-ratio-color-plot/first-80d.png  used on input line 272.
 (pdftex.def)             Requested size: 455.24411pt x 171.2522pt.
-<imgs/leachate-effluent-blend-ratio-color-plot/second-80d.png, id=763, 926.0196pt x 348.3414pt>
+<imgs/leachate-effluent-blend-ratio-color-plot/second-80d.png, id=775, 926.0196pt x 348.3414pt>
 File: imgs/leachate-effluent-blend-ratio-color-plot/second-80d.png Graphic file (type png)
 <use imgs/leachate-effluent-blend-ratio-color-plot/second-80d.png>
-Package pdftex.def Info: imgs/leachate-effluent-blend-ratio-color-plot/second-80d.png  used on input line 279.
+Package pdftex.def Info: imgs/leachate-effluent-blend-ratio-color-plot/second-80d.png  used on input line 277.
 (pdftex.def)             Requested size: 455.24411pt x 171.2522pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [33 <./imgs/pre-processing/blending-ratio.png> <./imgs/pre-processing/pos-encoding.png>]
-<imgs/pre-processing/feature-selection.png, id=778, 1011.78pt x 379.84767pt>
+<imgs/pre-processing/feature-selection.png, id=787, 1011.78pt x 379.84767pt>
 File: imgs/pre-processing/feature-selection.png Graphic file (type png)
 <use imgs/pre-processing/feature-selection.png>
 Package pdftex.def Info: imgs/pre-processing/feature-selection.png  used on input line 294.
 (pdftex.def)             Requested size: 364.19667pt x 136.72766pt.
-
+ [34 <./imgs/leachate-effluent-blend-ratio-color-plot/colour-blend-coef.png> <./imgs/results/colour-pattern.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[34 <./imgs/leachate-effluent-blend-ratio-color-plot/colour-blend-coef.png> <./imgs/results/colour-pattern.png>] [35 <./imgs/pre-processing/hourly-consumption-pattern.png>]
+[35 <./imgs/pre-processing/hourly-consumption-pattern.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 309--315
 
  []
 
 [36 <./imgs/results/nh3-pattern.png>] [37 <./imgs/leachate-effluent-blend-ratio-color-plot/first-80d.png> <./imgs/leachate-effluent-blend-ratio-color-plot/second-80d.png>]
-<imgs/models/random-forest.png, id=820, 2765.33125pt x 2001.4775pt>
+<imgs/models/random-forest.png, id=829, 2765.33125pt x 2001.4775pt>
 File: imgs/models/random-forest.png Graphic file (type png)
 <use imgs/models/random-forest.png>
 Package pdftex.def Info: imgs/models/random-forest.png  used on input line 326.
 (pdftex.def)             Requested size: 227.62206pt x 164.73302pt.
-<imgs/models/DNN.png, id=825, 450.39696pt x 302.84572pt>
+<imgs/models/DNN.png, id=834, 450.39696pt x 302.84572pt>
 File: imgs/models/DNN.png Graphic file (type png)
 <use imgs/models/DNN.png>
 Package pdftex.def Info: imgs/models/DNN.png  used on input line 331.
@@ -1191,17 +1202,17 @@ Underfull \hbox (badness 3229) in paragraph at lines 332--332
  []
 
 [38 <./imgs/pre-processing/feature-selection.png> <./imgs/models/random-forest.png> <./imgs/models/DNN.png>]
-<imgs/models/rnn-2.png, id=847, 353.1766pt x 348.44464pt>
+<imgs/models/rnn-2.png, id=857, 353.1766pt x 348.44464pt>
 File: imgs/models/rnn-2.png Graphic file (type png)
 <use imgs/models/rnn-2.png>
 Package pdftex.def Info: imgs/models/rnn-2.png  used on input line 352.
 (pdftex.def)             Requested size: 136.57462pt x 134.74442pt.
-<imgs/models/lstm-2.png, id=848, 346.29375pt x 352.31625pt>
+<imgs/models/lstm-2.png, id=858, 346.29375pt x 352.31625pt>
 File: imgs/models/lstm-2.png Graphic file (type png)
 <use imgs/models/lstm-2.png>
 Package pdftex.def Info: imgs/models/lstm-2.png  used on input line 357.
 (pdftex.def)             Requested size: 136.57462pt x 138.95103pt.
-<imgs/models/gru-2.png, id=849, 336.82982pt x 347.15411pt>
+<imgs/models/gru-2.png, id=859, 336.82982pt x 347.15411pt>
 File: imgs/models/gru-2.png Graphic file (type png)
 <use imgs/models/gru-2.png>
 Package pdftex.def Info: imgs/models/gru-2.png  used on input line 362.
@@ -1213,12 +1224,12 @@ Underfull \hbox (badness 4940) in paragraph at lines 363--363
 
 [39 <./imgs/models/rnn-2.png> <./imgs/models/lstm-2.png> <./imgs/models/gru-2.png>] [40]) (chapters/chapter-4-results.tex [41]
 CHAPTER 4.
-<imgs/results/baseline-models-nh3.png, id=910, 338.7054pt x 290.7663pt>
+<imgs/results/baseline-models-nh3.png, id=919, 338.7054pt x 290.7663pt>
 File: imgs/results/baseline-models-nh3.png Graphic file (type png)
 <use imgs/results/baseline-models-nh3.png>
 Package pdftex.def Info: imgs/results/baseline-models-nh3.png  used on input line 10.
 (pdftex.def)             Requested size: 204.85846pt x 175.86313pt.
-<imgs/results/baseline-models-colour.png, id=911, 345.4506pt x 290.7663pt>
+<imgs/results/baseline-models-colour.png, id=920, 345.4506pt x 290.7663pt>
 File: imgs/results/baseline-models-colour.png Graphic file (type png)
 <use imgs/results/baseline-models-colour.png>
 Package pdftex.def Info: imgs/results/baseline-models-colour.png  used on input line 15.
@@ -1226,22 +1237,22 @@ Package pdftex.def Info: imgs/results/baseline-models-colour.png  used on input 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-nh3.png, id=912, 354.123pt x 287.1528pt>
+<imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-nh3.png, id=921, 354.123pt x 287.1528pt>
 File: imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-nh3.png Graphic file (type png)
 <use imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-nh3.png>
 Package pdftex.def Info: imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-nh3.png  used on input line 25.
 (pdftex.def)             Requested size: 204.85846pt x 166.11932pt.
-<imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-nh3.png, id=913, 353.1594pt x 284.9847pt>
+<imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-nh3.png, id=922, 353.1594pt x 284.9847pt>
 File: imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-nh3.png Graphic file (type png)
 <use imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-nh3.png>
 Package pdftex.def Info: imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-nh3.png  used on input line 30.
 (pdftex.def)             Requested size: 204.85846pt x 165.31297pt.
-<imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-colour.png, id=914, 353.8821pt x 287.1528pt>
+<imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-colour.png, id=923, 353.8821pt x 287.1528pt>
 File: imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-colour.png Graphic file (type png)
 <use imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-colour.png>
 Package pdftex.def Info: imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-colour.png  used on input line 35.
 (pdftex.def)             Requested size: 204.85846pt x 166.22887pt.
-<imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-colour.png, id=915, 352.9185pt x 284.9847pt>
+<imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-colour.png, id=924, 352.9185pt x 284.9847pt>
 File: imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-colour.png Graphic file (type png)
 <use imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-colour.png>
 Package pdftex.def Info: imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-colour.png  used on input line 40.
@@ -1257,12 +1268,12 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 [42
 
 ] [43 <./imgs/results/baseline-models-nh3.png> <./imgs/results/baseline-models-colour.png>] [44 <./imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-nh3.png> <./imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-nh3.png> <./imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-colour.png> <./imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-colour.png>] [45]
-<imgs/results/feature-engineering/pre-processing-nh3-jan.png, id=945, 344.2461pt x 290.7663pt>
+<imgs/results/feature-engineering/pre-processing-nh3-jan.png, id=954, 344.2461pt x 290.7663pt>
 File: imgs/results/feature-engineering/pre-processing-nh3-jan.png Graphic file (type png)
 <use imgs/results/feature-engineering/pre-processing-nh3-jan.png>
 Package pdftex.def Info: imgs/results/feature-engineering/pre-processing-nh3-jan.png  used on input line 156.
 (pdftex.def)             Requested size: 204.85846pt x 173.03693pt.
-<imgs/results/feature-engineering/pre-processing-colour.png, id=946, 344.2461pt x 290.7663pt>
+<imgs/results/feature-engineering/pre-processing-colour.png, id=955, 344.2461pt x 290.7663pt>
 File: imgs/results/feature-engineering/pre-processing-colour.png Graphic file (type png)
 <use imgs/results/feature-engineering/pre-processing-colour.png>
 Package pdftex.def Info: imgs/results/feature-engineering/pre-processing-colour.png  used on input line 161.
@@ -1272,16 +1283,16 @@ Package pdftex.def Info: imgs/results/feature-engineering/pre-processing-colour.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [46] [47] [48 <./imgs/results/feature-engineering/pre-processing-nh3-jan.png> <./imgs/results/feature-engineering/pre-processing-colour.png>]
-<imgs/results/feature-engineering/nh3-input-1-4-comparison.png, id=966, 498.9039pt x 354.3639pt>
+<imgs/results/feature-engineering/nh3-input-1-4-comparison.png, id=975, 498.9039pt x 354.3639pt>
 File: imgs/results/feature-engineering/nh3-input-1-4-comparison.png Graphic file (type png)
 <use imgs/results/feature-engineering/nh3-input-1-4-comparison.png>
-Package pdftex.def Info: imgs/results/feature-engineering/nh3-input-1-4-comparison.png  used on input line 182.
+Package pdftex.def Info: imgs/results/feature-engineering/nh3-input-1-4-comparison.png  used on input line 181.
 (pdftex.def)             Requested size: 273.14923pt x 194.01936pt.
  [49 <./imgs/results/feature-engineering/nh3-input-1-4-comparison.png>]
-<imgs/results/feature-engineering/colour-input-1-4-comparison.png, id=974, 498.9039pt x 354.3639pt>
+<imgs/results/feature-engineering/colour-input-1-4-comparison.png, id=983, 498.9039pt x 354.3639pt>
 File: imgs/results/feature-engineering/colour-input-1-4-comparison.png Graphic file (type png)
 <use imgs/results/feature-engineering/colour-input-1-4-comparison.png>
-Package pdftex.def Info: imgs/results/feature-engineering/colour-input-1-4-comparison.png  used on input line 204.
+Package pdftex.def Info: imgs/results/feature-engineering/colour-input-1-4-comparison.png  used on input line 203.
 (pdftex.def)             Requested size: 273.14923pt x 194.01936pt.
 ) (chapters/chapter-5-conclusion.tex [50 <./imgs/results/feature-engineering/colour-input-1-4-comparison.png>]
 CHAPTER 5.
@@ -1295,17 +1306,17 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 33811 strings out of 478582
- 707500 string characters out of 2845288
- 1030845 words of memory out of 3000000
- 51238 multiletter control sequences out of 15000+600000
+ 33819 strings out of 478582
+ 707719 string characters out of 2845288
+ 1029650 words of memory out of 3000000
+ 51243 multiletter control sequences out of 15000+600000
  483850 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  85i,14n,90p,2487b,1025s stack positions out of 10000i,1000n,20000p,200000b,80000s
 <C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti8.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
-Output written on thesis.pdf (72 pages, 19918823 bytes).
+Output written on thesis.pdf (73 pages, 19921211 bytes).
 PDF statistics:
- 1332 PDF objects out of 1440 (max. 8388607)
- 273 named destinations out of 1000 (max. 500000)
- 658 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1346 PDF objects out of 1440 (max. 8388607)
+ 276 named destinations out of 1000 (max. 500000)
+ 666 words of extra memory for PDF output out of 10000 (max. 10000000)
 
