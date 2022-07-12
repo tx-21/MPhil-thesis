@@ -1,4 +1,4 @@
-\begin{thebibliography}{75}
+\begin{thebibliography}{77}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -26,6 +26,10 @@ J.R. Adewumi, A.A. Ilemobade, and J.E. Van~Zyl.
   (2):\penalty0 221--231, December 2010.
 \newblock ISSN 09213449.
 \newblock \doi{10.1016/j.resconrec.2010.09.012}.
+
+\bibitem[Agrawal(2019)]{agrawalHyperparametersDeepLearning2019}
+Samarth Agrawal.
+\newblock Hyperparameters in {{Deep Learning}}, February 2019.
 
 \bibitem[{Al-Ghazawi} and Alawneh(2021)]{al-ghazawiUseArtificialNeural2021}
 Ziad {Al-Ghazawi} and Rami Alawneh.
@@ -445,6 +449,11 @@ Ivan Pisa, Ignacio Santin, Antoni Morell, Jose~Lopez Vicario, and Ramon
 \bibitem[Riebesell(2022)]{riebesellRandomForest2022}
 Janosh Riebesell.
 \newblock Random {{Forest}}, June 2022.
+
+\bibitem[Ritchie~Ng(2019)]{ritchiengDeepLearningWizard2019}
+Jie~Fu Ritchie~Ng.
+\newblock Deep {{Learning Wizard}}.
+\newblock Zenodo, April 2019.
 
 \bibitem[Rosen et~al.(2008)Rosen, Rieger, Jeppsson, and
   Vanrolleghem]{rosenAddingRealismSimulated2008}

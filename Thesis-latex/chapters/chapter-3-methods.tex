@@ -3,7 +3,7 @@
 \subsection{Process and data sources in SWHEPP}
 Shek Wu Hui Effluent Polish Plant (SWHEPP) is a secondary sewage treatment plant that treats the municipal wastewater from Sheung Shui/Fanling Districts and the treated leachate effluent from North East New Territories (NENT) leachate treatment plant. The plant was designed for 300,000 population equivalents (PE) in 2001, and in 2009, the daily treatment capacity was expanded from 80,000 m$^3$/day to 93,000 m$^3$/day. SHWEPP is operated and maintained by Drainage Services Department (DSD), and the plant will be upgraded to a tertiary treatment level to increase the treatment capacity of 190,000 m$^3$/day by the end of 2025. As shown in Fig.~\ref{fig:SHWEPP-flowchart}, the treatment plant consists of primary sedimentation, secondary biological treatment, and final sedimentation, followed by a membrane bioreactor (MBR), which provides an advanced level of organic and suspended solids removal. A low volume of the MBR effluent is pumped to an effluent container n the MBR location to monitor the effluent quality in real-time. An ammoniacal nitrogen on-line sensor and a colour level on-line analyzer are installed in the effluent container, indicated as (a) and (b) in Fig.~\ref{fig:SHWEPP-flowchart}.
 
-\begin{figure}[h]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=0.9\columnwidth]{imgs/Sewage-treatment-process-flowchart.png}
     \caption{Sewage treatment process flowchart at SWHEPP (adapted from Drainage Services Department 2020)}
@@ -12,7 +12,7 @@ Shek Wu Hui Effluent Polish Plant (SWHEPP) is a secondary sewage treatment plant
 
 \section{Data collection and preparation}
 
-\begin{figure}[h]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\columnwidth]{imgs/instrument/sampling-tank.png}
     \caption{Colour levels and ammonia concentration are measure in the effluent container (i.e., on the right of the image.) A water pump transports MBR effluent to the effluent container continuously at real-time. The black vault on the left of the image contains a laptop and a colour spectrophotometer.} 
@@ -135,17 +135,17 @@ Exponentially weighted moving average (EWMA), also known as autoregressive (AR) 
 \noindent
 where $\alpha$ corresponds to the decay paratmeter, $x_t$ to the value at a time period, $y_t$ to the value of the EWMA at any time period t, span to the window size.
 
-\begin{figure}[h]
+\begin{figure}[!ht]
     \centering
-    \begin{subfigure}[t]{0.4\textwidth}
+    \begin{subfigure}[t]{0.7\textwidth}
       \includegraphics[width=\linewidth]{imgs/pre-processing/demo-polynomial-fitting.png}
       \caption{SG filter with different polynomial degree \citep{taalSmoothingYourData2017}.} \label{fig:filters-sg}
     \end{subfigure}%
     \hspace{2em}%   % maximize separation between the subfigures
-    \begin{subfigure}[t]{0.5\textwidth}
+    \begin{subfigure}[t]{0.9\textwidth}
       \includegraphics[width=\linewidth]{imgs/pre-processing/demo-weight-ewma.png}
       \caption{Examples of weights with exponential decay at varied alpha values \citep{cfiExponentiallyWeightedMoving2022}.} \label{fig:filters-ewma}
-    \end{subfigure}%  
+    \end{subfigure}% 
   \caption{Illustration of the influence of different polynomial degrees in the fitting of SG filter and the weigth decay with varied alpha values in EWMA filter.} \label{fig:filters}
 \end{figure}
 
@@ -168,18 +168,18 @@ Both SG and EWMA filters are required to select the hyperparamters, the selected
     \end{NiceTabular}
 \end{table}
 
-Fig.~\ref{fig:smoothed} shows the influences of different windows sizes on SG filters as in Fig.~\ref{fig:smoothed-sg} and on EWMA filters as in Fig.~\ref{smoothed-ew}.
+Fig.~\ref{fig:smoothed} shows the influences of different windows sizes on SG filters as in Fig.~\ref{fig:smoothed-sg} and on EWMA filters as in Fig.~\ref{fig:smoothed-ew}.
 
-\begin{figure}[h]
+\begin{figure}[!ht]
     \centering
-    \begin{subfigure}{0.45\textwidth}
+    \begin{subfigure}{0.7\textwidth}
       \includegraphics[width=\linewidth]{imgs/pre-processing/sg-filter.png}
-      \caption{} \label{fig:smoothed-sg}
+      \caption{Ammonia data filtered by SG filters with different window sizes.} \label{fig:smoothed-sg}
     \end{subfigure}%
     \hspace{2em}%   % maximize separation between the subfigures
-    \begin{subfigure}{0.45\textwidth}
+    \begin{subfigure}{0.7\textwidth}
       \includegraphics[width=\linewidth]{imgs/pre-processing/ew-filter.png}
-      \caption{} \label{fig:smoothed-ew}
+      \caption{Ammonia data filtered by EWMA filters with different window sizes.} \label{fig:smoothed-ew}
     \end{subfigure}%  
   \caption{Illustration of the influence of different polynomial degrees in the fitting of SG filter and the weigth decay with varied alpha values in EWMA filter.} \label{fig:smoothed}
 \end{figure}
@@ -195,9 +195,9 @@ Although the extreme values in the raw ammonia dataset were removed based on bas
 
 Peak analysis was performed on the daily ammonia data to automatically identify normal or abnormal signals. The analysis takes a one-dimension array (i.e., the data form of ammonia in a day) and finds all local maximum values by comparing neighboring values. This function will also provide information such as width and prominence, as in Fig.~\ref{fig: prominence} to help us identify whether the diurnal fluctuation exists.
 
-\begin{figure}[h]
+\begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.55\columnwidth]{imgs/pre-processing/prominence.png}
+    \includegraphics[width=0.7\columnwidth]{imgs/pre-processing/prominence.png}
     \caption{Illustration of peak analysis. Four important elements are automatic caculated by the function \citep{mathworksDocumentationFindpeaks2022}.}
     \label{fig:prominence}
  \end{figure}
@@ -205,21 +205,21 @@ Peak analysis was performed on the daily ammonia data to automatically identify 
 \subsubsection{Feature Engineering}
 We have carefully observed and analyzed the SWHEPP influent to create new features from the raw datasets based on our domain knowledge. We discovered that the SWHEPP influent consists of treated landfill effluent from NENT landfill leachate site and municipal wastewater, as shown in Fig.~\ref{fig:geomap}. We observed that with a higher blending ratio, which is calculated from the daily volume of treated leachate effluent divided by the daily inflow volume of SHWEPP, the colours level are also higher, as shown in Fig~\ref{fig:blend-colour-coef}. With the Pearson coefficient of 0.68, the increased volume of treated leachate effluent in the public sewage system is proportional to the increase of the colour levels in the SHWEPP influent, while the ammonia concentration is mainly from the municipal wastewater. During the mixing of both types of wastewater, as in Fig.~\ref{fig:blend-ratio}, substances contributing to colour levels were diluted by the municipal wastewater; at the same time, the ammonia concentration was also diluted by the treated leachate effluent. In Fig.~\ref{fig:color-to-nh3-pattern}, we can observe that the time when the lowest colour level of the day occurred is close to when the highest ammonia concentration was observed. The changes in colour levels and ammonia concentration are interactive. Thus, in feature engineering, colour level data was selected for training the ammonia forecasting model; ammonia data was selected for the training colour forecasting model, as shown in Fig.~\ref{fig:feature-selection}.
 
-\begin{figure}[h]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=0.95\columnwidth]{imgs/pre-processing/geomap.png}
     \caption{Sewer system coverage of SHWEPP. The covered areas (i.e., area circled in red boundary) include Fanling/Sheung-Shui new towns and NENT landfill leachate treament plant.}
     \label{fig:geomap}
  \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[!ht]
     \centering
-    \begin{subfigure}[t]{0.45\textwidth}
+    \hspace{2em}
+    \begin{subfigure}[t]{0.7\textwidth}
       \includegraphics[width=\linewidth]{imgs/pre-processing/blending-ratio.png}
       \caption{Flowchart showing the blending of treated leachate effluent with municipal wastewater.} \label{fig:blend-ratio}
-    \end{subfigure}%
-    \hspace{2em}%   % maximize separation between the subfigures
-    \begin{subfigure}[t]{0.45\textwidth}
+    \end{subfigure}\\
+    \begin{subfigure}[t]{0.5\textwidth}
       \includegraphics[width=\linewidth]{imgs/pre-processing/pos-encoding.png}
       \caption{Positional encoding of hour components.} \label{fig:pos-encoding}
     \end{subfigure}%  
@@ -227,14 +227,14 @@ We have carefully observed and analyzed the SWHEPP influent to create new featur
 \end{figure}
 
 
-\begin{figure}[h]
+\begin{figure}[!ht]
     \centering
-    \begin{subfigure}[t]{0.45\textwidth}
+    \begin{subfigure}[t]{0.7\textwidth}
         \includegraphics[width=\linewidth]{imgs/leachate-effluent-blend-ratio-color-plot/colour-blend-coef.png}
         \caption{Coefficienct between blending ratio and colour levles.} \label{fig:blend-colour-coef}
-      \end{subfigure}%  
-    \hspace{2em}%   % maximize separation between the subfigures
-    \begin{subfigure}[t]{0.45\textwidth}
+      \end{subfigure}\\
+      \hspace{2em}
+    \begin{subfigure}[t]{0.7\textwidth}
         \includegraphics[width=\linewidth]{imgs/results/colour-pattern.png}
         \caption{Trend comparison of ammonia concentration and colour levels.} \label{fig:color-to-nh3-pattern}
       \end{subfigure}%
@@ -252,27 +252,27 @@ The new features are inspired by the research work of \citet{abu-bakarQuantifyin
 
 Due to the size of the datasets used in this study for training ammonia and colour forecasting model is 31 days, only hour element was transformed into sine and cosine components as in Fig.~\ref{fig:pos-encoding}.
 
-\begin{figure}[h]
+\begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\columnwidth]{imgs/pre-processing/hourly-consumption-pattern.png}
     \caption{Hourly water consumption patterns in households \citep{abu-bakarQuantifyingImpactCOVID192021}. (a) Cumulative pattern and percentage of hourly consumption for households in the “Evening Peak (EP)” cluster (b) Cumulative pattern and percentage of hourly consumption for households in the “Late Morning Peak Peak (LM)” cluster. (c) Cumulative pattern and percentage of hourly consumption for households in the “Early Morning Peak (EM)” cluster. (d) Cummulative pattern and percentage of hourly consumption for households in the “Multiple Peak (MP)” cluster. Consumption is in (m3).}
     \label{fig:water-consumption-pattern}
  \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[!ht]
   \centering
-  \includegraphics[width=0.6\columnwidth]{imgs/results/nh3-pattern.png}
+  \includegraphics[width=0.8\columnwidth]{imgs/results/nh3-pattern.png}
   \caption{The daily patterns of ammonia concentration on 3, 7, 11, 15 Janurary 2022.}
   \label{fig:nh3-peak-pattern}
 \end{figure}
 
-\begin{figure}[!h]
+\begin{figure}[!ht]
     \centering
     \begin{subfigure}[t]{1.0\textwidth}
       \includegraphics[width=\linewidth]{imgs/leachate-effluent-blend-ratio-color-plot/first-80d.png}
       \caption{Data collected from 5 October 2021 to 22 December 2021.} \label{fig:data-oct}
-    \end{subfigure}%
-    \hspace{2em}%   % maximize separation between the subfigures
+    \end{subfigure}\\
+    \vspace{2em}%   % maximize separation between the subfigures
     \begin{subfigure}[t]{1.0\textwidth}
       \includegraphics[width=\linewidth]{imgs/leachate-effluent-blend-ratio-color-plot/second-80d.png}
       \caption{Data collected from 23 December 2021 to 24 February 2022.} \label{fig:data-nov}
@@ -289,9 +289,9 @@ The function of a validation dataset, as in (b) in Fig.~\ref{fig:training-scheme
 
 In Fig.~\ref{fig:training-scheme}, the hyperparameters will remain the same once the optimized values are found, thus generating a baseline model performance from different machine learning algorithms. The baseline results will be further compared with the results from the model trained by the proposed model training steps, which include datasets that have been performed data smoothing and feature engineering techniques.
 
-\begin{figure}[h]
+\begin{figure}[!ht]
     \centering
-    \includegraphics[width=0.8\columnwidth]{imgs/pre-processing/feature-selection.png}
+    \includegraphics[width=1.0\columnwidth]{imgs/pre-processing/feature-selection.png}
     \caption{Illustration of feature selections for model training.}
     \label{fig:feature-selection}
  \end{figure}
@@ -320,14 +320,14 @@ For $b=1, ..., B:$
 \subsection{Deep Neural Networks}
 Artificial Neural Network (ANN) is a broad term that encompasses any form of Deep Learning model. A typical ANN consists of input, hidden, and output layers, and each layer comprises multiple neurons (i.e., nodes). The connected neurons simulate the human brain by processing and transmitting input signals to the next nodes \citep{mohseni-dargahChapter12Machine2022}. What sets it apart from an ANN model and a DNN model is that the former contains only one hidden layer while the latter has more than one, as shown in Fig.~\ref{fig:dnn}. The DNN models are nonlinear, which finds the correct mathematical manipulation to turn the input into the output \citep{bangaloreaiDeepNeuralNetwork2018}.
 
-\begin{figure}[h]
+\begin{figure}[!ht]
   \centering
-  \begin{subfigure}[t]{0.5\textwidth}
+  \begin{subfigure}[t]{0.9\textwidth}
     \includegraphics[width=\linewidth]{imgs/models/random-forest.png}
     \caption{Random Forest (RF) \citep{riebesellRandomForest2022}.} \label{fig:rf}
-  \end{subfigure}%
-  \hspace{3em}%   % maximize separation between the subfigures
-  \begin{subfigure}[t]{0.4\textwidth}
+  \end{subfigure}\\
+  \vspace{1em}
+  \begin{subfigure}[t]{0.7\textwidth}
       \includegraphics[width=\linewidth]{imgs/models/DNN.png}
       \caption{Deep Neural Network (DNN) \citep{ibmNeuralNetworks2022}.} \label{fig:dnn}
   \end{subfigure}%
@@ -346,22 +346,21 @@ A recurrent neural network (RNN) is a type of Artificial Neural Network designed
 \noindent
 where $x_t$ is the current input, $h_t$ is the current hidden state (output), $h_{t-1}$ is the previous output, $W^x$ is the weights of the hidden state, $W^h$ is the weight of the input, $b$ is the bias, $\sigma$ is the sigmoid activation function.
 
-\begin{figure}[h]
+\begin{figure}[!ht]
     \centering
-    \begin{subfigure}[t]{0.3\textwidth}
+    \begin{subfigure}[t]{0.45\textwidth}
       \includegraphics[width=\linewidth]{imgs/models/rnn-2.png}
       \caption{Recurrent Neural Network (RNN).} \label{fig:rnn}
-    \end{subfigure}%
-    \hspace{1em}%   % maximize separation between the subfigures
-    \begin{subfigure}[t]{0.3\textwidth}
+    \end{subfigure}
+    \begin{subfigure}[t]{0.45\textwidth}
       \includegraphics[width=\linewidth]{imgs/models/lstm-2.png}
       \caption{Long Short-term Memory (LSTM).} \label{fig:lstm}
-    \end{subfigure}%
-    \hspace{1em}
-    \begin{subfigure}[t]{0.3\textwidth}
+    \end{subfigure}\\
+    \vspace{2em}
+    \begin{subfigure}[t]{0.45\textwidth}
       \includegraphics[width=\linewidth]{imgs/models/gru-2.png}
       \caption{Gate Recurrent Unit (GRU).} \label{fig:gru}
-    \end{subfigure}%  
+    \end{subfigure} 
   \caption{Variant architectures of Recurrent Neural Networks (adapted from \citet{olahUnderstandingLSTMNetworks2015}).  $x_t$ corresponds to the current input, $h_{t-1}$ to the last hidden state (output), $h_t$ to the current output, tanh is the tangent activation function, $\sigma$ is the sigmoid activation function,$\times$ is the vector pointwise multiplication, $+$ is the vector pointwise addition.} \label{fig:recurrent-nn}
 \end{figure}
 
@@ -399,4 +398,73 @@ where $z_t$ corresponds to the update gate, $r_t$ to the reset gate, $\tilde{h_t
 
 %\section{Implementation of regularization}
 %\subsection{Scheduler}
-\subsection{Configuratino of models}
+\subsection{Configuration of models}
+Hyperparameters are variables that we need to set before applying a learning algorithm to a dataset \citep{agrawalHyperparametersDeepLearning2019}. For different tasks and datasets, the optimized hyperparameters vary, which makes the seeking of hyperparameters challenging. For RF models, only one hyperparameter needs to be selected---the number of estimators. As shown in Fig.~\ref{fig:rf}, each estimator, known as the tree in the forest, makes a decision. Therefore, we need to set the number of estimators for making a forecast. In this study, we tried different numbers of estimators and selected 500 estimators ultimately.
+
+For training neural networks (NNs), the selection of hyperparameters is much more. The hyperparameters in NNs can be split into two categories, as shown in the followings:
+
+\noindent
+\textbf{Optimizer hyperparameters}\\
+\begin{myenumerate}
+    \item Learning rate
+    \item Number of epochs
+    \item Mini batch size
+\end{myenumerate}
+\noindent
+\textbf{Model-specific hyperparameters}\\
+\begin{myenumerate}
+    \item Number of hidden units (neurons)
+    \item Number of layers
+\end{myenumerate}
+
+The learning rate is a tuning parameter in an optimization algorithm that determines the step size at each iteration while moving toward a minimum of a loss function. An iteration describes the number of times a batch of data passed through the algorithm. In our study, the training data has a length of 432, with a batch size of one; the model will iterate 432 times to complete one epoch. To determine an optimal learning rate, there is a trade-off between the rate of convergence and overshooting. A too high learning rate leads to a learning step jump over minima as in Fig.~\ref{fig:high-lr}, yet a too low learning rate will either be too slow to converge or get stuck in a local minimum loss as in Fig~\ref{fig:low-lr}. A good size of learning rate should reach the minimum loss at a reasonable time, as in Fig.~\ref{fig:decent-lr}. However, searching for the most optimal learning rate can be time-consuming and a waste of computing power. In this study, we used a learning rate scheduler to achieve the same effect of using a decent learning rate. The scheduler can be set to reduce the learning rate as the epoch increases. When the algorithm detects the test loss is not reducing during the training within a designated epoch time, the learning rate will be multiplied by a customized factor. A factor of 0.5 and patience of 10 were used in this study. The effect of using a learning rate scheduler is shown in Fig.~\ref{fig:decay-lr}.
+
+\begin{figure}[!ht]
+  \centering
+  \begin{subfigure}[t]{0.45\textwidth}
+    \includegraphics[width=\linewidth]{imgs/low-lr.png}
+    \caption{Recurrent Neural Network (RNN).} \label{fig:low-lr}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.45\textwidth}
+    \includegraphics[width=\linewidth]{imgs/decent-lr.png}
+    \caption{Long Short-term Memory (LSTM).} \label{fig:decent-lr}
+  \end{subfigure}\\
+  \begin{subfigure}[t]{0.45\textwidth}
+    \includegraphics[width=\linewidth]{imgs/high-lr.png}
+    \caption{Gate Recurrent Unit (GRU).} \label{fig:high-lr}
+  \end{subfigure}
+  \begin{subfigure}[t]{0.45\textwidth}
+    \includegraphics[width=\linewidth]{imgs/decay-lr.png}
+    \caption{Gate Recurrent Unit (GRU).} \label{fig:decay-lr}
+  \end{subfigure} 
+\caption{Illustration of how different step sizes of learning rate reach the minimum loss \citep{ritchiengDeepLearningWizard2019}.} \label{fig:lr}
+\end{figure}
+
+In model-specific hyperparameter tuning, the number of neurons and the number of layers need to be determined based on the complexity of our training dataset. The ammonia and colour datasets are considered simple and small datasets. In the hyperparameter tunings of the deep learning models, we simplified the model structure by lowering the number of layers to 1 except for the DNN model. If the number of hidden layers decreased to one, the DNN models would be called the ANN models according to the definition. The number of neurons was set to 10 to maintain simple deep learning models to prevent overfitting.
+
+\begin{table}[!ht]
+  \centering
+  \caption{Final model configuratino.}\label{tab:model-config}
+  \begin{NiceTabular}{lccccl}
+      \toprule
+      Model & Input & h.d\tabularnote{Hidden layer.} & Output & Num. of Exp\tabularnote{The times the experiments were repeated.} & Comments \\
+      \midrule
+      RF   & 24\tabularnote{24 hourly data points were input into the models for trainin.} & - & 3 & 3 & Estimators = 500 \\
+      DNN  & 24 & 2 & 1 & 3 & h.d = 10 neurons \\
+      RNN  & 24 & 1 & 1 & 3 & h.d = 10 neurons \\
+      GRU  & 24 & 1 & 1 & 3 & h.d = 10 neurons \\
+      LSTM & 24 & 1 & 1 & 3 & h.d = 10 neurons \\
+      \bottomrule
+  \end{NiceTabular}
+\end{table}
+
+The settings of the optimzer hyperparameters are listed in the followings:
+
+\noindent
+\textbf{Optimizer hyperparameters}\\
+\begin{myenumerate}
+    \item Learning rate: 5e-05
+    \item Number of epochs: 100
+    \item Mini batch size: 1
+\end{myenumerate}
+
