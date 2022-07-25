@@ -24,15 +24,16 @@
 \contentsline {figure}{\numberline {3.20}{\ignorespaces Illustration of how different step sizes of learning rate reach the minimum loss \citep {ritchiengDeepLearningWizard2019}.\relax }}{46}{figure.caption.27}%
 \addvspace {1pt}
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Baseline performance of ammonia and colour forecasting models.\relax }}{49}{figure.caption.29}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Visulization of the model forecasting results.\relax }}{51}{figure.caption.30}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Visulization of the model forecasting results.\relax }}{52}{figure.caption.31}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Baseline performance of ammonia and colour forecasting models.\relax }}{57}{figure.caption.35}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Comparisons of the model performance in forecasitng ammonia concentrations.\relax }}{60}{figure.caption.36}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Comparisons of model performance in forecasting colour levels.\relax }}{61}{figure.caption.37}%
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Visualization of ammonia forecasting models at forecast horizon of one.\relax }}{63}{figure.caption.38}%
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Visualization of ammonia forecasting models at forecast horizon of two.\relax }}{64}{figure.caption.39}%
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Visualization of ammonia forecasting models at forecast horizon of three.\relax }}{65}{figure.caption.40}%
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Visualization of colour forecasting models at at forecast horizon of one.\relax }}{66}{figure.caption.41}%
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Visualization of colour forecasting models at forecast horizon of two.\relax }}{67}{figure.caption.42}%
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Visualization of colour forecasting models at forecast horizon of three.\relax }}{68}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Visulization of the model forecasting results.\relax }}{52}{figure.caption.30}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Visulization of the model forecasting results.\relax }}{53}{figure.caption.31}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Illustration of the heterogeneity and homogeneity between validation and different testing datasets.\relax }}{56}{figure.caption.33}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Baseline performance of ammonia and colour forecasting models.\relax }}{59}{figure.caption.36}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Comparisons of the model performance in forecasitng ammonia concentrations.\relax }}{62}{figure.caption.37}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Comparisons of model performance in forecasting colour levels.\relax }}{64}{figure.caption.38}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Visualization of ammonia forecasting models at forecast horizon of one.\relax }}{65}{figure.caption.39}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Visualization of ammonia forecasting models at forecast horizon of two.\relax }}{66}{figure.caption.40}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Visualization of ammonia forecasting models at forecast horizon of three.\relax }}{67}{figure.caption.41}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Visualization of colour forecasting models at at forecast horizon of one.\relax }}{68}{figure.caption.42}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Visualization of colour forecasting models at forecast horizon of two.\relax }}{69}{figure.caption.43}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Visualization of colour forecasting models at forecast horizon of three.\relax }}{70}{figure.caption.44}%
 \addvspace {1pt}
