@@ -107,15 +107,15 @@ As shown in Fig.~\ref{fig:heterogeneity}, the fluctuation patterns of NH$_{3}$-N
 
 \begin{figure}[!ht]
   \centering
-  \begin{subfigure}[t]{0.45\textwidth}
+  \begin{subfigure}[t]{0.6\textwidth}
     \includegraphics[width=\linewidth]{imgs/results/heterogeneity-validation.png}
     \caption{Validation dataset from January 2022.} \label{fig:valid-data}
   \end{subfigure}\\
-  \begin{subfigure}[t]{0.45\textwidth}
+  \begin{subfigure}[t]{0.6\textwidth}
     \includegraphics[width=\linewidth]{imgs/results/heterogeneity-jan-test.png}
     \caption{Testing dataset from January 2022.} \label{fig:jan-test-data}
-  \end{subfigure}
-  \begin{subfigure}[t]{0.45\textwidth}
+  \end{subfigure}\\
+  \begin{subfigure}[t]{0.6\textwidth}
     \includegraphics[width=\linewidth]{imgs/results/heterogeneity-test-oct.png}
     \caption{Testing dataset from October 2021.} \label{fig:oct-test-data}
   \end{subfigure} 
@@ -217,7 +217,7 @@ For colour forecasting models, as shown in Fig.~\ref{fig:preprocessing-colour}, 
 In the section of feature engineering, we have introduced the selection and creation of the extra input features for training forecasting models, as shown in Fig.~\ref{fig:feature-selection}. In this study, a forecasting model trained by one feature is called an univariate model and denoted as LSTM-1; a forecasting model trained by two features is called a multivariate model and denoted as LSTM-2. For models trained by three and four features are denoted as LSTM-3 and LSTM-4. In Fig.~\ref{fig:nh3-feature-engineering}, the performance of ammonia forecasting models trained by two to four inputs (i.e., LSTM-2, LSTM-3, LSTM-4) is compared with the baseline performance (i.e., LSTM-1-obs) to demonstrate how the feature engineered features influenced on the model outputs. 
 %Notice that due to colour data are not available from 10 to 16 October 2021, the models in Fig.~\ref{fig:colour-feature-engineering} were evaluated on training dataset from 16 to 22 January 2022. 
 
-As shown in Fig.~\ref{fig:nh3-feature-engineering}, LSTM-4-obs, LSTM-3-obs, LSTM-2-obs, and LSTM-1-obs have the test loss values of 0.0432, 0.0426, 0.0411, and 0.0405, respectively. This result indicates that LSTM models trained with more features resulted in poorer model performance. Based on our understanding to the extra features such as color levels and sine/cosine features, models trained with more features are expected lower test values. The model performance from LSTM-sg7 and LSTM-sg9 fits well with what we hypothesized. The test loss values of LSTM-4-sg7, LSTM-3-sg7, LSTM-2-sg7, LSTM-1-sg7 are 0.0369, 0.0373, 0.0379, 0.0388, respectively. For LSTM-4-sg9, LSTM-3-sg9, LSTM-2-sg9, and LSTM-1-sg9, the test loss values are 0.0384, 0.0391, 0.0409, 0.0410, respectively. These findings showed that the test loss values of the LSTM models trained by sg7 and sg9 filtered datasets followed the trends of LSTM-4$<$LSTM-3$<$LSTM-2$<$LSTM-1. The most remarkable results are from LSTM models trained by SG filtered dataset at a window size of 7. Comparing to the baseline model performance (i.e., LSTM-1-obs), the test loss values of LSTM-1-sg7, LSTM-2-sg7, LSTM-3-sg7 and LSTM-4-sg7 reduced by 4.2\%, 6.4\%, 7.9\%, and 8.9\%, respectively.
+As shown in Fig.~\ref{fig:nh3-feature-engineering}, LSTM-4-obs, LSTM-3-obs, LSTM-2-obs, and LSTM-1-obs have the test loss values of 0.0432, 0.0426, 0.0411, and 0.0405, respectively. This result indicates that LSTM models trained with more features resulted in poorer model performance. Based on our understanding to the extra features such as color levels and sine/cosine features, models trained with more features are expected lower test values. The model performance from LSTM-sg7 and LSTM-sg9 fits well with what we hypothesized. The test loss values of LSTM-4-sg7, LSTM-3-sg7, LSTM-2-sg7, LSTM-1-sg7 are 0.0369, 0.0373, 0.0379, 0.0388, respectively. For LSTM-4-sg9, LSTM-3-sg9, LSTM-2-sg9, and LSTM-1-sg9, the test loss values are 0.0384, 0.0391, 0.0409, 0.0410, respectively. These findings showed that the test loss values of the LSTM models trained by sg7 and sg9 filtered datasets followed the trends of LSTM-4 $<$ LSTM-3 $<$ LSTM-2 $<$ LSTM-1. The most remarkable results are from LSTM models trained by SG filtered dataset at a window size of 7. Comparing to the baseline model performance (i.e., LSTM-1-obs), the test loss values of LSTM-1-sg7, LSTM-2-sg7, LSTM-3-sg7 and LSTM-4-sg7 reduced by 4.2\%, 6.4\%, 7.9\%, and 8.9\%, respectively.
 
 Our findings in the ammonia forecasting models suggest that colour level is an indispensable feature for improving the model performance. LSTM-2 models trained by datasets applied with any pre-processing techniques showed lower test loss compared to LSTM-1, except LSTM-2 trained by dataset without applying any methods. Strong evidence leads us to believe that the fluctuation of ammonia concentration is highly correlated with the colour levels in SHWEPP influent even without direct evidence.
 

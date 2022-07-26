@@ -15,7 +15,7 @@ Shek Wu Hui Effluent Polish Plant (SWHEPP) is a secondary sewage treatment plant
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\columnwidth]{imgs/instrument/sampling-tank.png}
-    \caption{Colour levels and ammonia concentration are measure in the effluent container (i.e., on the right of the image.) A water pump transports MBR effluent to the effluent container continuously at real-time. The black vault on the left of the image contains a laptop and a colour spectrophotometer.} 
+    \caption{Colour levels and ammonia concentration are measured in the effluent container (i.e., on the right of the image.) A water pump transports MBR effluent to the effluent container continuously in real-time. The black vault on the left of the image contains a laptop and a colour spectrophotometer.} 
     \label{fig:sampling-tank}
  \end{figure}
 
@@ -46,27 +46,27 @@ The automatic sampling and analyzing of the colour level begins with the actuato
     \centering
     \begin{subfigure}{0.3\textwidth}
       \includegraphics[width=\linewidth]{imgs/instrument/SIP10.png}
-      \caption{SIP10 peristaltic pump, Hach} \label{fig:hach-sip}
+      \caption{SIP10 peristaltic pump, Hach Company} \label{fig:hach-sip}
     \end{subfigure}%
     \hspace{2em}   % maximize separation between the subfigures
     \begin{subfigure}{0.3\textwidth}
       \includegraphics[width=\linewidth]{imgs/instrument/DR3900_PS.png}
-      \caption{DR3900 spectrophotometer, Hach} \label{fig:hach-dr3900}
+      \caption{DR3900 spectrophotometer, Hach Company} \label{fig:hach-dr3900}
     \end{subfigure}%
     \vspace{2em}
     \begin{subfigure}{0.7\textwidth}
         \includegraphics[width=\linewidth]{imgs/instrument/actuator-mount.png}
-        \caption{Customized clicker/actuator} \label{fig:hach-actuator}
+        \caption{Customized clicker/actuator with programmable timer} \label{fig:hach-actuator}
     \end{subfigure}%  
   \caption{Instruments of on-line colour analysis system.} \label{fig:hach}
 \end{figure}
 
-The maintenance and calibration of the DR3900 spectrophotometer is performed on a weekly basis. During the maintenance, the DR3900 device was shut off, and 100 mg/L chlorine solution was pumped into the sampling tubes and the plastic cuvette for disinfection and cleansing. The cleansing of the tubes and cuvette were manually inspected with eyes to make sure no foreign objects were stuck inside. De-ionized water was brought to the site to perform the spectrophotometer calibration after the reboot of DR3900. 
+The maintenance and calibration of the DR3900 spectrophotometer are performed on a weekly basis. During the maintenance, the DR3900 device was shut off, and 100 mg/L chlorine solution was pumped into the sampling tubes and the plastic cuvette for disinfection and cleansing. The cleansing of the tubes and cuvette were manually inspected with eyes to make sure no foreign objects were stuck inside. De-ionized water was brought to the site to perform the spectrophotometer calibration after the reboot of DR3900. 
 
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.8\columnwidth]{imgs/instrument/colour-sampler.png}
-    \caption{Schematic diagram of the custom-made on-line colour anlaysis system.}
+    \caption{Schematic diagram of the custom-made on-line colour analysis system.}
     \label{fig:diagram-colour-analysis}
  \end{figure}
 
@@ -75,12 +75,12 @@ The maintenance and calibration of the DR3900 spectrophotometer is performed on 
 \begin{figure}[h]
     \centering
     \includegraphics[width=1.0\columnwidth]{imgs/results/data.png}
-    \caption{Ammonia and colour data collected from 23 December 2021 to 22 January 2022.}
+    \caption{Ammonia and colour data collected from 23 December 2021 to 22  January 2022.}
     \label{fig:nh3-color-data}
 \end{figure}
 
 \subsection{Loss function for model evaluation}
-Loss functions are used to determine the error between the model outputs (i.e., prediction or forecasting values) and the given target value \citep{deepaiLossFunction2022}. The bigger the difference between the ground truth $\bm{y}$ and the model outputs $\bm{\hat{y}}$, the higher the value of the loss function is, meaning the model performed poorer. A low value for the loss means the model performed well. The selection of the types of the loss function is essential for training the model to perform specific tasks. This study uses Mean Squared Error (MSE) to evaluate the regression models. The values of MSE will never be negative and are formally defined by the following equation:
+Loss functions are used to determine the error between the model outputs (i.e., prediction or forecasting values) and the given target value \citep{deepaiLossFunction2022}. The bigger the difference between the ground truth $\bm{y}$ and the model outputs $\bm{\hat{y}}$, the higher the value of the loss function is, meaning the model performed poorer. A low value for the loss means the model performed well. The selection of the types of loss function is essential for training the model to perform specific tasks. This study uses Mean Squared Error (MSE) to evaluate the regression models. The values of MSE will never be negative and are formally defined by the following equation:
 
 \begin{equation}\label{eq-mse}
     MSE=\frac{\sum (y_i-\hat{y_i})^2}{n}
@@ -101,9 +101,9 @@ The raw data embedded in the original CSV files has many problems, such as missi
 Extreme values were manually removed before the colour and ammonia datasets were averaged into time-series data at 1-hour intervals. For the ammonia dataset, we replaced the values higher than 7.0 mg/L with NaN (i.e., Not a number), and further interpolation was used to fill up the NaN along with the missing values in the dataset. For colour dataset, we manually took out the relatively low data points on the days when the maintenance and calibration tasks were performed; extremely values higher than 300 Hazen Unit were also replaced by NaN. Same as the data cleaning method used for the ammonia dataset, the missing values and NaN were filled up with interpolation.
 
 \subsubsection{Data smoothing with Savitzky-Golay and EWMA filter}
-Data smoothing was performed using the same method on ammonia and colour datasets. One of the effective ways to remove the noise from the dataset is to apply data smoothing filters. Two filters were applied in this study, Savitzky-Golay (SG) and Exponentially Weighted Moving Average (EWMA) filters.
+Data smoothing was performed using the same methods on ammonia concentrations and colour levels datasets. One of the effective ways to remove the noise from the dataset is to apply data smoothing filters. Two filters were applied in this study, Savitzky-Golay (SG) and Exponentially Weighted Moving Average (EWMA) filters.
 
-A SG filter is a digital filter that can be applied to a set of digital data points for the purpose of smoothing the data without distorting the data tendency. This is achieved via convolution by fitting successive subsets of adjacent data points with a low-degree polynomial using linear least-squares \citep{wikipediaSavitzkyGolayFilter2022}. The illustration is shown in Fig.~\ref{fig:filters-sg}, and the procedures of how data points are smoothed are presented in the following steps:
+An SG filter is a digital filter that can be applied to a set of digital data points for the purpose of smoothing the data without distorting the data tendency. This is achieved via convolution by fitting successive subsets of adjacent data points with a low-degree polynomial using linear least-squares \citep{wikipediaSavitzkyGolayFilter2022}. The illustration is shown in Fig.~\ref{fig:filters-sg}, and the procedures of how data points are smoothed are presented in the following steps:
 
 \noindent
 \begin{myenumerate}
@@ -133,7 +133,7 @@ Exponentially weighted moving average (EWMA), also known as autoregressive (AR) 
 \end{equation}
 
 \noindent
-where $\alpha$ corresponds to the decay paratmeter, $x_t$ to the value at a time period, $y_t$ to the value of the EWMA at any time period t, span to the window size.
+where $\alpha$ corresponds to the decay paratmeters, $x_t$ to the value at a time period, $y_t$ to the value of the EWMA at any time period t, span to the window size.
 
 \begin{figure}[!ht]
     \centering
@@ -146,10 +146,10 @@ where $\alpha$ corresponds to the decay paratmeter, $x_t$ to the value at a time
       \includegraphics[width=\linewidth]{imgs/pre-processing/demo-weight-ewma.png}
       \caption{Examples of weights with exponential decay at varied alpha values \citep{cfiExponentiallyWeightedMoving2022}.} \label{fig:filters-ewma}
     \end{subfigure}% 
-  \caption{Illustration of the influence of different polynomial degrees in the fitting of SG filter and the weigth decay with varied alpha values in EWMA filter.} \label{fig:filters}
+  \caption{Illustration of the influence of different polynomial degrees in the fitting of SG filter and the weight decay with varied alpha values in EWMA filter.} \label{fig:filters}
 \end{figure}
 
-Both SG and EWMA filters are required to select the hyperparamters, the selected values are presented in Table.~\ref{tab:filter-hyperparameters}.
+Both SG and EWMA filters are required to select the hyperparameters, the selected values are presented in Table.~\ref{tab:filter-hyperparameters}.
 
 \begin{table}[!ht]
     \centering
@@ -181,11 +181,11 @@ Fig.~\ref{fig:smoothed} shows the influences of different windows sizes on SG fi
       \includegraphics[width=\linewidth]{imgs/pre-processing/ew-filter.png}
       \caption{Ammonia data filtered by EWMA filters with different window sizes.} \label{fig:smoothed-ew}
     \end{subfigure}%  
-  \caption{Illustration of the influence of different polynomial degrees in the fitting of SG filter and the weigth decay with varied alpha values in EWMA filter.} \label{fig:smoothed}
+  \caption{Illustration of the influence of different polynomial degrees in the fitting of SG filter and the weight decay with varied alpha values in EWMA filter.} \label{fig:smoothed}
 \end{figure}
 
 \subsubsection{Outlier Removal}
-Although the extreme values in the raw ammonia dataset were removed based on basic rules (i.e., concentration higher than 7.0 mg/L), the ammonia sensor can still collectively capture unideal data points. In the outlier removal process, we intended to identify the collective faults of ammonia data in the unit of an entire day.  Two abnormal conditions are defined to determine whether the ammonia data on a specific day shows collective fault:
+Although the extreme values in the raw ammonia dataset were removed based on basic rules (i.e., concentration higher than 7.0 mg/L), the ammonia sensor can still collectively capture unideal data points. In the outlier removal process, we intended to identify the collective faults of ammonia data in the unit of an entire day. Two abnormal conditions are defined to determine whether the ammonia data on a specific day shows collective fault:
 
 \noindent
 \begin{myenumerate}
@@ -193,12 +193,12 @@ Although the extreme values in the raw ammonia dataset were removed based on bas
     \item No diurnal fluctuation (i.e., Fluctuation = peak value – bottom line value).
 \end{myenumerate}
 
-Peak analysis was performed on the daily ammonia data to automatically identify normal or abnormal signals. The analysis takes a one-dimension array (i.e., the data form of ammonia in a day) and finds all local maximum values by comparing neighboring values. This function will also provide information such as width and prominence, as in Fig.~\ref{fig: prominence} to help us identify whether the diurnal fluctuation exists.
+Peak analysis was performed on the daily ammonia data to automatically identify normal or abnormal signals. The analysis takes a one-dimension array (i.e., the data form of ammonia in a day) and finds all local maximum values by comparing neighbouring values. This function will also provide information such as width and prominence, as in Fig.~\ref{fig:prominence} to help us identify whether the diurnal fluctuation exists.
 
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.7\columnwidth]{imgs/pre-processing/prominence.png}
-    \caption{Illustration of peak analysis. Four important elements are automatic caculated by the function \citep{mathworksDocumentationFindpeaks2022}.}
+    \caption{Illustration of peak analysis. Four important elements are automatic calculated by the function \citep{mathworksDocumentationFindpeaks2022}.}
     \label{fig:prominence}
  \end{figure}
 
@@ -208,7 +208,7 @@ We have carefully observed and analyzed the SWHEPP influent to create new featur
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.95\columnwidth]{imgs/pre-processing/geomap.png}
-    \caption{Sewer system coverage of SHWEPP. The covered areas (i.e., area circled in red boundary) include Fanling/Sheung-Shui new towns and NENT landfill leachate treament plant.}
+    \caption{Sewer system coverage of SHWEPP. The covered areas (i.e., area circled in red boundary) include Fanling/Sheung-Shui new towns and NENT landfill leachate treatment plant.}
     \label{fig:geomap}
  \end{figure}
 
@@ -231,38 +231,38 @@ We have carefully observed and analyzed the SWHEPP influent to create new featur
     \centering
     \begin{subfigure}[t]{0.7\textwidth}
         \includegraphics[width=\linewidth]{imgs/leachate-effluent-blend-ratio-color-plot/colour-blend-coef.png}
-        \caption{Coefficienct between blending ratio and colour levles.} \label{fig:blend-colour-coef}
+        \caption{Coefficient between blending ratio and colour levels.} \label{fig:blend-colour-coef}
       \end{subfigure}\\
       \hspace{2em}
     \begin{subfigure}[t]{0.7\textwidth}
         \includegraphics[width=\linewidth]{imgs/results/colour-pattern.png}
         \caption{Trend comparison of ammonia concentration and colour levels.} \label{fig:color-to-nh3-pattern}
       \end{subfigure}%
-  \caption{Observatios of ammonia concentration and colour levels in SHWEPP influent.} \label{fig:observation-shweep-influent}
+  \caption{Observed ammonia concentration and colour levels in SHWEPP influent.} \label{fig:observation-shweep-influent}
 \end{figure}
 
 The new features are inspired by the research work of \citet{abu-bakarQuantifyingImpactCOVID192021}. The author summarized the four types of hourly household water consumption patterns as in Fig.~\ref{fig:water-consumption-pattern}, which correlates the specific time of the day to the volume of water consumed in households. In other words, as fresh water is consumed, wastewater is generated simultaneously; the wastewater then enters the public sewage system and increases ammonia concentration. As shown in Fig.~\ref{fig:nh3-peak-pattern}, the peak analysis tool helped us to identify the ammonia concentration's peak hour, which occurred around 13:00 to 14:00, and 20:00 to 21:00. Thus, it is convinced that time features will help the machine learning models correlate better and predict the change of ammonia concentration in the wastewater. Time feature is created through a technique called positional encoding (POS). The positional encoded feature was achieved in the following steps:
 
 \noindent
 \begin{myenumerate}
-    \item The timestamp are represented as three elements---hour, day and month.
+    \item The timestamp is represented as three elements---hour, day and month.
     \item Each element will bed decomposed into sine and cosine components.
     \item Last step is applied to hours and days to make all elements represented cyclically.
 \end{myenumerate}
 
-Due to the size of the datasets used in this study for training ammonia and colour forecasting model is 31 days, only hour element was transformed into sine and cosine components as in Fig.~\ref{fig:pos-encoding}.
+Due to the size of the datasets used in this study for training ammonia and colour forecasting model being 31 days, only the hour element was transformed into sine and cosine components as in Fig.~\ref{fig:pos-encoding}.
 
 \begin{figure}[!ht]
     \centering
     \includegraphics[width=0.8\columnwidth]{imgs/pre-processing/hourly-consumption-pattern.png}
-    \caption{Hourly water consumption patterns in households \citep{abu-bakarQuantifyingImpactCOVID192021}. (a) Cumulative pattern and percentage of hourly consumption for households in the “Evening Peak (EP)” cluster (b) Cumulative pattern and percentage of hourly consumption for households in the “Late Morning Peak Peak (LM)” cluster. (c) Cumulative pattern and percentage of hourly consumption for households in the “Early Morning Peak (EM)” cluster. (d) Cummulative pattern and percentage of hourly consumption for households in the “Multiple Peak (MP)” cluster. Consumption is in (m3).}
+    \caption{Hourly water consumption patterns in households \citep{abu-bakarQuantifyingImpactCOVID192021}. (a) Cumulative pattern and percentage of hourly consumption for households in the “Evening Peak (EP)” cluster (b) Cumulative pattern and percentage of hourly consumption for households in the “Late Morning Peak Peak (LM)” cluster. (c) Cumulative pattern and percentage of hourly consumption for households in the “Early Morning Peak (EM)” cluster. (d) Cumulative pattern and percentage of hourly consumption for households in the “Multiple Peak (MP)” cluster. Consumption is in (m$^3$).}
     \label{fig:water-consumption-pattern}
  \end{figure}
 
 \begin{figure}[!ht]
   \centering
   \includegraphics[width=0.8\columnwidth]{imgs/results/nh3-pattern.png}
-  \caption{The daily patterns of ammonia concentration on 3, 7, 11, 15 Janurary 2022.}
+  \caption{The daily patterns of ammonia concentration on 3, 7, 11, 15 January 2022.}
   \label{fig:nh3-peak-pattern}
 \end{figure}
 
@@ -277,15 +277,24 @@ Due to the size of the datasets used in this study for training ammonia and colo
       \includegraphics[width=\linewidth]{imgs/leachate-effluent-blend-ratio-color-plot/second-80d.png}
       \caption{Data collected from 23 December 2021 to 24 February 2022.} \label{fig:data-nov}
     \end{subfigure}%  
-  \caption{Monitored colour level in MBR effluent and the change of blending ratio (v/v) of treated leachate effluent to municipal wastewater in the inflow of SWHEPP during December 2021–January 2022. Date of manually calibration and colour level measured in laboratory is also provided as black cross and green dot. The moving average of colour level is calculated by averaging the colour level in the past 24 hours. Note: The colour levels analysed by the on-line colour monitoring system were compared to the manually measured data obtained from the laboratory, which showed errors of 2.08\%, 4.05\%, 1.11\%, 65.25\%, 4.94\% and 11.0\% in the TSE samples collected 5 Oct, 22 Oct, 3 Nov, 15 Nov, 12 Dec, and 31 Dec 2021, respectively.} \label{fig:nh3-data}
+  \caption{Monitored colour levels in MBR effluent and the changes in blending ratio (v/v) of treated leachate effluent to municipal wastewater in the inflow of SWHEPP from December 2021 to January 2022. The date of manually calibration and colour level measured in the laboratory are also provided as a black cross and green dot. The moving average of colour level is calculated by averaging the colour level in the past 24 hours. Note: The colour levels analyzed by the on-line colour monitoring system were compared to the manually measured data obtained from the laboratory, which showed errors of 2.08\%, 4.05\%, 1.11\%, 65.25\%, 4.94\% and 11.0\% in the effluent samples collected 5 Oct, 22 Oct, 3 Nov, 15 Nov, 12 Dec, and 31 Dec 2021, respectively.} \label{fig:nh3-data}
 \end{figure}
 
 \subsection{Data transformation}
 Before the pre-processed data is fed into the models for training, we need to split the data into three clusters, which are training (60\%), validation (20\%), and testing dataset (20\%). Among each cluster, the data will be further split into input variables $\bm{X}$ and output variables $\bm{Y}$ (i.e., training X/training Y, testing X/testing Y). During the training process, machine learning algorithms will learn a target function $\bm{f}$ to best map $\bm{X}$ to $\bm{Y}$. A training dataset is a set of examples (e.g., historical data) for models to learn the hidden trends and information in the data, shown in (a) in Fig.~\ref{fig:training-scheme}. Training loss is calculated by taking the sum of loss for each pair of input and output in the training dataset after every training cycle (i.e., epoch).
 
-In this study, the model is designed to forecast values three hours into the future using the values from the past 24 hours. Therefore, each training X will be assigned with time-series data of 24 hours, while each Y will be assigned with 3 hours. After the model successfully learns the hidden patterns between the training X and Y, it can forecast the values three hours into the future as testing X is input to the model.
+In this study, the model is designed to forecast values three hours into the future using the values from the past 24 hours. Fig.~\ref{fig:forecast-concept} illustrates a forecasting model's training and forecasting process. The length of the sliding time window in this study is set to be 25 (hours). In training set 1 (i.e., the first 24 hours from the training dataset), the blue block represents the observed values of 24 hours, while the yellow block is the first data point from the testing dataset (i.e., equivalent to the 25$^{th}$ hour of the training dataset). The model is required to learn how to map the blue block to the yellow block; the times of model learning is equivalent to the length of the training dataset deducted by the length of the sliding time window (i.e., the second to the last 25$^{th}$ hour will be mapped to the last hour of the training dataset). Once the training process is complete, the model will be able to generate a value, known as the prediction or forecast, given an input of 24 hours of data. 
 
-The function of a validation dataset, as in (b) in Fig.~\ref{fig:training-scheme}, is used to assess the model performance until we obtain the optimized hyperparameter settings, including the number of neurons in machine learning models, epoch, etc. The hyperparameter settings for each model will be discussed in the next section. The validation loss plays a vital role during the model training. The adjustments of the hyperparameters will directly reflect on the change of the validation loss; the lower the values, the better the model performance is. As the optimized model is obtained, a testing dataset is used to evaluate the performance of the forecasting model, as shown in (c) in Fig.~\ref{fig:training-scheme}. The testing datasets will only be input into the models when the models are tuned to the optimized settings and ready for the final evaluation. The testing datasets are also known as the unseen datasets, which can fairly evaluate the model performance. If the model tuning process was performed on the testing dataset, the model performance would be biased since the hyperparameters are adjusted in favor of the evaluation of the testing dataset.
+For forecasting one hour into the future, the model will be input with 24 hours of observed values from the testing dataset, and the model will generate a value known as the forecasted values of the 25$^{th}$ hour. For predicting two hours into the future, the model will be input with 23 hours of observed values and the first forecasted values (i.e., the 25$^{th}$ hour), as shown in Forecast Set 2 in Fig.~\ref{fig:forecast-concept}. For forecasting three hours into the future, the model will be input with 22 hours of observed values and two forecasted values from the last two forecasting processes to generate the value, known as the 26$^{th}$ hour. As the sliding time window moves toward the future forecast horizons, the model forecasted results would rely more on the forecasted values instead of the observed values, making the forecasted values less reliable. In this study, a forecast horizon of three is selected for testing the reliability of the model forecasting performance.
+
+\begin{figure}[!ht]
+  \centering
+  \includegraphics[width=0.9\columnwidth]{imgs/forecast-concept.png}
+  \caption{Concept of forecasting models \citep{liuTimeSeriesForecasting2020}.}
+  \label{fig:forecast-concept}
+\end{figure}
+
+The function of a validation dataset, as in (b) in Fig.~\ref{fig:training-scheme}, is used to assess the model performance until we obtain the optimized hyperparameter settings, including the number of neurons in machine learning models, epoch, etc. The hyperparameter settings for each model will be discussed in the next section. The validation loss plays a vital role during the model training. The adjustments of the hyperparameters will directly reflect on the change of the validation loss; the lower the values, the better the model performance is. As the optimized model is obtained, a testing dataset is used to evaluate the performance of the forecasting model, as shown in (c) in Fig.~\ref{fig:training-scheme}. The testing datasets will only be input into the models when the models are tuned to the optimized settings and ready for the final evaluation. The testing datasets are also known as the unseen datasets, which can fairly evaluate the model performance. If the model tuning process was performed on the testing dataset, the model performance would be biased since the hyperparameters are adjusted in favour of the evaluation of the testing dataset.
 
 In Fig.~\ref{fig:training-scheme}, the hyperparameters will remain the same once the optimized values are found, thus generating a baseline model performance from different machine learning algorithms. The baseline results will be further compared with the results from the model trained by the proposed model training steps, which include datasets that have been performed data smoothing and feature engineering techniques.
 
@@ -310,7 +319,7 @@ For $b=1, ..., B:$
 \begin{myenumerate}
   \item Sample (with replacement) n training examples from $X$, $Y$, call these $X_b, Y_b$.
   \item Train a regression tree $f_b$ on $X_b, Y_b$.
-  \item Predict unseen samples $x^{'}$ by averaging the predicdtions from all the regression tree learners on $x^{'}$ as in Eq.~\ref{eq-rf}:
+  \item Predict unseen samples $x^{'}$ by averaging the predictions from all the regression tree learners on $x^{'}$ as in Eq.~\ref{eq-rf}:
 \end{myenumerate}
 
 \begin{equation}\label{eq-rf}
@@ -326,7 +335,7 @@ Artificial Neural Network (ANN) is a broad term that encompasses any form of Dee
     \includegraphics[width=\linewidth]{imgs/models/random-forest.png}
     \caption{Random Forest (RF) \citep{riebesellRandomForest2022}.} \label{fig:rf}
   \end{subfigure}\\
-  \vspace{1em}
+  \vspace{3em}
   \begin{subfigure}[t]{0.7\textwidth}
       \includegraphics[width=\linewidth]{imgs/models/DNN.png}
       \caption{Deep Neural Network (DNN) \citep{ibmNeuralNetworks2022}.} \label{fig:dnn}
@@ -356,7 +365,7 @@ where $x_t$ is the current input, $h_t$ is the current hidden state (output), $h
       \includegraphics[width=\linewidth]{imgs/models/lstm-2.png}
       \caption{Long Short-term Memory (LSTM).} \label{fig:lstm}
     \end{subfigure}\\
-    \vspace{2em}
+    \vspace{3em}
     \begin{subfigure}[t]{0.45\textwidth}
       \includegraphics[width=\linewidth]{imgs/models/gru-2.png}
       \caption{Gate Recurrent Unit (GRU).} \label{fig:gru}
@@ -404,12 +413,13 @@ Hyperparameters are variables that we need to set before applying a learning alg
 For training neural networks (NNs), the selection of hyperparameters is much more. The hyperparameters in NNs can be split into two categories, as shown in the followings:
 
 \noindent
-\textbf{Optimizer hyperparameters}\\
+\textbf{Optimized hyperparameters}\\
 \begin{myenumerate}
     \item Learning rate
     \item Number of epochs
     \item Mini batch size
 \end{myenumerate}
+
 \noindent
 \textbf{Model-specific hyperparameters}\\
 \begin{myenumerate}
@@ -417,34 +427,44 @@ For training neural networks (NNs), the selection of hyperparameters is much mor
     \item Number of layers
 \end{myenumerate}
 
-The learning rate is a tuning parameter in an optimization algorithm that determines the step size at each iteration while moving toward a minimum of a loss function. An iteration describes the number of times a batch of data passed through the algorithm. In our study, the training data has a length of 432, with a batch size of one; the model will iterate 432 times to complete one epoch. To determine an optimal learning rate, there is a trade-off between the rate of convergence and overshooting. A too high learning rate leads to a learning step jump over minima as in Fig.~\ref{fig:high-lr}, yet a too low learning rate will either be too slow to converge or get stuck in a local minimum loss as in Fig~\ref{fig:low-lr}. A good size of learning rate should reach the minimum loss at a reasonable time, as in Fig.~\ref{fig:decent-lr}. However, searching for the most optimal learning rate can be time-consuming and a waste of computing power. In this study, we used a learning rate scheduler to achieve the same effect of using a decent learning rate. The scheduler can be set to reduce the learning rate as the epoch increases. When the algorithm detects the test loss is not reducing during the training within a designated epoch time, the learning rate will be multiplied by a customized factor. A factor of 0.5 and patience of 10 were used in this study. The effect of using a learning rate scheduler is shown in Fig.~\ref{fig:decay-lr}.
+The learning rate is a tuning parameter in an optimization algorithm that determines the step size at each iteration while moving toward a minimum of a loss function. An iteration describes the number of times a batch of data passed through the algorithm. In our study, the training data has a length of 432, with a batch size of one; the model will iterate 432 times to complete one epoch. There is a trade-off between the rate of convergence and overshooting when determining an optimal learning rate. A too high learning rate leads to a learning step jump over minima as in Fig.~\ref{fig:high-lr}, yet a too low learning rate will either be too slow to converge or get stuck in a local minimum loss as in Fig~\ref{fig:low-lr}. A good size of learning rate should reach the minimum loss at a reasonable time, as in Fig.~\ref{fig:decent-lr}. However, searching for the most optimal learning rate can be time-consuming and a waste of computing power. In this study, we used a learning rate scheduler to achieve the same effect of using a decent learning rate. The scheduler can be set to reduce the learning rate as the epoch increases. When the algorithm detects the test loss is not reducing during the training within a designated epoch time, the learning rate will be multiplied by a customized factor. A factor of 0.5 and a patience of 10 were used in this study. The effect of using a learning rate scheduler is shown in Fig.~\ref{fig:decay-lr}.
 
 \begin{figure}[!ht]
   \centering
   \begin{subfigure}[t]{0.45\textwidth}
     \includegraphics[width=\linewidth]{imgs/low-lr.png}
-    \caption{Recurrent Neural Network (RNN).} \label{fig:low-lr}
+    \caption{Low learning rate.} \label{fig:low-lr}
   \end{subfigure}
   \begin{subfigure}[t]{0.45\textwidth}
     \includegraphics[width=\linewidth]{imgs/decent-lr.png}
-    \caption{Long Short-term Memory (LSTM).} \label{fig:decent-lr}
+    \caption{Decent learning rate.} \label{fig:decent-lr}
   \end{subfigure}\\
   \begin{subfigure}[t]{0.45\textwidth}
     \includegraphics[width=\linewidth]{imgs/high-lr.png}
-    \caption{Gate Recurrent Unit (GRU).} \label{fig:high-lr}
+    \caption{High learning rate.} \label{fig:high-lr}
   \end{subfigure}
   \begin{subfigure}[t]{0.45\textwidth}
     \includegraphics[width=\linewidth]{imgs/decay-lr.png}
-    \caption{Gate Recurrent Unit (GRU).} \label{fig:decay-lr}
+    \caption{Decaying learning rate.} \label{fig:decay-lr}
   \end{subfigure} 
 \caption{Illustration of how different step sizes of learning rate reach the minimum loss \citep{ritchiengDeepLearningWizard2019}.} \label{fig:lr}
 \end{figure}
 
 In model-specific hyperparameter tuning, the number of neurons and the number of layers need to be determined based on the complexity of our training dataset. The ammonia and colour datasets are considered simple and small datasets. In the hyperparameter tunings of the deep learning models, we simplified the model structure by lowering the number of layers to 1 except for the DNN model. If the number of hidden layers decreased to one, the DNN models would be called the ANN models according to the definition. The number of neurons was set to 10 to maintain simple deep learning models to prevent overfitting.
 
-\begin{table}[!ht]
+The settings of the optimized hyperparameters are listed in the followings in the final iteration of model hyperparameter tuning:
+
+\noindent
+\textbf{Optimized hyperparameters}\\
+\begin{myenumerate}
+    \item Learning rate: 5e-05
+    \item Number of epochs: 100
+    \item Batch size: 1
+\end{myenumerate}
+
+\begin{table}[t]
   \centering
-  \caption{Final model configuratino.}\label{tab:model-config}
+  \caption{Final model configuration.}\label{tab:model-config}
   \begin{NiceTabular}{lccccl}
       \toprule
       Model & Input & h.d\tabularnote{Hidden layer.} & Output & Num. of Exp\tabularnote{The times the experiments were repeated.} & Comments \\
@@ -457,14 +477,3 @@ In model-specific hyperparameter tuning, the number of neurons and the number of
       \bottomrule
   \end{NiceTabular}
 \end{table}
-
-The settings of the optimzer hyperparameters are listed in the followings:
-
-\noindent
-\textbf{Optimizer hyperparameters}\\
-\begin{myenumerate}
-    \item Learning rate: 5e-05
-    \item Number of epochs: 100
-    \item Mini batch size: 1
-\end{myenumerate}
-
