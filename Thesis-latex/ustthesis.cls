@@ -432,7 +432,6 @@
 
 % \@chapapp is initially defined to be 'Chapter'.  The \appendix
 % command redefines it to be 'Appendix'.
-
 \def\@chapapp{CHAPTER}
 
 % \@makechapterhead {TEXT} : Makes the heading for the \chapter command.

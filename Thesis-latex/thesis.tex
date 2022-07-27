@@ -3,12 +3,11 @@
 %              A template file for usage with ustthesis.cls             %
 %                                                                       %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \documentclass{ustthesis}
 \usepackage{nicematrix,booktabs}
 \usepackage{threeparttable}
 \usepackage{amsmath, amssymb, amsfonts, bm}
-\usepackage{mathptmx}
+%\usepackage{mathptmx}
 \usepackage{algorithm}
 \usepackage{algorithmic}
 \usepackage{color,graphicx}
@@ -90,8 +89,15 @@
 \setcounter{secnumdepth}{3}
 
 %make dots in the toc
-\usepackage{tocloft}
+
+\usepackage[titles]{tocloft}
+%\cftsetindents{figure}{0.5em}{3.5em}
+%\cftsetindents{table}{0.5em}{3.5em}
+
+%\usepackage{tocloft}
 \renewcommand\cftchapdotsep{\cftdotsep}%
+
+
 
 %\renewcommand\cftsecleader{\cftdotfill{\cftdotsep}}
 
@@ -137,6 +143,7 @@
 % \PNumberAboveBottomMargin
 
 \graphicspath{{./figure/}}
+\usepackage{times}
 \begin{document}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

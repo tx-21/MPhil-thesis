@@ -2,7 +2,10 @@
 \contentsline {chapter}{Authorization Page}{\nbi ii}{Doc-Start}%
 \contentsline {chapter}{Signature Page}{\nbi iii}{Doc-Start}%
 \contentsline {chapter}{Acknowledgments}{\nbi iv}{figure.caption.1}%
-\contentsline {chapter}{Abstract}{\nbi x}{figure.caption.1}%
+\contentsline {chapter}{Table of Contents}{\nbi v}{chapter*.2}%
+\contentsline {chapter}{List of Figures}{\nbi vii}{chapter*.3}%
+\contentsline {chapter}{List of Tables}{\nbi ix}{chapter*.4}%
+\contentsline {chapter}{Abstract}{\nbi x}{chapter*.4}%
 \contentsline {chapter}{{Chapter 1}\hspace {1em}Introduction}{1}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Background}{1}{section.1.1}%
 \contentsline {section}{\numberline {1.2}Objectives}{3}{section.1.2}%
