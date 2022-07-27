@@ -8,6 +8,7 @@
 \usepackage{nicematrix,booktabs}
 \usepackage{threeparttable}
 \usepackage{amsmath, amssymb, amsfonts, bm}
+\usepackage{mathptmx}
 \usepackage{algorithm}
 \usepackage{algorithmic}
 \usepackage{color,graphicx}
@@ -22,6 +23,7 @@
 \usepackage{textcomp}
 \usepackage{multirow}
 \usepackage{xcolor}
+%set hyperlink to black
 \hypersetup{colorlinks,
             linkcolor={black!50!black},
             citecolor={black!50!black},
@@ -86,6 +88,12 @@
 
 \setcounter{tocdepth}{3}
 \setcounter{secnumdepth}{3}
+
+%make dots in the toc
+\usepackage{tocloft}
+\renewcommand\cftchapdotsep{\cftdotsep}%
+
+%\renewcommand\cftsecleader{\cftdotfill{\cftdotsep}}
 
 
 % \renewcommand{\familydefault}{\rmdefault}
