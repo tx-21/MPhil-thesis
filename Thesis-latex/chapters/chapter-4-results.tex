@@ -13,7 +13,7 @@ In this study, five machine learning algorithms were trained with univariate dat
     \includegraphics[width=\linewidth]{imgs/results/baseline-models-colour.png}
     \caption{Test loss values from five colour forecasting models.} \label{fig:baseline-colour}
   \end{subfigure}\\
-\caption{Baseline performance of ammonia and colour forecasting models.} \label{fig:baseline-performance}
+\caption{Baseline performance of the ammonia and colour forecasting models.} \label{fig:baseline-performance}
 \end{figure}
 
 GRU and LSTM models learn the data in similar ways by utilizing memorizing cells to pass and receive critical information from the previous memorizing cells, known as the architecture of recurrent neural network. Compared to RNN models, both models contain more "gates" in the architectures to help control the flow of information, enabling the models to capture more details. The number of gates in RNN, GRU, and LSTM is one, three, and four; theoretically, GRU and LSTM can learn more information from the data based on a greater number of gates. The results in Fig.~\ref{fig:baseline-nh3} showed good agreement with our understanding that LSTM performed better than GRU, followed by RNN models based on the values of test loss. For DNN models, the lack of memorizing cells in the model architecture relates to the poorer capability of learning information hidden in time-series datasets. In other words, DNN models cannot comprehend the information hidden in each datapoint in sequence, making the time-series dataset merely a common set of data. The DNN model with a test loss of 0.0440, higher than the 0.0414 of the RNN models, fully justifies the need to use the architecture of recurrent neural networks for training ammonia forecasting models.
@@ -64,7 +64,7 @@ In this study, we investigate whether the datasets treated by the proposed data 
 
 \begin{table}[!ht]
   \centering
-  \caption{Baseline performance of ammonia forecasting model, evaluated on test dataset from \textbf{16 to 22 Janurary 2022}. Loss values are calculated by MSE.}\label{tab:baseline-result-jan-nh3}
+  \caption{Baseline performance of the ammonia forecasting model, evaluated on test dataset from \textbf{16 to 22 Janurary 2022}. Loss values were calculated by MSE.}\label{tab:baseline-result-jan-nh3}
   \begin{NiceTabular}{lcclcc}
       \toprule
       Model-Dataset & Test loss & Valid loss & Model-Dataset & Test loss & Valid loss \\
@@ -137,7 +137,7 @@ As shown in Table.~\ref{tab:baseline-result-oct-nh3}, the models with the top lo
 
 \begin{table}[!ht]
     \centering
-    \caption{Baseline performance of ammonia forecasting model, evaluated on test dataset from \textbf{10 to 16 October 2021}. Loss values are calculated by MSE.}\label{tab:baseline-result-oct-nh3}
+    \caption{Baseline performance of the ammonia forecasting models, evaluated on test dataset from \textbf{10 to 16 October 2021}. Loss values were calculated by MSE.}\label{tab:baseline-result-oct-nh3}
     \begin{NiceTabular}{lcclcc}
         \toprule
         Model-Dataset & Test loss & Valid loss & Model-Dataset & Test loss & Valid loss \\
@@ -172,7 +172,7 @@ In the investigation of how a small dataset can influence the model results, we 
 
 \begin{table}[!ht]
   \centering
-  \caption{Baseline performance of colour forecasting model, evaluated on test dataset from \textbf{16 to 22 Janurary 2022}. Loss values are calculated by MSE.}\label{tab:baseline-result-jan-colour}
+  \caption{Baseline performance of the colour forecasting models, evaluated on test dataset from \textbf{16 to 22 Janurary 2022}. Loss values were calculated by MSE.}\label{tab:baseline-result-jan-colour}
   \begin{NiceTabular}{lcclcc}
       \toprule
       Model-Dataset & Test loss & Valid loss & Model-Dataset & Test loss & Valid loss \\
@@ -201,7 +201,7 @@ In the investigation of how a small dataset can influence the model results, we 
 
 By comparing the baseline performance and the influences of data pre-processing techniques on machine learning models, our findings appear to be well substantiated by using LSTM models for training ammonia and colour forecasting models due to their outstanding model performance evaluated by test loss values. Although EWMA filters showed surprising effects on improving the performance of most models, the conclusions of determining which pre-processing techniques are the optimum option should be treated with caution. Thus, the testings of the proposed model training processes will include all the pre-processing techniques for model training, and LSTM will be used as the only machine learning model.
 
-\subsection{The effect of window size of data smoothing filters}
+\subsection{The effects of window sizes of the data smoothing filters}
 
 \begin{figure}[!ht]
   \centering
@@ -212,16 +212,16 @@ By comparing the baseline performance and the influences of data pre-processing 
   \hspace{2em}
   \begin{subfigure}[t]{0.75\textwidth}
     \includegraphics[width=\linewidth]{imgs/results/feature-engineering/pre-processing-colour.png}
-    \caption{Baseline performance of colour forecasting models trained by LSTM.} \label{fig:preprocessing-colour}
+    \caption{Baseline performance of the colour forecasting models trained by LSTM.} \label{fig:preprocessing-colour}
   \end{subfigure}
-\caption{Baseline performance of ammonia and colour forecasting models.} \label{fig:preprocessing-comparison}
+\caption{Baseline performance of the ammonia and colour forecasting models.} \label{fig:preprocessing-comparison}
 \end{figure}
 
 The influences of window sizes in the data smoothing process are investigated using LSTM models and illustrated in Fig.~\ref{fig:preprocessing-comparison}. Larger and smaller SG window sizes have different impacts on ammonia and colour forecasting models. In ammonia forecasting models, as shown in Fig.~\ref{fig:preprocessing-nh3}, LSTM models trained with SG filtered datasets with window sizes of 5, 7, and 9 have the test loss values of 0.0388, 0.0388, and 0.0410. The results suggested that modifying data points at higher degrees may negatively affect the model training process. The results from models trained by EWMA filtered datasets showed good agreement with this finding. The model trained with EWMA filtered datasets with the windows size of 2, 3, and 4 have the test loss values of 0.0392, 0.0388, and 0.0395. A higher test loss value is observed in LSTM-ew4 compared to LSTM-ew3.
 
 For colour forecasting models, as shown in Fig.~\ref{fig:preprocessing-colour}, LSTM models trained by SG filtered datasets with window sizes of 5, 7, and 9 have test loss values of 0.0168, 0.0161, and 0.0143. LSTM models trained by EWMA filtered datasets with window sizes of 2, 3, and 4 showed test loss values of 0.0138, 0.0138, and 0.0136. From these results, we observed that larger window sizes helped the models achieve lower test loss for colour forecasting models, which does not support what we have concluded for the ammonia forecasting models. One possible explanation for the contradictory results is that ammonia and colour data have different sensitivity toward the data smoothing filters. For instance, ammonia concentrations change between the values of 1.0 to 7.0 mg/L, while colour levels vary from 80 to 160 Hazen Units, making the values of filtered data points less significant in colour data. In other words, if ammonia data points are shifted from the original values after applying data smoothing techniques, the values might be biased considering the fluctuated range of ammonia is small, while the shifted colour level data can be less biased among the sample regarding the fluctuation range of colour level is much larger. By far, we can not conclude how to select the window sizes of the data smoothing filters. The unpredictable influences of applying data smoothing filters on forecasting models impede the determination of the optimum data smoothing techniques in the subsequent experiments. 
 
-\section{Exploit hidden patterns in MBR effluent water quality to enhance model performance}
+\section{Exploit hidden patterns in the MBR effluent quality to enhance model performance}
 \subsection{Ammonia forecasting models}
 In the section of feature engineering, we have introduced the selection and creation of the extra input features for training forecasting models, as shown in Fig.~\ref{fig:feature-selection}. In this study, a forecasting model trained by one feature is called an univariate model and denoted as LSTM-1; a forecasting model trained by two features is called a multivariate model and denoted as LSTM-2. For models trained by three and four features are denoted as LSTM-3 and LSTM-4. In Fig.~\ref{fig:nh3-feature-engineering}, the performance of ammonia forecasting models trained by two to four inputs (i.e., LSTM-2, LSTM-3, LSTM-4) is compared with the baseline performance (i.e., LSTM-1-obs) to demonstrate how the feature engineered features influenced on the model outputs. 
 %Notice that due to colour data are not available from 10 to 16 October 2021, the models in Fig.~\ref{fig:colour-feature-engineering} were evaluated on training dataset from 16 to 22 January 2022. 
@@ -263,7 +263,7 @@ The interpretation for the higher test loss in LSTM-4 models in sg9, ew2, ew3, a
 
 %\section{Design of model architecture through analyzing wastewater composition in sewer system}
 
-\subsection{Model forecasting results on different forecast horizon}
+\subsection{Model forecasting results on different forecast horizons}
 In this study, ammonia and colour forecasting models were input with data from the past 24 hours to forecast the values three hours into the future. To demonstrate how the proposed model training methods improved the baseline model performance, the forecasted results were visualized for easier comparisons. As shown in Fig.~\ref{fig:nh3-forecast-fc1}, the proposed model training methods helped the model to forecast better on 21 January as in Fig.~\ref{fig:nh3-lstm-4-fc1} during the low ammonia concentration period. On other days, both LSTM-1-obs and LSTM-4-sg7 shared similar accuracy in forecasting ammonia concentration.
 
 \begin{figure}[!ht]
@@ -277,7 +277,7 @@ In this study, ammonia and colour forecasting models were input with data from t
     \includegraphics[width=\linewidth]{imgs/results/steps/nh3-lstm-4-fc1.png}
     \caption{LSTM-4-sg7, MSE = 0.0529} \label{fig:nh3-lstm-4-fc1}
   \end{subfigure}\\
-\caption{Visualization of ammonia forecasting models at forecast horizon of one.} \label{fig:nh3-forecast-fc1}
+\caption{Visualization of the ammonia forecasting models at forecast horizon of one.} \label{fig:nh3-forecast-fc1}
 \end{figure}
 
 In forecasting ammonia concentration in the second hour into the future as in Fig.~\ref{fig:nh3-forecast-fc2}, both model showed much higher MSE values of 0.2916 and 0.2351 compared to the MSE values of 0.0647 and 0.0529 from Fig.~\ref{fig:nh3-forecast-fc1}. Both models forecasted the ammonia concentration fairly on 17, 18, 19, and 20 January but forecasted poorly on 21 January. During the last two days of forecasting, the patterns of ammonia concentration were quite different compared to the previous four days. For instance, on the 20 January, the peak concentration of ammonia during the day reached to 5.0 mg/L. Both models seemed unable to precisely forecast the trend of the ammonia concentrations, resulting in overestimated ammonia concentration around noon on 21 January. The proposed model training methods did not seem to forecast better than the baseline model. Forecasting longer time horizons requires an adequate training dataset size in terms of the number of training features and the length of the dataset. The ammonia forecasting model as in Fig.~\ref{fig:nh3-lstm-4-fc2} was trained with four features with a dataset length of 18 days. Yet, the results suggested that the quantity of training dataset is not sufficient enough for forecasting two hours into the future.
@@ -293,10 +293,10 @@ In forecasting ammonia concentration in the second hour into the future as in Fi
     \includegraphics[width=\linewidth]{imgs/results/steps/nh3-lstm-4-fc2.png}
     \caption{LSTM-4-sg7, MSE = 0.2351} \label{fig:nh3-lstm-4-fc2}
   \end{subfigure}\\
-\caption{Visualization of ammonia forecasting models at forecast horizon of two.} \label{fig:nh3-forecast-fc2}
+\caption{Visualization of the ammonia forecasting models at forecast horizon of two.} \label{fig:nh3-forecast-fc2}
 \end{figure}
 
-In forecasting ammonia concentration at a forecast horizon of three, although the MSE values of 0.7637 from LSTM-4-sg7 are lower than 0.8025 from LSTM-1-obs, the difference between the two model performances is negligible. For the LSTM-4-sg7 model, we observed ammonia concentrations lower than 0 mg/L were forecasted on 20 January. Both LSTM-4-sg7 and LSTM-1-obs models poorly forecasted the peak ammonia concentration of over 5.0 mg/L on 21 January, which is 3.0 mg/L higher than the actual ammonia concentration on the same day. The results suggest that even with the use of proposed model training methods, the capability of the model performance is still limited due to the limited size of the training dataset.
+In forecasting ammonia concentration at a forecast horizon of three, although the MSE values of 0.7637 from LSTM-4-sg7 are lower than 0.8025 from LSTM-1-obs, the difference between the two model performance is negligible. For the LSTM-4-sg7 model, we observed ammonia concentrations lower than 0 mg/L were forecasted on 20 January. Both LSTM-4-sg7 and LSTM-1-obs models poorly forecasted the peak ammonia concentration of over 5.0 mg/L on 21 January, which is 3.0 mg/L higher than the actual ammonia concentration on the same day. The results suggest that even with the use of proposed model training methods, the capability of the model performance is still limited due to the limited size of the training dataset.
 
 \begin{figure}[!ht]
   \centering
@@ -309,7 +309,7 @@ In forecasting ammonia concentration at a forecast horizon of three, although th
     \includegraphics[width=\linewidth]{imgs/results/steps/nh3-lstm-4-fc3.png}
     \caption{LSTM-4-sg7, MSE = 0.7637} \label{fig:nh3-lstm-4-fc3}
   \end{subfigure}\\
-\caption{Visualization of ammonia forecasting models at forecast horizon of three.} \label{fig:nh3-forecast-fc3}
+\caption{Visualization of the ammonia forecasting models at forecast horizon of three.} \label{fig:nh3-forecast-fc3}
 \end{figure}
 
 LSTM-1-obs and LSTM-3-sg9 models forecasted colour levels at a forecast horizon of one with good MSE values of 22.4922 and 17.5955. The errors between the actual and forecasted values are mostly less than 5 Hazen Units. On 18 January, the colour levels dropped to 80 Hazen Units, and both models forecasted colour levels with errours values of up to 5 Hazen Units and higher. Although on 22 January, the LSTM-3-sg9 model forecasted the colour level of 92 Hazen Units, which is 10 Hazen Units off from the actual values, the general model performance is satisfactory. 
@@ -325,7 +325,7 @@ LSTM-1-obs and LSTM-3-sg9 models forecasted colour levels at a forecast horizon 
     \includegraphics[width=\linewidth]{imgs/results/steps/colour-lstm-3-fc1.png}
     \caption{LSTM-3-sg9, MSE = 17.5955} \label{fig:colour-lstm-3-fc1}
   \end{subfigure}\\
-\caption{Visualization of colour forecasting models at at forecast horizon of one.} \label{fig:colour-forecast-fc1}
+\caption{Visualization of the colour forecasting models at at forecast horizon of one.} \label{fig:colour-forecast-fc1}
 \end{figure}
 
 In forecasting colour levels at a forecast horizon of two, the MSE values of LSTM-1-obs and LSTM-3-sg9 increased from 22.4922 and 17.5955 to 62.6678 and 47.4252. The forecasting errors expanded from less than 5 Hazen Units on average to 10 Hazen Units. In Fig.~\ref{fig:colour-forecast-fc2}, LSTM-3-sg9 showed more reliable forecasting results compared to LSTM-1-obs by generating minor errors between the forecasted and actual values. However, the lowest forecasted colour level on 22 January has increased from 10 to 24 Hazen Unis, and we can see clearly that the models were getting less reliable in forecasting two hours into the future in forecasting colour levels. The cause of it can also be attributed to insufficient quantity of training dataset.
@@ -341,7 +341,7 @@ In forecasting colour levels at a forecast horizon of two, the MSE values of LST
     \includegraphics[width=\linewidth]{imgs/results/steps/colour-lstm-3-fc2.png}
     \caption{LSTM-3-sg9, MSE = 47.4252} \label{fig:colour-lstm-3-fc2}
   \end{subfigure}\\
-\caption{Visualization of colour forecasting models at forecast horizon of two.} \label{fig:colour-forecast-fc2}
+\caption{Visualization of the colour forecasting models at forecast horizon of two.} \label{fig:colour-forecast-fc2}
 \end{figure}
 
 In Fig.~\ref{fig:colour-forecast-fc3}, the MSE values of LSTM-1-obs and LSTM-3-sg9 have increased to 116.8928 and 103.4329 in forecasting colour levels at forecast horizons of three. We first noticed that both the models failed to forecast the lowest colour levels on 19 January. The significant drop in colour level can be a rare event in which the model did not learn how to react to such a change of colour levels from historical data. On the following days of 20 January, both the models underestimated the colour levels by forecasting up to 20 Hazen Units lower. The model performance deteriorated even faster than using ammonia forecasting models to forecast ammonia concentration at a forecast horizon of three. The results suggest that with much strong fluctuation of colour levels during the day, it is not reasonable to use colour forecasting models trained with only three input features to forecast three hours into the future.
@@ -357,5 +357,5 @@ In Fig.~\ref{fig:colour-forecast-fc3}, the MSE values of LSTM-1-obs and LSTM-3-s
     \includegraphics[width=\linewidth]{imgs/results/steps/colour-lstm-3-fc3.png}
     \caption{LSTM-3-sg9, MSE = 103.4329} \label{fig:colour-lstm-3-fc3}
   \end{subfigure}\\
-\caption{Visualization of colour forecasting models at forecast horizon of three.} \label{fig:colour-forecast-fc3}
+\caption{Visualization of the colour forecasting models at forecast horizon of three.} \label{fig:colour-forecast-fc3}
 \end{figure}

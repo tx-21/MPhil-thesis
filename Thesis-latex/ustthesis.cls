@@ -769,9 +769,9 @@ scholarly research.}
 %  \pchapter{Acknowledgements}
   % \pchapter{Acknowledgments}
     \begin{center}
-      {\Lbi Acknowledgments \par\par\normalsize}
+      {\Lbi Acknowledgements \par\par\normalsize}
     \end{center}
-  \addcontentsline{toc}{chapter}{Acknowledgments}
+  \addcontentsline{toc}{chapter}{Acknowledgements}
   \textspace
 }
 % dfk 4/1/91: added \par to force end of paragraph before undoing

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.27)  28 JUL 2022 19:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.3) (preloaded format=pdflatex 2022.3.27)  28 JUL 2022 23:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -692,31 +692,31 @@ Package tocloft Info: The document has chapter divisions on input line 51.
 ) (C:\Users\Tim\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\times.sty
 Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
 )
-Package translations Info: No language package found. I am going to use `english' as default language. on input line 147.
-LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 147.
+Package translations Info: No language package found. I am going to use `english' as default language. on input line 150.
+LaTeX Font Info:    Trying to load font information for OT1+ptm on input line 150.
  (C:\Users\Tim\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 ) (thesis.aux)
 \openout1 = `thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 150.
+LaTeX Font Info:    ... okay on input line 150.
  (C:\Users\Tim\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count368
@@ -743,14 +743,14 @@ File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
  (C:\Users\Tim\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 147.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 150.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: changepage package is loaded.
 \caption@adjustwidth@hsize=\dimen325
 \caption@adjustwidth@linewidth=\dimen326
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 147.
+Package hyperref Info: Link coloring ON on input line 150.
  (C:\Users\Tim\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
  (C:\Users\Tim\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcount.sty
@@ -760,9 +760,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count378
 )
-LaTeX Info: Redefining \ref on input line 147.
-LaTeX Info: Redefining \pageref on input line 147.
-LaTeX Info: Redefining \nameref on input line 147.
+LaTeX Info: Redefining \ref on input line 150.
+LaTeX Info: Redefining \pageref on input line 150.
+LaTeX Info: Redefining \nameref on input line 150.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -809,32 +809,32 @@ Warning: \subject {Subject Name} not yet defined.
 Title page
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\nbi' on input line 160.
+(hyperref)                removing `\nbi' on input line 162.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\nbi' on input line 160.
+(hyperref)                removing `\nbi' on input line 162.
 
 [1
 
 
 {C:/Users/Tim/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+msa on input line 160.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 162.
  (C:\Users\Tim\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 160.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 162.
  (C:\Users\Tim\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 Authorization Page
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\nbi' on input line 160.
+(hyperref)                removing `\nbi' on input line 162.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\nbi' on input line 160.
+(hyperref)                removing `\nbi' on input line 162.
 
 [2] (sections/signature.tex
 Signature Page
@@ -849,11 +849,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 [3]) (sections/ack.tex)
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\nbi' on input line 203.
+(hyperref)                removing `\nbi' on input line 205.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\nbi' on input line 203.
+(hyperref)                removing `\nbi' on input line 205.
 
 [4]
 Table of Contents
@@ -875,11 +875,11 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\nbi' on input line 211.
+(hyperref)                removing `\nbi' on input line 213.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\nbi' on input line 211.
+(hyperref)                removing `\nbi' on input line 213.
 
 [6]
 List of Figures
@@ -901,15 +901,20 @@ Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\nbi' on input line 219.
+(hyperref)                removing `\nbi' on input line 221.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\nbi' on input line 219.
+(hyperref)                removing `\nbi' on input line 221.
 
 [8]
 List of Tables
-(thesis.lot)
+(thesis.lot
+Overfull \hbox (7.92522pt too wide) in paragraph at lines 8--8
+ [][] [][][]\OT1/ptm/m/n/12 Baseline per-for-mance of the am-mo-nia fore-cast-ing model, eval-u-ated on test dataset 
+ []
+
+)
 \tf@lot=\write6
 \openout6 = `thesis.lot'.
 
@@ -979,7 +984,7 @@ CHAPTER 2.
 \l__nicematrix_final_i_int=\count385
 \l__nicematrix_final_j_int=\count386
  [15]
-<imgs/propose-frameworks-for-control-strategy-design.png, id=544, 911.54839pt x 426.30696pt>
+<imgs/propose-frameworks-for-control-strategy-design.png, id=545, 911.54839pt x 426.30696pt>
 File: imgs/propose-frameworks-for-control-strategy-design.png Graphic file (type png)
 <use imgs/propose-frameworks-for-control-strategy-design.png>
 Package pdftex.def Info: imgs/propose-frameworks-for-control-strategy-design.png  used on input line 117.
@@ -996,12 +1001,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 143--151
 
 [19]) (chapters/chapter-3-methods.tex [20]
 CHAPTER 3.
-<imgs/Sewage-treatment-process-flowchart.png, id=636, 1004.03679pt x 412.54124pt>
+<imgs/Sewage-treatment-process-flowchart.png, id=637, 1004.03679pt x 412.54124pt>
 File: imgs/Sewage-treatment-process-flowchart.png Graphic file (type png)
 <use imgs/Sewage-treatment-process-flowchart.png>
 Package pdftex.def Info: imgs/Sewage-treatment-process-flowchart.png  used on input line 8.
 (pdftex.def)             Requested size: 409.71692pt x 168.34355pt.
-<imgs/instrument/sampling-tank.png, id=637, 677.10107pt x 488.25269pt>
+<imgs/instrument/sampling-tank.png, id=638, 677.10107pt x 488.25269pt>
 File: imgs/instrument/sampling-tank.png Graphic file (type png)
 <use imgs/instrument/sampling-tank.png>
 Package pdftex.def Info: imgs/instrument/sampling-tank.png  used on input line 17.
@@ -1009,7 +1014,7 @@ Package pdftex.def Info: imgs/instrument/sampling-tank.png  used on input line 1
 [21
 
  <./imgs/Sewage-treatment-process-flowchart.png>] [22 <./imgs/instrument/sampling-tank.png>]
-<imgs/instrument/ammonium-sensor.png, id=656, 283.0575pt x 325.215pt>
+<imgs/instrument/ammonium-sensor.png, id=657, 283.0575pt x 325.215pt>
 File: imgs/instrument/ammonium-sensor.png Graphic file (type png)
 <use imgs/instrument/ammonium-sensor.png>
 Package pdftex.def Info: imgs/instrument/ammonium-sensor.png  used on input line 30.
@@ -1019,13 +1024,13 @@ Underfull \hbox (badness 2065) in paragraph at lines 31--31
 []\OT1/ptm/m/n/10.95 (a) |AmmoLyt$[]$Plus 700 IQ,
  []
 
-<imgs/instrument/controller-for-iq-sensor.png, id=657, 335.53929pt x 326.93571pt>
+<imgs/instrument/controller-for-iq-sensor.png, id=658, 335.53929pt x 326.93571pt>
 File: imgs/instrument/controller-for-iq-sensor.png Graphic file (type png)
 <use imgs/instrument/controller-for-iq-sensor.png>
 Package pdftex.def Info: imgs/instrument/controller-for-iq-sensor.png  used on input line 35.
 (pdftex.def)             Requested size: 136.57462pt x 133.07172pt.
 [23 <./imgs/instrument/ammonium-sensor.png> <./imgs/instrument/controller-for-iq-sensor.png>]
-<imgs/instrument/SIP10.png, id=668, 424.15607pt x 353.1766pt>
+<imgs/instrument/SIP10.png, id=669, 424.15607pt x 353.1766pt>
 File: imgs/instrument/SIP10.png Graphic file (type png)
 <use imgs/instrument/SIP10.png>
 Package pdftex.def Info: imgs/instrument/SIP10.png  used on input line 48.
@@ -1035,7 +1040,7 @@ Underfull \hbox (badness 5345) in paragraph at lines 49--49
 []\OT1/ptm/m/n/10.95 (a) |SIP10 peri-staltic pump,
  []
 
-<imgs/instrument/DR3900_PS.png, id=669, 521.80661pt x 394.04356pt>
+<imgs/instrument/DR3900_PS.png, id=670, 521.80661pt x 394.04356pt>
 File: imgs/instrument/DR3900_PS.png Graphic file (type png)
 <use imgs/instrument/DR3900_PS.png>
 Package pdftex.def Info: imgs/instrument/DR3900_PS.png  used on input line 53.
@@ -1045,22 +1050,22 @@ Underfull \hbox (badness 1248) in paragraph at lines 54--54
 []\OT1/ptm/m/n/10.95 (b) |DR3900 spec-tropho-tome-
  []
 
-<imgs/instrument/actuator-mount.png, id=670, 1152.01822pt x 508.0409pt>
+<imgs/instrument/actuator-mount.png, id=671, 1152.01822pt x 508.0409pt>
 File: imgs/instrument/actuator-mount.png Graphic file (type png)
 <use imgs/instrument/actuator-mount.png>
 Package pdftex.def Info: imgs/instrument/actuator-mount.png  used on input line 58.
 (pdftex.def)             Requested size: 318.66948pt x 140.52951pt.
-<imgs/leachate-effluent-blend-ratio-color-plot/first-80d.png, id=672, 891.5709pt x 339.1872pt>
+<imgs/leachate-effluent-blend-ratio-color-plot/first-80d.png, id=673, 891.5709pt x 339.1872pt>
 File: imgs/leachate-effluent-blend-ratio-color-plot/first-80d.png Graphic file (type png)
 <use imgs/leachate-effluent-blend-ratio-color-plot/first-80d.png>
 Package pdftex.def Info: imgs/leachate-effluent-blend-ratio-color-plot/first-80d.png  used on input line 69.
 (pdftex.def)             Requested size: 455.24411pt x 173.1902pt.
-<imgs/leachate-effluent-blend-ratio-color-plot/second-80d.png, id=673, 891.5709pt x 339.1872pt>
+<imgs/leachate-effluent-blend-ratio-color-plot/second-80d.png, id=674, 891.5709pt x 339.1872pt>
 File: imgs/leachate-effluent-blend-ratio-color-plot/second-80d.png Graphic file (type png)
 <use imgs/leachate-effluent-blend-ratio-color-plot/second-80d.png>
 Package pdftex.def Info: imgs/leachate-effluent-blend-ratio-color-plot/second-80d.png  used on input line 74.
 (pdftex.def)             Requested size: 455.24411pt x 173.1902pt.
-<imgs/instrument/colour-sampler.png, id=674, 835.83696pt x 498.14679pt>
+<imgs/instrument/colour-sampler.png, id=675, 835.83696pt x 498.14679pt>
 File: imgs/instrument/colour-sampler.png Graphic file (type png)
 <use imgs/instrument/colour-sampler.png>
 Package pdftex.def Info: imgs/instrument/colour-sampler.png  used on input line 82.
@@ -1068,7 +1073,7 @@ Package pdftex.def Info: imgs/instrument/colour-sampler.png  used on input line 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<imgs/results/data.png, id=676, 1197.97563pt x 373.395pt>
+<imgs/results/data.png, id=677, 1197.97563pt x 373.395pt>
 File: imgs/results/data.png Graphic file (type png)
 <use imgs/results/data.png>
 Package pdftex.def Info: imgs/results/data.png  used on input line 91.
@@ -1077,7 +1082,7 @@ Package pdftex.def Info: imgs/results/data.png  used on input line 91.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [24 <./imgs/instrument/SIP10.png> <./imgs/instrument/DR3900_PS.png> <./imgs/instrument/actuator-mount.png>] [25 <./imgs/leachate-effluent-blend-ratio-color-plot/first-80d.png> <./imgs/leachate-effluent-blend-ratio-color-plot/second-80d.png>]
-<imgs/pre-processing/training-scheme.png, id=698, 653.44125pt x 519.22554pt>
+<imgs/pre-processing/training-scheme.png, id=699, 653.44125pt x 519.22554pt>
 File: imgs/pre-processing/training-scheme.png Graphic file (type png)
 <use imgs/pre-processing/training-scheme.png>
 Package pdftex.def Info: imgs/pre-processing/training-scheme.png  used on input line 108.
@@ -1092,33 +1097,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 122--129
  []
 
 [28]
-<imgs/pre-processing/demo-polynomial-fitting.png, id=736, 502.9992pt x 402.5439pt>
+<imgs/pre-processing/demo-polynomial-fitting.png, id=737, 502.9992pt x 402.5439pt>
 File: imgs/pre-processing/demo-polynomial-fitting.png Graphic file (type png)
 <use imgs/pre-processing/demo-polynomial-fitting.png>
 Package pdftex.def Info: imgs/pre-processing/demo-polynomial-fitting.png  used on input line 155.
 (pdftex.def)             Requested size: 318.66948pt x 255.04129pt.
-<imgs/pre-processing/demo-weight-ewma.png, id=741, 479.391pt x 308.95425pt>
+<imgs/pre-processing/demo-weight-ewma.png, id=742, 479.391pt x 308.95425pt>
 File: imgs/pre-processing/demo-weight-ewma.png Graphic file (type png)
 <use imgs/pre-processing/demo-weight-ewma.png>
 Package pdftex.def Info: imgs/pre-processing/demo-weight-ewma.png  used on input line 160.
 (pdftex.def)             Requested size: 409.71692pt x 264.0549pt.
  [29 <./imgs/pre-processing/demo-polynomial-fitting.png> <./imgs/pre-processing/demo-weight-ewma.png>]
-<imgs/pre-processing/sg-filter.png, id=757, 483.30562pt x 318.69063pt>
+<imgs/pre-processing/sg-filter.png, id=758, 483.30562pt x 318.69063pt>
 File: imgs/pre-processing/sg-filter.png Graphic file (type png)
 <use imgs/pre-processing/sg-filter.png>
 Package pdftex.def Info: imgs/pre-processing/sg-filter.png  used on input line 190.
 (pdftex.def)             Requested size: 318.66948pt x 210.13707pt.
-<imgs/pre-processing/ew-filter.png, id=758, 483.30562pt x 318.69063pt>
+<imgs/pre-processing/ew-filter.png, id=759, 483.30562pt x 318.69063pt>
 File: imgs/pre-processing/ew-filter.png Graphic file (type png)
 <use imgs/pre-processing/ew-filter.png>
 Package pdftex.def Info: imgs/pre-processing/ew-filter.png  used on input line 195.
 (pdftex.def)             Requested size: 318.66948pt x 210.13707pt.
-<imgs/pre-processing/sg-filter-colour.png, id=759, 485.815pt x 318.69063pt>
+<imgs/pre-processing/sg-filter-colour.png, id=760, 485.815pt x 318.69063pt>
 File: imgs/pre-processing/sg-filter-colour.png Graphic file (type png)
 <use imgs/pre-processing/sg-filter-colour.png>
 Package pdftex.def Info: imgs/pre-processing/sg-filter-colour.png  used on input line 204.
 (pdftex.def)             Requested size: 318.66948pt x 209.04294pt.
-<imgs/pre-processing/ewma-filter-colour.png, id=760, 485.815pt x 318.69063pt>
+<imgs/pre-processing/ewma-filter-colour.png, id=761, 485.815pt x 318.69063pt>
 File: imgs/pre-processing/ewma-filter-colour.png Graphic file (type png)
 <use imgs/pre-processing/ewma-filter-colour.png>
 Package pdftex.def Info: imgs/pre-processing/ewma-filter-colour.png  used on input line 209.
@@ -1128,33 +1133,33 @@ Underfull \hbox (badness 10000) in paragraph at lines 218--223
 
  []
 
-<imgs/pre-processing/prominence.png, id=762, 451.6875pt x 365.65178pt>
+<imgs/pre-processing/prominence.png, id=763, 451.6875pt x 365.65178pt>
 File: imgs/pre-processing/prominence.png Graphic file (type png)
 <use imgs/pre-processing/prominence.png>
 Package pdftex.def Info: imgs/pre-processing/prominence.png  used on input line 228.
 (pdftex.def)             Requested size: 318.66948pt x 257.98538pt.
 [30] [31 <./imgs/pre-processing/sg-filter.png> <./imgs/pre-processing/ew-filter.png>]
-<imgs/pre-processing/geomap.png, id=784, 782.925pt x 511.48232pt>
+<imgs/pre-processing/geomap.png, id=785, 782.925pt x 511.48232pt>
 File: imgs/pre-processing/geomap.png Graphic file (type png)
 <use imgs/pre-processing/geomap.png>
 Package pdftex.def Info: imgs/pre-processing/geomap.png  used on input line 238.
 (pdftex.def)             Requested size: 432.48051pt x 282.54144pt.
-<imgs/pre-processing/blending-ratio.png, id=785, 492.98465pt x 475.34732pt>
+<imgs/pre-processing/blending-ratio.png, id=786, 492.98465pt x 475.34732pt>
 File: imgs/pre-processing/blending-ratio.png Graphic file (type png)
 <use imgs/pre-processing/blending-ratio.png>
 Package pdftex.def Info: imgs/pre-processing/blending-ratio.png  used on input line 247.
 (pdftex.def)             Requested size: 318.66948pt x 307.27484pt.
-<imgs/pre-processing/pos-encoding.png, id=786, 366.8907pt x 366.168pt>
+<imgs/pre-processing/pos-encoding.png, id=787, 366.8907pt x 366.168pt>
 File: imgs/pre-processing/pos-encoding.png Graphic file (type png)
 <use imgs/pre-processing/pos-encoding.png>
 Package pdftex.def Info: imgs/pre-processing/pos-encoding.png  used on input line 251.
 (pdftex.def)             Requested size: 227.62206pt x 227.17825pt.
-<imgs/leachate-effluent-blend-ratio-color-plot/colour-blend-coef.png, id=787, 891.5709pt x 339.1872pt>
+<imgs/leachate-effluent-blend-ratio-color-plot/colour-blend-coef.png, id=788, 443.4969pt x 331.4784pt>
 File: imgs/leachate-effluent-blend-ratio-color-plot/colour-blend-coef.png Graphic file (type png)
 <use imgs/leachate-effluent-blend-ratio-color-plot/colour-blend-coef.png>
 Package pdftex.def Info: imgs/leachate-effluent-blend-ratio-color-plot/colour-blend-coef.png  used on input line 261.
-(pdftex.def)             Requested size: 318.66948pt x 121.23262pt.
-<imgs/results/colour-pattern.png, id=788, 469.5141pt x 331.4784pt>
+(pdftex.def)             Requested size: 318.66948pt x 238.19386pt.
+<imgs/results/colour-pattern.png, id=789, 469.5141pt x 331.4784pt>
 File: imgs/results/colour-pattern.png Graphic file (type png)
 <use imgs/results/colour-pattern.png>
 Package pdftex.def Info: imgs/results/colour-pattern.png  used on input line 266.
@@ -1165,60 +1170,60 @@ Underfull \hbox (badness 10000) in paragraph at lines 274--280
  []
 
 [34 <./imgs/pre-processing/blending-ratio.png> <./imgs/pre-processing/pos-encoding.png>]
-<imgs/pre-processing/hourly-consumption-pattern.png, id=813, 945.96268pt x 579.02036pt>
+<imgs/pre-processing/hourly-consumption-pattern.png, id=814, 945.96268pt x 579.02036pt>
 File: imgs/pre-processing/hourly-consumption-pattern.png Graphic file (type png)
 <use imgs/pre-processing/hourly-consumption-pattern.png>
 Package pdftex.def Info: imgs/pre-processing/hourly-consumption-pattern.png  used on input line 285.
 (pdftex.def)             Requested size: 364.19667pt x 222.92795pt.
-<imgs/results/nh3-pattern.png, id=818, 643.203pt x 428.5611pt>
+<imgs/results/nh3-pattern.png, id=819, 643.203pt x 428.5611pt>
 File: imgs/results/nh3-pattern.png Graphic file (type png)
 <use imgs/results/nh3-pattern.png>
 Package pdftex.def Info: imgs/results/nh3-pattern.png  used on input line 292.
 (pdftex.def)             Requested size: 364.19667pt x 242.66061pt.
  [35 <./imgs/leachate-effluent-blend-ratio-color-plot/colour-blend-coef.png> <./imgs/results/colour-pattern.png>] [36 <./imgs/pre-processing/hourly-consumption-pattern.png> <./imgs/results/nh3-pattern.png>]
-<imgs/forecast-concept.png, id=837, 774.32143pt x 563.10374pt>
+<imgs/forecast-concept.png, id=838, 774.32143pt x 563.10374pt>
 File: imgs/forecast-concept.png Graphic file (type png)
 <use imgs/forecast-concept.png>
 Package pdftex.def Info: imgs/forecast-concept.png  used on input line 307.
 (pdftex.def)             Requested size: 409.71692pt x 297.9538pt.
  [37]
-<imgs/pre-processing/feature-selection.png, id=849, 1011.78pt x 379.84767pt>
+<imgs/pre-processing/feature-selection.png, id=850, 1011.78pt x 379.84767pt>
 File: imgs/pre-processing/feature-selection.png Graphic file (type png)
 <use imgs/pre-processing/feature-selection.png>
 Package pdftex.def Info: imgs/pre-processing/feature-selection.png  used on input line 318.
 (pdftex.def)             Requested size: 455.24411pt x 170.91248pt.
- [38 <./imgs/forecast-concept.png>]
+ [38 <./imgs/forecast-concept.png>] [39 <./imgs/pre-processing/feature-selection.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 333--339
 
  []
 
-[39 <./imgs/pre-processing/feature-selection.png>]
-<imgs/models/random-forest.png, id=878, 2765.33125pt x 2001.4775pt>
+<imgs/models/random-forest.png, id=875, 2765.33125pt x 2001.4775pt>
 File: imgs/models/random-forest.png Graphic file (type png)
 <use imgs/models/random-forest.png>
 Package pdftex.def Info: imgs/models/random-forest.png  used on input line 350.
 (pdftex.def)             Requested size: 409.71692pt x 296.54387pt.
-<imgs/models/DNN.png, id=883, 450.39696pt x 302.84572pt>
+<imgs/models/DNN.png, id=880, 450.39696pt x 302.84572pt>
 File: imgs/models/DNN.png Graphic file (type png)
 <use imgs/models/DNN.png>
 Package pdftex.def Info: imgs/models/DNN.png  used on input line 355.
 (pdftex.def)             Requested size: 318.66948pt x 214.27797pt.
-<imgs/models/rnn-2.png, id=894, 353.1766pt x 348.44464pt>
+[40] [41 <./imgs/models/random-forest.png> <./imgs/models/DNN.png>]
+<imgs/models/rnn-2.png, id=912, 353.1766pt x 348.44464pt>
 File: imgs/models/rnn-2.png Graphic file (type png)
 <use imgs/models/rnn-2.png>
 Package pdftex.def Info: imgs/models/rnn-2.png  used on input line 376.
 (pdftex.def)             Requested size: 204.85846pt x 202.11398pt.
-<imgs/models/lstm-2.png, id=895, 346.29375pt x 352.31625pt>
+<imgs/models/lstm-2.png, id=913, 346.29375pt x 352.31625pt>
 File: imgs/models/lstm-2.png Graphic file (type png)
 <use imgs/models/lstm-2.png>
 Package pdftex.def Info: imgs/models/lstm-2.png  used on input line 380.
 (pdftex.def)             Requested size: 204.85846pt x 208.42387pt.
-<imgs/models/gru-2.png, id=896, 336.82982pt x 347.15411pt>
+<imgs/models/gru-2.png, id=914, 336.82982pt x 347.15411pt>
 File: imgs/models/gru-2.png Graphic file (type png)
 <use imgs/models/gru-2.png>
 Package pdftex.def Info: imgs/models/gru-2.png  used on input line 385.
 (pdftex.def)             Requested size: 204.85846pt x 211.13333pt.
- [40] [41 <./imgs/models/random-forest.png> <./imgs/models/DNN.png>] [42 <./imgs/models/rnn-2.png> <./imgs/models/lstm-2.png> <./imgs/models/gru-2.png>] [43]
+ [42 <./imgs/models/rnn-2.png> <./imgs/models/lstm-2.png> <./imgs/models/gru-2.png>] [43] [44]
 Underfull \hbox (badness 10000) in paragraph at lines 430--437
 
  []
@@ -1228,28 +1233,27 @@ Underfull \hbox (badness 10000) in paragraph at lines 438--444
 
  []
 
-[44]
-<imgs/low-lr.png, id=976, 232.72661pt x 165.18857pt>
+<imgs/low-lr.png, id=974, 232.72661pt x 165.18857pt>
 File: imgs/low-lr.png Graphic file (type png)
 <use imgs/low-lr.png>
 Package pdftex.def Info: imgs/low-lr.png  used on input line 450.
 (pdftex.def)             Requested size: 204.85846pt x 145.41173pt.
-<imgs/decent-lr.png, id=977, 229.71536pt x 166.04893pt>
+<imgs/decent-lr.png, id=975, 229.71536pt x 166.04893pt>
 File: imgs/decent-lr.png Graphic file (type png)
 <use imgs/decent-lr.png>
 Package pdftex.def Info: imgs/decent-lr.png  used on input line 454.
 (pdftex.def)             Requested size: 204.85846pt x 148.08713pt.
-<imgs/high-lr.png, id=978, 237.45857pt x 166.90929pt>
+<imgs/high-lr.png, id=976, 237.45857pt x 166.90929pt>
 File: imgs/high-lr.png Graphic file (type png)
 <use imgs/high-lr.png>
 Package pdftex.def Info: imgs/high-lr.png  used on input line 458.
 (pdftex.def)             Requested size: 204.85846pt x 143.9976pt.
-<imgs/decay-lr.png, id=979, 304.99661pt x 226.27393pt>
+<imgs/decay-lr.png, id=977, 304.99661pt x 226.27393pt>
 File: imgs/decay-lr.png Graphic file (type png)
 <use imgs/decay-lr.png>
 Package pdftex.def Info: imgs/decay-lr.png  used on input line 462.
 (pdftex.def)             Requested size: 204.85846pt x 151.98598pt.
-
+[45]
 Underfull \hbox (badness 10000) in paragraph at lines 472--479
 
  []
@@ -1259,179 +1263,179 @@ pdfTeX warning (ext4): destination with the same identifier (name{tabularnote.1}
 <to be read again> 
                    \relax 
 l.485 ...& Input & h.d\tabularnote{Hidden layer.} 
-                                                  & Output & Num. of Exp\tab... [45]) (chapters/chapter-4-results.tex [46 <./imgs/low-lr.png> <./imgs/decent-lr.png> <./imgs/high-lr.png> <./imgs/decay-lr.png>]
+                                                  & Output & Num. of Exp\tab...) (chapters/chapter-4-results.tex [46 <./imgs/low-lr.png> <./imgs/decent-lr.png> <./imgs/high-lr.png> <./imgs/decay-lr.png>] [47]
 CHAPTER 4.
-<imgs/results/baseline-models-nh3.png, id=1008, 338.7054pt x 290.7663pt>
+<imgs/results/baseline-models-nh3.png, id=1013, 338.7054pt x 290.7663pt>
 File: imgs/results/baseline-models-nh3.png Graphic file (type png)
 <use imgs/results/baseline-models-nh3.png>
 Package pdftex.def Info: imgs/results/baseline-models-nh3.png  used on input line 8.
 (pdftex.def)             Requested size: 341.43307pt x 293.12148pt.
-<imgs/results/baseline-models-colour.png, id=1009, 345.4506pt x 290.7663pt>
+<imgs/results/baseline-models-colour.png, id=1014, 345.4506pt x 290.7663pt>
 File: imgs/results/baseline-models-colour.png Graphic file (type png)
 <use imgs/results/baseline-models-colour.png>
 Package pdftex.def Info: imgs/results/baseline-models-colour.png  used on input line 13.
 (pdftex.def)             Requested size: 341.43307pt x 287.39366pt.
-[47
+[48
 
 ]
 
-LaTeX Warning: Text page 48 contains only floats.
+LaTeX Warning: Text page 49 contains only floats.
 
-[48 <./imgs/results/baseline-models-nh3.png> <./imgs/results/baseline-models-colour.png>] [49]
-<imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-nh3.png, id=1033, 354.123pt x 287.1528pt>
+[49 <./imgs/results/baseline-models-nh3.png> <./imgs/results/baseline-models-colour.png>] [50]
+<imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-nh3.png, id=1039, 354.123pt x 287.1528pt>
 File: imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-nh3.png Graphic file (type png)
 <use imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-nh3.png>
 Package pdftex.def Info: imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-nh3.png  used on input line 34.
 (pdftex.def)             Requested size: 341.43307pt x 276.88162pt.
-<imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-nh3.png, id=1034, 353.1594pt x 284.9847pt>
+<imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-nh3.png, id=1040, 353.1594pt x 284.9847pt>
 File: imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-nh3.png Graphic file (type png)
 <use imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-nh3.png>
 Package pdftex.def Info: imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-nh3.png  used on input line 39.
 (pdftex.def)             Requested size: 341.43307pt x 275.52162pt.
- [50 <./imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-nh3.png> <./imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-nh3.png>]
-<imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-colour.png, id=1042, 353.8821pt x 287.1528pt>
+ [51 <./imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-nh3.png> <./imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-nh3.png>]
+<imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-colour.png, id=1047, 353.8821pt x 287.1528pt>
 File: imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-colour.png Graphic file (type png)
 <use imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-colour.png>
 Package pdftex.def Info: imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-colour.png  used on input line 49.
 (pdftex.def)             Requested size: 341.43307pt x 277.0525pt.
-<imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-colour.png, id=1043, 352.9185pt x 284.9847pt>
+<imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-colour.png, id=1048, 352.9185pt x 284.9847pt>
 File: imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-colour.png Graphic file (type png)
 <use imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-colour.png>
 Package pdftex.def Info: imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-colour.png  used on input line 54.
 (pdftex.def)             Requested size: 341.43307pt x 275.71732pt.
- [51 <./imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-colour.png> <./imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-colour.png>] [52]
-<imgs/pre-processing/outliers.png, id=1058, 860.2539pt x 287.1528pt>
+ [52 <./imgs/results/ammonia-colour-forecast-plot/00-RF_1_pred_Step1-obs-colour.png> <./imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-colour.png>] [53]
+<imgs/pre-processing/outliers.png, id=1063, 860.2539pt x 287.1528pt>
 File: imgs/pre-processing/outliers.png Graphic file (type png)
 <use imgs/pre-processing/outliers.png>
 Package pdftex.def Info: imgs/pre-processing/outliers.png  used on input line 103.
 (pdftex.def)             Requested size: 455.24411pt x 151.95802pt.
- [53]
-<imgs/results/heterogeneity-validation.png, id=1068, 488.3043pt x 331.7193pt>
+ [54]
+<imgs/results/heterogeneity-validation.png, id=1073, 488.3043pt x 331.7193pt>
 File: imgs/results/heterogeneity-validation.png Graphic file (type png)
 <use imgs/results/heterogeneity-validation.png>
 Package pdftex.def Info: imgs/results/heterogeneity-validation.png  used on input line 120.
 (pdftex.def)             Requested size: 273.14923pt x 185.56413pt.
-<imgs/results/heterogeneity-jan-test.png, id=1069, 488.3043pt x 331.7193pt>
+<imgs/results/heterogeneity-jan-test.png, id=1074, 488.3043pt x 331.7193pt>
 File: imgs/results/heterogeneity-jan-test.png Graphic file (type png)
 <use imgs/results/heterogeneity-jan-test.png>
 Package pdftex.def Info: imgs/results/heterogeneity-jan-test.png  used on input line 124.
 (pdftex.def)             Requested size: 273.14923pt x 185.56413pt.
-<imgs/results/heterogeneity-test-oct.png, id=1070, 488.3043pt x 331.7193pt>
+<imgs/results/heterogeneity-test-oct.png, id=1075, 488.3043pt x 331.7193pt>
 File: imgs/results/heterogeneity-test-oct.png Graphic file (type png)
 <use imgs/results/heterogeneity-test-oct.png>
 Package pdftex.def Info: imgs/results/heterogeneity-test-oct.png  used on input line 128.
 (pdftex.def)             Requested size: 273.14923pt x 185.56413pt.
- [54 <./imgs/pre-processing/outliers.png>]
+ [55 <./imgs/pre-processing/outliers.png>]
 
-LaTeX Warning: Text page 55 contains only floats.
+LaTeX Warning: Text page 56 contains only floats.
 
-[55 <./imgs/results/heterogeneity-validation.png> <./imgs/results/heterogeneity-jan-test.png> <./imgs/results/heterogeneity-test-oct.png>] [56] [57]
-<imgs/results/feature-engineering/pre-processing-nh3-jan.png, id=1096, 344.2461pt x 290.7663pt>
+[56 <./imgs/results/heterogeneity-validation.png> <./imgs/results/heterogeneity-jan-test.png> <./imgs/results/heterogeneity-test-oct.png>] [57] [58]
+<imgs/results/feature-engineering/pre-processing-nh3-jan.png, id=1101, 344.2461pt x 290.7663pt>
 File: imgs/results/feature-engineering/pre-processing-nh3-jan.png Graphic file (type png)
 <use imgs/results/feature-engineering/pre-processing-nh3-jan.png>
 Package pdftex.def Info: imgs/results/feature-engineering/pre-processing-nh3-jan.png  used on input line 209.
 (pdftex.def)             Requested size: 341.43307pt x 288.40967pt.
-<imgs/results/feature-engineering/pre-processing-colour.png, id=1097, 344.2461pt x 290.7663pt>
+<imgs/results/feature-engineering/pre-processing-colour.png, id=1102, 344.2461pt x 290.7663pt>
 File: imgs/results/feature-engineering/pre-processing-colour.png Graphic file (type png)
 <use imgs/results/feature-engineering/pre-processing-colour.png>
 Package pdftex.def Info: imgs/results/feature-engineering/pre-processing-colour.png  used on input line 214.
 (pdftex.def)             Requested size: 341.43307pt x 288.40967pt.
- [58] [59 <./imgs/results/feature-engineering/pre-processing-nh3-jan.png> <./imgs/results/feature-engineering/pre-processing-colour.png>] [60]
-<imgs/results/feature-engineering/nh3-input-1-4-comparison.png, id=1119, 498.9039pt x 354.3639pt>
+ [59] [60 <./imgs/results/feature-engineering/pre-processing-nh3-jan.png> <./imgs/results/feature-engineering/pre-processing-colour.png>] [61]
+<imgs/results/feature-engineering/nh3-input-1-4-comparison.png, id=1124, 498.9039pt x 354.3639pt>
 File: imgs/results/feature-engineering/nh3-input-1-4-comparison.png Graphic file (type png)
 <use imgs/results/feature-engineering/nh3-input-1-4-comparison.png>
 Package pdftex.def Info: imgs/results/feature-engineering/nh3-input-1-4-comparison.png  used on input line 237.
 (pdftex.def)             Requested size: 455.24411pt x 323.36923pt.
- [61 <./imgs/results/feature-engineering/nh3-input-1-4-comparison.png>]
-<imgs/results/feature-engineering/colour-input-1-4-comparison.png, id=1126, 498.9039pt x 354.3639pt>
+ [62 <./imgs/results/feature-engineering/nh3-input-1-4-comparison.png>]
+<imgs/results/feature-engineering/colour-input-1-4-comparison.png, id=1132, 498.9039pt x 354.3639pt>
 File: imgs/results/feature-engineering/colour-input-1-4-comparison.png Graphic file (type png)
 <use imgs/results/feature-engineering/colour-input-1-4-comparison.png>
 Package pdftex.def Info: imgs/results/feature-engineering/colour-input-1-4-comparison.png  used on input line 259.
 (pdftex.def)             Requested size: 455.24411pt x 323.36923pt.
-<imgs/results/steps/nh3-lstm-1-fc1.png, id=1129, 298.4751pt x 204.5241pt>
+<imgs/results/steps/nh3-lstm-1-fc1.png, id=1135, 298.4751pt x 204.5241pt>
 File: imgs/results/steps/nh3-lstm-1-fc1.png Graphic file (type png)
 <use imgs/results/steps/nh3-lstm-1-fc1.png>
 Package pdftex.def Info: imgs/results/steps/nh3-lstm-1-fc1.png  used on input line 272.
 (pdftex.def)             Requested size: 341.43307pt x 233.9619pt.
-<imgs/results/steps/nh3-lstm-4-fc1.png, id=1130, 298.497pt x 204.546pt>
+<imgs/results/steps/nh3-lstm-4-fc1.png, id=1136, 298.497pt x 204.546pt>
 File: imgs/results/steps/nh3-lstm-4-fc1.png Graphic file (type png)
 <use imgs/results/steps/nh3-lstm-4-fc1.png>
 Package pdftex.def Info: imgs/results/steps/nh3-lstm-4-fc1.png  used on input line 277.
 (pdftex.def)             Requested size: 341.43307pt x 233.98698pt.
- [62]
-<imgs/results/steps/nh3-lstm-1-fc2.png, id=1139, 298.4751pt x 204.5241pt>
+ [63]
+<imgs/results/steps/nh3-lstm-1-fc2.png, id=1144, 298.4751pt x 204.5241pt>
 File: imgs/results/steps/nh3-lstm-1-fc2.png Graphic file (type png)
 <use imgs/results/steps/nh3-lstm-1-fc2.png>
 Package pdftex.def Info: imgs/results/steps/nh3-lstm-1-fc2.png  used on input line 288.
 (pdftex.def)             Requested size: 341.43307pt x 233.9619pt.
-<imgs/results/steps/nh3-lstm-4-fc2.png, id=1140, 298.497pt x 204.546pt>
+<imgs/results/steps/nh3-lstm-4-fc2.png, id=1145, 298.497pt x 204.546pt>
 File: imgs/results/steps/nh3-lstm-4-fc2.png Graphic file (type png)
 <use imgs/results/steps/nh3-lstm-4-fc2.png>
 Package pdftex.def Info: imgs/results/steps/nh3-lstm-4-fc2.png  used on input line 293.
 (pdftex.def)             Requested size: 341.43307pt x 233.98698pt.
- [63 <./imgs/results/feature-engineering/colour-input-1-4-comparison.png>]
-<imgs/results/steps/nh3-lstm-1-fc3.png, id=1146, 298.4751pt x 204.5241pt>
+ [64 <./imgs/results/feature-engineering/colour-input-1-4-comparison.png>]
+<imgs/results/steps/nh3-lstm-1-fc3.png, id=1151, 298.4751pt x 204.5241pt>
 File: imgs/results/steps/nh3-lstm-1-fc3.png Graphic file (type png)
 <use imgs/results/steps/nh3-lstm-1-fc3.png>
 Package pdftex.def Info: imgs/results/steps/nh3-lstm-1-fc3.png  used on input line 304.
 (pdftex.def)             Requested size: 341.43307pt x 233.9619pt.
-<imgs/results/steps/nh3-lstm-4-fc3.png, id=1147, 298.497pt x 204.546pt>
+<imgs/results/steps/nh3-lstm-4-fc3.png, id=1152, 298.497pt x 204.546pt>
 File: imgs/results/steps/nh3-lstm-4-fc3.png Graphic file (type png)
 <use imgs/results/steps/nh3-lstm-4-fc3.png>
 Package pdftex.def Info: imgs/results/steps/nh3-lstm-4-fc3.png  used on input line 309.
 (pdftex.def)             Requested size: 341.43307pt x 233.98698pt.
- [64 <./imgs/results/steps/nh3-lstm-1-fc1.png> <./imgs/results/steps/nh3-lstm-4-fc1.png>]
-<imgs/results/steps/colour-lstm-1-fc1.png, id=1154, 304.0158pt x 207.4149pt>
+ [65 <./imgs/results/steps/nh3-lstm-1-fc1.png> <./imgs/results/steps/nh3-lstm-4-fc1.png>]
+<imgs/results/steps/colour-lstm-1-fc1.png, id=1159, 304.0158pt x 207.4149pt>
 File: imgs/results/steps/colour-lstm-1-fc1.png Graphic file (type png)
 <use imgs/results/steps/colour-lstm-1-fc1.png>
 Package pdftex.def Info: imgs/results/steps/colour-lstm-1-fc1.png  used on input line 320.
 (pdftex.def)             Requested size: 318.66948pt x 217.42177pt.
-<imgs/results/steps/colour-lstm-3-fc1.png, id=1155, 304.0158pt x 207.4149pt>
+<imgs/results/steps/colour-lstm-3-fc1.png, id=1160, 304.0158pt x 207.4149pt>
 File: imgs/results/steps/colour-lstm-3-fc1.png Graphic file (type png)
 <use imgs/results/steps/colour-lstm-3-fc1.png>
 Package pdftex.def Info: imgs/results/steps/colour-lstm-3-fc1.png  used on input line 325.
 (pdftex.def)             Requested size: 318.66948pt x 217.42177pt.
- [65 <./imgs/results/steps/nh3-lstm-1-fc2.png> <./imgs/results/steps/nh3-lstm-4-fc2.png>]
-<imgs/results/steps/colour-lstm-1-fc2.png, id=1163, 304.0158pt x 207.4149pt>
+ [66 <./imgs/results/steps/nh3-lstm-1-fc2.png> <./imgs/results/steps/nh3-lstm-4-fc2.png>]
+<imgs/results/steps/colour-lstm-1-fc2.png, id=1168, 304.0158pt x 207.4149pt>
 File: imgs/results/steps/colour-lstm-1-fc2.png Graphic file (type png)
 <use imgs/results/steps/colour-lstm-1-fc2.png>
 Package pdftex.def Info: imgs/results/steps/colour-lstm-1-fc2.png  used on input line 336.
 (pdftex.def)             Requested size: 318.66948pt x 217.42177pt.
-<imgs/results/steps/colour-lstm-3-fc2.png, id=1164, 303.7749pt x 207.4149pt>
+<imgs/results/steps/colour-lstm-3-fc2.png, id=1169, 303.7749pt x 207.4149pt>
 File: imgs/results/steps/colour-lstm-3-fc2.png Graphic file (type png)
 <use imgs/results/steps/colour-lstm-3-fc2.png>
 Package pdftex.def Info: imgs/results/steps/colour-lstm-3-fc2.png  used on input line 341.
 (pdftex.def)             Requested size: 318.66948pt x 217.599pt.
- [66 <./imgs/results/steps/nh3-lstm-1-fc3.png> <./imgs/results/steps/nh3-lstm-4-fc3.png>]
-<imgs/results/steps/colour-lstm-1-fc3.png, id=1172, 303.7749pt x 207.4149pt>
+ [67 <./imgs/results/steps/nh3-lstm-1-fc3.png> <./imgs/results/steps/nh3-lstm-4-fc3.png>]
+<imgs/results/steps/colour-lstm-1-fc3.png, id=1177, 303.7749pt x 207.4149pt>
 File: imgs/results/steps/colour-lstm-1-fc3.png Graphic file (type png)
 <use imgs/results/steps/colour-lstm-1-fc3.png>
 Package pdftex.def Info: imgs/results/steps/colour-lstm-1-fc3.png  used on input line 352.
 (pdftex.def)             Requested size: 318.66948pt x 217.599pt.
-<imgs/results/steps/colour-lstm-3-fc3.png, id=1173, 303.7749pt x 207.4149pt>
+<imgs/results/steps/colour-lstm-3-fc3.png, id=1178, 303.7749pt x 207.4149pt>
 File: imgs/results/steps/colour-lstm-3-fc3.png Graphic file (type png)
 <use imgs/results/steps/colour-lstm-3-fc3.png>
 Package pdftex.def Info: imgs/results/steps/colour-lstm-3-fc3.png  used on input line 357.
 (pdftex.def)             Requested size: 318.66948pt x 217.599pt.
- [67 <./imgs/results/steps/colour-lstm-1-fc1.png> <./imgs/results/steps/colour-lstm-3-fc1.png>]) (chapters/chapter-5-conclusion.tex [68 <./imgs/results/steps/colour-lstm-1-fc2.png> <./imgs/results/steps/colour-lstm-3-fc2.png>] [69 <./imgs/results/steps/colour-lstm-1-fc3.png> <./imgs/results/steps/colour-lstm-3-fc3.png>]
+ [68 <./imgs/results/steps/colour-lstm-1-fc1.png> <./imgs/results/steps/colour-lstm-3-fc1.png>]) (chapters/chapter-5-conclusion.tex [69 <./imgs/results/steps/colour-lstm-1-fc2.png> <./imgs/results/steps/colour-lstm-3-fc2.png>] [70 <./imgs/results/steps/colour-lstm-1-fc3.png> <./imgs/results/steps/colour-lstm-3-fc3.png>]
 CHAPTER 5.
-[70
+[71
 
-] [71]) (thesis.bbl [72] [73
+] [72]) (thesis.bbl [73] [74
 
-] [74] [75] [76] [77] [78] [79] [80]) [81] (thesis.aux) ) 
+] [75] [76] [77] [78] [79] [80] [81]) [82] (thesis.aux) ) 
 Here is how much of TeX's memory you used:
- 34955 strings out of 478582
- 731680 string characters out of 2845288
- 990601 words of memory out of 3000000
- 52290 multiletter control sequences out of 15000+600000
+ 34958 strings out of 478582
+ 731709 string characters out of 2845288
+ 990686 words of memory out of 3000000
+ 52291 multiletter control sequences out of 15000+600000
  495384 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 85i,14n,90p,3234b,1031s stack positions out of 10000i,1000n,20000p,200000b,80000s
+ 85i,14n,90p,3269b,1031s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}<C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmib10.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cmextra/cmmib8.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/Tim/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on thesis.pdf (92 pages, 23802638 bytes).
+Output written on thesis.pdf (93 pages, 23689398 bytes).
 PDF statistics:
- 1567 PDF objects out of 1728 (max. 8388607)
- 326 named destinations out of 1000 (max. 500000)
- 797 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1575 PDF objects out of 1728 (max. 8388607)
+ 328 named destinations out of 1000 (max. 500000)
+ 805 words of extra memory for PDF output out of 10000 (max. 10000000)
 
