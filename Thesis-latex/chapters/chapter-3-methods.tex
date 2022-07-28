@@ -61,7 +61,21 @@ The automatic sampling and analyzing of the colour level begins with the actuato
   \caption{Instruments of on-line colour analysis system.} \label{fig:hach}
 \end{figure}
 
-The maintenance and calibration of the DR3900 spectrophotometer are performed on a weekly basis. During the maintenance, the DR3900 device was shut off, and 100 mg/L chlorine solution was pumped into the sampling tubes and the plastic cuvette for disinfection and cleansing. The cleansing of the tubes and cuvette were manually inspected with eyes to make sure no foreign objects were stuck inside. De-ionized water was brought to the site to perform the spectrophotometer calibration after the reboot of DR3900. 
+As shown in Fig.~\ref{fig:colour-calibration-lab-sampling}, the maintenance and calibration of the DR3900 spectrophotometer are performed on a weekly basis. During the maintenance, the DR3900 device was shut off, and 100 mg/L chlorine solution was pumped into the sampling tubes and the plastic cuvette for disinfection and cleansing. The cleansing of the tubes and cuvette were manually inspected with eyes to make sure no foreign objects were stuck inside. De-ionized water was brought to the site to perform the spectrophotometer calibration after the reboot of DR3900.
+
+\begin{figure}[!ht]
+  \centering
+  \begin{subfigure}[t]{1.0\textwidth}
+    \includegraphics[width=\linewidth]{imgs/leachate-effluent-blend-ratio-color-plot/first-80d.png}
+    \caption{Data collected from 5 October 2021 to 22 December 2021.} \label{fig:data-oct}
+  \end{subfigure}\\
+  \vspace{2em}%   % maximize separation between the subfigures
+  \begin{subfigure}[t]{1.0\textwidth}
+    \includegraphics[width=\linewidth]{imgs/leachate-effluent-blend-ratio-color-plot/second-80d.png}
+    \caption{Data collected from 23 December 2021 to 24 February 2022.} \label{fig:data-nov}
+  \end{subfigure}%  
+\caption{The dates of manually calibration and colour level measured in the laboratory are provided as blue crosses and red dots.} \label{fig:colour-calibration-lab-sampling}
+\end{figure}
 
 \begin{figure}[h]
     \centering
@@ -168,7 +182,7 @@ Both SG and EWMA filters are required to select the hyperparameters, the selecte
     \end{NiceTabular}
 \end{table}
 
-Fig.~\ref{fig:smoothed} shows the influences of different windows sizes on SG filters as in Fig.~\ref{fig:smoothed-sg} and on EWMA filters as in Fig.~\ref{fig:smoothed-ew}.
+Fig.~\ref{fig:smoothed} and Fig.~\ref{fig:smoothed-colour} show the influences of different windows sizes of SG and EWMA filters on ammonia concentration and colour levels datasets.
 
 \begin{figure}[!ht]
     \centering
@@ -181,7 +195,21 @@ Fig.~\ref{fig:smoothed} shows the influences of different windows sizes on SG fi
       \includegraphics[width=\linewidth]{imgs/pre-processing/ew-filter.png}
       \caption{Ammonia data filtered by EWMA filters with different window sizes.} \label{fig:smoothed-ew}
     \end{subfigure}%  
-  \caption{Illustration of the influence of different polynomial degrees in the fitting of SG filter and the weight decay with varied alpha values in EWMA filter.} \label{fig:smoothed}
+  \caption{Comparison of the applying different window sizes on ammonia concentration dataset .} \label{fig:smoothed}
+\end{figure}
+
+\begin{figure}[!ht]
+  \centering
+  \begin{subfigure}{0.7\textwidth}
+    \includegraphics[width=\linewidth]{imgs/pre-processing/sg-filter-colour.png}
+    \caption{Colour data filtered by SG filters with different window sizes.} \label{fig:smoothed-sg-colour}
+  \end{subfigure}%
+  \hspace{2em}%   % maximize separation between the subfigures
+  \begin{subfigure}{0.7\textwidth}
+    \includegraphics[width=\linewidth]{imgs/pre-processing/ewma-filter-colour.png}
+    \caption{Colour data filtered by EWMA filters with different window sizes.} \label{fig:smoothed-ew-colour}
+  \end{subfigure}%  
+\caption{Comparison of the applying different window sizes on colour level dataset .} \label{fig:smoothed-colour}
 \end{figure}
 
 \subsubsection{Outlier Removal}
@@ -266,19 +294,6 @@ Due to the size of the datasets used in this study for training ammonia and colo
   \label{fig:nh3-peak-pattern}
 \end{figure}
 
-\begin{figure}[!ht]
-    \centering
-    \begin{subfigure}[t]{1.0\textwidth}
-      \includegraphics[width=\linewidth]{imgs/leachate-effluent-blend-ratio-color-plot/first-80d.png}
-      \caption{Data collected from 5 October 2021 to 22 December 2021.} \label{fig:data-oct}
-    \end{subfigure}\\
-    \vspace{2em}%   % maximize separation between the subfigures
-    \begin{subfigure}[t]{1.0\textwidth}
-      \includegraphics[width=\linewidth]{imgs/leachate-effluent-blend-ratio-color-plot/second-80d.png}
-      \caption{Data collected from 23 December 2021 to 24 February 2022.} \label{fig:data-nov}
-    \end{subfigure}%  
-  \caption{Monitored colour levels in MBR effluent and the changes in blending ratio (v/v) of treated leachate effluent to municipal wastewater in the inflow of SWHEPP from December 2021 to January 2022. The date of manually calibration and colour level measured in the laboratory are also provided as a black cross and green dot. The moving average of colour level is calculated by averaging the colour level in the past 24 hours. Note: The colour levels analyzed by the on-line colour monitoring system were compared to the manually measured data obtained from the laboratory, which showed errors of 2.08\%, 4.05\%, 1.11\%, 65.25\%, 4.94\% and 11.0\% in the effluent samples collected 5 Oct, 22 Oct, 3 Nov, 15 Nov, 12 Dec, and 31 Dec 2021, respectively.} \label{fig:nh3-data}
-\end{figure}
 
 \subsection{Data transformation}
 Before the pre-processed data is fed into the models for training, we need to split the data into three clusters, which are training (60\%), validation (20\%), and testing dataset (20\%). Among each cluster, the data will be further split into input variables $\bm{X}$ and output variables $\bm{Y}$ (i.e., training X/training Y, testing X/testing Y). During the training process, machine learning algorithms will learn a target function $\bm{f}$ to best map $\bm{X}$ to $\bm{Y}$. A training dataset is a set of examples (e.g., historical data) for models to learn the hidden trends and information in the data, shown in (a) in Fig.~\ref{fig:training-scheme}. Training loss is calculated by taking the sum of loss for each pair of input and output in the training dataset after every training cycle (i.e., epoch).
@@ -469,7 +484,7 @@ The settings of the optimized hyperparameters are listed in the followings in th
       \toprule
       Model & Input & h.d\tabularnote{Hidden layer.} & Output & Num. of Exp\tabularnote{The times the experiments were repeated.} & Comments \\
       \midrule
-      RF   & 24\tabularnote{24 hourly data points were input into the models for trainin.} & - & 3 & 3 & Estimators = 500 \\
+      RF   & 24\tabularnote{24 hourly data points were input into the models for training.} & - & 3 & 3 & Estimators = 500 \\
       DNN  & 24 & 2 & 1 & 3 & h.d = 10 neurons \\
       RNN  & 24 & 1 & 1 & 3 & h.d = 10 neurons \\
       GRU  & 24 & 1 & 1 & 3 & h.d = 10 neurons \\

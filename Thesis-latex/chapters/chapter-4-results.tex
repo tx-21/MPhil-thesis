@@ -39,7 +39,7 @@ The significantly higher test loss of RF models compared to other models can be 
       \includegraphics[width=\linewidth]{imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-nh3.png}
       \caption{Baseline LSTM model forecasting ammonia concentration.} \label{fig:baseline-nh3-plot-lstm}
     \end{subfigure}\\
-  \caption{Visulization of the model forecasting results.} \label{fig:baseline-plot-ammonia}
+  \caption{Visualization of the baseline ammonia forecasting results.} \label{fig:baseline-plot-ammonia}
 \end{figure}
 
 
@@ -54,7 +54,7 @@ The significantly higher test loss of RF models compared to other models can be 
       \includegraphics[width=\linewidth]{imgs/results/ammonia-colour-forecast-plot/00-LSTM_1_pred_Step1-obs-colour.png}
       \caption{Baseline LSTM model forecasting colour levels.} \label{fig:baseline-colour-plot-lstm}
     \end{subfigure}\\
-  \caption{Visulization of the model forecasting results.} \label{fig:baseline-plot-colour}
+  \caption{Visualization of the baseline colour forecasting results.} \label{fig:baseline-plot-colour}
 \end{figure}
 
 \section{Improved performance on forecasting models using data pre-processing techniques}
@@ -95,7 +95,16 @@ In this study, we investigate whether the datasets treated by the proposed data 
 
 The improvements in the performance of ammonia forecasting models are most significant with models trained by SG filtered datasets. Training GRU models with an sg7 filtered dataset reduced the test loss of GRU-obs from 0.0414 to 0.0383 (-7.5\%). LSTM-sg7 also successfully decreased the test loss value of LSTM-obs from 0.0405 to 0.0388 (-4.2\%), while RNN-sg5 reduced the test loss value of RNN-obs from 0.0440 to 0.0415 (-5.7\%). Using SG filters on the training datasets improves the performance of LSTM, GRU, and RNN models. However, the DNN and RF models trained by sg filtered datasets did not show a superior model performance compared to the test loss values of 0.0561 and 0.1158 of DNN-obs and RF-obs, respectively. Given that DNN and RF models perceive the data points as clusters of individuals, data smoothing using SG filters is not expected to help improve their model performance. SG filter smoothes the data points by convoluting both previous and subsequent data points, making a series of data points correlated or linked with each other. Such data property is believed to be captured by the memorizing cells in recurrent neural networks, such as RNN, GRU, and LSTM models. From the results in Table.~\ref{tab:baseline-result-jan-nh3}, all the recurrent neural networks-based models outperformed all the DNN and RF models. It can be concluded that DNN and RF models are poor options for training time-series models, even with the use of the SG filter technique.
 
-The RNN-or, GRU-or, and LSTM-or models, which were trained with datasets applied with outlier removal methods, showed lower test loss values of 0.0432 (-1.8\%), 0.0405 (-2.2\%), and 0.0398 (1.7\%) compared to test loss values of 0.0440, 0.0414, and 0.0405 from RNN-obs, GRU-obs, and LSTM-obs, respectively. We also noticed that the improvements of RNN-or, GRU-or, and LSTM-or are minor compared with the models trained by SG and EWMA filtered datasets. In this method, three days of abnormal data were removed from an 18-day dataset, which accounts for around 15\% of the data. Despite the fact that 15\% of the data was removed, the improvement in lowering the test loss values was slight. It is suggested that the deep learning models are smart enough to neglect the noise in the training datasets while performing forecasts from the test dataset.
+The RNN-or, GRU-or, and LSTM-or models, which were trained with datasets applied with outlier removal methods, showed lower test loss values of 0.0432 (-1.8\%), 0.0405 (-2.2\%), and 0.0398 (1.7\%) compared to test loss values of 0.0440, 0.0414, and 0.0405 from RNN-obs, GRU-obs, and LSTM-obs, respectively. We also noticed that the improvements of RNN-or, GRU-or, and LSTM-or are minor compared with the models trained by SG and EWMA filtered datasets. In this method, three days of abnormal data were removed from an 18-day dataset as in Fig.~\ref{fig:outlier-3day}, which accounts for around 15\% of the data. Despite the fact that 15\% of the data was removed, the improvement in lowering the test loss values was slight. It is suggested that the deep learning models are smart enough to neglect the noise in the training datasets while performing forecasts from the test dataset.
+
+\begin{figure}[!ht]
+  \centering
+  \begin{subfigure}[t]{1.0\textwidth}
+    \includegraphics[width=\linewidth]{imgs/pre-processing/outliers.png}
+    \caption{Validation dataset from January 2022.} \label{fig:outlier-removed-3d}
+  \end{subfigure}
+\caption{Results of the removed outliers from the training dataset.} \label{fig:outlier-3day}
+\end{figure}
 
 RNN, GRU, and LSTM models trained by EWMA filtered datasets also showed good improvements in the model performance. RNN-ew2, GRU-ew2, and LSTM-ew3 showed lower test loss of 0.0421 (4.3\%), 0.0389 (6.0\%), and 0.0388 (4.2\%) compared to RNN-obs, GRU-obs, and LSTM-obs of 0.0440, 0.0414, and 0.0405, respectively. EWMA filters modified the data points by averaging the value of the current data points with previous ones, making the data property almost identical to the SG filtered data. Both SG and EWMA filters similarly influenced the baseline models, in which LSTM obtained the lowest test loss values, followed by GRU and RNN models. By far, the results only suggest that both filters are robust techniques in terms of lowing the test loss, yet we cannot draw conclusions about which filter is more effective in improving the model performance. In addition, we discovered our test loss values to be abnormal when inspecting models' validation loss and the test loss values.
 

@@ -29,23 +29,23 @@
 \contentsline {subsection}{\numberline {3.2.1}On-line data monitoring and collection}{22}{subsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.2.2}Loss function for model evaluation}{25}{subsection.3.2.2}%
 \contentsline {subsection}{\numberline {3.2.3}Data cleaning and pre-processing}{26}{subsection.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.2.3.1}Data smoothing with Savitzky-Golay and EWMA filter}{27}{subsubsection.3.2.3.1}%
-\contentsline {subsubsection}{\numberline {3.2.3.2}Outlier Removal}{28}{subsubsection.3.2.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.3.3}Feature Engineering}{31}{subsubsection.3.2.3.3}%
-\contentsline {subsection}{\numberline {3.2.4}Data transformation}{34}{subsection.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.2.3.1}Data smoothing with Savitzky-Golay and EWMA filter}{28}{subsubsection.3.2.3.1}%
+\contentsline {subsubsection}{\numberline {3.2.3.2}Outlier Removal}{30}{subsubsection.3.2.3.2}%
+\contentsline {subsubsection}{\numberline {3.2.3.3}Feature Engineering}{30}{subsubsection.3.2.3.3}%
+\contentsline {subsection}{\numberline {3.2.4}Data transformation}{35}{subsection.3.2.4}%
 \contentsline {subsection}{\numberline {3.2.5}Feature selection}{38}{subsection.3.2.5}%
 \contentsline {section}{\numberline {3.3}Machine learning models}{39}{section.3.3}%
 \contentsline {subsection}{\numberline {3.3.1}Random Forest}{39}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Deep Neural Networks}{39}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Recurrent Neural Network}{41}{subsection.3.3.3}%
-\contentsline {subsection}{\numberline {3.3.4}Long Short-term Memory}{41}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.2}Deep Neural Networks}{40}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Recurrent Neural Network}{40}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Long Short-term Memory}{42}{subsection.3.3.4}%
 \contentsline {subsection}{\numberline {3.3.5}Gate Recurrent Unit}{43}{subsection.3.3.5}%
 \contentsline {subsection}{\numberline {3.3.6}Configuration of models}{44}{subsection.3.3.6}%
 \contentsline {chapter}{{Chapter 4}\hspace {1em}Results and Discussion}{47}{chapter.4}%
 \contentsline {section}{\numberline {4.1}Baseline performance of the forecasting models}{47}{section.4.1}%
 \contentsline {section}{\numberline {4.2}Improved performance on forecasting models using data pre-processing techniques}{52}{section.4.2}%
 \contentsline {subsection}{\numberline {4.2.1}Models trained by pre-processed datasets}{52}{subsection.4.2.1}%
-\contentsline {subsection}{\numberline {4.2.2}The effect of window size of data smoothing filters}{59}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.2}The effect of window size of data smoothing filters}{58}{subsection.4.2.2}%
 \contentsline {section}{\numberline {4.3}Exploit hidden patterns in MBR effluent water quality to enhance model performance}{60}{section.4.3}%
 \contentsline {subsection}{\numberline {4.3.1}Ammonia forecasting models}{60}{subsection.4.3.1}%
 \contentsline {subsection}{\numberline {4.3.2}Colour forecasting models}{61}{subsection.4.3.2}%
