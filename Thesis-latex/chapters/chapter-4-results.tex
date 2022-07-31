@@ -325,7 +325,7 @@ LSTM-1-obs and LSTM-3-sg9 models forecasted colour levels at a forecast horizon 
     \includegraphics[width=\linewidth]{imgs/results/steps/colour-lstm-3-fc1.png}
     \caption{LSTM-3-sg9, MSE = 17.5955} \label{fig:colour-lstm-3-fc1}
   \end{subfigure}\\
-\caption{Visualization of the colour forecasting models at at forecast horizon of one.} \label{fig:colour-forecast-fc1}
+\caption{Visualization of the colour forecasting models at forecast horizon of one.} \label{fig:colour-forecast-fc1}
 \end{figure}
 
 In forecasting colour levels at a forecast horizon of two, the MSE values of LSTM-1-obs and LSTM-3-sg9 increased from 22.4922 and 17.5955 to 62.6678 and 47.4252. The forecasting errors expanded from less than 5 Hazen Units on average to 10 Hazen Units. In Fig.~\ref{fig:colour-forecast-fc2}, LSTM-3-sg9 showed more reliable forecasting results compared to LSTM-1-obs by generating minor errors between the forecasted and actual values. However, the lowest forecasted colour level on 22 January has increased from 10 to 24 Hazen Unis, and we can see clearly that the models were getting less reliable in forecasting two hours into the future in forecasting colour levels. The cause of it can also be attributed to insufficient quantity of training dataset.

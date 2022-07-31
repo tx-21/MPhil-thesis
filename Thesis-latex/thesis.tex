@@ -98,9 +98,27 @@
 %\usepackage{tocloft}
 \renewcommand\cftchapdotsep{\cftdotsep}%
 
-
+% Add references in toc
+\usepackage[nottoc,notlot,notlof]{tocbibind}
+\renewcommand{\bibname}{References}
 %\renewcommand\cftsecleader{\cftdotfill{\cftdotsep}}
 
+\usepackage{listings}
+
+\lstset{
+language=Python,
+basicstyle=\ttfamily,
+otherkeywords={self},             
+keywordstyle=\ttfamily\color{blue!90!black},
+keywords=[2]{True,False},
+keywords=[3]{ttk},
+keywordstyle={[2]\ttfamily\color{yellow!80!orange}},
+keywordstyle={[3]\ttfamily\color{red!80!orange}},
+emph={MyClass,__init__},          
+emphstyle=\ttfamily\color{red!80!black},    
+stringstyle=\color{green!80!black},
+showstringspaces=false            
+}
 
 % \renewcommand{\familydefault}{\rmdefault}
 
@@ -286,7 +304,7 @@
 % the following line.                                                   %
 %                                                                       %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%\addcontentsline{toc}{section}{References}
 \bibliographystyle{plainnat}
 
 \bibliography{MPhil-thesis-papers}
@@ -299,5 +317,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %\input{chapters/chapter-6-appendices.tex}
 
+\appendix
+%\chapter{Appendix Title}
+\input{chapters/chapter-6-appendices.tex}
 
 \end{document}
