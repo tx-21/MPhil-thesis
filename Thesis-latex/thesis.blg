@@ -5,47 +5,44 @@ Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: plainnat.bst
 Reallocating 'name_of_file' (item size: 1) to 20 items.
 Database file #1: MPhil-thesis-papers.bib
-Warning--empty journal in chandolaAnomalyDetectionSurvey2009
-Warning--empty institution in unicefURBANWATERSCARCITY2021
-You've used 78 entries,
+You've used 22 entries,
             2773 wiz_defined-function locations,
-            1158 strings with 26045 characters,
-and the built_in function-call counts, 39041 in all, are:
-= -- 3512
-> -- 2537
-< -- 40
-+ -- 864
-- -- 783
-* -- 3454
-:= -- 6138
-add.period$ -- 308
-call.type$ -- 78
-change.case$ -- 495
-chr.to.int$ -- 75
-cite$ -- 158
-duplicate$ -- 1518
-empty$ -- 2918
-format.name$ -- 883
-if$ -- 8029
-int.to.chr$ -- 4
+            726 strings with 9219 characters,
+and the built_in function-call counts, 8586 in all, are:
+= -- 732
+> -- 461
+< -- 17
++ -- 164
+- -- 141
+* -- 639
+:= -- 1319
+add.period$ -- 65
+call.type$ -- 22
+change.case$ -- 112
+chr.to.int$ -- 21
+cite$ -- 44
+duplicate$ -- 383
+empty$ -- 769
+format.name$ -- 165
+if$ -- 1798
+int.to.chr$ -- 2
 int.to.str$ -- 1
-missing$ -- 54
-newline$ -- 470
-num.names$ -- 314
-pop$ -- 905
+missing$ -- 7
+newline$ -- 116
+num.names$ -- 90
+pop$ -- 275
 preamble$ -- 1
-purify$ -- 416
+purify$ -- 90
 quote$ -- 0
-skip$ -- 1200
+skip$ -- 317
 stack$ -- 0
-substring$ -- 1378
-swap$ -- 170
-text.length$ -- 5
+substring$ -- 186
+swap$ -- 53
+text.length$ -- 1
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 858
-warning$ -- 2
-while$ -- 327
+type$ -- 242
+warning$ -- 0
+while$ -- 77
 width$ -- 0
-write$ -- 1146
-(There were 2 warnings)
+write$ -- 276

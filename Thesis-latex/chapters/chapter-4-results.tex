@@ -64,7 +64,7 @@ In this study, we investigate whether the datasets treated by the proposed data 
 
 \begin{table}[!ht]
   \centering
-  \caption{Baseline performance of the ammonia forecasting model, evaluated on test dataset from \textbf{16 to 22 Janurary 2022}. Loss values were calculated by MSE.}\label{tab:baseline-result-jan-nh3}
+  \caption{Baseline performance of the ammonia forecasting model, evaluated on test dataset from \textbf{16 to 22 January 2022}. Loss values were calculated by MSE.}\label{tab:baseline-result-jan-nh3}
   \begin{NiceTabular}{lcclcc}
       \toprule
       Model-Dataset & Test loss & Valid loss & Model-Dataset & Test loss & Valid loss \\
@@ -172,7 +172,7 @@ In the investigation of how a small dataset can influence the model results, we 
 
 \begin{table}[!ht]
   \centering
-  \caption{Baseline performance of the colour forecasting models, evaluated on test dataset from \textbf{16 to 22 Janurary 2022}. Loss values were calculated by MSE.}\label{tab:baseline-result-jan-colour}
+  \caption{Baseline performance of the colour forecasting models, evaluated on test dataset from \textbf{16 to 22 January 2022}. Loss values were calculated by MSE.}\label{tab:baseline-result-jan-colour}
   \begin{NiceTabular}{lcclcc}
       \toprule
       Model-Dataset & Test loss & Valid loss & Model-Dataset & Test loss & Valid loss \\
@@ -270,12 +270,12 @@ In this study, ammonia and colour forecasting models were input with data from t
   \centering
   \begin{subfigure}[t]{0.75\textwidth}
     \includegraphics[width=\linewidth]{imgs/results/steps/nh3-lstm-1-fc1.png}
-    \caption{LSTM-1-obs, MSE = 0.0647} \label{fig:nh3-lstm-1-fc1}
+    \caption{LSTM-1-obs, MSE = 0.0647, R-squared = 0.8847} \label{fig:nh3-lstm-1-fc1}
   \end{subfigure}\\
   \vspace{2em}
   \begin{subfigure}[t]{0.75\textwidth}
     \includegraphics[width=\linewidth]{imgs/results/steps/nh3-lstm-4-fc1.png}
-    \caption{LSTM-4-sg7, MSE = 0.0529} \label{fig:nh3-lstm-4-fc1}
+    \caption{LSTM-4-sg7, MSE = 0.0529, R-squared = 0.9057} \label{fig:nh3-lstm-4-fc1}
   \end{subfigure}\\
 \caption{Visualization of the ammonia forecasting models at forecast horizon of one.} \label{fig:nh3-forecast-fc1}
 \end{figure}
@@ -286,12 +286,12 @@ In forecasting ammonia concentration in the second hour into the future as in Fi
   \centering
   \begin{subfigure}[t]{0.75\textwidth}
     \includegraphics[width=\linewidth]{imgs/results/steps/nh3-lstm-1-fc2.png}
-    \caption{LSTM-1-obs, MSE = 0.2916} \label{fig:nh3-lstm-1-fc2}
+    \caption{LSTM-1-obs, MSE = 0.2916, R-squared = 0.4805} \label{fig:nh3-lstm-1-fc2}
   \end{subfigure}\\
   \vspace{2em}
   \begin{subfigure}[t]{0.75\textwidth}
     \includegraphics[width=\linewidth]{imgs/results/steps/nh3-lstm-4-fc2.png}
-    \caption{LSTM-4-sg7, MSE = 0.2351} \label{fig:nh3-lstm-4-fc2}
+    \caption{LSTM-4-sg7, MSE = 0.2351, R-squared = 0.5812} \label{fig:nh3-lstm-4-fc2}
   \end{subfigure}\\
 \caption{Visualization of the ammonia forecasting models at forecast horizon of two.} \label{fig:nh3-forecast-fc2}
 \end{figure}
@@ -302,12 +302,12 @@ In forecasting ammonia concentration at a forecast horizon of three, although th
   \centering
   \begin{subfigure}[t]{0.75\textwidth}
     \includegraphics[width=\linewidth]{imgs/results/steps/nh3-lstm-1-fc3.png}
-    \caption{LSTM-1-obs, MSE = 0.8025} \label{fig:nh3-lstm-1-fc3}
+    \caption{LSTM-1-obs, MSE = 0.8025, R-squared = -0.4291} \label{fig:nh3-lstm-1-fc3}
   \end{subfigure}\\
   \vspace{2em}
   \begin{subfigure}[t]{0.75\textwidth}
     \includegraphics[width=\linewidth]{imgs/results/steps/nh3-lstm-4-fc3.png}
-    \caption{LSTM-4-sg7, MSE = 0.7637} \label{fig:nh3-lstm-4-fc3}
+    \caption{LSTM-4-sg7, MSE = 0.7637, R-squared = -0.3599} \label{fig:nh3-lstm-4-fc3}
   \end{subfigure}\\
 \caption{Visualization of the ammonia forecasting models at forecast horizon of three.} \label{fig:nh3-forecast-fc3}
 \end{figure}
@@ -318,12 +318,12 @@ LSTM-1-obs and LSTM-3-sg9 models forecasted colour levels at a forecast horizon 
   \centering
   \begin{subfigure}[t]{0.7\textwidth}
     \includegraphics[width=\linewidth]{imgs/results/steps/colour-lstm-1-fc1.png}
-    \caption{LSTM-1-obs, MSE = 22.4922} \label{fig:colour-lstm-1-fc1}
+    \caption{LSTM-1-obs, MSE = 22.4922, R-squared = 0.9311} \label{fig:colour-lstm-1-fc1}
   \end{subfigure}\\
   \vspace{1em}
   \begin{subfigure}[t]{0.7\textwidth}
     \includegraphics[width=\linewidth]{imgs/results/steps/colour-lstm-3-fc1.png}
-    \caption{LSTM-3-sg9, MSE = 17.5955} \label{fig:colour-lstm-3-fc1}
+    \caption{LSTM-3-sg9, MSE = 17.5955, R-squared = 0.9461} \label{fig:colour-lstm-3-fc1}
   \end{subfigure}\\
 \caption{Visualization of the colour forecasting models at forecast horizon of one.} \label{fig:colour-forecast-fc1}
 \end{figure}
@@ -334,12 +334,12 @@ In forecasting colour levels at a forecast horizon of two, the MSE values of LST
   \centering
   \begin{subfigure}[t]{0.7\textwidth}
     \includegraphics[width=\linewidth]{imgs/results/steps/colour-lstm-1-fc2.png}
-    \caption{LSTM-1-obs, MSE = 62.6678} \label{fig:colour-lstm-1-fc2}
+    \caption{LSTM-1-obs, MSE = 62.6678, R-squared = 0.8053} \label{fig:colour-lstm-1-fc2}
   \end{subfigure}\\
   \vspace{1em}
   \begin{subfigure}[t]{0.7\textwidth}
     \includegraphics[width=\linewidth]{imgs/results/steps/colour-lstm-3-fc2.png}
-    \caption{LSTM-3-sg9, MSE = 47.4252} \label{fig:colour-lstm-3-fc2}
+    \caption{LSTM-3-sg9, MSE = 47.4252, R-squared = 0.8526} \label{fig:colour-lstm-3-fc2}
   \end{subfigure}\\
 \caption{Visualization of the colour forecasting models at forecast horizon of two.} \label{fig:colour-forecast-fc2}
 \end{figure}
@@ -350,12 +350,16 @@ In Fig.~\ref{fig:colour-forecast-fc3}, the MSE values of LSTM-1-obs and LSTM-3-s
   \centering
   \begin{subfigure}[t]{0.7\textwidth}
     \includegraphics[width=\linewidth]{imgs/results/steps/colour-lstm-1-fc3.png}
-    \caption{LSTM-1-obs, MSE = 116.8928} \label{fig:colour-lstm-1-fc3}
+    \caption{LSTM-1-obs, MSE = 116.8928, R-squared = 0.6237} \label{fig:colour-lstm-1-fc3}
   \end{subfigure}\\
   \vspace{1em}
   \begin{subfigure}[t]{0.7\textwidth}
     \includegraphics[width=\linewidth]{imgs/results/steps/colour-lstm-3-fc3.png}
-    \caption{LSTM-3-sg9, MSE = 103.4329} \label{fig:colour-lstm-3-fc3}
+    \caption{LSTM-3-sg9, MSE = 103.4329, R-squared = 0.6750} \label{fig:colour-lstm-3-fc3}
   \end{subfigure}\\
 \caption{Visualization of the colour forecasting models at forecast horizon of three.} \label{fig:colour-forecast-fc3}
 \end{figure}
+
+One of the underlying causes of inaccurate forecasting results in longer forecast horizons for both forecasting NH$_{3}$-N concentration and colour levels can be attributed to the physical limitations of the MBR effluent container. When the effluent was sampled in the container, the NH$_{3}$-N and colour substances in the effluent container were not always evenly dispersed throughout the water, resulting in heterogeneity in the effluent container. Thus, the forecasted NH$_{3}$-N concentration and colour levels can deviate from the true values. Another cause of the inaccuracy is derived from how the model inferences the forecasting values. As shown in Fig.~\ref{fig:inference-process}, the forecast horizon of two was inferred from 23 hours of the observed value and one hour of the forecasted value. Therefore, if the first forecasted value was not with pinpoint accuracy compared to the true values, the second forecasted value, which is inferred from the model based on the input of the previous forecasted value, will only become much more inaccurate. The error will be magnified with the increase in the forecast horizon.
+
+The measurement technology of water quality can also significantly impact the accuracy of model forecasting in the long forecast horizon. In this study, we found models are more capable of forecasting colour levels for one to three hours into the future compared to NH$_{3}$-N forecasting models. The measurement technology of on-line colour is based on the spectrophotometer, which is a reliable way to measure colour levels in the water. However, the technology used for NH$_{3}$-N data collection is an ion-selective electrode sensor, which is a less robust way to measure NH$_{3}$-N compared to the conventional wet-analyzer. The NH$_{3}$-N sensor inaccuracy can be caused by the interference from other ions, the effect of the ionic strength of the solution, and potential drift during a sequence of measurements. The physical constraints of the NH$_{3}$-N sensor have made the data quality inherently poor, resulting in limited model forecasting accuracy.

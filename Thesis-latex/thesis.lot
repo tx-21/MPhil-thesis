@@ -1,12 +1,9 @@
 \addvspace {1pt}
+\contentsline {table}{\numberline {1.1}{\ignorespaces The selected hyperparameters for SG and EWMA filters.\relax }}{10}{table.caption.14}%
+\contentsline {table}{\numberline {1.2}{\ignorespaces Final model configurations.\relax }}{27}{table.caption.29}%
 \addvspace {1pt}
-\contentsline {table}{\numberline {2.1}{\ignorespaces Endorsed Reclaimed Water Quality Standards from Water Supply Department.\relax }}{16}{table.caption.5}%
-\addvspace {1pt}
-\contentsline {table}{\numberline {3.1}{\ignorespaces The selected hyperparameters for SG and EWMA filters.\relax }}{30}{table.caption.16}%
-\contentsline {table}{\numberline {3.2}{\ignorespaces Final model configurations.\relax }}{47}{table.caption.30}%
-\addvspace {1pt}
-\contentsline {table}{\numberline {4.1}{\ignorespaces Baseline performance of the ammonia forecasting model, evaluated on test dataset from \textbf {16 to 22 Janurary 2022}. Loss values were calculated by MSE.\relax }}{53}{table.caption.34}%
-\contentsline {table}{\numberline {4.2}{\ignorespaces Baseline performance of the ammonia forecasting models, evaluated on test dataset from \textbf {10 to 16 October 2021}. Loss values were calculated by MSE.\relax }}{57}{table.caption.37}%
-\contentsline {table}{\numberline {4.3}{\ignorespaces Baseline performance of the colour forecasting models, evaluated on test dataset from \textbf {16 to 22 Janurary 2022}. Loss values were calculated by MSE.\relax }}{58}{table.caption.38}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Baseline performance of the ammonia forecasting model, evaluated on test dataset from \textbf {16 to 22 January 2022}. Loss values were calculated by MSE.\relax }}{33}{table.caption.33}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Baseline performance of the ammonia forecasting models, evaluated on test dataset from \textbf {10 to 16 October 2021}. Loss values were calculated by MSE.\relax }}{37}{table.caption.36}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces Baseline performance of the colour forecasting models, evaluated on test dataset from \textbf {16 to 22 January 2022}. Loss values were calculated by MSE.\relax }}{38}{table.caption.37}%
 \addvspace {1pt}
 \addvspace {1pt}
