@@ -83,7 +83,7 @@ def inference(model_number, path_to_save_predictions, forecast_window, dataloade
             fh3.append(out_prediction_ammonia[-1])
         
             # if current_exp == last_exp_num:
-            #    plot_prediction(index, path_to_save_predictions, src_ammonia, target_ammonia, prediction_ammonia, index_in, index_tar)
+            #     plot_prediction(index, path_to_save_predictions, src_ammonia, target_ammonia, prediction_ammonia, index_in, index_tar,'NH3')
     
         forecast_horizon['fh1'] = fh1
         forecast_horizon['fh2'] = fh2
@@ -102,9 +102,16 @@ def inference(model_number, path_to_save_predictions, forecast_window, dataloade
         rmse_3, r2_3 = plot_prediction_horizon(forecast_horizon['fh3'], forecast_horizon['fh3_true'], '3', model_dic_keys_ls[model_number], path_to_save_predictions,date_range,current_exp,last_exp_num,'NH3')
         
         val_loss /= len(dataloader)
-        # if current_exp == last_exp_num:
-        #     log_test_loss(val_loss, path_to_save_loss)
-        # logger.info(f"{model_dic_keys_ls[model_number]}_Loss On Unseen Dataset: {val_loss}")
+        if current_exp == last_exp_num:
+            log_test_loss(val_loss, path_to_save_loss)
+            fc1 = np.column_stack([forecast_horizon['fh1'], forecast_horizon['fh1_true']])
+            fc2 = np.column_stack([forecast_horizon['fh2'], forecast_horizon['fh2_true']])
+            fc3 = np.column_stack([forecast_horizon['fh3'], forecast_horizon['fh3_true']])
+            log_test_raw(fc1,path_to_save_loss,'fc1')
+            log_test_raw(fc2,path_to_save_loss,'fc2')
+            log_test_raw(fc3,path_to_save_loss,'fc3')
+
+        logger.info(f"{model_dic_keys_ls[model_number]}_Loss On Unseen Dataset: {val_loss}")
         # metric_out = [rmse_1, rmse_2, rmse_3, r2_1, r2_2, r2_3, val_loss]
         # metric_out = [rmse_1, r2_1, val_loss]
     

@@ -10,7 +10,7 @@ if __name__ == "__main__":
     parser.add_argument("--patience", type=int, default=10)
     parser.add_argument("--epoch", type=int, default=100)
     parser.add_argument("--lr", type=float, default=5e-05)
-    parser.add_argument("--Exp_num", type=int, default=3)
+    parser.add_argument("--Exp_num", type=int, default=1)
     parser.add_argument("--num_dataset", type=int, default=7) # max = 7
     parser.add_argument("--k", type=int, default=1)
     parser.add_argument("--batch_size", type=int, default=1)

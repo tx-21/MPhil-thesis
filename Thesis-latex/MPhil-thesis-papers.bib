@@ -68,6 +68,24 @@
   month = feb
 }
 
+@misc{ahmedTransformersTimeseriesAnalysis2022,
+  title = {Transformers in {{Time-series Analysis}}: {{A Tutorial}}},
+  shorttitle = {Transformers in {{Time-series Analysis}}},
+  author = {Ahmed, Sabeen and Nielsen, Ian E. and Tripathi, Aakash and Siddiqui, Shamoon and Rasool, Ghulam and Ramachandran, Ravi P.},
+  year = {2022},
+  month = apr,
+  number = {arXiv:2205.01138},
+  eprint = {2205.01138},
+  eprinttype = {arxiv},
+  primaryclass = {cs},
+  publisher = {{arXiv}},
+  abstract = {Transformer architecture has widespread applications, particularly in Natural Language Processing and computer vision. Recently Transformers have been employed in various aspects of time-series analysis. This tutorial provides an overview of the Transformer architecture, its applications, and a collection of examples from recent research papers in time-series analysis. We delve into an explanation of the core components of the Transformer, including the self-attention mechanism, positional encoding, multi-head, and encoder/decoder. Several enhancements to the initial, Transformer architecture are highlighted to tackle time-series tasks. The tutorial also provides best practices and techniques to overcome the challenge of effectively training Transformers for time-series analysis.},
+  archiveprefix = {arXiv},
+  langid = {english},
+  keywords = {Computer Science - Machine Learning},
+  file = {C\:\\Users\\Tim\\Zotero\\storage\\WKPSP73I\\Ahmed et al. - 2022 - Transformers in Time-series Analysis A Tutorial.pdf}
+}
+
 @article{al-abriStatisticalMachineLearning2016,
   title = {Statistical and {{Machine Learning}} Forecasting Methods {{Concerns}} and Ways Forward},
   author = {{Al-Abri}, Eman S. and S., Eman},
@@ -314,6 +332,24 @@
   doi = {10.18178/ijesd.2020.11.1.1222},
   langid = {english},
   file = {C\:\\Users\\Tim\\Zotero\\storage\\T5WLAUBN\\Bulacan State University, City of Malolos, Bulacan, Philippines. He is also with AMA University Quezon City, Philippines et al. - 2020 - Predicting River Pollution Using Random Forest Dec.pdf}
+}
+
+@article{caiTrafficTransformerCapturing2020,
+  title = {Traffic Transformer: {{Capturing}} the Continuity and Periodicity of Time Series for Traffic Forecasting},
+  shorttitle = {Traffic Transformer},
+  author = {Cai, Ling and Janowicz, Krzysztof and Mai, Gengchen and Yan, Bo and Zhu, Rui},
+  year = {2020},
+  month = jun,
+  journal = {Transactions in GIS},
+  volume = {24},
+  number = {3},
+  pages = {736--755},
+  issn = {1361-1682, 1467-9671},
+  doi = {10.1111/tgis.12644},
+  abstract = {Traffic forecasting is a challenging problem due to the complexity of jointly modeling spatio-temporal dependencies at different scales. Recently, several hybrid deep learning models have been developed to capture such dependencies. These approaches typically utilize convolutional neural networks or graph neural networks (GNNs) to model spatial dependency and leverage recurrent neural networks (RNNs) to learn temporal dependency. However, RNNs are only able to capture sequential information in the time series, while being incapable of modeling their periodicity (e.g., weekly patterns). Moreover, RNNs are difficult to parallelize, making training and prediction less efficient. In this work we propose a novel deep learning architecture called Traffic Transformer to capture the continuity and periodicity of time series and to model spatial dependency. Our work takes inspiration from Google's Transformer framework for machine translation. We conduct extensive experiments on two real-world traffic data sets, and the results demonstrate that our model outperforms baseline models by a substantial margin.},
+  langid = {english},
+  keywords = {Key},
+  file = {C\:\\Users\\Tim\\Zotero\\storage\\D4639I9A\\Cai et al. - 2020 - Traffic transformer Capturing the continuity and .pdf}
 }
 
 @misc{castroWhyShouldChoose2018,
@@ -939,6 +975,22 @@
   abstract = {To increase prediction accuracy of dissolved oxygen (DO) in aquaculture, a hybrid model based on multi-scale features using ensemble empirical mode decomposition (EEMD) is proposed. Firstly, original DO datasets are decomposed by EEMD and we get several components. Secondly, these components are used to reconstruct four terms including high frequency term, intermediate frequency term, low frequency term and trend term. Thirdly, according to the characteristics of high and intermediate frequency terms, which fluctuate violently, the least squares support vector machine (LSSVR) is used to predict the two terms. The fluctuation of low frequency term is gentle and periodic, so it can be modeled by BP neural network with an optimal mind evolutionary computation (MEC-BP). Then, the trend term is predicted using grey model (GM) because it is nearly linear. Finally, the prediction values of DO datasets are calculated by the sum of the forecasting values of all terms. The experimental results demonstrate that our hybrid model outperforms EEMD-ELM (extreme learning machine based on EEMD), EEMD-BP and MEC-BP models based on the mean absolute error (MAE), mean absolute percentage error (MAPE), mean square error (MSE) and root mean square error (RMSE). Our hybrid model is proven to be an effective approach to predict aquaculture DO.},
   keywords = {Aquaculture,DO prediction,Hybrid model},
   file = {C\:\\Users\\Tim\\Zotero\\storage\\62I29SDC\\2018 - Li et al. - A hybrid model for dissolved oxygen prediction in aquaculture based on multi-scale features.pdf}
+}
+
+@article{limTemporalFusionTransformers2021,
+  title = {Temporal {{Fusion Transformers}} for Interpretable Multi-Horizon Time Series Forecasting},
+  author = {Lim, Bryan and Ar{\i}k, Sercan {\"O}. and Loeff, Nicolas and Pfister, Tomas},
+  year = {2021},
+  month = oct,
+  journal = {International Journal of Forecasting},
+  volume = {37},
+  number = {4},
+  pages = {1748--1764},
+  issn = {01692070},
+  doi = {10.1016/j.ijforecast.2021.03.012},
+  abstract = {Multi-horizon forecasting often contains a complex mix of inputs \textendash{} including static (i.e. time-invariant) covariates, known future inputs, and other exogenous time series that are only observed in the past \textendash{} without any prior information on how they interact with the target. Several deep learning methods have been proposed, but they are typically `black-box' models that do not shed light on how they use the full range of inputs present in practical scenarios. In this paper, we introduce the Temporal Fusion Transformer (TFT) \textendash{} a novel attention-based architecture that combines high-performance multi-horizon forecasting with interpretable insights into temporal dynamics. To learn temporal relationships at different scales, TFT uses recurrent layers for local processing and interpretable self-attention layers for long-term dependencies. TFT utilizes specialized components to select relevant features and a series of gating layers to suppress unnecessary components, enabling high performance in a wide range of scenarios. On a variety of real-world datasets, we demonstrate significant performance improvements over existing benchmarks, and highlight three practical interpretability use cases of TFT.},
+  langid = {english},
+  file = {C\:\\Users\\Tim\\Zotero\\storage\\FEDJ4IX7\\Lim et al. - 2021 - Temporal Fusion Transformers for interpretable mul.pdf}
 }
 
 @article{liPredictionFlowBased2022,
@@ -1664,6 +1716,22 @@
   langid = {english},
   keywords = {Drinking Water,standards,Water Quality,Water Supply},
   annotation = {WHO/FWC/WSH/17.01}
+}
+
+@article{wuDeepTransformerModels2020,
+  title = {Deep {{Transformer Models}} for {{Time Series Forecasting}}: {{The Influenza Prevalence Case}}},
+  shorttitle = {Deep {{Transformer Models}} for {{Time Series Forecasting}}},
+  author = {Wu, Neo and Green, Bradley and Ben, Xue and O'Banion, Shawn},
+  year = {2020},
+  month = jan,
+  journal = {arXiv:2001.08317 [cs, stat]},
+  eprint = {2001.08317},
+  eprinttype = {arxiv},
+  primaryclass = {cs, stat},
+  abstract = {In this paper, we present a new approach to time series forecasting. Time series data are prevalent in many scientific and engineering disciplines. Time series forecasting is a crucial task in modeling time series data, and is an important area of machine learning. In this work we developed a novel method that employs Transformer-based machine learning models to forecast time series data. This approach works by leveraging selfattention mechanisms to learn complex patterns and dynamics from time series data. Moreover, it is a generic framework and can be applied to univariate and multivariate time series data, as well as time series embeddings. Using influenzalike illness (ILI) forecasting as a case study, we show that the forecasting results produced by our approach are favorably comparable to the stateof-the-art.},
+  archiveprefix = {arXiv},
+  langid = {english},
+  file = {C\:\\Users\\Tim\\Zotero\\storage\\NDUWG6BG\\Wu et al. - 2020 - Deep Transformer Models for Time Series Forecastin.pdf}
 }
 
 @article{xuAlternativeLaboratoryTesting2021,

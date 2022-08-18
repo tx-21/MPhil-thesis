@@ -84,7 +84,7 @@ As shown in Fig.~\ref{fig:colour-calibration-lab-sampling}, the maintenance and 
     \label{fig:diagram-colour-analysis}
  \end{figure}
 
- In the proposed model training methods, ammonia and colour data are input into the training forecasting models. Thus, the colour and ammonia data as features should be collected from the same period of time with the same dataset size. In addition, abnormal data caused by sensor downtime should also be excluded. Thus, we chose the ammonia and colour data from 23 December 2021 to 22 January, as shown in Fig.~\ref{fig:nh3-color-data}.
+ In the proposed model training methods, ammonia and colour data are input into the training forecasting models. Thus, the colour and ammonia data as features should be collected from the same period of time with the same dataset size. In addition, abnormal data caused by sensor downtime should also be excluded. Thus, we chose the ammonia and colour data from 23 December 2021 to 22 January, as shown in Fig.~\ref{fig:nh3-color-data} (see Appendix.~ref{raw-nh3-colour-data}).
 
 \begin{figure}[h]
     \centering
@@ -249,9 +249,9 @@ We have carefully observed and analyzed the SWHEPP influent to create new featur
     \end{subfigure}\\
     \begin{subfigure}[t]{0.5\textwidth}
       \includegraphics[width=\linewidth]{imgs/pre-processing/pos-encoding.png}
-      \caption{Positional encoding of hour components.} \label{fig:pos-encoding}
+      \caption{Position encoding of hour components.} \label{fig:pos-encoding}
     \end{subfigure}%  
-  \caption{Analysis of influent quality composition and the illustration of the positional encoding.} \label{fig:blend-pos}
+  \caption{Analysis of influent quality composition and the illustration of the position encoding.} \label{fig:blend-pos}
 \end{figure}
 
 
@@ -269,14 +269,32 @@ We have carefully observed and analyzed the SWHEPP influent to create new featur
   \caption{Observed ammonia concentrations and colour levels in SHWEPP influent.} \label{fig:observation-shweep-influent}
 \end{figure}
 
-The new features were inspired by the research work of \citet{abu-bakarQuantifyingImpactCOVID192021}. The author summarized the four types of hourly household water consumption patterns as in Fig.~\ref{fig:water-consumption-pattern}, which correlates the specific time of the day to the volume of water consumed in households. In other words, as fresh water is consumed, wastewater is generated simultaneously; the wastewater then enters the public sewage system and increases ammonia concentrations. As shown in Fig.~\ref{fig:nh3-peak-pattern}, the peak analysis tool helped us to identify the ammonia concentrations' peak hour, which occurred around 13:00 to 14:00, and 20:00 to 21:00. Thus, it is convinced that time features will help the machine learning models correlate better and predict the change of ammonia concentrations in the wastewater. Time feature was created through a technique called positional encoding (POS). The positional encoded feature was achieved in the following steps:
+The feature creation for training NH$_{3}$-N forecasting model was inspired by the research work of \citet{abu-bakarQuantifyingImpactCOVID192021}. The author summarized the four types of hourly household water consumption patterns as in Fig.~\ref{fig:water-consumption-pattern}, which correlates the specific time of the day to the volume of water consumed in households. In other words, as fresh water is consumed, wastewater is generated simultaneously; the wastewater then enters the public sewage system and increases ammonia concentrations. As shown in Fig.~\ref{fig:nh3-peak-pattern}, the peak analysis tool helped us to identify the ammonia concentrations' peak hours, which occurred around 13:00 to 14:00, and 20:00 to 21:00. This discovery indicates the periodicity of the NH$_{3}$-N patterns exists, and can be potentially transformed into features for training NH$_{3}$-N forecasting models. 
+
+\citet{caiTrafficTransformerCapturing2020} states that the capture of the periodicity of the data during model training, a position encoding (PE) strategy is required. 
+PE strategy is known for its use in the Transformer model to preserve the order of elements in a sequence (e.g., the order of words in a sentence) when modeling sequences.
+In solving the time series problem, the PE strategy can also be adopted and has been proved to help capture the periodicity of the time series data.
+The element-wise addition of PE can be achieved through periodic functions of sine and cosine, which is used to encode sequential information in the time series data of the input vector (i.e., feature) with a position encoding vector \citep{wuDeepTransformerModels2020}.
+The PE vector was achieved in the following steps:
 
 \noindent
 \begin{myenumerate}
-    \item The timestamp is represented as three elements---hour, day and month.
+    \item The timestamp is represented as three elements---hour, day, and month.
     \item Each element will bed decomposed into sine and cosine components.
     \item Last step is applied to hours and days to make all elements represented cyclically.
 \end{myenumerate}
+
+The formulation of PE vectors to represent hour components is shown in Eq.~\ref{pe}, adapted from \citep{ahmedTransformersTimeseriesAnalysis2022}:
+
+\begin{equation}\label{pe}
+  \begin{aligned}
+      &sin_{hour}=sin(\frac{2 \pi t_{hour}}{24}) \\
+      &cos_{hour}=cos(\frac{2 \pi t_{hour}}{24})
+  \end{aligned}
+\end{equation}
+
+\noindent
+where $sin_{hour}$ and $cos_{hour}$ corresponds to the hour elements, $t_{hour}$ corresponds to which hour of the input data.
 
 Due to the size of the datasets used in this study for training ammonia and colour forecasting model being 31 days, only the hour element was transformed into sine and cosine components as in Fig.~\ref{fig:pos-encoding}.
 
@@ -298,8 +316,13 @@ Due to the size of the datasets used in this study for training ammonia and colo
 \subsection{Data transformation}
 Before the pre-processed data was fed into the models for training, we need to split the data into three clusters, which were training (60\%), validation (20\%), and testing dataset (20\%). Among each cluster, the data will be further split into input variables $\bm{X}$ and output variables $\bm{Y}$ (i.e., training X/training Y, testing X/testing Y). During the training process, machine learning algorithms will learn a target function $\bm{f}$ to best map $\bm{X}$ to $\bm{Y}$. A training dataset is a set of examples (e.g., historical data) for models to learn the hidden trends and information in the data, shown in (a) in Fig.~\ref{fig:training-scheme}. Training loss is calculated by taking the sum of loss for each pair of input and output in the training dataset after every training cycle (i.e., epoch).
 
-In this study, the model is designed to forecast values three hours into the future using the values from the past 24 hours. Fig.~\ref{fig:forecast-concept} illustrates a forecasting model's training and forecasting process. The length of the sliding time window in this study is set to be 25 (hours). In training set 1 (i.e., the first 24 hours from the training dataset), the blue block represents the observed values of 24 hours, while the yellow block is the first data point from the testing dataset (i.e., equivalent to the 25$^{th}$ hour of the training dataset). The model is required to learn how to map the blue block to the yellow block; the times of model learning is equivalent to the length of the training dataset deducted by the length of the sliding time window (i.e., the second to the last 25$^{th}$ hour will be mapped to the last hour of the training dataset). Once the training process is complete, the model will be able to generate a value, known as the inference, prediction, or forecast, given an input of 24 hours of data.
+Fig.~\ref{fig:forecast-concept} illustrates the concept of the forecasting model's training and forecasting process. 
+%The length of the sliding time window in this study is set to be 25 (hours). 
+In training set 1, the blue block represents the observed values, while the yellow block is the datapoint from the training dataset Y.
+The model is required to learn how to map the blue block to the yellow block; the times of model learning is equivalent to the length of the training dataset deducted by the length of the sliding time window (i.e., the sliding time window refers to the length of the input data).
+Once the training process is complete, the model will be able to generate a value, known as the inference, prediction, or forecast, given the input.
 
+In this study, the model is designed to forecast values three hours into the future using   the values from the past 24 hours. 
 As shown in Fig.~\ref{fig:inference-process}, to forecast one hour into the future, the model will be input with 24 hours of observed values from the testing dataset, and the model will generate a value known as the forecasted values of the 25$^{th}$ hour. For predicting two hours into the future, the model will be input with 23 hours of observed values and the first forecasted values (i.e., the 25$^{th}$ hour). For forecasting three hours into the future, the model will be input with 22 hours of observed values and two forecasted values from the last two forecasting processes to generate the value, known as the 26$^{th}$ hour. As the sliding time window moves toward the future forecast horizons, the model forecasted results would rely more on the forecasted values instead of the observed values, making the forecasted values less reliable. In this study, a forecast horizon of three was selected for testing the reliability of the model forecasting performance.
 
 \begin{figure}[!ht]
@@ -320,7 +343,7 @@ As shown in Fig.~\ref{fig:inference-process}, to forecast one hour into the futu
     \includegraphics[width=\linewidth]{imgs/revision/inference-forecast-horizon.png}
     \caption{Inference process for different forecastion horizons.} \label{fig:inference-process}
   \end{subfigure}\\
-\caption{Illustration of the training and inference process.} \label{fig:forecast-horizon}
+\caption{Illustration of the training and inference process used in this study.} \label{fig:forecast-horizon}
 \end{figure}
 
 The function of a validation dataset, as in (b) in Fig.~\ref{fig:training-scheme}, is used to assess the model performance until we obtain the optimized hyperparameter settings, including the number of neurons in machine learning models, epoch, etc. The hyperparameter settings for each model will be discussed in the next section. The validation loss plays a vital role during the model training. The adjustments of the hyperparameters will directly reflect on the change of the validation loss; the lower the values, the better the model performance is. As the optimized model is obtained, a testing dataset is used to evaluate the performance of the forecasting model, as shown in (c) in Fig.~\ref{fig:training-scheme}. The testing datasets will only be input into the models when the models were tuned to the optimized settings and ready for the final evaluation. The testing datasets are also known as the unseen datasets, which can fairly evaluate the model performance. If the model tuning process was performed on the testing dataset, the model performance would be biased since the hyperparameters were adjusted in favour of the evaluation of the testing dataset.
