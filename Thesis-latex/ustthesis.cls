@@ -792,12 +792,12 @@ scholarly research.}
     \begin{center}
       {\Lbi \expandafter{\@title} \par}
 
-      \vglue 6ex
+      \vglue 30ex
       {by \par}
       \vglue 2ex
       % {\lbi \uppercase{\@author} \par}
       {\expandafter{\@author} \par}
-      \vglue 2ex
+      \vglue 8ex  
 
     {This is to certify that I have examined the above \@DegreeSName thesis} \\
     \vglue 1ex
@@ -1743,7 +1743,7 @@ scholarly research.}
     \typeout{%
       Warning: \noexpand\depthead{Prof. Name} not yet defined.
     }
-    \member{Prof. ???, Head of Department}
+    \member{Prof. ???, Program Director}
     \addlinedefinedtrue
   \fi
   \ifdatedefined \else
