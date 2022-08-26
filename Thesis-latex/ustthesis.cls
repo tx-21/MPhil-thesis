@@ -845,6 +845,7 @@ scholarly research.}
 \def\endsignature{
     \par\textspaceundo
 		\begin{center}
+    {\normalsize Environmental Engineering Program\par}
     {\normalsize Department of \@department\par}
     {\normalsize \space\mon\space\number\year}
     \end{center}
